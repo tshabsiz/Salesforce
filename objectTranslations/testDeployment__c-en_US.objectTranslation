@@ -8,9 +8,5 @@
         <plural>true</plural>
         <value>testDeployment</value>
     </caseValues>
-    <fields>
-        <label><!-- State --></label>
-        <name>State__c</name>
-    </fields>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>
