@@ -77,15 +77,15 @@
         
         }).then(function(response){
               var navEvt = $A.get("e.force:navigateToSObject");
-              navEvt.setParams({
-            "recordId": ID
-        });
+              navEvt.setParams({"recordId": ID});
+            
         navEvt.fire();
         workspaceAPI.openTab({
-               recordId: ID,
-               focus: true
-           });
- 
+               recordId: ID
+            }).then(function(response) {
+            workspaceAPI.focusTab({tabId : response});
+       });
+
             
         })
         .catch(function(error) {

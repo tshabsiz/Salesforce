@@ -36,6 +36,6 @@
     </values>
     <values>
         <field>Product_Partner_Team__c</field>
-        <value xsi:type="xsd:string">Transactional Banking|Transactional Banking JHB - Business Banking|Transactional Banking JHB - Corporate and Investment Banking​|Transactional Banking KZN - Durban|Transactional Banking KZN - Remote Regions - EC|Transactional Banking PTA - Pretoria|Transactional Banking PTA - Remote - Bloemfontein|Transactional Banking PTA - Remote Regions|Transactional Banking Product Sales Enablement|Transactional Banking RBB Solutions Team|Transactional Banking SA|Transactional Banking SA - TBS|Transactional Banking SA Solutions Team|Transactional Banking WC - Cape Town</value>
+        <value xsi:type="xsd:string">TB - All|TB - Johannesburg - BB|TB - Johannesburg - CIB|TB - KZN - Durban|TB - KZN - Remote|TB - Pretoria|TB - Pretoria - Local|TB - Western Cape|Transactional Banking|Transactional Banking JHB - Business Banking|Transactional Banking JHB - Corporate and Investment Banking|Transactional Banking KZN - Durban|Transactional Banking KZN - Remote Regions - EC|Transactional Banking PTA - Pretoria|Transactional Banking PTA - Remote - Bloemfontein|Transactional Banking PTA - Remote Regions|Transactional Banking Product Sales Enablement|Transactional Banking RBB Solutions Team|Transactional Banking SA|Transactional Banking SA - TBS|Transactional Banking WC - Cape Town</value>
     </values>
 </CustomMetadata>

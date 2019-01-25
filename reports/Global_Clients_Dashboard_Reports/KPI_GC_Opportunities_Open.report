@@ -150,6 +150,12 @@
             <operator>equals</operator>
             <value>Global Corporates - Cape,Global Corporates Eastern Cape,Global Corporates Western Cape,Global Corporates Gauteng,Global Corporates KwaZulu-Natal,Global Corporates South Africa,Global Clients</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Income Recovery</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -184,6 +190,6 @@
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
+        <interval>INTERVAL_CURY</interval>
     </timeFrameFilter>
 </Report>

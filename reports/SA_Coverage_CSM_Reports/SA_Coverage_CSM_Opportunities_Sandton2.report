@@ -10,19 +10,13 @@
         <field>CAMPAIGN_SOURCE</field>
     </columns>
     <columns>
-        <field>Opportunity.Owner_Team__c</field>
-    </columns>
-    <columns>
-        <field>OpportunityLineItem.Balance__c.CONVERT</field>
+        <field>ACCOUNT_NAME</field>
     </columns>
     <columns>
         <field>CLOSE_DATE</field>
     </columns>
     <columns>
         <field>STAGE_NAME</field>
-    </columns>
-    <columns>
-        <field>TYPE</field>
     </columns>
     <columns>
         <field>PRODUCT_NAME</field>
@@ -32,6 +26,9 @@
     </columns>
     <columns>
         <field>OpportunityLineItem.Product_Level_3__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Balance__c.CONVERT</field>
     </columns>
     <columns>
         <field>OpportunityLineItem.Annualised_Income__c.CONVERT</field>
@@ -44,49 +41,6 @@
     </columns>
     <columns>
         <field>CREATED_DATE</field>
-    </columns>
-    <columns>
-        <field>QUANTITY</field>
-    </columns>
-    <columns>
-        <field>UNIT_PRICE</field>
-    </columns>
-    <columns>
-        <field>UNIT_PRICE.CONVERT</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>TOTAL_PRICE</field>
-    </columns>
-    <columns>
-        <field>TOTAL_PRICE.CONVERT</field>
-    </columns>
-    <columns>
-        <field>SERVICE_DATE</field>
-    </columns>
-    <columns>
-        <field>SERVICE_MONTH</field>
-    </columns>
-    <columns>
-        <field>PRODUCT_DESCRIPTION</field>
-    </columns>
-    <columns>
-        <field>PRODUCT_PRICE</field>
-    </columns>
-    <columns>
-        <field>PRODUCT_PRICE.CONVERT</field>
-    </columns>
-    <columns>
-        <field>PRODUCT_CUSTOMER_ID</field>
-    </columns>
-    <columns>
-        <field>PRODUCT_ACTIVE</field>
-    </columns>
-    <columns>
-        <field>ACCOUNT_NAME</field>
-    </columns>
-    <columns>
-        <field>ROLLUP_DESCRIPTION</field>
     </columns>
     <columns>
         <field>Opportunity.Related_Group_Client__c</field>
@@ -106,7 +60,13 @@
             <column>Opportunity.CSM_Initiator__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Yolande Albert,Edith Ferreira,Roshan Bhika,Neveshen Naidoo,Kimberlee Erasmus,Sharky Kishun,Zukiswa Ndodana,Mariana Lopes</value>
+            <value>adele otto,bridget ngobeni,Edith Ferreira,julia radebe,Kimberlee Erasmus,lisa boltina,Mariana Lopes,Roshan Bhika,shaheen mahomed,thato mmereki,Yolande Albert,Zukiswa Ndodana</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closed Lost</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -115,7 +75,12 @@
         <field>Opportunity.CSM_Initiator__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>SA Coverage CSM Opportunities - Sandton</name>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>TYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>SA CSM Opportunities - Sandton &amp; GC</name>
     <params>
         <name>open</name>
         <value>all</value>
@@ -129,6 +94,7 @@
         <value>1</value>
     </params>
     <reportType>OpportunityProduct</reportType>
+    <roleHierarchyFilter>BAGL_Management</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>

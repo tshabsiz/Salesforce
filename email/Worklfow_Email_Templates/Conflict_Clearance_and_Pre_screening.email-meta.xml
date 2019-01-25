@@ -9,39 +9,36 @@
     <textOnly>Dear {!Opportunity.OwnerFirstName}
 
 Private Opportunity: {!Opportunity.Name}
-Owner: {!Opportunity.OwnerFullName}
-Client: {!Opportunity.Account}
+Owner: {!Opportunity.OwnerFullName} 
+Client: {!Opportunity.Account} 
 Opportunity Status: {!Opportunity.StageName} Probability:{!Opportunity.Probability}
 
-Please note: To anonymise this private-side opportunity the Related Relationship name will be replaced with the Relationship named ‘Private Side Client’ until the opportunity is closed. The original Relationship name (and Related Group Client name if it has been added) will be visible and available for reporting to appropriate individuals such as the opportunity owner and Accountable Banker.
+
+Please note: To anonymise this private-side opportunity the Related Relationship name will be replaced with the Relationship named ‘Private Side Client’ until the opportunity is closed. The original Relationship name (and Related Group Client name if it has been added) will be visible and available for reporting to appropriate individuals such as the opportunity owner and Accountable Banker.    
 
 Conflict Resolution
-Please follow this link: Conflict Clearance Request* to submit your CCR through the cBanker platform. Teams using eBanker as their underlying pipeline management system should submit their CCRs through eBanker.
-
-For queries refer to the Conflicts of Interest Management Procedures for Private Side Businesses* or contact the EMEA Conflict Management team:
-
-philipp.breu@barclays.com - Head of EMEA Conflict Management:+44 (0)20 7773 0821
-sara.x.basemera@barclayscapital.com: +44 (0) 20 7773 7732
-melissa.cope@barclayscapital.com: +44 (0) 20 3134 3404
-genny.chan@barclays.com : +44 (0) 20 7773 0905
-catherine.pond@barclays.com: +44 (0) 20 3555 4837
+Please follow this link: Conflict Clearance Request* to submit your CCR through the cBanker platform. 
+For queries refer to the Conflicts of Interest Management Procedures for Private Side Businesses* or contact the CIB Africa Compliance Control Room team:
+CIB Africa Compliance Control Room - xraCIBAfricaComplian@absa.co.za
+Control Room Team:
+Silvana Battani (Head): Tel 010 245 4065
+Phiwa Masuku: Tel 010 245 4202 
+Aysha Moodley: Tel 011 772 7458
+Sinazo Mgubo: Tel 011 895 7545
+Andor Gradwell: Tel  011 895 7666
 
 Pre-Screening
 Please conduct pre-screening on the primary client, its executive directors and shareholders having 10% or more interest in the primary client either directly or indirectly and any related party that you deem to be relevant (e.g. mandated officials).
 
+Email FincrimeopsCT@absa.co.za for all new requests and query resolution stating the business area and including all the information.
 
-Click here to complete the FinOps Form*  electronically, (KYC Pre-screening Request) and follow these steps:
-
-- Insert your username and then click Check the Name icon to identify the user
-- Select the correct business area for cost allocation purposes
-
-Email FincrimeopsCT@absa.co.za for query resolution stating the business area and including all the information as requested in the automated form.
+Escalations can be forwarded  to  CIB Africa Private Side Advisory.
 
 *The CCR  forms can only be used in Internet Explorer with Chrome Frame plugin Version 23 or using the Google Chrome browser.
 
 Kind regards
 
-Conflicts Management</textOnly>
+CIB Compliance</textOnly>
     <type>html</type>
     <uiType>Aloha</uiType>
 </EmailTemplate>

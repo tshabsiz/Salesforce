@@ -66,6 +66,12 @@
     <columns>
         <field>Opportunity.Next_Steps__c</field>
     </columns>
+    <columns>
+        <field>Opportunity.Reason_Won_Lost__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Loss_Win_Description__c</field>
+    </columns>
     <currency>ZAR</currency>
     <filter>
         <criteriaItems>
@@ -81,7 +87,7 @@
             <value>South Africa</value>
         </criteriaItems>
     </filter>
-    <format>Summary</format>
+    <format>Tabular</format>
     <name>Closed SA Trade Deals - last 30 days</name>
     <params>
         <name>open</name>

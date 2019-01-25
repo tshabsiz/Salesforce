@@ -60,7 +60,7 @@
         <field>Call_Report__c.Attendees__r$Barclays_Attendee__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>IBS SA Call reports YTD</name>
+    <name>IBS SA Call reports YTD (SA)</name>
     <params>
         <name>co</name>
         <value>1</value>

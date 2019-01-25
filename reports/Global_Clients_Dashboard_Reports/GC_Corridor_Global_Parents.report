@@ -86,7 +86,7 @@
             <column>Account.Segment__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Global Corporate</value>
+            <value>Global Corporate,Global Development Organisation (GDO)</value>
         </criteriaItems>
         <criteriaItems>
             <column>TYPE</column>
@@ -99,6 +99,12 @@
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>APAC (EX CHINA),CHINA,EUROPE,UAE,UK,USA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>bank,banka,banque,banca,banco,kasse</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

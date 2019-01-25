@@ -149,7 +149,7 @@ public with sharing class JLOC_PrintViewController {
 
             /* Get the latest FinancialInformation record for this Account - ordered by Year & CreatedDate */
             if(jlocClientPlan!=null)
-            jlocFinanceList = ClientFinancialsController.queryFinancialInformation(jlocClientPlan);
+            jlocFinanceList = ClientFinancialsController.queryFinancialInformation(jlocClientPlan, 0, 5);
 
             /* Make calculations based on the latest (newest) finance record */
             jlocFinancials = null;

@@ -274,8 +274,16 @@
         <name>Turnover__c</name>
     </fields>
     <fields>
+        <label><!-- YearString --></label>
+        <name>YearString__c</name>
+    </fields>
+    <fields>
         <label><!-- Year --></label>
         <name>Year__c</name>
+        <picklistValues>
+            <masterLabel>2014</masterLabel>
+            <translation><!-- 2014 --></translation>
+        </picklistValues>
         <picklistValues>
             <masterLabel>2015</masterLabel>
             <translation><!-- 2015 --></translation>

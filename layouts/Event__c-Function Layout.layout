@@ -524,6 +524,7 @@
         <fields>NAME</fields>
         <fields>Host__c</fields>
         <fields>Number_of_Hosts__c</fields>
+        <fields>Contact_Full_Name__c</fields>
         <fields>Last_Name__c</fields>
         <fields>Overall_Status__c</fields>
         <fields>Contact__c</fields>
@@ -543,6 +544,10 @@
         <fields>Delegate_Registration_Status__c</fields>
         <fields>Email_Template_Name__c</fields>
         <relatedList>EM_Event_Email_Configuration__c.Event__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>Event_Session__c.Event_Function__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>TASK.SUBJECT</fields>

@@ -20,7 +20,8 @@ public with sharing class APT_ApprovalRequestController {
 
 	public APT_ApprovalRequestController(ApexPages.StandardController stdController) {
 		annualPricing = (Annual_Pricing__c)stdController.getRecord();
-		isSubmitted = annualPricing.Approval_Status__c == APT_AnnualPricingUtils.STATUS_NOT_SUBMITTED ? false : true;
+		//isSubmitted = annualPricing.Approval_Status__c == APT_AnnualPricingUtils.STATUS_NOT_SUBMITTED ? false : true;
+        isSubmitted = annualPricing.Approval_Status__c == APT_AnnualPricingUtils.STATUS_STANDARD_PRICING ? false : true;
 		pricingGroups = APT_AnnualPricingUtils.getAnnualPricingItemsForApproval(annualPricing);
 
         

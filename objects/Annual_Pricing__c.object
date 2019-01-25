@@ -71,9 +71,9 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Not Submitted</fullName>
+                    <fullName>Standard Pricing</fullName>
                     <default>false</default>
-                    <label>Not Submitted</label>
+                    <label>Standard Pricing</label>
                 </value>
                 <value>
                     <fullName>Pending</fullName>

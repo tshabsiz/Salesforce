@@ -1,15 +1,24 @@
 ({
     doInit  : function(component, event, helper) {
         
-        
         var tabId =  component.get("v.tabId");
-        helper.closeThisTab(component, event, tabId);
+        if(tabId !== null && tabId !== '') 
+            helper.closeThisTab(component, event, tabId);
+            
         helper.showSpinner(component, event, helper);
         
         var recordId  = component.get("v.recordId");
+     
         if(recordId == null || recordId == ''){
             recordId = '';
         }
+
+        if(recordId !== null && recordId !== ''&& !recordId.startsWith('500')){
+          
+            component.set("v.callReportId", recordId);
+            //recordId = null;
+            //component.set("v.recordId", recordId);
+        }        
         
     
         var action = component.get("c.GetAccount");
@@ -24,7 +33,14 @@
             
             var state = response.getState();
             if (state === "SUCCESS") {
-                console.log(JSON.parse(response.getReturnValue()))
+             
+                if(recordId !== null && recordId !== ''&& !recordId.startsWith('500')){
+                    
+                    component.set("v.callReportId", recordId);
+                    recordId = null;
+                    component.set("v.recordId", recordId);
+                }      
+                
                  helper.setFocusedTabLabel(component, 'Complains Case');
                 
                 helper.hideSpinner(component, event, helper);
@@ -588,6 +604,7 @@
             'subject':subject,             
             'description':description,
             
+            'callReportId':component.get('v.callReportId'),
             'complaintServiceCategory':complaintServiceCategory,
             'resolvingArea':resolvingArea,             
             'complaintServiceType':complaintServiceType,

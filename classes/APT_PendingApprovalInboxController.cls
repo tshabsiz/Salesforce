@@ -44,6 +44,7 @@ public with sharing class APT_PendingApprovalInboxController {
 		for(Annual_Pricing_Item__c annualPricingItem : [SELECT Id, Name, Annual_Pricing__c, Pricing_Group__c, Pricing_Deal_Product_Name__c, 
 															Standard_Price__c, Standard_VAT_Inclusive__c, Final_Price__c,
 															Request_Comments__c, Approval_Status__c 
+                                                        
 															FROM Annual_Pricing_Item__c WHERE Id IN :annualPricingItemIds
 															ORDER BY Pricing_Deal_Product__r.Pricing_Group__r.Report_Sequence__c, Pricing_Deal_Product__r.Report_Sequence__c]){
 			mapAnnualPricingItems.put(annualPricingItem.Id, annualPricingItem);

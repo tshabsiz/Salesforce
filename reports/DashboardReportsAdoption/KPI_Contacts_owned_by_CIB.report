@@ -26,8 +26,8 @@
         <criteriaItems>
             <column>Contact$Owner.Profile</column>
             <isUnlocked>false</isUnlocked>
-            <operator>notContain</operator>
-            <value>wealth</value>
+            <operator>equals</operator>
+            <value>Barclays Private Side User,Barclays Read Only,Barclays Standard User,Standard User,Standard User (Banking - Private),Standard User ( Lightning ),Standard User (Markets),Standard User ( Private Lightning ),Standard User (Research),Standard User (RoA),Standard User (TBS User)</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -41,7 +41,7 @@
         <field>Contact$Owner</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>KPI - Contacts owned by CIB</name>
+    <name>CIB FO Contacts loaded - CY</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -52,7 +52,7 @@
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>Contact$LastModifiedDate</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
     </timeFrameFilter>
 </Report>

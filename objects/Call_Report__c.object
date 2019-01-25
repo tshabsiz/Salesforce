@@ -606,7 +606,7 @@
         <label>Meeting Reason</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -1240,7 +1240,7 @@
         <label>Proposed Solution(s)</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
         <valueSet>
@@ -3131,7 +3131,7 @@
         <relationshipName>Client_Call_Reports</relationshipName>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -3184,7 +3184,7 @@
             <filterItems>
                 <field>$Profile.Name</field>
                 <operation>equals</operation>
-                <value>Barclays Standard User, ABSA META User,User, Standard User ( Lightning ), Banking User (Custom), Standard User (Banking - Private), Standard User ( Lightning ), Standard User (Markets), Standard User (Research), ,Standard User (WIMI)</value>
+                <value>Barclays Standard User, ABSA META User,User, Standard User ( Lightning ), Banking User (Custom), Standard User (Banking - Private), Standard User ( Lightning ), Standard User (Markets), Standard User (Research), ,Standard User (WIMI), Standard User (RoA)</value>
             </filterItems>
             <filterItems>
                 <field>Account.RecordTypeId</field>
@@ -3250,6 +3250,17 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>Share_With_Markets_Institu__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>When ticked share record with ZAF - CIB - Markets - Institutions role</description>
+        <externalId>false</externalId>
+        <label>Share With Markets Institution</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Subject__c</fullName>
         <externalId>false</externalId>
         <label>Subject</label>
@@ -3267,7 +3278,7 @@
         <label>Team Role</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -3510,6 +3521,26 @@
             <value>Call_Report__c.Research_Call_Report</value>
         </filters>
         <label>Research Team&apos;s Call Reports</label>
+    </listViews>
+    <listViews>
+        <fullName>WEF_List</fullName>
+        <columns>NAME</columns>
+        <columns>Relationship__c</columns>
+        <columns>Subject__c</columns>
+        <columns>Client_Plan__c</columns>
+        <columns>RECORDTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Subject__c</field>
+            <operation>startsWith</operation>
+            <value>WEF 2019</value>
+        </filters>
+        <filters>
+            <field>Meeting_Date__c</field>
+            <operation>greaterThan</operation>
+            <value>1/1/2019</value>
+        </filters>
+        <label>2019 WEF Call Reports List</label>
     </listViews>
     <listViews>
         <fullName>X7_All_Call_Reports_My_Team</fullName>
@@ -5553,11 +5584,11 @@
         <picklistValues>
             <picklist>Meeting_Reason2__c</picklist>
             <values>
-                <fullName>Annual Review</fullName>
+                <fullName>Client Acquisition</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Client Acquisition</fullName>
+                <fullName>Customer Service</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -5565,15 +5596,11 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>New Product Discussion</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Presentation</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>Relationship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Road Show</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

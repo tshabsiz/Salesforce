@@ -28,7 +28,8 @@ public with sharing class APT_ViewAnnualPricingController {
 		pricingGroups = APT_AnnualPricingUtils.getAnnualPricingItemsGroupedByPricingGroups(annualPricing);
 		isApprovalRequired = APT_AnnualPricingUtils.getIsApprovalRequired(pricingGroups);
 
-		isSubmitted = annualPricing.Approval_Status__c == APT_AnnualPricingUtils.STATUS_NOT_SUBMITTED ? false : true;
+        isSubmitted = annualPricing.Approval_Status__c == APT_AnnualPricingUtils.STATUS_STANDARD_PRICING ? false : true;
+		//isSubmitted = annualPricing.Approval_Status__c == APT_AnnualPricingUtils.STATUS_NOT_SUBMITTED ? false : true;
 		isPending = annualPricing.Approval_Status__c == APT_AnnualPricingUtils.STATUS_PENDING ? true : false;
 		isApproved = annualPricing.Approval_Status__c == APT_AnnualPricingUtils.STATUS_APPROVED ? true : false;
 		isRejected = annualPricing.Approval_Status__c == APT_AnnualPricingUtils.STATUS_REJECTED ? true : false;

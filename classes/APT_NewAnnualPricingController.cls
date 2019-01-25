@@ -107,8 +107,8 @@ public with sharing class APT_NewAnnualPricingController {
 	* <Date>      <Authors Name>     <Brief Description of Change>
 	*------------------------------------------------------------*/
     public PageReference save() {
-		annualPricing.Approval_Status__c = APT_AnnualPricingUtils.STATUS_NOT_SUBMITTED;
-
+		//annualPricing.Approval_Status__c = APT_AnnualPricingUtils.STATUS_NOT_SUBMITTED;
+        annualPricing.Approval_Status__c = APT_AnnualPricingUtils.STATUS_STANDARD_PRICING;
         Set<Id> pricingDealProductIds = new Set<Id>();
         for(PricingGroupWrapper pricingGroupWrapper : pricingGroups){
         	for(PricingDealProductWrapper pricingDealProductWrapper : pricingGroupWrapper.pricingDealProducts){

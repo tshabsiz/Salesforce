@@ -3,9 +3,9 @@
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>DOS - Pricing Tool</name>
     <queueMembers>
-        <roleAndSubordinates>
-            <roleAndSubordinate>CSC_Digital_Ops_Support_Manager</roleAndSubordinate>
-        </roleAndSubordinates>
+        <roleAndSubordinatesInternal>
+            <roleAndSubordinateInternal>CSC_Digital_Ops_Support_Manager</roleAndSubordinateInternal>
+        </roleAndSubordinatesInternal>
     </queueMembers>
     <queueSobject>
         <sobjectType>Case</sobjectType>

@@ -7,13 +7,10 @@
         <field>OPPORTUNITY_NAME</field>
     </columns>
     <columns>
-        <field>User.Hub__c</field>
+        <field>FULL_NAME</field>
     </columns>
     <columns>
-        <field>User.Team__c</field>
-    </columns>
-    <columns>
-        <field>User.Team_Role__c</field>
+        <field>ACCOUNT_NAME</field>
     </columns>
     <columns>
         <field>CAMPAIGN_SOURCE</field>
@@ -56,13 +53,7 @@
         <field>CREATED</field>
     </columns>
     <columns>
-        <field>FULL_NAME</field>
-    </columns>
-    <columns>
         <field>ROLLUP_DESCRIPTION</field>
-    </columns>
-    <columns>
-        <field>ACCOUNT_NAME</field>
     </columns>
     <columns>
         <field>Account.SDS__c</field>
@@ -85,10 +76,10 @@
             <value></value>
         </criteriaItems>
         <criteriaItems>
-            <column>RECORDTYPE</column>
+            <column>STAGE_NAME</column>
             <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>Opportunity.Public_opportunity_RT</value>
+            <operator>notEqual</operator>
+            <value>Closed Lost</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -116,6 +107,7 @@
         <value>1</value>
     </params>
     <reportType>OpportunityProduct</reportType>
+    <roleHierarchyFilter>BAGL_Management</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>

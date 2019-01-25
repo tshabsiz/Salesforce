@@ -38,7 +38,7 @@
                 <column>PROFILE</column>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
-                <value>ABSA META User,ABSA Research User,Banking User (Custom),Barclays Private Side User,Barclays Standard User,Standard User ( Lightning ),Standard User ( Private Lightning ),TMG Standard User,Litigation Standard User,Legal Standard User,Legal Support Standard User,Barclays CSC User,Barclays Wealth Advisor,Standard User (WIMI),Standard User (Wealth Advisory),Standard User (Banking - Private)</value>
+                <value>Barclays Private Side User,Barclays Read Only,Barclays Standard User,Standard User,Standard User (Banking - Private),Standard User ( Lightning ),Standard User (Markets),Standard User ( Private Lightning ),Standard User (Research),Standard User (RoA),Standard User (TBS User)</value>
             </criteriaItems>
         </filter>
         <format>Summary</format>
@@ -78,7 +78,7 @@
                 <column>PROFILE</column>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
-                <value>ABSA META User,ABSA Research User,Banking User (Custom),Barclays Private Side User,Barclays Standard User,Standard User ( Lightning ),Standard User ( Private Lightning ),TMG Standard User,Litigation Standard User,Legal Standard User,Legal Support Standard User,Barclays CSC User,Barclays Wealth Advisor,Standard User (WIMI),Standard User (Wealth Advisory),Standard User (Banking - Private)</value>
+                <value>Barclays Private Side User,Barclays Read Only,Barclays Standard User,Standard User,Standard User (Banking - Private),Standard User ( Lightning ),Standard User (Markets),Standard User ( Private Lightning ),Standard User (Research),Standard User (RoA),Standard User (TBS User)</value>
             </criteriaItems>
         </filter>
         <format>Summary</format>
@@ -103,6 +103,31 @@
         <blockId xsi:nil="true"/>
         <joinTable>u</joinTable>
     </blockInfo>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>B0#FORMULA1</column>
+        </chartSummaries>
+        <chartType>Donut</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>ADDRESS_COUNTRY_CODE</groupingColumn>
+        <legendPosition>Bottom</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
     <format>MultiBlock</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
@@ -114,7 +139,7 @@
         <field>User.Business_Area__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Log-in rate by Country</name>
+    <name>CIB FO Log-in rate by Country</name>
     <reportType>User</reportType>
     <showDetails>false</showDetails>
 </Report>

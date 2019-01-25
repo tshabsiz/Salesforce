@@ -125,7 +125,7 @@
         <field>ACCOUNT_NAME</field>
     </columns>
     <currency>ZAR</currency>
-    <description>Global Corporates</description>
+    <description>PUI Pipeline</description>
     <filter>
         <criteriaItems>
             <column>Account.Segment__c</column>

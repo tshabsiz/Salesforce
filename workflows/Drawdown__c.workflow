@@ -7,7 +7,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/TMG_Draw_down_Request</template>
     </alerts>
@@ -18,7 +18,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/TMG_Draw_down_Utilization_request</template>
     </alerts>

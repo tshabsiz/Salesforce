@@ -13,6 +13,10 @@
         <name>Attendee_Email__c</name>
     </fields>
     <fields>
+        <label><!-- Attendee Mobile --></label>
+        <name>Attendee_Mobile__c</name>
+    </fields>
+    <fields>
         <label><!-- Attendee Name --></label>
         <name>Attendee_Name__c</name>
     </fields>

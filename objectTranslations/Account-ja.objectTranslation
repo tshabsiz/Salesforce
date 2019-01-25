@@ -1816,6 +1816,30 @@
         <name>Opportunities__c</name>
     </fields>
     <fields>
+        <label><!-- Original Salesforce ID --></label>
+        <name>OriginalSalesforceID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Country --></label>
+        <name>Owner_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Team --></label>
+        <name>Parent_Banker_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Banker --></label>
+        <name>Parent_Banker__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Hub --></label>
+        <name>Parent_Hub__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent --></label>
+        <name>Parent__c</name>
+    </fields>
+    <fields>
         <label><!-- Portfolio --></label>
         <name>Portfolio__c</name>
         <picklistValues>
@@ -2667,6 +2691,22 @@
     <fields>
         <label><!-- UK Barclays Org ID --></label>
         <name>UK_Barclays_Org_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ultimate Parent Team --></label>
+        <name>Ultimate_Parent_Banker_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ultimate Parent Banker --></label>
+        <name>Ultimate_Parent_Banker__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ultimate Parent Hub --></label>
+        <name>Ultimate_Parent_Hub__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ultimate Parent --></label>
+        <name>Ultimate_Parent__c</name>
     </fields>
     <fields>
         <help><!-- You can add multiple user codes by separating them with a comma. e.g. 33333,44444,55555 --></help>

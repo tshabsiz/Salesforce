@@ -7,6 +7,11 @@
     </folderShares>
     <folderShares>
         <accessLevel>View</accessLevel>
+        <sharedTo>charlene.london@absa1.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
         <sharedTo>christian.magoloza@absa1.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
@@ -53,6 +58,11 @@
     <folderShares>
         <accessLevel>View</accessLevel>
         <sharedTo>ZAF_CIB_International_Banking_and_Trade</sharedTo>
+        <sharedToType>RoleAndSubordinatesInternal</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>FX_Sales</sharedTo>
         <sharedToType>RoleAndSubordinatesInternal</sharedToType>
     </folderShares>
     <name>SA Trade Reports</name>

@@ -18,6 +18,11 @@
             <start>185.81.100.1</start>
         </ipRanges>
         <ipRanges>
+            <description>Pretoria CSC IP Address</description>
+            <end>169.202.235.5</end>
+            <start>169.202.235.1</start>
+        </ipRanges>
+        <ipRanges>
             <end>162.248.187.255</end>
             <start>162.248.184.1</start>
         </ipRanges>
@@ -67,10 +72,10 @@
         <complexity>UpperLowerCaseNumeric</complexity>
         <expiration>NinetyDays</expiration>
         <historyRestriction>3</historyRestriction>
-        <lockoutInterval>FifteenMinutes</lockoutInterval>
+        <lockoutInterval>ThirtyMinutes</lockoutInterval>
         <maxLoginAttempts>ThreeAttempts</maxLoginAttempts>
         <minimumPasswordLength>8</minimumPasswordLength>
-        <minimumPasswordLifetime>true</minimumPasswordLifetime>
+        <minimumPasswordLifetime>false</minimumPasswordLifetime>
         <obscureSecretAnswer>true</obscureSecretAnswer>
         <questionRestriction>DoesNotContainPassword</questionRestriction>
     </passwordPolicies>
@@ -84,10 +89,10 @@
         <enableClickjackNonsetupUser>false</enableClickjackNonsetupUser>
         <enableClickjackNonsetupUserHeaderless>false</enableClickjackNonsetupUserHeaderless>
         <enableClickjackSetup>true</enableClickjackSetup>
-        <enableContentSniffingProtection>true</enableContentSniffingProtection>
+        <enableContentSniffingProtection>false</enableContentSniffingProtection>
         <enablePostForSessions>false</enablePostForSessions>
         <enableSMSIdentity>false</enableSMSIdentity>
-        <enableUpgradeInsecureRequests>false</enableUpgradeInsecureRequests>
+        <enableUpgradeInsecureRequests>true</enableUpgradeInsecureRequests>
         <enableXssProtection>true</enableXssProtection>
         <enforceIpRangesEveryRequest>false</enforceIpRangesEveryRequest>
         <forceLogoutOnSessionTimeout>true</forceLogoutOnSessionTimeout>

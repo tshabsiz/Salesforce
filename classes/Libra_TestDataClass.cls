@@ -107,7 +107,9 @@ public class Libra_TestDataClass {
         testRelAccount = new Account();
         testRelAccount.Name ='ABSA TEST';
         testRelAccount.Type = 'Client';
-        testRelAccount.SDS__c = 'SDS';
+         Integer length = 10;
+        String key = EncodingUtil.convertToHex(crypto.generateAesKey(128));
+        testRelAccount.SDS__c = key.substring(0, length);
         testRelAccount.Financial_Year_End_Month__c = todaysDate_nextMonth.format('MMMM');
         testRelAccount.RecordTypeId = AccountRecordTypes.get('Prospect').getRecordTypeId();
         Insert testRelAccount;

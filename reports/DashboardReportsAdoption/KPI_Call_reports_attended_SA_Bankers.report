@@ -41,13 +41,11 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>VerticalColumnStacked</chartType>
+        <chartType>VerticalColumn</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Call_Report__c.Attendees__r$Barclays_Attendee__c.Hub__c</groupingColumn>
-        <legendPosition>Right</legendPosition>
+        <groupingColumn>Call_Report__c$Owner_Hub__c</groupingColumn>
         <location>CHART_TOP</location>
-        <secondaryGroupingColumn>Call_Report__c.Attendees__r$Barclays_Attendee__c.Team__c</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -72,40 +70,27 @@
         <field>Call_Report__c$Type__c</field>
     </columns>
     <columns>
-        <field>Call_Report__c$Meeting_Reason__c</field>
-    </columns>
-    <columns>
         <field>Call_Report__c$Relationship__c</field>
     </columns>
     <columns>
-        <field>Call_Report__c.Attendees__r$Barclays_Attendee__c.Team_Role__c</field>
+        <field>Call_Report__c$Meeting_Reason2__c</field>
     </columns>
     <currency>ZAR</currency>
     <filter>
         <criteriaItems>
-            <column>Call_Report__c.Attendees__r$Barclays_Attendee__c.Hub__c</column>
-            <isUnlocked>false</isUnlocked>
-            <operator>contains</operator>
-            <value>Coverage South Africa</value>
+            <column>Call_Report__c$Owner_Hub__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Coverage South Africa - Coastal Regions,Coverage South Africa - Financial Services,Coverage South Africa - Global Clients,Coverage South Africa - Public Sector,Coverage South Africa - Sectors</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Call_Report__c.Attendees__r$Barclays_Attendee__c.Hub__c</field>
+        <field>Call_Report__c$Owner_Hub__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Call_Report__c.Attendees__r$Barclays_Attendee__c.Team__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Call_Report__c.Attendees__r$Barclays_Attendee__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <name>KPI - Call reports attended - SA Bankers</name>
+    <name>KPI - Call reports logged - SA Bankers</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -117,6 +102,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Call_Report__c$Meeting_Date__c</dateColumn>
-        <interval>INTERVAL_THISMONTH</interval>
+        <interval>INTERVAL_CURFY</interval>
     </timeFrameFilter>
 </Report>

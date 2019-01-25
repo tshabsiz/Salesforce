@@ -46,7 +46,7 @@
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>OpportunityLineItem.Weighted_Income_this_Year__c</column>
+                    <column>OpportunityLineItem.Hold_Size__c.CONVERT</column>
                 </chartSummary>
                 <chartSummary>
                     <axisBinding>y2</axisBinding>
@@ -203,6 +203,36 @@
             </dashboardComponent>
             <rowIndex>28</rowIndex>
             <rowSpan>7</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>9</colSpan>
+            <columnIndex>0</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>OpportunityLineItem.Hold_Size__c</column>
+                </chartSummary>
+                <componentType>ColumnGrouped</componentType>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>CLOSE_DATE</groupingColumn>
+                <groupingColumn>INDUSTRY</groupingColumn>
+                <header>GF - SA Debt Pipeline by Industry</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>Product_GF_Dashboard_Reports/GF_SA_Debt_Pipeline_by_Industry</report>
+                <showPercentage>false</showPercentage>
+                <showValues>true</showValues>
+                <sortBy>RowValueDescending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>35</rowIndex>
+            <rowSpan>6</rowSpan>
         </dashboardGridComponents>
         <numberOfColumns>9</numberOfColumns>
         <rowHeight>80</rowHeight>

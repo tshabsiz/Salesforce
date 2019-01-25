@@ -78,7 +78,7 @@
                 <axisBinding>y</axisBinding>
                 <column>RowCount</column>
             </chartSummary>
-            <componentType>BarStacked</componentType>
+            <componentType>Bar</componentType>
             <dashboardFilterColumns>
                 <column>CREATED_DATEONLY</column>
             </dashboardFilterColumns>
@@ -94,13 +94,13 @@
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>ACCOUNT.NAME</groupingColumn>
-            <groupingColumn>STATUS</groupingColumn>
             <header>Top 10 Relationships</header>
             <legendPosition>Bottom</legendPosition>
             <maxValuesDisplayed>10</maxValuesDisplayed>
             <report>WCSC_Report_Folder/Top_10_Relationship</report>
             <showPercentage>false</showPercentage>
-            <showValues>false</showValues>
+            <showPicturesOnCharts>false</showPicturesOnCharts>
+            <showValues>true</showValues>
             <sortBy>RowValueDescending</sortBy>
             <useReportChart>false</useReportChart>
         </components>

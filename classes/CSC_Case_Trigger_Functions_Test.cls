@@ -27,13 +27,13 @@ public class CSC_Case_Trigger_Functions_Test {
         
         
         list<Case> manualCase = CSC_TestDataFactory.getTestCaseList('CSC Manual Cases', u.Id);
-        manualCase[0].Queue__c = 'EBSH - Passwords';
+        manualCase[0].Queue__c = 'EBSH - Absa Electronic Banking';
         manualCase[0].Department__c = 'EBSH';
         manualCase[0].Service_Type__c = 'System';
         manualCase[0].Email_Status__c = 'New';
         
         list<Case> emailCase = CSC_TestDataFactory.getTestCaseList('CSC Emails', u.Id);
-        emailCase[0].Queue__c = 'EBSH - Passwords';
+        emailCase[0].Queue__c = 'EBSH - Absa Electronic Banking';
         emailCase[0].Department__c = 'EBSH';
         emailCase[0].Service_Type__c = 'System';
         emailCase[0].Email_Status__c = 'New';
@@ -43,7 +43,7 @@ public class CSC_Case_Trigger_Functions_Test {
         list<Case> caseComp = CSC_TestDataFactory.getTestCaseList( 'Complaint' , UserInfo.getUserId());
         caseComp[0].Resolving_Area__c = 'Electronic Banking';
         caseComp[0].Resolving_Team__c = 'EBSH Complaints';
-        caseComp[0].Complaint_Service_Type__c = 'Delays';
+        caseComp[0].Complaint_Service_Type__c = 'ATM Related Issues';
           caseComp[0].Queue__c = 'EBSH Complaints';
         caseComp[0].Complaint_Service_Category__c = 'Complaint';
         caseComp[0].MNPI__c = true; 
@@ -51,7 +51,7 @@ public class CSC_Case_Trigger_Functions_Test {
         list<Case> caseInsertList = CSC_TestDataFactory.getTestCaseList( 'Complaint' , UserInfo.getUserId() );
         CaseInsertList[0].Resolving_Area__c = 'Electronic Banking';
         caseInsertList[0].Resolving_Team__c = 'EBSH Complaints';
-        caseInsertList[0].Complaint_Service_Type__c = 'Delays';
+        caseInsertList[0].Complaint_Service_Type__c = 'ATM Related Issues';
           caseInsertList[0].Queue__c = 'EBSH Complaints';
         caseInsertList[0].Complaint_Service_Category__c = 'Complaint';
         caseInsertList[0].Email_Status__c = 'New';
@@ -76,11 +76,11 @@ public class CSC_Case_Trigger_Functions_Test {
         map<Id,Case> oldVal = new map<Id, Case>(newCase);
         
         
-        newCase[0].Queue__c = 'EBSH - Passwords';
+        newCase[0].Queue__c = 'EBSH - Absa Electronic Banking';
         newCase[0].Email_Status__c = 'Promoted';
-        newCase[0].OwnerId = [Select Id From Group Where DeveloperName = 'EBSH_Passwords' limit 1].Id;
+        newCase[0].OwnerId = [Select Id From Group Where DeveloperName = 'EBSH' limit 1].Id;
         
-        update newCase;
+        //update newCase;
         
         CSC_Case_Trigger_Functions_Complaint.updateServiceMapping(newCase, oldVal);
         

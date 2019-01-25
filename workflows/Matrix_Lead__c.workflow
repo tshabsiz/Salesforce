@@ -7,7 +7,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/Matrix_Lead_21_Days_period_passed</template>
     </alerts>
@@ -18,7 +18,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/Matrix_Lead_41_Days_period_passed</template>
     </alerts>
@@ -29,7 +29,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/Matrix_Lead_60_Days_Notification_Extension_Request_Approved</template>
     </alerts>
@@ -50,7 +50,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/Matrix_Lead_60_days_notification_to_send_lead_to_the_queue</template>
     </alerts>
@@ -81,7 +81,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/Matrix_Lead_21_Days_Notification</template>
     </alerts>
@@ -96,7 +96,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/Matrix_Lead_30_Days_Notification</template>
     </alerts>
@@ -107,7 +107,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/Matrix_Lead_51_Days_Notification</template>
     </alerts>
@@ -118,7 +118,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/Matrix_Lead_81_Days_Notification</template>
     </alerts>
@@ -133,7 +133,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/Matrix_Lead_90_Days_Notification</template>
     </alerts>

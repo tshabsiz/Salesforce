@@ -305,8 +305,7 @@
                         <td class="field sixw"><apex:outputField value="{!jlocFinancials.Turnover__c}" rendered="{!jlocFinancials.Turnover__c != null}"/></td>
                         <td class="label sixw">{!$ObjectType.Financial_Information__c.fields.Market_Cap__c.Label}</td>
                         <td class="field sixw"><apex:outputField value="{!jlocFinancials.Market_Cap__c}" rendered="{!jlocFinancials.Market_Cap__c != null}"/></td>
-                        <td class="label sixw">{!$Label.lbl_ValuationDate}</td>
-                        <td class="field sixw"><apex:outputText value="{0,date,MMM yyyy}" rendered="{!jlocFinancials.LastModifiedDate != null}"><apex:param value="{!jlocFinancials.LastModifiedDate}" /></apex:outputText></td>
+                        <td class="label sixw" colspan="2" />
                     </tr>
                     <tr>
                         <td class="label sixw">{!$Label.lbl_NetDebt}</td>
@@ -316,7 +315,7 @@
                         <td class="label sixw">{!$Label.lbl_NetDebt} / {!$ObjectType.Financial_Information__c.fields.EBITDA__c.Label}</td>
                         <td class="field sixw"><apex:outputText value="{!jlocFinancialsCalcDebDivtEbitda}" rendered="{!jlocFinancialsCalcDebDivtEbitda != null}"/></td>
                     </tr>
-                    <tr><td class="label sixws" colspan="6" rendered="{!jlocFinancials.Financial_Results__c != null && jlocFinancials.Financial_Results__c != 'Audited Full Year' }" ><apex:outputText value="An annualised EBITA has been used to calculate the net Debt Ratio" rendered="{!jlocFinancials.Financial_Results__c != null && jlocFinancials.Financial_Results__c != 'Audited Full Year' }" /></td></tr>
+                    <tr><td class="label sixws" colspan="6" rendered="{!jlocFinancials.Financial_Results__c != null && jlocFinancials.Financial_Results__c != 'Audited Full Year' }" ><apex:outputText value="An annualised EBITDA has been used to calculate the net Debt Ratio" rendered="{!jlocFinancials.Financial_Results__c != null && jlocFinancials.Financial_Results__c != 'Audited Full Year' }" /></td></tr>
                 </table>
            </div>       
         </apex:outputPanel>

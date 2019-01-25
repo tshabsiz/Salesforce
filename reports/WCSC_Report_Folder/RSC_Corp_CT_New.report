@@ -145,6 +145,6 @@
         <dateColumn>CREATED_DATEONLY</dateColumn>
         <endDate>2018-12-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2018-05-01</startDate>
+        <startDate>2018-06-01</startDate>
     </timeFrameFilter>
 </Report>

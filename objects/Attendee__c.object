@@ -69,6 +69,23 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Attendee_Mobile__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(NOT(ISBLANK(Barclays_Attendee__c)), 
+&apos;&apos;, 
+IF(NOT(ISBLANK(Client_Attendee__c)), 
+ Client_Attendee__r.MobilePhone , 
+&apos;&apos;
+)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Attendee Mobile</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Attendee_Name__c</fullName>
         <externalId>false</externalId>
         <formula>IF(ISBLANK( Barclays_Attendee__c )= FALSE ,

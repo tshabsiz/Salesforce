@@ -57,6 +57,15 @@
         <type>Default</type>
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Owner_Hover</fullName>
+        <fields>Name</fields>
+        <fields>Title</fields>
+        <fields>IsActive</fields>
+        <fields>Hub__c</fields>
+        <fields>Team__c</fields>
+        <label>Owner Hover</label>
+    </compactLayouts>
     <enableFeeds>true</enableFeeds>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
@@ -327,10 +336,6 @@
             <valueSettings>
                 <controllingFieldValue>CIB</controllingFieldValue>
                 <valueName>Debt</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>CIB</controllingFieldValue>
-                <valueName>EDC</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>CIB</controllingFieldValue>
@@ -678,6 +683,16 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>Document_URL__c</fullName>
+        <externalId>false</externalId>
+        <label>Document URL</label>
+        <length>225</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Hub__c</fullName>
@@ -1820,6 +1835,16 @@
                     <default>false</default>
                     <label>Zimbabwe</label>
                 </value>
+                <value>
+                    <fullName>Absa Linked Investments</fullName>
+                    <default>false</default>
+                    <label>Absa Linked Investments</label>
+                </value>
+                <value>
+                    <fullName>External Distribution Channel</fullName>
+                    <default>false</default>
+                    <label>External Distribution Channel</label>
+                </value>
             </valueSetDefinition>
             <valueSettings>
                 <controllingFieldValue>RoA South</controllingFieldValue>
@@ -2195,6 +2220,14 @@
             <valueSettings>
                 <controllingFieldValue>South Africa</controllingFieldValue>
                 <valueName>WIMI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>South Africa</controllingFieldValue>
+                <valueName>Absa Linked Investments</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>South Africa</controllingFieldValue>
+                <valueName>External Distribution Channel</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Africa</controllingFieldValue>
@@ -2627,7 +2660,6 @@
                 <controllingFieldValue>Coverage</controllingFieldValue>
                 <controllingFieldValue>Markets</controllingFieldValue>
                 <controllingFieldValue>Wealth Advisory</controllingFieldValue>
-                <controllingFieldValue>Business Enablers</controllingFieldValue>
                 <controllingFieldValue>Central</controllingFieldValue>
                 <controllingFieldValue>Cash Management</controllingFieldValue>
                 <valueName>NA</valueName>
@@ -2651,7 +2683,6 @@
                 <controllingFieldValue>Global Finance</controllingFieldValue>
                 <controllingFieldValue>Coverage</controllingFieldValue>
                 <controllingFieldValue>Markets</controllingFieldValue>
-                <controllingFieldValue>Business Enablers</controllingFieldValue>
                 <controllingFieldValue>Cash Management</controllingFieldValue>
                 <valueName>RoA</valueName>
             </valueSettings>
@@ -5679,18 +5710,22 @@
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Retail Distribution</controllingFieldValue>
+                <controllingFieldValue>Absa Linked Investments</controllingFieldValue>
                 <valueName>ALI Coastal</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Retail Distribution</controllingFieldValue>
+                <controllingFieldValue>Absa Linked Investments</controllingFieldValue>
                 <valueName>ALI Inland</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Retail Distribution</controllingFieldValue>
+                <controllingFieldValue>External Distribution Channel</controllingFieldValue>
                 <valueName>EDC Coastal</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Retail Distribution</controllingFieldValue>
+                <controllingFieldValue>External Distribution Channel</controllingFieldValue>
                 <valueName>EDC Inland</valueName>
             </valueSettings>
             <valueSettings>

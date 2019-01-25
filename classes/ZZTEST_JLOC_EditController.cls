@@ -364,9 +364,16 @@ private class ZZTEST_JLOC_EditController {
         Management_Case.Body = Blob.ValueOf('first test attachment');
         INSERT Management_Case;
         
+        Attachment PricingAndReturns_Document = new Attachment();
+        PricingAndReturns_Document.ParentId = jloc.Id;
+        PricingAndReturns_Document.Name = 'PricingAndReturns_Document.pdf';
+        PricingAndReturns_Document.Body = Blob.ValueOf('first test attachment');
+        INSERT PricingAndReturns_Document;
+        
         jloc.Stress_Case_ID__c = Bank_Case.Id;
         jloc.Banker_Case_ID__c = Stress_Case.Id;
         jloc.Management_Case_ID__c = Management_Case.Id;
+        jloc.Pricing_and_Returns_Document_ID__c = Management_Case.Id;
         UPDATE jloc;
 
         Test.startTest();
@@ -381,6 +388,7 @@ private class ZZTEST_JLOC_EditController {
         controller.removeStressCase();
         controller.removeBankCase();
         controller.removeManagementCase();
+        controller.removePricingAndReturnsDocument();
 
         Test.stopTest();
     }

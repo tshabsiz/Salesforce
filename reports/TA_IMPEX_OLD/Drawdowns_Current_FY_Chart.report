@@ -63,7 +63,7 @@
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>advpm__Matter__c$CreatedDate</dateColumn>
+        <dateColumn>advpm__Matter__c.Agreements1__r.Drawdowns__r$CreatedDate</dateColumn>
         <interval>INTERVAL_CURFY</interval>
     </timeFrameFilter>
 </Report>

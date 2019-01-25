@@ -78,7 +78,7 @@
             <column>MEMBER_ROLE</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value></value>
+            <value>Transactional Banking Originator</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

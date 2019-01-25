@@ -3,5 +3,5 @@
     <apiVersion>40.0</apiVersion>
     <availableInTouch>false</availableInTouch>
     <confirmationTokenRequired>false</confirmationTokenRequired>
-    <label>EngageCampaignsCustomList</label>
+    <label>Send Engage Email</label>
 </ApexPage>

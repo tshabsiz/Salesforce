@@ -21,8 +21,8 @@
         <label><!-- Engaged --></label>
         <name>Engaged__c</name>
         <picklistValues>
-            <masterLabel>Barclays Not Present</masterLabel>
-            <translation><!-- Barclays Not Present --></translation>
+            <masterLabel>Absa Not Present</masterLabel>
+            <translation><!-- Absa Not Present --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Not Primary Bank</masterLabel>
@@ -41,8 +41,8 @@
         <label><!-- Primary Bank --></label>
         <name>Primary_Bank__c</name>
         <picklistValues>
-            <masterLabel>Barclays</masterLabel>
-            <translation><!-- Barclays --></translation>
+            <masterLabel>Absa</masterLabel>
+            <translation><!-- Absa --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Citibank</masterLabel>

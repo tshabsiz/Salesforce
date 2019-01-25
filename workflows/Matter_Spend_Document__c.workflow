@@ -8,7 +8,7 @@
             <field>Spend_Schedules_Owners_Email__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_BAGL_Legal_Request_to_approve_spend_schedule</template>
     </alerts>
@@ -20,7 +20,7 @@
             <field>Approver__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_BAGL_Legal_Request_to_approve_spend</template>
     </alerts>

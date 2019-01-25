@@ -350,6 +350,38 @@ public class AccountTeamMemberTrigger_Helper {
 		//deleting
 		Database.delete(shareRecs, false);
 	}
+    public static void shareAnnualPricing(List<Account_Team_Member__c> members) {
+        
+        //getting accounts ids
+        Set<Id> accIds = new Set<Id>();
+        List<Account_Team_Member__c> membersCSM = new List<Account_Team_Member__c>();
+        
+        for (Account_Team_Member__c member: members) {
+            if(member.Team_Role__c == 'Coverage Support Manager'){
+                accIds.add(member.Organisation__c);
+                membersCSM.add(member);
+            }
+        }
+        
+        
+        //getting Annual pricing
+        Map<Id, List<Annual_Pricing__c>> pricingPerAcc = getAnnualPricingsPerAccount(accIds);
+        
+        //creating sharing records
+        List<Annual_Pricing__Share> shareRecs = new List<Annual_Pricing__Share>();
+        
+        for (Account_Team_Member__c member: membersCSM) {
+            
+            if (pricingPerAcc.containsKey(member.Organisation__c)) {
+                for (Annual_Pricing__c AnnualPricing: pricingPerAcc.get(member.Organisation__c)) {
+                    shareRecs.add(APT_AnnualPricingUtils.createSharingInstance(AnnualPricing.Id, member.Team_Member__c));
+                }
+            }
+        }
+        
+        //inserting
+        Database.insert(shareRecs, false);
+    }
 
 	/**
 	* @description queries of client plans related to accounts in param
@@ -414,5 +446,34 @@ public class AccountTeamMemberTrigger_Helper {
 		}
 		return mapAccountToTeamMembers;
 	}
+    
+ private static Map<Id, List<Annual_Pricing__c>> getAnnualPricingsPerAccount(Set<Id> accIds) {
+
+		//getting client plans
+		List<Annual_Pricing__c> AnnualPricings = [
+			SELECT Id, Organisation__c
+			FROM Annual_Pricing__c
+			WHERE Organisation__c IN :accIds
+		];
+
+		//classifying plans
+		Map<Id, List<Annual_Pricing__c>> pricingPerAcc = new Map<Id, List<Annual_Pricing__c>>();
+		for (Annual_Pricing__c AnnualPricing: AnnualPricings) {
+
+			if (pricingPerAcc.containsKey(AnnualPricing.Organisation__c)) {
+				List<Annual_Pricing__c> accPricings = pricingPerAcc.get(AnnualPricing.Organisation__c);
+				accPricings.add(AnnualPricing);
+
+			} else {
+				List<Annual_Pricing__c> accPricings = new List<Annual_Pricing__c>();
+				accPricings.add(AnnualPricing);
+				pricingPerAcc.put(AnnualPricing.Organisation__c, accPricings);
+			}
+		}
+
+		return pricingPerAcc;
+	}
+
+
 
 }

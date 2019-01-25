@@ -258,6 +258,17 @@
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
+    <listViews>
+        <fullName>Market</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>Market</value>
+        </filters>
+        <label>Market</label>
+    </listViews>
     <nameField>
         <label>Event Email Content Name</label>
         <type>Text</type>

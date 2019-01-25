@@ -30,6 +30,7 @@
     </columns>
     <currency>ZAR</currency>
     <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND (5 OR 6 OR 7 OR 8)</booleanFilter>
         <criteriaItems>
             <column>CUST_NAME</column>
             <isUnlocked>true</isUnlocked>
@@ -43,16 +44,40 @@
             <value>closed</value>
         </criteriaItems>
         <criteriaItems>
-            <column>advpm__Matter__c.TMG_Product_Level_3__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notContain</operator>
-            <value>General Banking</value>
-        </criteriaItems>
-        <criteriaItems>
             <column>Fit_To_Lend_Checklist__c.Status__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>New</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CHILD_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>024191</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CHILD_CREATED_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Corne Nel</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CHILD_CREATED_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Colin Louw</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CHILD_CREATED_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Shereen Adams</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CHILD_CREATED_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>JoeleneShanteMershall DeJongh</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
@@ -73,6 +98,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Fit_To_Lend_Checklist__c.Status_Change_Stamp__c</dateColumn>
-        <interval>INTERVAL_CURFY</interval>
+        <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

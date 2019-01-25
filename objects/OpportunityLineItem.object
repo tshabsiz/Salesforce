@@ -945,6 +945,14 @@
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>FX_Sales_Comment__c</fullName>
+        <description>Fx Sales comment on the product page when any product with level 2 foreign exchange is selected</description>
+        <externalId>false</externalId>
+        <label>FX Sales Comment</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
         <fullName>Facilities_Off_Balance__c</fullName>
         <externalId>false</externalId>
         <label>Facilities Off Balance</label>
@@ -1358,6 +1366,15 @@
         <required>false</required>
         <scale>2</scale>
         <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>MonthlyValue__c</fullName>
+        <externalId>false</externalId>
+        <label>Monthly Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
     </fields>
     <fields>
         <fullName>Net_Facility_Balance__c</fullName>

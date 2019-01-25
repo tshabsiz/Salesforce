@@ -44,10 +44,10 @@
         <chartType>VerticalColumnStacked</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Account.Hub_F__c</groupingColumn>
+        <groupingColumn>ACCOUNT_OWNER</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
-        <secondaryGroupingColumn>ACCOUNT_OWNER</secondaryGroupingColumn>
+        <secondaryGroupingColumn>Account.Hub_F__c</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -115,8 +115,8 @@
         <criteriaItems>
             <column>Account.Hub_F__c</column>
             <isUnlocked>false</isUnlocked>
-            <operator>contains</operator>
-            <value>Coverage South Africa</value>
+            <operator>equals</operator>
+            <value>Coverage South Africa - Coastal Regions,Coverage South Africa - Financial Services,Coverage South Africa - Global Clients,Coverage South Africa - Public Sector,Coverage South Africa - Sectors</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -144,6 +144,7 @@
         <value>1</value>
     </params>
     <reportType>OpportunityProduct</reportType>
+    <roleHierarchyFilter>BAGL_Management</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>

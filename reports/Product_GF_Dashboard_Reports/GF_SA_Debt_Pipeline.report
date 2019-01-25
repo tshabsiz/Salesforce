@@ -7,17 +7,19 @@
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Opportunity.Weighted_Annualised_Income__c.CONVERT</column>
+            <column>OpportunityLineItem.Hold_Size__c.CONVERT</column>
         </chartSummaries>
-        <chartType>HorizontalBar</chartType>
+        <chartType>HorizontalBarGrouped</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
         <groupingColumn>CLOSE_DATE</groupingColumn>
+        <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>INDUSTRY</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
-        <showValues>false</showValues>
+        <showValues>true</showValues>
         <size>Medium</size>
         <summaryAxisRange>Auto</summaryAxisRange>
         <textColor>#000000</textColor>
@@ -68,9 +70,6 @@
         <field>TYPE</field>
     </columns>
     <columns>
-        <field>INDUSTRY</field>
-    </columns>
-    <columns>
         <field>OpportunityLineItem.Balance__c</field>
     </columns>
     <columns>
@@ -102,6 +101,10 @@
     </columns>
     <columns>
         <field>OpportunityLineItem.LGD__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.Hold_Size__c.CONVERT</field>
     </columns>
     <columns>
         <field>OpportunityLineItem.RWA__c</field>
@@ -168,6 +171,11 @@
         <field>CLOSE_DATE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>INDUSTRY</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <name>GF - SA Debt Pipeline</name>
     <params>
         <name>open</name>
@@ -182,12 +190,11 @@
         <value>1</value>
     </params>
     <reportType>OpportunityProduct</reportType>
+    <roleHierarchyFilter>BAGL_Management</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>STAGE_NAME</sortColumn>
-    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
         <endDate>2018-12-31</endDate>

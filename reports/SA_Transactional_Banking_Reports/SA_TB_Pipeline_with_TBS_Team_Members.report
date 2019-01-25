@@ -81,7 +81,7 @@
             <column>MEMBER_ROLE</column>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Transactional Banking Specialist</value>
+            <value>Transactional Solution Specialist,Transactional Banking Specialist</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

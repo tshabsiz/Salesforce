@@ -16,27 +16,27 @@
                        
                      </td>
                 </tr>   
-                <tr width="600" style= "background-color: #f05a7d; padding: 100px 20px;">
+               <!-- <tr width="600" style= "background-color: #fa551e padding: 100px 20px;">
                   <td>
                      <h1 style="text-align: center; color:#640032; font-size: 60px; padding: 100px 20px;"><apex:outputText value="{!relatedTo.Email_Setup_To_Use__r.header__c}" escape="false" /></h1>
                   </td>
-               </tr>
+                </tr> -->
                 <tr>
                     <td style="padding-top: 25px; padding-bottom: 25px">
                     
                         <apex:outputText value="{!relatedTo.Email_Setup_To_Use__r.Heading__c}" escape="false" />
-                          <!--  <apex:outputPanel rendered="{!relatedTo.Contact__r.Salutation == ''}" layout="none">
+                        <apex:outputPanel rendered="{!relatedTo.Contact__r.Salutation == ''}" layout="none">
                         Dear {!relatedTo.Contact__r.FirstName} {!relatedTo.Contact__r.LastName},<br/>
                         </apex:outputPanel>
                         <apex:outputPanel rendered="{!relatedTo.Contact__r.Salutation != ''}" layout="none">
                             Dear {!relatedTo.Contact__r.Salutation} {!relatedTo.Contact__r.LastName},<br/>
-                        </apex:outputPanel> -->
+                        </apex:outputPanel> 
                         
                         <apex:outputText value="{!SUBSTITUTE(relatedTo.Email_Setup_To_Use__r.Body__c, '<p><br></p>', '')}" escape="false" />
                         
                         <table width="100%">
                          <tr style="padding-top:10px; padding-bottom:10px; margin-top:10px;"></tr>
-                         <tr style="padding-top:10px; padding-bottom:10px; background-color: #f05a7d;"><td></td></tr>
+                         <tr style="padding-top:10px; padding-bottom:10px; background-color: #fa551e;"><td></td></tr>
                         </table>
                   
                         <table border="0" width="100%" cellspacing="0" cellpadding="0" style= "padding-top: 20px; font-family: Arial, sans-serif; font-size: 20px; color: {!relatedTo.Email_Setup_To_Use__r.Font_Color__c};">
@@ -111,7 +111,7 @@
                             </a><br/>
                         </apex:outputPanel>
 
-                      <table width="100%" style= "background-color: #f05a7d; padding-bottom: 15px;padding-top: 15px;padding-left: 30px; padding-right: 30px ">
+                      <table width="100%" style= "background-color: #fa551e; padding-bottom: 15px;padding-top: 15px;padding-left: 30px; padding-right: 30px ">
                        <tr width="100%"><td> <apex:outputText value="{!relatedTo.Email_Setup_To_Use__r.Footer__c}" escape="false" /></td></tr>
                        </table>
                     </td>

@@ -7,6 +7,9 @@
         <field>FULL_NAME</field>
     </columns>
     <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
         <field>CAMPAIGN_SOURCE</field>
     </columns>
     <columns>
@@ -43,49 +46,6 @@
         <field>CREATED_DATE</field>
     </columns>
     <columns>
-        <field>QUANTITY</field>
-    </columns>
-    <columns>
-        <field>UNIT_PRICE</field>
-    </columns>
-    <columns>
-        <field>UNIT_PRICE.CONVERT</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>TOTAL_PRICE</field>
-    </columns>
-    <columns>
-        <field>TOTAL_PRICE.CONVERT</field>
-    </columns>
-    <columns>
-        <field>SERVICE_DATE</field>
-    </columns>
-    <columns>
-        <field>SERVICE_MONTH</field>
-    </columns>
-    <columns>
-        <field>PRODUCT_DESCRIPTION</field>
-    </columns>
-    <columns>
-        <field>PRODUCT_PRICE</field>
-    </columns>
-    <columns>
-        <field>PRODUCT_PRICE.CONVERT</field>
-    </columns>
-    <columns>
-        <field>PRODUCT_CUSTOMER_ID</field>
-    </columns>
-    <columns>
-        <field>PRODUCT_ACTIVE</field>
-    </columns>
-    <columns>
-        <field>ROLLUP_DESCRIPTION</field>
-    </columns>
-    <columns>
-        <field>ACCOUNT_NAME</field>
-    </columns>
-    <columns>
         <field>Opportunity.Related_Group_Client_CIF__c</field>
     </columns>
     <columns>
@@ -103,7 +63,13 @@
             <column>Opportunity.CSM_Initiator__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Yumna Halim,Angelo Biggs,Christelle Hayes,Lenie Esterhuysen,Zelda Laubscher,Firdaus Rajie,Sharon Pretorius,Zola Gift Siphokazi Dlodlo,Melvin Pedro,Shiham Allie</value>
+            <value>Charmaine Jacobsz,Tracy Higgins,Christelle Hayes,Lenie Esterhuysen,noma manona,Firdaus Rajie,Sharon Pretorius,Shiham Allie,Yumna Halim,zelda laubscher,Zola Dlodlo</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closed Lost</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -126,6 +92,7 @@
         <value>1</value>
     </params>
     <reportType>OpportunityProduct</reportType>
+    <roleHierarchyFilter>BAGL_Management</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>

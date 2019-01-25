@@ -49,6 +49,7 @@ public class ZZTEST_ChildOpportunitiesController {
             parentOpp.Reason_Won_Lost__c = 'Other';
             parentOpp.Closed_via_Visual_Workflow__c = true;
             parentOpp.ProductLevel3Count__c = 1;
+            parentOpp.Notify_ABSA_Insurance_Of_This_Deal__c = 'No';
             update parentOpp;
             // Simulate a user saving
             ctrl.save();

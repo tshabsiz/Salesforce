@@ -9,7 +9,7 @@
             <recipient>Internal_Support_Team</recipient>
             <type>group</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/System_Limits_Notification</template>
     </alerts>
@@ -22,7 +22,7 @@
             <recipient>Internal_Support_Team</recipient>
             <type>group</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/System_Limits_Workaround_Notification</template>
     </alerts>

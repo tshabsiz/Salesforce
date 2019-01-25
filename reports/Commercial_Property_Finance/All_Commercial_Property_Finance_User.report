@@ -37,9 +37,6 @@
         <field>User.Hub__c</field>
     </columns>
     <columns>
-        <field>User.Team__c</field>
-    </columns>
-    <columns>
         <field>User.Team_Role__c</field>
     </columns>
     <columns>
@@ -66,8 +63,19 @@
             <operator>equals</operator>
             <value>Commercial Property Finance</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>LAST_LOGIN</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_N_DAYS:30</value>
+        </criteriaItems>
     </filter>
-    <format>Tabular</format>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User.Team__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <name>All Commercial Property Finance User</name>
     <params>
         <name>active</name>

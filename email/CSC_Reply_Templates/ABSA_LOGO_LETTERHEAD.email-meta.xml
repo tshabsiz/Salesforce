@@ -13,9 +13,9 @@ Dear __________________________
 Please note that we are doing our best to resolve your query/request. We are aware that it is taking longer than agreed and apologise for any inconvenience that this may have caused.
 Thank you for your patience and ongoing support.
  
-Kind regards
  
-______________________________</textOnly>
+Kind regards
+{!User.Name} | Service Consultant | Phone: +{!User.Phone}</textOnly>
     <type>html</type>
     <uiType>Aloha</uiType>
 </EmailTemplate>

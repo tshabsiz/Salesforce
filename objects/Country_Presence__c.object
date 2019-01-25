@@ -104,9 +104,9 @@
                     <label>Present But Not Banking</label>
                 </value>
                 <value>
-                    <fullName>Barclays Not Present</fullName>
+                    <fullName>Absa Not Present</fullName>
                     <default>false</default>
-                    <label>Barclays Not Present</label>
+                    <label>Absa Not Present</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
@@ -123,29 +123,9 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Barclays</fullName>
+                    <fullName>Absa</fullName>
                     <default>false</default>
-                    <label>Barclays</label>
-                </value>
-                <value>
-                    <fullName>Nedbank</fullName>
-                    <default>false</default>
-                    <label>Nedbank</label>
-                </value>
-                <value>
-                    <fullName>Standard Bank</fullName>
-                    <default>false</default>
-                    <label>Standard Bank</label>
-                </value>
-                <value>
-                    <fullName>First National</fullName>
-                    <default>false</default>
-                    <label>First National</label>
-                </value>
-                <value>
-                    <fullName>Investec</fullName>
-                    <default>false</default>
-                    <label>Investec</label>
+                    <label>Absa</label>
                 </value>
                 <value>
                     <fullName>Citibank</fullName>
@@ -153,9 +133,9 @@
                     <label>Citibank</label>
                 </value>
                 <value>
-                    <fullName>Standard Chart</fullName>
+                    <fullName>First National</fullName>
                     <default>false</default>
-                    <label>Standard Chart</label>
+                    <label>First National</label>
                 </value>
                 <value>
                     <fullName>HSBC</fullName>
@@ -163,9 +143,29 @@
                     <label>HSBC</label>
                 </value>
                 <value>
+                    <fullName>Investec</fullName>
+                    <default>false</default>
+                    <label>Investec</label>
+                </value>
+                <value>
+                    <fullName>Nedbank</fullName>
+                    <default>false</default>
+                    <label>Nedbank</label>
+                </value>
+                <value>
                     <fullName>Other</fullName>
                     <default>false</default>
                     <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Standard Bank</fullName>
+                    <default>false</default>
+                    <label>Standard Bank</label>
+                </value>
+                <value>
+                    <fullName>Standard Chart</fullName>
+                    <default>false</default>
+                    <label>Standard Chart</label>
                 </value>
             </valueSetDefinition>
         </valueSet>

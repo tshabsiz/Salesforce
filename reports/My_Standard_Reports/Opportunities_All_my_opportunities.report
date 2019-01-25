@@ -13,6 +13,12 @@
         <field>ACCOUNT_OWNER</field>
     </columns>
     <columns>
+        <field>Opportunity.Related_Group_Client__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Related_Group_Client_CIF__c</field>
+    </columns>
+    <columns>
         <field>Account.Team_F__c</field>
     </columns>
     <columns>

@@ -62,6 +62,7 @@ public class ClientPlanSummaryController extends ClientPlanUtils{
             
             //financials tab
             financialsController = new ClientFinancialsController();
+            financialsController.financeList = ClientFinancialsController.queryFinancialInformation(this.plan, 0, 5);
             
             //presence tab
             presenceController = new ClientPresenceController();

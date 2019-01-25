@@ -100,7 +100,7 @@
         </criteriaItems>
     </filter>
     <format>Tabular</format>
-    <name>IB Pipeline Opportunities (SA)</name>
+    <name>IB Pipeline Opportunities (SA) CSC</name>
     <params>
         <name>open</name>
         <value>open</value>
@@ -114,6 +114,7 @@
         <value>1</value>
     </params>
     <reportType>OpportunityProduct</reportType>
+    <roleHierarchyFilter>BAGL_Management</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>

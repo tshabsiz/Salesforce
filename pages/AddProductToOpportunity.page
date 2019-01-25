@@ -75,7 +75,7 @@
                      <tr>
                         <td><apex:outputLabel style="font-weight:bold" value="{!$ObjectType.OpportunityLineItem.fields.Annualised_Income__c.Label}"/></td> 
                         <td></td>
-                        <td></td>
+                        <td ></td>
                         <td>
                             <apex:outputPanel layout="none" rendered="{!productFamily != Debt}">
                                 <apex:outputLabel style="font-weight:bold" value="{!$ObjectType.OpportunityLineItem.fields.Balance__c.Label}"/>
@@ -84,9 +84,15 @@
                                 <apex:outputLabel style="font-weight:bold" value="{!$ObjectType.OpportunityLineItem.fields.Hold_Size__c.Label}" />
                             </apex:outputPanel>
                         </td>
-                        <td></td>
+                        <td style="width: 50px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                         <td><apex:outputLabel style="font-weight:bold" value="{!$ObjectType.OpportunityLineItem.fields.Gross_Margin__c.Label}"/></td>
+                         <td></td>
+                         <td><apex:outputLabel style="font-weight:bold" value="{!$ObjectType.OpportunityLineItem.fields.Ftp__c.Label}"/></td>
+                    
+                         <td></td>
                         <td><apex:outputLabel style="font-weight:bold" value="{!$ObjectType.OpportunityLineItem.fields.Margin__c.Label}"/></td>
                         <td></td>
+                         <td></td>
                         <td><apex:outputLabel style="font-weight:bold" value="{!$ObjectType.OpportunityLineItem.fields.Estimated_Utilisation__c.Label}"/></td>
                         <td></td>
                      </tr>
@@ -96,16 +102,22 @@
                         <td width="1%" style="text-align:left; font-size:18px;">(</td>
                         <td>
                             <apex:outputPanel layout="none" rendered="{!productFamily != Debt}">
-                                <apex:inputField id="balanceInputF" value="{!OpportunityLineItem.Balance__c}" onchange="setNewFacilityBalance();updateAnnualValue();" />
+                                <apex:inputField id="balanceInputF" value="{!OpportunityLineItem.Balance__c}" style="min-width:20px;max-width:200px" onchange="setNewFacilityBalance();updateAnnualValue();" />
                             </apex:outputPanel>
                             <apex:outputPanel layout="none" rendered="{!productFamily == Debt}">
-                                <apex:inputField id="holdSizeInputF" value="{!OpportunityLineItem.Hold_Size__c}" onchange="onHoldSizeChanged();" />
+                                <apex:inputField id="holdSizeInputF" value="{!OpportunityLineItem.Hold_Size__c}" style="min-width:20px;max-width:120px" onchange="onHoldSizeChanged();" />
                             </apex:outputPanel>
                         </td>
-                        <td width="20%" style="text-align:center; font-size:18px;">x</td>
-                        <td><apex:inputField id="marginInputF" value="{!OpportunityLineItem.Margin__c}" onchange="updateAnnualValue();" /></td>
-                        <td width="20%" style="text-align:center; font-size:18px;">x</td>
-                        <td><apex:inputField id="estimatedUtilisationInputF" value="{!OpportunityLineItem.Estimated_Utilisation__c}" onchange="updateAnnualValue();" /></td>
+                         <td style="font-size:18px;width:50px">x (</td>
+                        
+                        <td><apex:inputField id="grossMargin" value="{!OpportunityLineItem.Gross_Margin__c}" onchange="updateNetMargin();" style="min-width:20px;max-width:100px"/></td>
+                        <td style="text-align:center; font-size:18px;">-</td>
+                        <td><apex:inputField id="ftp" value="{!OpportunityLineItem.Ftp__c}" onchange="updateNetMargin();" style="min-width:20px;max-width:120px" /></td>
+                        <td width="20%" style="text-align:center; font-size:18px;">=</td>
+                        <td><apex:inputField id="marginInputF" value="{!OpportunityLineItem.Margin__c}" style="min-width:20px;max-width:60px" onchange="updateAnnualValue();" /></td>
+                             <td style="text-align:center; font-size:18px;">)</td>
+                         <td width="20%" style="text-align:center; font-size:18px;">x</td>
+                        <td><apex:inputField id="estimatedUtilisationInputF" value="{!OpportunityLineItem.Estimated_Utilisation__c}" style="min-width:20px;max-width:60px" onchange="updateAnnualValue();" /></td>
                         <td width="1%" style="text-align:left; font-size:18px;">)</td>
                         
                      </tr>
@@ -121,48 +133,57 @@
                         <td></td>
                      </tr>
                      <tr>
-                        <td></td>
+                        <td>
+                         
+                         </td>
                         <td width="2%" style="text-align:center; font-size:18px;">+</td>
                         <td></td>
                         
                         <apex:outputPanel layout="none" rendered="{!productFamily != Debt}">
-                            <td><apex:inputField id="feesInputF" value="{!OpportunityLineItem.Fees__c}" onchange="updateAnnualValue();" /></td>
+                            <td><apex:inputField id="feesInputF" value="{!OpportunityLineItem.Fees__c}" style="min-width:20px;max-width:120px" onchange="updateAnnualValue();" /></td>
                         </apex:outputPanel>
                         <apex:outputPanel layout="none" rendered="{!productFamily == Debt}">
-                             <td><apex:inputField id="feesReadOnlyInputF" value="{!OpportunityLineItem.Fees__c}" styleClass="feesReadOnlyInputF" />
+                             <td><apex:inputField id="feesReadOnlyInputF" value="{!OpportunityLineItem.Fees__c}" style="min-width:20px;max-width:120px" styleClass="feesReadOnlyInputF" />
                              </td>
                         </apex:outputPanel>
                         
                         <td width="2%" style="text-align:center; font-size:18px;">+</td>
-                        <td><apex:inputField id="RecurringFeesPeriod" value="{!OpportunityLineItem.Recurring_Fees_Period__c}" onchange="updateAnnualValue();" /></td>
+                        <td><apex:inputField id="RecurringFeesPeriod" value="{!OpportunityLineItem.Recurring_Fees_Period__c}" style="min-width:20px;max-width:120px" onchange="updateAnnualValue();" /></td>
                         <td></td>
-                        <td><apex:inputField id="RecurringFees" value="{!OpportunityLineItem.Recurring_Fees__c}" onchange="updateAnnualValue();" /></td>
+                        <td><apex:inputField id="RecurringFees" value="{!OpportunityLineItem.Recurring_Fees__c}" style="min-width:20px;max-width:120px" onchange="updateAnnualValue();" /></td>
                         <td></td>
                      </tr>
                      <tr>
                         <td><apex:outputLabel style="font-weight:bold" value="{!$ObjectType.OpportunityLineItem.fields.Income_this_Year__c.Label}"/></td> 
                         <td></td>
                         <td></td>
-                        <td><apex:outputLabel style="font-weight:bold" value="{!$ObjectType.OpportunityLineItem.fields.Gross_Margin__c.Label}"/></td>
-                        <td></td>
-                        <td><apex:outputLabel style="font-weight:bold" value="{!$ObjectType.OpportunityLineItem.fields.Ftp__c.Label}"/></td>
                         <td></td>
                         <td></td>
                         <td></td>
-                     </tr>
-                     <tr>
-                        <td><apex:inputText disabled="true" id="incomeThisYearOutputF" /></td>
-                        <td></td>
-                        <td></td>
-                        <td><apex:inputField id="grossMargin" value="{!OpportunityLineItem.Gross_Margin__c}" onchange="updateNetMargin();"/></td>
-                        <td></td>
-                        <td><apex:inputField id="ftp" value="{!OpportunityLineItem.Ftp__c}" onchange="updateNetMargin();" /></td>
                         <td></td>
                         <td></td>
                         <td></td>
                      </tr>
+                     
 
                      </table>
+                    <table>
+                        <tr>
+                        <td></td> 
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     </tr>
+                     <tr>  
+                        <td><apex:inputText disabled="true" id="incomeThisYearOutputF" /></td>
+                        
+                     </tr>
+                    </table>
                 </apex:outputPanel>
                 
                 <apex:outputPanel id="transactionalInformation">
@@ -170,6 +191,8 @@
                         <apex:inputField id="Volume" value="{!OpportunityLineItem.Volume__c}" onchange="UpdateRecurringFees();updateAnnualValue();"/>
                         <apex:inputField id="FeePerTransaction" value="{!OpportunityLineItem.Transaction_Value__c}" onchange="UpdateRecurringFees();updateAnnualValue();"/>
                         <apex:inputField value="{!OpportunityLineItem.Primary_Banking_Target__c}" id="PrimaryBanking" />
+                        <apex:inputField id="MonthlyValue" value="{!OpportunityLineItem.MonthlyValue__c}" />
+                        <apex:inputField id="FXSalesComment" value="{!OpportunityLineItem.FX_Sales_Comment__c}" rendered="{!isForeignExchange}"/>
                     </apex:pageblockSection>
                 </apex:outputPanel>
                 <apex:outputPanel id="debtFinanceInformation" styleClass="debtFinanceInformation">

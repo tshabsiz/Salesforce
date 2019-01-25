@@ -196,6 +196,7 @@ public class ZZTEST_AddProductToOpportunity {
             System.assertEquals(false, ctrl.isCPF);
             System.assertEquals(false, ctrl.isRPF);
 			System.assertEquals(false, ctrl.isBond);
+            System.assertEquals(false, ctrl.isForeignExchange);
             System.assertEquals(false, ctrl.isExternal);
             System.assertEquals(false, ctrl.isGlobalFinance);
             System.assertEquals('', ctrl.ProductLevel3Name);

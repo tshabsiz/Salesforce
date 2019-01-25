@@ -366,6 +366,7 @@ HYPERLINK(&quot;/apex/ADAPT360?queryType=cif&amp;regId=&quot; &amp; CIF__c,
     </fields>
     <fields>
         <fullName>CIF__c</fullName>
+        <caseSensitive>true</caseSensitive>
         <description>Wealth - This field (will be)is used for integration with PMP.</description>
         <externalId>false</externalId>
         <label>CIF</label>
@@ -374,7 +375,7 @@ HYPERLINK(&quot;/apex/ADAPT360?queryType=cif&amp;regId=&quot; &amp; CIF__c,
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Text</type>
-        <unique>false</unique>
+        <unique>true</unique>
     </fields>
     <fields>
         <fullName>Call_Report_Count__c</fullName>
@@ -3232,10 +3233,32 @@ HYPERLINK(&quot;/apex/ADAPT360?queryType=cif&amp;regId=&quot; &amp; CIF__c,
         <type>Summary</type>
     </fields>
     <fields>
+        <fullName>OriginalSalesforceID__c</fullName>
+        <externalId>false</externalId>
+        <label>Original Salesforce ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>OwnerId</fullName>
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Owner_Country__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner.Country</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner Country</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Ownership</fullName>
@@ -3264,6 +3287,66 @@ HYPERLINK(&quot;/apex/ADAPT360?queryType=cif&amp;regId=&quot; &amp; CIF__c,
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Banker_Team__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+OR($RecordType.Name = &quot;Relationship Group&quot;, $RecordType.Name = &quot;Prospect&quot;), 
+&quot;&quot;, 
+TEXT(Parent.Owner.Team__c) 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Parent Team</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parent_Banker__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+OR($RecordType.Name = &quot;Relationship Group&quot;, $RecordType.Name = &quot;Prospect&quot;), 
+&quot;&quot;, 
+Parent.Owner.FirstName + &quot; &quot; + Parent.Owner.LastName 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Parent Banker</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parent_Hub__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+OR($RecordType.Name = &quot;Relationship Group&quot;, $RecordType.Name = &quot;Prospect&quot;), 
+&quot;&quot;, 
+Parent.Hub_F__c 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Parent Hub</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parent__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+OR($RecordType.Name = &quot;Relationship Group&quot;, $RecordType.Name = &quot;Prospect&quot;), 
+&quot;&quot;, 
+IF(NOT(ISBLANK(Parent.Name)),Parent.Name,&quot;&quot;) 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Parent</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Phone</fullName>
@@ -3954,6 +4037,7 @@ Registration number of customer</description>
     </fields>
     <fields>
         <fullName>SDS__c</fullName>
+        <caseSensitive>false</caseSensitive>
         <description>The SDS ID number of the Organisation</description>
         <externalId>true</externalId>
         <label>SDS ID</label>
@@ -3962,7 +4046,7 @@ Registration number of customer</description>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Text</type>
-        <unique>false</unique>
+        <unique>true</unique>
     </fields>
     <fields>
         <fullName>SICCODE_Description__c</fullName>
@@ -4835,6 +4919,66 @@ Registration number of customer</description>
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Ultimate_Parent_Banker_Team__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+OR($RecordType.Name = &quot;Relationship Group&quot;, $RecordType.Name = &quot;Prospect&quot;), 
+TEXT(Parent.Owner.Team__c), 
+TEXT(Parent.Parent.Owner.Team__c) 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ultimate Parent Team</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ultimate_Parent_Banker__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+OR($RecordType.Name = &quot;Relationship Group&quot;, $RecordType.Name = &quot;Prospect&quot;), 
+Parent.Owner.FirstName + &quot; &quot; + Parent.Owner.LastName, 
+Parent.Parent.Owner.FirstName + &quot; &quot; + Parent.Parent.Owner.LastName 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ultimate Parent Banker</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ultimate_Parent_Hub__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+OR($RecordType.Name = &quot;Relationship Group&quot;, $RecordType.Name = &quot;Prospect&quot;), 
+Parent.Hub_F__c, 
+Parent.Parent.Hub_F__c 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ultimate Parent Hub</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ultimate_Parent__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+OR($RecordType.Name = &quot;Relationship Group&quot;, $RecordType.Name = &quot;Prospect&quot;), 
+Parent.Name, 
+Parent.Parent.Name 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ultimate Parent</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>User_Code__c</fullName>
         <description>RN - CloudSmiths
 This code will be used to search for Relationships in SF from the CIF integration quick action</description>
@@ -5164,6 +5308,25 @@ This code will be used to search for Relationships in SF from the CIF integratio
             <value>Account.Prospect</value>
         </filters>
         <label>My Teams Prospects</label>
+    </listViews>
+    <listViews>
+        <fullName>NBFI_Relationship_Groups</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Team_F__c</field>
+            <operation>contains</operation>
+            <value>nbfi</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.TYPE</field>
+            <operation>equals</operation>
+            <value>Relationship Group</value>
+        </filters>
+        <label>NBFI Relationship Groups</label>
     </listViews>
     <listViews>
         <fullName>X1_All_Relationships</fullName>

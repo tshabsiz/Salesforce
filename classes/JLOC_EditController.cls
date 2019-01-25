@@ -118,7 +118,7 @@ public with sharing class JLOC_EditController {
                     
                     //Tonga : MM add method calls to other functions to call client plan information, 
                     //this required we update existing classes in ordwer to reuse code
-                    financeList =  ClientFinancialsController.queryFinancialInformation(clientPlan);
+                    financeList =  ClientFinancialsController.queryFinancialInformation(clientPlan, 0, 5);
                     otherFacility = ClientFinancialsController.QueryOtherFacility(clientPlan);
                     otherCountry = ClientPresenceController.queryCountries(clientPlan.Id);
                     absaSecurity = ClientFinancialsController.queryAbsaSecurity(clientPlan.Relationship__c);
@@ -543,35 +543,40 @@ public with sharing class JLOC_EditController {
         return pageRef;
     }
     
-    public PageReference getPageRemoveForecastImage()
+    public PageReference getPageToRedirect(String anchor)
     {
         PageReference pageRef = new ApexPages.StandardController(jloc).edit();
-        pageRef.setAnchor('/3');
+        pageRef.setAnchor('/' + anchor);
         pageRef.setRedirect(true);
         return pageRef;
     }
-    
-        
     public PageReference removeStressCase()
     {
         JLOC_UploadDocumentController.deletePreviousVersion(jloc.Stress_Case_ID__c);
         jloc.Stress_Case_ID__c=null;
 		save();
-        return getPageRemoveForecastImage();
+        return getPageToRedirect('3');
     }
     public PageReference removeBankCase()
     {
        JLOC_UploadDocumentController.deletePreviousVersion(jloc.Banker_Case_ID__c);
         jloc.Banker_Case_ID__c=null;
 		save();
-        return getPageRemoveForecastImage();
+        return getPageToRedirect('3');
     }
     public PageReference removeManagementCase()
     {
        JLOC_UploadDocumentController.deletePreviousVersion(jloc.Management_Case_ID__c);
         jloc.Management_Case_ID__c=null;
 		save();
-        return getPageRemoveForecastImage();
+        return getPageToRedirect('3');
+    }
+    public PageReference removePricingAndReturnsDocument()
+    {
+        JLOC_UploadDocumentController.deletePreviousVersion(jloc.Pricing_and_Returns_Document_ID__c);
+        jloc.Pricing_and_Returns_Document_ID__c=null;
+		save();
+        return getPageToRedirect('7');
     }
     public PageReference displayMessage()
     {

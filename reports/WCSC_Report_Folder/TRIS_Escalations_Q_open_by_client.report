@@ -116,6 +116,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_CURFY</interval>
+        <interval>INTERVAL_PREVCUR2Y</interval>
     </timeFrameFilter>
 </Report>

@@ -337,6 +337,20 @@
                 <div class="section">
                     <table class="grid">
                         <tr>
+                            <th>{!$ObjectType.Client_Plan__c.fields.Executive_Summary__c.Label}</th>
+                        </tr>
+                        <tr>
+                            <td class="field">
+                                <apex:outputField value="{!Client_Plan__c.Executive_Summary__c}" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <br/>
+                <div class="section">
+                    <table class="grid">
+                        <tr>
                             <th>{!$ObjectType.Client_Plan__c.fields.Client_Overview__c.Label}</th>
                         </tr>
                         <tr>
@@ -818,8 +832,6 @@
         
         <!-- ############################################################# -->
         <apex:outputPanel rendered="{!pageFacilitiesBreakdown}">
-            <div class="page-break"></div>
-            <div class="title">{!$Label.lbl_TotalFacilitiesBreakdownSchedule}</div>
             <!-- Tonga MM : Remove existing product Section from Client plan as they will now utilize the ACM table section
 <!--  <apex:outputPanel rendered="{!!clientPlanExistingProducts.empty}">
 <div class="section">
@@ -912,153 +924,184 @@
 <br/>
 -->
             <apex:outputPanel rendered="{!!acmfs.Empty}">
-                <table  class="grid">
-                    <thead>
-                        <tr>
-                            <td class="header" colspan="12">{!$Label.lbl_ACMFacilities}</td>
-                        </tr>
-                        <tr  >
-                            <th >
-                                <span>
-                                    <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.FACILITYPRODUCTDESCRIPTION__c.Label}" />
-                                </span>
-                            </th>
-                            <th >
-                                <span>
-                                    <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.Country__c.Label}" />
-                                </span>
-                            </th>
-                            <th >
-                                <span>
-                                    <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.EXPIRYDATE__c.Label}" />
-                                </span>
-                            </th>
-                            <th >
-                                <span>
-                                    <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.FACILITYAMOUNT__c.Label}" />
-                                </span>
-                            </th>
-                            <th >
-                                <span>
-                                    <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.LOSSGIVENDEFAULT__c.Label}" />
-                                </span>
-                            </th>
-                            <th >
-                                <span>
-                                    <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.ACMUTILIZATIONAMOUNT__c.Label}" />
-                                </span>
-                            </th>
-                            <th >
-                                <span>
-                                    <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.GROSS_MARGIN__c.Label}" />
-                                </span>
-                            </th>
-                            <th >
-                                <span>
-                                    <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.FTP_bps__c.Label}" />
-                                </span>
-                            </th>
-                            <th >
-                                <span>
-                                    <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.Net_Margin__c.Label}" />
-                                </span>
-                            </th>
-                            <th >
-                                <span>
-                                    <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.Arrang_Fee__c.Label}" />
-                                </span>
-                            </th>
-                            <th>
-                                <span>
-                                    <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.COM_FEES__c.Label}" />
-                                </span>
-                            </th>
-                            <th >
-                                <span>
-                                    <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.RoRWA__c.Label}" />
-                                </span>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <apex:variable value="{!0}" var="acmfsKeyIndex"/>
-                        <apex:repeat value="{!acmfsKeys}" var="acmfsKey">
-                            <tr id="{!acmfsKey}">
-                                <td colspan="12" bgcolor="#bfbfbf">
-                                    {!acmfsLabels[acmfsKeyIndex]}
-                                </td>
+                <div style="page-break-before: always;">
+                    <div class="title" >{!$Label.lbl_TotalFacilitiesBreakdownSchedule}</div>
+                    <table  class="grid" style="border-collapse: separate;border-spacing: 0px 0px;-fs-table-paginate: paginate;page-break-inside: auto;">
+                        <thead>
+                            <tr>
+                                <td class="header" colspan="12">{!$Label.lbl_ACMFacilities}</td>
                             </tr>
-                            <apex:repeat value="{!acmfsMap[acmfsKey]}" var="acmf">
-                                <tr id="{!acmf.Id}" >
-                                    <td class="field">
-                                        {!acmf.FACILITYPRODUCTDESCRIPTION__c}
-                                    </td>
-                                    <td class="field">
-                                        {!acmf.Country__c}
-                                    </td>
-                                    <td class="field">
-                                        <apex:outputText value="{0, date, dd/MM/yyyy}" rendered="{!acmf.EXPIRYDATE__c != null}">
-                                            <apex:param value="{!acmf.EXPIRYDATE__c}" /> 
-                                        </apex:outputText>
-                                    </td>
-                                    <td class="field">
-                                        {!acmf.FACILITYCURRENCY__c} <apex:outputText value="{0, number, ###,##0}"><apex:param value="{!acmf.FACILITYAMOUNT__c}"/></apex:outputText>
-                                    </td>
-                                    <td class="field">
-                                        {!acmf.LOSSGIVENDEFAULT__c}
-                                    </td>
-                                    <td class="field">
-                                        {!acmf.ACMUTILIZATIONCURRENCY__c} <apex:outputText value="{0, number, ###,##0}"><apex:param value="{!acmf.ACMUTILIZATIONAMOUNT__c}"/></apex:outputText>
-                                    </td>
-                                    <td class="field">
-                                        <apex:outputText value="{!acmf.GROSS_MARGIN__c}" />
-                                    </td>
-                                    <td class="field">
-                                        <apex:outputText value="{!acmf.FTP_bps__c}"/>
-                                    </td>
-                                    <td class="field">
-                                        <apex:outputText value="{!acmf.NET_MARGIN__c}"/>
-                                    </td>
-                                    <td class="field">
-                                        <apex:outputText value="{!acmf.Arrang_Fee__c}"/>
-                                    </td>
-                                    <td class="field">
-                                        <apex:outputText value="{!acmf.COM_FEES__c}"/>
-                                    </td>
-                                    <td class="field">
-                                        <apex:outputText value="{!acmf.RoRWA__c}"/>
+                            <tr  >
+                                <th >
+                                    <span>
+                                        <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.FACILITYPRODUCTDESCRIPTION__c.Label}" />
+                                    </span>
+                                </th>
+                                <th >
+                                    <span>
+                                        <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.Country__c.Label}" />
+                                    </span>
+                                </th>
+                                <th >
+                                    <span>
+                                        <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.EXPIRYDATE__c.Label}" />
+                                    </span>
+                                </th>
+                                <th >
+                                    <span>
+                                        <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.FACILITYAMOUNT__c.Label}" />
+                                    </span>
+                                </th>
+                                <th >
+                                    <span>
+                                        <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.LOSSGIVENDEFAULT__c.Label}" />
+                                    </span>
+                                </th>
+                                <th >
+                                    <span>
+                                        <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.ACMUTILIZATIONAMOUNT__c.Label}" />
+                                    </span>
+                                </th>
+                                <th >
+                                    <span>
+                                        <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.GROSS_MARGIN__c.Label}" />
+                                    </span>
+                                </th>
+                                <th >
+                                    <span>
+                                        <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.FTP_bps__c.Label}" />
+                                    </span>
+                                </th>
+                                <th >
+                                    <span>
+                                        <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.Net_Margin__c.Label}" />
+                                    </span>
+                                </th>
+                                <th >
+                                    <span>
+                                        <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.Arrang_Fee__c.Label}" />
+                                    </span>
+                                </th>
+                                <th>
+                                    <span>
+                                        <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.COM_FEES__c.Label}" />
+                                    </span>
+                                </th>
+                                <th >
+                                    <span>
+                                        <apex:outputText value="{!$ObjectType.ACMFacility__c.fields.RoRWA__c.Label}" />
+                                    </span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <apex:variable value="{!0}" var="acmfsKeyIndex"/>
+                            <apex:repeat value="{!acmfsKeys}" var="acmfsKey">
+                                <tr id="{!acmfsKey}">
+                                    <td colspan="12" bgcolor="#bfbfbf">
+                                        {!acmfsLabels[acmfsKeyIndex]}
                                     </td>
                                 </tr>
-                                
+                                <apex:repeat value="{!acmfsMap[acmfsKey]}" var="acmf">
+                                    <tr id="{!acmf.Id}" >
+                                        <td class="field">
+                                            {!acmf.FACILITYPRODUCTDESCRIPTION__c}
+                                        </td>
+                                        <td class="field">
+                                            {!acmf.Country__c}
+                                        </td>
+                                        <td class="field">
+                                            <apex:outputText value="{0, date, dd/MM/yyyy}" rendered="{!acmf.EXPIRYDATE__c != null}">
+                                                <apex:param value="{!acmf.EXPIRYDATE__c}" /> 
+                                            </apex:outputText>
+                                        </td>
+                                        <td class="field">
+                                            {!acmf.FACILITYCURRENCY__c} <apex:outputText value="{0, number, ###,##0}"><apex:param value="{!acmf.FACILITYAMOUNT__c}"/></apex:outputText>
+                                        </td>
+                                        <td class="field">
+                                            {!acmf.LOSSGIVENDEFAULT__c}
+                                        </td>
+                                        <td class="field">
+                                            {!acmf.ACMUTILIZATIONCURRENCY__c} <apex:outputText value="{0, number, ###,##0}"><apex:param value="{!acmf.ACMUTILIZATIONAMOUNT__c}"/></apex:outputText>
+                                        </td>
+                                        <td class="field">
+                                            <apex:outputText value="{!acmf.GROSS_MARGIN__c}" />
+                                        </td>
+                                        <td class="field">
+                                            <apex:outputText value="{!acmf.FTP_bps__c}"/>
+                                        </td>
+                                        <td class="field">
+                                            <apex:outputText value="{!acmf.NET_MARGIN__c}"/>
+                                        </td>
+                                        <td class="field">
+                                            <apex:outputText value="{!acmf.Arrang_Fee__c}"/>
+                                        </td>
+                                        <td class="field">
+                                            <apex:outputText value="{!acmf.COM_FEES__c}"/>
+                                        </td>
+                                        <td class="field">
+                                            <apex:outputText value="{!acmf.RoRWA__c}"/>
+                                        </td>
+                                    </tr>
+                                    
+                                </apex:repeat>
+                                <apex:variable var="acmfsKeyIndex" value="{!acmfsKeyIndex + 1}"/>
                             </apex:repeat>
-                            <apex:variable var="acmfsKeyIndex" value="{!acmfsKeyIndex + 1}"/>
-                        </apex:repeat>
-                        <tr>
-                            <th colspan="12" class="facilityProductDescription">
-                                {!$Label.lbl_ACMSubTotal}
-                            </th>
-                        </tr>
-                        <apex:repeat value="{!facilitySubTotalMap}" var="key">
+                            <tr>
+                                <th colspan="12" class="facilityProductDescription">
+                                    {!$Label.lbl_ACMSubTotal}
+                                </th>
+                            </tr>
+                            <apex:repeat value="{!facilitySubTotalMap}" var="key">
+                                <tr>
+                                    <td class="field"/>
+                                    <td class="field"/>
+                                    <td class="field"/>
+                                    <td style="word-wrap:break-word" class="field">
+                                        {!key}&nbsp;<apex:outputText value="{0, number,  ###,###,###.##}">
+                                        <apex:param value="{!facilitySubTotalMap[key].facilityAmountSubTotal}"/>
+                                        </apex:outputText>
+                                        ({!userCurrency}&nbsp;<apex:outputText value="{0, number,  ###,###,###.##}">
+                                        <apex:param value="{!facilitySubTotalMap[key].convertedFacilityAmountSubTotal}"/>
+                                        </apex:outputText>)
+                                    </td>
+                                    <td class="field"/>
+                                    <td class="field">
+                                        {!key}&nbsp;<apex:outputText value="{0, number,  ###,###,###.##}">
+                                        <apex:param value="{!facilitySubTotalMap[key].utilizationAmountSubTotal}"/>
+                                        </apex:outputText> 
+                                        ({!userCurrency}&nbsp;<apex:outputText value="{0, number,  ###,###,###.##}">
+                                        <apex:param value="{!facilitySubTotalMap[key].convertedUtilizationAmountSubTotal}"/>
+                                        </apex:outputText>)
+                                    </td>
+                                    <td class="field"/>
+                                    <td class="field"/>
+                                    <td class="field"/>
+                                    <td class="field"/>
+                                    <td class="field"/>
+                                    <td class="field"/>
+                                </tr>
+                            </apex:repeat>
+                            <tr>
+                                <th colspan="12" class="facilityProductDescription">
+                                    {!$Label.lbl_ACMTotal}
+                                </th>
+                            </tr>
                             <tr>
                                 <td class="field"/>
                                 <td class="field"/>
                                 <td class="field"/>
-                                <td style="word-wrap:break-word" class="field">
-                                    {!key}&nbsp;<apex:outputText value="{0, number,  ###,###,###.##}">
-                                    <apex:param value="{!facilitySubTotalMap[key].facilityAmountSubTotal}"/>
+                                <td class="field">
+                                    {!userCurrency}&nbsp;<apex:outputText value="{0, number,  ###,###,###.##}">
+                                    <apex:param value="{!ACMFacilityFacilityTotal}"/>
                                     </apex:outputText>
-                                    ({!userCurrency}&nbsp;<apex:outputText value="{0, number,  ###,###,###.##}">
-                                    <apex:param value="{!facilitySubTotalMap[key].convertedFacilityAmountSubTotal}"/>
-                                    </apex:outputText>)
                                 </td>
                                 <td class="field"/>
                                 <td class="field">
-                                    {!key}&nbsp;<apex:outputText value="{0, number,  ###,###,###.##}">
-                                    <apex:param value="{!facilitySubTotalMap[key].utilizationAmountSubTotal}"/>
+                                    {!userCurrency}&nbsp;<apex:outputText value="{0, number,  ###,###,###.##}">
+                                    <apex:param value="{!ACMFacilityUtilizationTotal}"/>
                                     </apex:outputText> 
-                                    ({!userCurrency}&nbsp;<apex:outputText value="{0, number,  ###,###,###.##}">
-                                    <apex:param value="{!facilitySubTotalMap[key].convertedUtilizationAmountSubTotal}"/>
-                                    </apex:outputText>)
+                                    
                                 </td>
                                 <td class="field"/>
                                 <td class="field"/>
@@ -1067,37 +1110,9 @@
                                 <td class="field"/>
                                 <td class="field"/>
                             </tr>
-                        </apex:repeat>
-                        <tr>
-                            <th colspan="12" class="facilityProductDescription">
-                                {!$Label.lbl_ACMTotal}
-                            </th>
-                        </tr>
-                        <tr>
-                            <td class="field"/>
-                            <td class="field"/>
-                            <td class="field"/>
-                            <td class="field">
-                                {!userCurrency}&nbsp;<apex:outputText value="{0, number,  ###,###,###.##}">
-                                <apex:param value="{!ACMFacilityFacilityTotal}"/>
-                                </apex:outputText>
-                            </td>
-                            <td class="field"/>
-                            <td class="field">
-                                {!userCurrency}&nbsp;<apex:outputText value="{0, number,  ###,###,###.##}">
-                                <apex:param value="{!ACMFacilityUtilizationTotal}"/>
-                                </apex:outputText> 
-                                
-                            </td>
-                            <td class="field"/>
-                            <td class="field"/>
-                            <td class="field"/>
-                            <td class="field"/>
-                            <td class="field"/>
-                            <td class="field"/>
-                        </tr>
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
             </apex:outputPanel>
             
             <br/>

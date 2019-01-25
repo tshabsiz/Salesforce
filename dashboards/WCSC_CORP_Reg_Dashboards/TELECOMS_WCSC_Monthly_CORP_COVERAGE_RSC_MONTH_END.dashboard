@@ -60,7 +60,7 @@
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
-                <title>Overall SLA Performance</title>
+                <title>Overall SLA Performance This Month</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -91,7 +91,7 @@
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
-                <title>Case Volumes per Business Unit</title>
+                <title>Case Volumes per Bus Unit This Month</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -101,14 +101,20 @@
             <colSpan>3</colSpan>
             <columnIndex>0</columnIndex>
             <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>Case.Number_of_Requests__c</column>
+                </chartSummary>
                 <componentType>Bar</componentType>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>true</enableHover>
                 <expandOthers>false</expandOthers>
+                <groupingColumn>Case.Service_Type__c</groupingColumn>
                 <header>Top 20 Service Types - TELECOMS CORP NATIONAL</header>
                 <legendPosition>Bottom</legendPosition>
                 <maxValuesDisplayed>20</maxValuesDisplayed>
@@ -117,7 +123,7 @@
                 <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
                 <sortBy>RowValueDescending</sortBy>
-                <title>Top 20 Service Types requested</title>
+                <title>This Month</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>4</rowIndex>
@@ -148,6 +154,7 @@
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
                 <sortBy>RowValueDescending</sortBy>
+                <title>Overall SLA Performance This Month</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>4</rowIndex>
@@ -242,6 +249,7 @@
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
+                <title>Overall SLA Performance This Month</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>8</rowIndex>
@@ -349,53 +357,24 @@
                     <axisBinding>y</axisBinding>
                     <column>RowCount</column>
                 </chartSummary>
-                <componentType>Donut</componentType>
+                <componentType>BarGrouped</componentType>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
-                <expandOthers>true</expandOthers>
+                <expandOthers>false</expandOthers>
                 <groupingColumn>Case.Resolving_Team__c</groupingColumn>
-                <header>RSC CORP NATIONAL - Complaints Volume</header>
+                <groupingColumn>ACCOUNT.NAME</groupingColumn>
+                <header>CORP NATIONAL - Complaints Volume</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>WCSC_CORP_Reg_Reports/RSC_CORP_Complaints_Resolving_Area</report>
-                <showPercentage>true</showPercentage>
-                <showTotal>true</showTotal>
+                <report>Complaints_Reports/CSS_Complaints_Resolving_Area_By_Client</report>
+                <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowValueDescending</sortBy>
+                <title>YTD</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>16</rowIndex>
-            <rowSpan>4</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>3</colSpan>
-            <columnIndex>0</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartAxisRange>Auto</chartAxisRange>
-                <chartSummary>
-                    <axisBinding>y</axisBinding>
-                    <column>RowCount</column>
-                </chartSummary>
-                <componentType>Bar</componentType>
-                <displayUnits>Auto</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
-                <enableHover>true</enableHover>
-                <expandOthers>false</expandOthers>
-                <groupingColumn>ACCOUNT.NAME</groupingColumn>
-                <header>RSC CORP NATIONAL - Complaints Volume by Client</header>
-                <legendPosition>Bottom</legendPosition>
-                <report>WCSC_CORP_Reg_Reports/RSC_CORP_NATIO_Complaints_Resolving_Area</report>
-                <showPercentage>false</showPercentage>
-                <showPicturesOnCharts>false</showPicturesOnCharts>
-                <showValues>true</showValues>
-                <sortBy>RowValueDescending</sortBy>
-                <title>Status by Client</title>
-                <useReportChart>false</useReportChart>
-            </dashboardComponent>
-            <rowIndex>20</rowIndex>
             <rowSpan>4</rowSpan>
         </dashboardGridComponents>
         <numberOfColumns>9</numberOfColumns>

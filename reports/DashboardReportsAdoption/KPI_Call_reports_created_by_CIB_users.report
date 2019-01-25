@@ -8,17 +8,16 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>VerticalColumnGrouped</chartType>
+        <chartType>Donut</chartType>
         <enableHoverLabels>false</enableHoverLabels>
-        <expandOthers>true</expandOthers>
-        <groupingColumn>User$CountryCode</groupingColumn>
-        <legendPosition>Right</legendPosition>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>User*User$Business_Area__c</groupingColumn>
+        <legendPosition>Bottom</legendPosition>
         <location>CHART_TOP</location>
-        <secondaryGroupingColumn>User*User$Business_Area__c</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
-        <showPercentage>false</showPercentage>
-        <showTotal>false</showTotal>
-        <showValues>false</showValues>
+        <showPercentage>true</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>true</showValues>
         <size>Medium</size>
         <summaryAxisRange>Auto</summaryAxisRange>
         <textColor>#000000</textColor>
@@ -36,7 +35,13 @@
         <field>User.Call_Report__c$CreatedById$Name</field>
     </columns>
     <columns>
-        <field>User.Call_Report__c$CreatedById$Meeting_Date__c</field>
+        <field>User.Call_Report__c$CreatedById$Owner_Hub__c</field>
+    </columns>
+    <columns>
+        <field>User.Call_Report__c$CreatedById$Owner_Business_Area__c</field>
+    </columns>
+    <columns>
+        <field>User.Call_Report__c$CreatedById$Owner_Team__c</field>
     </columns>
     <currency>ZAR</currency>
     <description>Based on meeting date</description>
@@ -44,8 +49,8 @@
         <criteriaItems>
             <column>User.Call_Report__c$CreatedById$Owner.Profile</column>
             <isUnlocked>false</isUnlocked>
-            <operator>contains</operator>
-            <value>standard,private</value>
+            <operator>equals</operator>
+            <value>Barclays Read Only,Barclays Standard User,Standard User,Standard User (Banking - Private),Standard User ( Lightning ),Standard User (Markets),Standard User ( Private Lightning ),Standard User (Research),Standard User (RoA),Standard User (TBS User)</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
@@ -54,23 +59,28 @@
         <field>User$CountryCode</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>User.Call_Report__c$CreatedById$Meeting_Date__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>User*User$Business_Area__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>KPI - Call reports by CIB users</name>
+    <name>CIB FO Call reports - YTD</name>
     <params>
         <name>co</name>
         <value>1</value>
     </params>
     <reportType>Call_Reports_by_Country__c</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>User.Call_Report__c$CreatedById$Meeting_Date__c</dateColumn>
-        <interval>INTERVAL_THISMONTH</interval>
+        <interval>INTERVAL_CURFY</interval>
     </timeFrameFilter>
 </Report>

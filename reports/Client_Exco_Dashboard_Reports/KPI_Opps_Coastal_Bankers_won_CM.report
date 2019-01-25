@@ -146,7 +146,7 @@
         <field>FULL_NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>KPI - Opps Coastal Bankers won - CM</name>
+    <name>KPI - Opps Coastal Bankers won - CY</name>
     <params>
         <name>open</name>
         <value>closedwon</value>
@@ -160,6 +160,7 @@
         <value>1</value>
     </params>
     <reportType>Opportunity</reportType>
+    <roleHierarchyFilter>BAGL_Management</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>

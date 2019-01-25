@@ -2,7 +2,7 @@
 
 <img src="{!URLFOR($Resource.CloudSmiths_Resources, 'img/barclays_header.jpg')}" />
 
-<p>Dear {!Case.OwnerFullName},</p>
+<p>Dear Knowledge Champion,</p>
 <p>
 You were allocated the following work:
 </p>
@@ -21,4 +21,4 @@ You were allocated the following work:
 {!Case.Link}
 
 <p>
-If you experience any technical problems or have any questions please contact Dudu Langa (<a href="mailto:"Dudu.Langa@absa.co.za">Dudu.Langa@absa.co.za</a>) or Tumelo Singo (<a href="mailto:"Tumelo.Singo@absa.co.za">Tumelo.Singo@absa.co.za</a>).</p>
+If you experience any technical problems or have any questions please contact Dudu Langa (<a href="mailto:"Dudu.Langa@absa.co.za">Dudu.Langa@absa.co.za</a>) or Vami Mbatha (<a href="mailto:"Vamisile.Mbatha@absa.co.za">Vamisile.Mbatha@absa.co.za</a>).</p>

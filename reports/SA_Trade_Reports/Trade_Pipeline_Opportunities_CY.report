@@ -81,6 +81,27 @@
     <columns>
         <field>LAST_UPDATE</field>
     </columns>
+    <columns>
+        <field>Opportunity.Asset_Hub_1a__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Asset_Hub_1perc__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Asset_Hub_2__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Asset_Hub_2perc__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Asset_Hub_3__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Asset_Hub_3perc__c</field>
+    </columns>
     <currency>ZAR</currency>
     <filter>
         <booleanFilter>1 AND (2 OR 3)</booleanFilter>
@@ -103,7 +124,7 @@
             <value>south africa</value>
         </criteriaItems>
     </filter>
-    <format>Summary</format>
+    <format>Tabular</format>
     <name>Trade Pipeline Opportunities</name>
     <params>
         <name>open</name>
@@ -118,6 +139,7 @@
         <value>1</value>
     </params>
     <reportType>OpportunityProduct</reportType>
+    <roleHierarchyFilter>BAGL_Management</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>

@@ -1,55 +1,21 @@
 ({
     
     doInit  : function(component, event, helper) { 
-         		 var recordId =  component.get("v.recordId");
-                var tabId =  component.get("v.tabId");
         
-                if(recordId != '' && tabId != '')
-                {
-                    helper.closeThisTab(component, event, tabId);
-                    
-                    helper.focusNewTab(component, event, recordId);
-                    
-                    
-                    
-                   // helper.closeFocusedTab(component, event, helper);
-                }
-        
-        else{
-         console.log(component.get("v.pageReference").state.recordTypeId)
-        var componentName = 'c:lscCscNewManualCase';
-       
-                if(component.get("v.pageReference").state.recordTypeId == '01224000000gQUVAA2' ||component.get("v.pageReference").state.recordTypeId == '01224000000gQUV'){
-                    componentName = 'c:lscDosNewManualCase';
-                
-                }
-                
-                if(component.get("v.pageReference").state.recordTypeId == '01224000000gQ1NAAU' || component.get("v.pageReference").state.recordTypeId == '01224000000gQ1N'){
-                    componentName = 'c:lscCmNewManualCase';
-                  
-                }
-                
-        //helper.closeFocusedTab(component, event, helper);
-        var evt = $A.get("e.force:navigateToComponent");
         var workspaceAPI = component.find("workspace");
-        workspaceAPI.getFocusedTabInfo().
-        then(function(response) {
-            var focusedTabId = response.tabId;
-            evt.setParams({
-                componentDef : componentName,
-                componentAttributes: {
-                    tabId:focusedTabId
-                }
-            });
-            evt.fire();
-        }).then(function(response) {
-            
+        workspaceAPI.isConsoleNavigation().then(function(response) {
+
+            if(response){
+                 helper.serviceNavigation(component, event, helper);
+            }else{
+                 helper.salesNavigation(component, event, helper);
+            }
         })
         .catch(function(error) {
             console.log(error);
         });
         
-        }        
+         		
         /*
               
         helper.showSpinner(component, event, helper);

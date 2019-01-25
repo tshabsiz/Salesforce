@@ -89,16 +89,16 @@
     </groupingsDown>
     <groupingsDown>
         <aggregateType>Sum</aggregateType>
-        <dateGranularity>Day</dateGranularity>
-        <field>ACCOUNT.NAME</field>
+        <dateGranularity>Month</dateGranularity>
+        <field>CREATED_DATE</field>
         <sortByName>Case.Number_of_Requests__c</sortByName>
         <sortOrder>Desc</sortOrder>
         <sortType>Aggregate</sortType>
     </groupingsDown>
     <groupingsDown>
         <aggregateType>Sum</aggregateType>
-        <dateGranularity>Month</dateGranularity>
-        <field>CREATED_DATE</field>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT.NAME</field>
         <sortByName>Case.Number_of_Requests__c</sortByName>
         <sortOrder>Desc</sortOrder>
         <sortType>Aggregate</sortType>
@@ -119,6 +119,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_CURFY</interval>
+        <interval>INTERVAL_PREVCURY</interval>
     </timeFrameFilter>
 </Report>

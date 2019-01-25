@@ -88,18 +88,14 @@
     </profileActionOverrides>
     <setupExperience>service</setupExperience>
     <tabs>standard-Case</tabs>
-    <tabs>standard-Contact</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
     <tabs>standard-home</tabs>
-    <tabs>How_To__kav</tabs>
+    <tabs>standard-OmniSupervisorLightning</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningService_UtilityBar</utilityBar>
     <workspaceConfig>
-        <mappings>
-            <tab>How_To__kav</tab>
-        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>
@@ -107,10 +103,10 @@
             <tab>standard-Case</tab>
         </mappings>
         <mappings>
-            <tab>standard-Contact</tab>
+            <tab>standard-Dashboard</tab>
         </mappings>
         <mappings>
-            <tab>standard-Dashboard</tab>
+            <tab>standard-OmniSupervisorLightning</tab>
         </mappings>
         <mappings>
             <tab>standard-home</tab>

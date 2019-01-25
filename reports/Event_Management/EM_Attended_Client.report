@@ -8,17 +8,15 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>HorizontalBarGrouped</chartType>
+        <chartType>HorizontalBar</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Delegate__c.Contact_Relationship__c</groupingColumn>
-        <legendPosition>Right</legendPosition>
+        <groupingColumn>Delegate__c.Contact__c</groupingColumn>
         <location>CHART_TOP</location>
-        <secondaryGroupingColumn>Delegate__c.Contact__c</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
-        <showValues>false</showValues>
+        <showValues>true</showValues>
         <size>Medium</size>
         <summaryAxisRange>Auto</summaryAxisRange>
         <textColor>#000000</textColor>
@@ -71,7 +69,7 @@
             <column>CUST_NAME</column>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
-            <value>CIB Mid-Corporate Coverage Economic Update</value>
+            <value>Aid to the Last Mile</value>
         </criteriaItems>
         <criteriaItems>
             <column>Delegate__c.Status__c</column>
@@ -87,11 +85,6 @@
         </criteriaItems>
     </filter>
     <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Delegate__c.Host__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Delegate__c.Contact__c</field>

@@ -19,7 +19,7 @@
             <column>Case_QA__c.AgentName__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
-            <value>nelson,bheki,mpho,gabriel,zinzile,Cleopatra</value>
+            <value>nelson,bheki,mpho,gabriel,Cleopatra</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

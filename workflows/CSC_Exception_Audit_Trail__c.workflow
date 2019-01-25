@@ -12,7 +12,7 @@
             <recipient>rudolf.niehaus@absa1.com</recipient>
             <type>user</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>CSC_Auto_Response_Templates/CSC_Failure_Exception</template>
     </alerts>

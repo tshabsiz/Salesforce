@@ -63,6 +63,9 @@
         <aggregateTypes>Sum</aggregateTypes>
         <field>Opportunity.Income_this_Year__c.CONVERT</field>
     </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
     <currency>ZAR</currency>
     <filter>
         <booleanFilter>((((1 OR 2)) AND 3) AND 4)</booleanFilter>

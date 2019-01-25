@@ -257,7 +257,7 @@ public class Agency_Transfer_Override_Test
     @isTest
     public static void testOverride_FacilityTranche2Level()
 	{
-		CloudSmiths_TestDataClass testData = new CloudSmiths_TestDataClass();
+		CloudSmiths_TestDataClass testData = new CloudSmiths_TestDataClass();Test.startTest();
 		testData.TestAgencyTransfer.Facility__c = testData.testFacility.id;
         testData.TestAgencyTransfer.Facility_Tranche__c = testData.TestFacilityTranche.id;
         testData.TestFacilityParty.Facility_Amount__c = 50;
@@ -283,7 +283,7 @@ public class Agency_Transfer_Override_Test
         tranchePartyUpdateList.add(testData.TestTrancheParty2);
         upsert tranchePartyUpdateList;
 
-		Test.startTest();
+		
 
 		//Controller + Extension
 		ApexPages.StandardController sc = new ApexPages.standardController(testData.TestAgencyTransfer); 

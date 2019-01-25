@@ -4,10 +4,22 @@
     <email>dummy@invalid.com</email>
     <name>EBSS - CSC Documentation</name>
     <queueMembers>
-        <roleAndSubordinatesInternal>
-            <roleAndSubordinateInternal>Client_Service_Centre</roleAndSubordinateInternal>
-        </roleAndSubordinatesInternal>
+        <users>
+            <user>belinda.phasha@absa1.com</user>
+            <user>carolina.depinho@absa1.com</user>
+            <user>gertysueallan.moloto@absa1.com</user>
+            <user>johanna.sepato@absa1.com</user>
+            <user>keorapetse.langa@absa1.com</user>
+            <user>lee-ann.cohen@absa1.com</user>
+            <user>orin.shamburg@absa1.com</user>
+            <user>pearl.mlungwana@absa1.com</user>
+            <user>sade.magi@absa1.com</user>
+            <user>samuel.mahlangu@absa1.com</user>
+            <user>sheroleen.becardie@absa1.com</user>
+            <user>herniccah.seete2@absa1.com</user>
+        </users>
     </queueMembers>
+    <queueRoutingConfig>EBSS_CSC_DOC</queueRoutingConfig>
     <queueSobject>
         <sobjectType>Case</sobjectType>
     </queueSobject>

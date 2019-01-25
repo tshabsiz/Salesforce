@@ -28,9 +28,9 @@ public class Task_Trigger_Test {
         list<Case> caseInsertList = CSC_TestDataFactory.getTestCaseList('Complaint', UserInfo.getUserId());
         caseInsertList[0].Queue__c = 'Complaints Client';
         //caseInsertList[0].Department__c = 'EBSH';
-        caseInsertList[0].Service_Type__c = 'Delays';
-        caseInsertList[0].Service_Sub_Category__c = 'Takes to Long';
-        caseInsertList[0].Service_Category__c = 'Complaint';
+      //  caseInsertList[0].Service_Type__c = 'ATM Related Issues';
+       // caseInsertList[0].Service_Sub_Category__c = 'Takes to Long';
+      //  caseInsertList[0].Service_Category__c = 'Complaint';
         caseInsertList[0].Division__c = 'CIB';
         caseInsertList[0].Business_Area__c = 'Banking';
         caseInsertList[0].Nature_Of_Complaint__c = 'Formal'; 

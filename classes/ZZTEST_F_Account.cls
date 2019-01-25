@@ -94,7 +94,7 @@ public class ZZTEST_F_Account {
         ac.Phone = '223556875';
         ac.Rating = 'Hot';
         ac.Global_corporate__c = TRUE;
-        ac.SDS__c = String.valueOf(productCounter*1000);
+        //ac.SDS__c = String.valueOf(productCounter*1000);
         ac.Client_Country__c = 'South Africa';
         ac.Registration_Number__c = '12345609';
         return ac;
@@ -113,7 +113,7 @@ public class ZZTEST_F_Account {
         ac.Industry = 'Entertainment';
         ac.Phone = '223556875';
         ac.Rating = 'Hot';
-        ac.SDS__c = '10000651';
+        //ac.SDS__c = '10000651';
         ac.Global_corporate__c = TRUE;
         ac.Country_of_Operation__c = 'PL';
         ac.Country_of_Incorporation__c = 'PL';
@@ -136,7 +136,7 @@ public class ZZTEST_F_Account {
         ac.Industry = 'Entertainment';
         ac.Phone = '223556875';
         ac.Rating = 'Hot';
-        ac.SDS__c = '10000650';
+        //ac.SDS__c = '10000650';
         ac.Global_corporate__c = TRUE;
         ac.Country_of_Operation__c = 'PL';
         ac.Country_of_Incorporation__c = 'PL';
@@ -186,7 +186,7 @@ public class ZZTEST_F_Account {
         ac.Phone = '223556875';
         ac.Rating = 'Hot';
         ac.Global_corporate__c = TRUE;
-        ac.SDS__c = String.valueOf(productCounter*1000);
+        //ac.SDS__c = String.valueOf(productCounter*1000);
         ac.Client_Country__c = 'South Africa';
         ac.Registration_Number__c = '12345609';
         ac.OwnerId = userFactory.getBarclaysStandardUser().Id;

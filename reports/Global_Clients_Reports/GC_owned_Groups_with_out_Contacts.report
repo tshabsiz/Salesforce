@@ -4,9 +4,6 @@
         <field>Account$Name</field>
     </columns>
     <columns>
-        <field>Account$Parent</field>
-    </columns>
-    <columns>
         <field>Account$Owner</field>
     </columns>
     <columns>
@@ -60,7 +57,12 @@
             <value>global clients</value>
         </criteriaItems>
     </filter>
-    <format>Tabular</format>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Parent</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <name>GC-owned Groups with/out Contacts</name>
     <params>
         <name>co</name>

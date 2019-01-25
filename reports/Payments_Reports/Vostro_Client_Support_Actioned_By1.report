@@ -4,6 +4,9 @@
         <field>CASE_NUMBER</field>
     </columns>
     <columns>
+        <field>Case.Actioned_By__c</field>
+    </columns>
+    <columns>
         <field>PRIORITY</field>
     </columns>
     <columns>
@@ -11,9 +14,6 @@
     </columns>
     <columns>
         <field>CREATED_DATE</field>
-    </columns>
-    <columns>
-        <field>OWNER</field>
     </columns>
     <columns>
         <field>Case.Case_Type_Indicator__c</field>
@@ -66,7 +66,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Case.Actioned_By__c</field>
+        <field>OWNER</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Vostro Client Support - Action By - WIP</name>

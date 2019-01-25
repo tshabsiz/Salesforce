@@ -89,6 +89,9 @@
         <field>Opportunity.Account_Name__c</field>
     </columns>
     <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
         <field>Account.Segment__c</field>
     </columns>
     <columns>

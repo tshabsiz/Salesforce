@@ -1,10 +1,11 @@
-<aura:component implements="force:hasRecordId" controller="lscNewCaseExt">
+<aura:component implements="force:hasRecordId,force:lightningQuickAction" controller="lscNewCaseExt">
     <ltng:require scripts='../../soap/ajax/37.0/connection.js, ../../soap/ajax/37.0/apex.js,/support/console/35.0/integration.js'/>
     <lightning:workspaceAPI aura:id="workspace" />
     <aura:attribute name="model" type="object" />
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
     <aura:attribute name="recordId" type="String" default=""/>
     <aura:attribute name="recordTypeId" type="String" default=""/>
+    <aura:attribute name="callReportId" type="String" default=""/>
     <aura:attribute name="OwnerId" type="String" default="" />
     <aura:attribute name="recordEditFormLoaded" type="Boolean" default="false" />
     <aura:attribute name="includesClosed" type="Boolean" default="false" />
@@ -15,7 +16,7 @@
     <aura:attribute name="isUserSearch" type="boolean" default="true" access="private"/>
   <ltng:require styles="{!$Resource.lscCommon}" />
     <aura:attribute name="accountOptions" type="array" />
-    
+    <div  >
     <div class="slds-box slds-clearfix">
         <lightning:layout horizontalAlign="end">
             
@@ -124,7 +125,7 @@
                     <lightning:layoutItem size="6">
                        
                         <aura:if isTrue="{!v.model.caseOwnerName_r == ''}"> 
-                            <div style="width: 15%; float: left">
+                            <div style="width: 30%; float: left">
                                 <lightning:select aura:id="SearchUserBy" label="Case Owner" onchange="{!c.caseOwnerTypeChanged}">
                                     <aura:if isTrue="{!((v.model.theCase_r.Owner.Type != 'User') == true)== ((v.model.theCase_r.Owner.Type != 'Queue')==true)}">
                                         <option value="None" selected = "{!((v.model.theCase_r.Owner.Type != 'User') == true)== ((v.model.theCase_r.Owner.Type != 'Queue')==true)}">--None--</option>
@@ -135,7 +136,7 @@
                             </div>
                         </aura:if>
                          <aura:if isTrue="{!v.model.caseOwnerName_r != ''}"> 
-                                <div style="width: 15%; float: left">
+                                <div style="width: 30%; float: left">
                                 <lightning:select aura:id="SearchUserBy" label="Case Owner" onchange="{!c.caseOwnerTypeChanged}">
                                     <option value="User" >User</option>
                                     <option value="Queue" >Queue</option>
@@ -143,7 +144,7 @@
                             </div>
                          </aura:if>
                         
-                        <div style="width: 65%; float: left">                    
+                        <div style="width: 60%; float: left">                    
                             
                             <aura:if isTrue="{!and(v.recordEditFormLoaded, or(v.model.caseOwnerName_r == null, v.model.caseOwnerName_r == ''))}">                         
                                 <c:lscSearchAccount isUserSearch = "{!v.isUserSearch}" UserName="{!v.UserName}" SelectedAccount="{!v.OwnerId}" UserID="" HasAccount="false" Lable="."/>
@@ -209,7 +210,7 @@
                 
                 <lightning:layout horizontalAlign="center">
                     <lightning:layoutItem size="6">
-                        <div style="width: 100%">
+                        <div style="width: 80%">
                             <lightning:inputField aura:id="Incident_Date__c" fieldName="Incident_Date__c" />
                         </div>
                     </lightning:layoutItem>
@@ -442,5 +443,5 @@
     
     
     
-    
+     </div>
 </aura:component>

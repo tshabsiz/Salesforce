@@ -11,7 +11,7 @@
         <chartType>HorizontalBarGrouped</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Delegate__c.Contact_Relationship__c</groupingColumn>
+        <groupingColumn>Delegate__c.Host__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
         <secondaryGroupingColumn>Delegate__c.Contact__c</secondaryGroupingColumn>
@@ -71,7 +71,7 @@
             <column>CUST_NAME</column>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
-            <value>CIB Mid-Corporate Coverage Economic Update</value>
+            <value>Aid to the Last Mile</value>
         </criteriaItems>
         <criteriaItems>
             <column>Delegate__c.Status__c</column>

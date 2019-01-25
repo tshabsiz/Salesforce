@@ -117,8 +117,8 @@
         <criteriaItems>
             <column>Account.Hub_F__c</column>
             <isUnlocked>false</isUnlocked>
-            <operator>contains</operator>
-            <value>Coverage South Africa</value>
+            <operator>equals</operator>
+            <value>Coverage South Africa - Coastal Regions,Coverage South Africa - Financial Services,Coverage South Africa - Global Clients,Coverage South Africa - Public Sector,Coverage South Africa - Sectors</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Reason_Won_Lost__c</column>
@@ -152,6 +152,7 @@
         <value>1</value>
     </params>
     <reportType>OpportunityProduct</reportType>
+    <roleHierarchyFilter>BAGL_Management</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>

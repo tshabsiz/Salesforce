@@ -47,6 +47,12 @@
             <sourceValues>
                 <sourceValue>Structured Trade and Commodity Finance</sourceValue>
             </sourceValues>
+            <sourceValues>
+                <sourceValue>Money Market Short Term Lending ( Corp )</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Property Loans</sourceValue>
+            </sourceValues>
             <value>ASSETS</value>
         </values>
         <values>
@@ -85,6 +91,9 @@
             </sourceValues>
             <sourceValues>
                 <sourceValue>Call &amp; Fixed deposit (TPFM)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Corporate Money Markets Deposits</sourceValue>
             </sourceValues>
             <value>LIABILITIES</value>
         </values>
@@ -275,6 +284,9 @@
             <sourceValues>
                 <sourceValue>Joseph Kanyua</sourceValue>
             </sourceValues>
+            <sourceValues>
+                <sourceValue>Silas Aduda</sourceValue>
+            </sourceValues>
             <value>LLC</value>
         </values>
         <values>
@@ -283,6 +295,9 @@
             </sourceValues>
             <sourceValues>
                 <sourceValue>Caroline Nthia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Edgar Ralph Wamalwa</sourceValue>
             </sourceValues>
             <value>PS</value>
         </values>
@@ -426,8 +441,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
-        <endDate>2018-06-30</endDate>
-        <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2018-01-01</startDate>
+        <interval>INTERVAL_CURFY</interval>
     </timeFrameFilter>
 </Report>

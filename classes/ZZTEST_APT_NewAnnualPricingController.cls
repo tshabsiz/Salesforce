@@ -142,7 +142,8 @@ private class ZZTEST_APT_NewAnnualPricingController {
 		Annual_Pricing__c annualPricingAfterIns = [SELECT Id, Name, Approval_Status__c, (SELECT Id, Name FROM Annual_Pricing_Items__r) 
 											FROM Annual_Pricing__c WHERE Organisation__c = :account.Id AND Pricing_Template__c = :pricingTemplate.Id
 											LIMIT 1];
-		System.assertEquals(annualPricingAfterIns.Approval_Status__c, APT_AnnualPricingUtils.STATUS_NOT_SUBMITTED);
+		//System.assertEquals(annualPricingAfterIns.Approval_Status__c, APT_AnnualPricingUtils.STATUS_NOT_SUBMITTED);
+        System.assertEquals(annualPricingAfterIns.Approval_Status__c, APT_AnnualPricingUtils.STATUS_STANDARD_PRICING);
 		System.assertEquals(annualPricingAfterIns.Annual_Pricing_Items__r.size(), 2*GROUP_ITEMS_SIZE);
 
         Test.stopTest();

@@ -25,7 +25,6 @@ public without sharing class OpportunityTrigger_Helper {
     public static final String TEAM_ROLE_BANKER = 'Accountable Banker';
     public static Boolean FirstRun = true;
     public static Boolean isInsert = false;
-    public static Set<Id> updateOpportunitySegment = new Set<Id>();
     public static Account PrivateSideClient;
     public static Boolean PrivateSideClientSearched = false;
     public static Set<Id> modifyOpportunityForPrivateSideUser = new Set<Id>();
@@ -80,23 +79,23 @@ public without sharing class OpportunityTrigger_Helper {
         if(oppsId.size() > 0) {
             List<Pricebook2> pricebook = [SELECT Name, Id FROM Pricebook2 WHERE IsStandard = TRUE];
             if (pricebook.size() > 0) {
-            	for(Opportunity opp : [SELECT Id, Pricebook2Id FROM Opportunity WHERE Id in :oppsId]) {
-                
+                for(Opportunity opp : [SELECT Id, Pricebook2Id FROM Opportunity WHERE Id in :oppsId]) {
+                    
                     opp.Pricebook2Id = pricebook[0].Id;
                     
                     oppToUpdate.add(opp);
                     System.debug('XXXXXX actual code Opportunity pricebook changed to ' + opp.Pricebook2Id);
                     System.debug('XXXXXX actual code Pricebook Id to be used ' + pricebook[0].Id);
-            	}
-            	update oppToUpdate;
+                }
+                update oppToUpdate;
             }
         }
     }
     /**
-     * @ModifiedDate : 2017-05-17
-     * @ModifiedBy   : Tonga MM
-     * @Description  : Fixed issue in production when coverage bankers are added as team member they need edit permission on the opportunity
-     * */
+* @ModifiedDate : 2017-05-17
+* @ModifiedBy   : Tonga MM
+* @Description  : Fixed issue in production when coverage bankers are added as team member they need edit permission on the opportunity
+* */
     
     public static void addCoverageBanker(List<Opportunity> listOfOpp,Map<Id, Opportunity> triggerOld)
     {
@@ -196,7 +195,7 @@ public without sharing class OpportunityTrigger_Helper {
                     mapOpportunityToTeamMember.put(oppTeamMember.OpportunityId, new Set<Id>{oppTeamMember.UserId});
                 }
             }
-           
+            
         }			
         
         //Insert Opportunity Team Members
@@ -206,12 +205,12 @@ public without sharing class OpportunityTrigger_Helper {
         String errorMessage = '';
         for(Database.SaveResult r : results)
         {
-         	if(!r.isSuccess())
+            if(!r.isSuccess())
             {
                 foundError = true;
                 for(Database.Error err : r.getErrors())
                 {
-                 errorMessage  = err.getMessage();   
+                    errorMessage  = err.getMessage();   
                 }
             }
         }
@@ -235,7 +234,7 @@ public without sharing class OpportunityTrigger_Helper {
             //Update Opportunity Access Level
             update oppShareToUpd;
         }
-
+        
     }   
     
     /**
@@ -260,14 +259,14 @@ public without sharing class OpportunityTrigger_Helper {
         
         if (mapOppToOldAccountableBanker.size() > 0) {
             List<OpportunityTeamMember> oppTeamMembersToDel = new List<OpportunityTeamMember>();
-        	for(OpportunityTeamMember oppTeamMember : [SELECT Id, UserId, OpportunityId FROM OpportunityTeamMember 
-                                                   WHERE OpportunityId IN :mapOppToOldAccountableBanker.keySet()
-                                                   AND TeamMemberRole = :TEAM_ROLE_BANKER]){
-                                                       if(oppTeamMember.UserId == mapOppToOldAccountableBanker.get(oppTeamMember.OpportunityId)){
-                                                           oppTeamMembersToDel.add(oppTeamMember);
+            for(OpportunityTeamMember oppTeamMember : [SELECT Id, UserId, OpportunityId FROM OpportunityTeamMember 
+                                                       WHERE OpportunityId IN :mapOppToOldAccountableBanker.keySet()
+                                                       AND TeamMemberRole = :TEAM_ROLE_BANKER]){
+                                                           if(oppTeamMember.UserId == mapOppToOldAccountableBanker.get(oppTeamMember.OpportunityId)){
+                                                               oppTeamMembersToDel.add(oppTeamMember);
+                                                           }
                                                        }
-            }
-        
+            
             //Delete old Opportunity Team Members
             delete oppTeamMembersToDel; 
         }
@@ -441,14 +440,14 @@ public without sharing class OpportunityTrigger_Helper {
         if (PrivateSideClientName != null && PrivateSideClientName != '') {
             if (PrivateSideClient == NULL) {
                 if (!PrivateSideClientSearched) {
-                	try {
+                    try {
                         PrivateSideClientSearched = true;
-
-                		PrivateSideClient = [SELECT Id FROM Account WHERE Name =: PrivateSideClientName ORDER BY CreatedDate LIMIT 1];
-            		} catch(Exception e) {
+                        
+                        PrivateSideClient = [SELECT Id FROM Account WHERE Name =: PrivateSideClientName ORDER BY CreatedDate LIMIT 1];
+                    } catch(Exception e) {
                         PrivateSideClientSearched = true;
-                		return; // If we can't get the Generic Private Side Client then exit the method
-            		}
+                        return; // If we can't get the Generic Private Side Client then exit the method
+                    }
                 } else {
                     return;
                 }
@@ -482,12 +481,12 @@ public without sharing class OpportunityTrigger_Helper {
                               && triggerOld.get(opp.Id).StageName != ClosedWon
                               && triggerOld.get(opp.Id).StageName != ClosedLost
                               && (
-                                  	// If PrivateSideClassification is null (meaning its legacy data) or PrivateSideClassification is 'Team head is conflicted'
-                                 	((opp.StageName == ClosedWon || opp.StageName == ClosedLost) && (opp.PrivateSideClassification__c == null || (opp.PrivateSideClassification__c != null && opp.PrivateSideClassification__c == 'Team head is conflicted')))
-									||
-                                  	// If PrivateSideClassification was null and we changed this field to 'Team head is not conflicted' item
-                                  	((opp.StageName != ClosedWon && opp.StageName != ClosedLost) && triggerOld.get(opp.Id).PrivateSideClassification__c != opp.PrivateSideClassification__c && triggerOld.get(opp.Id).PrivateSideClassification__c == null && opp.PrivateSideClassification__c != null && opp.PrivateSideClassification__c == 'Team head is not conflicted')
-                                 )
+                                  // If PrivateSideClassification is null (meaning its legacy data) or PrivateSideClassification is 'Team head is conflicted'
+                                  ((opp.StageName == ClosedWon || opp.StageName == ClosedLost) && (opp.PrivateSideClassification__c == null || (opp.PrivateSideClassification__c != null && opp.PrivateSideClassification__c == 'Team head is conflicted')))
+                                  ||
+                                  // If PrivateSideClassification was null and we changed this field to 'Team head is not conflicted' item
+                                  ((opp.StageName != ClosedWon && opp.StageName != ClosedLost) && triggerOld.get(opp.Id).PrivateSideClassification__c != opp.PrivateSideClassification__c && triggerOld.get(opp.Id).PrivateSideClassification__c == null && opp.PrivateSideClassification__c != null && opp.PrivateSideClassification__c == 'Team head is not conflicted')
+                              )
                              )
                     {
                         // Update the generic "Private Side Client" to the original client
@@ -530,32 +529,39 @@ public without sharing class OpportunityTrigger_Helper {
 * @Author:          Dino Scarcella
 * @Company:         Absa Capital
 * @Description:     SFAFRICA-547 - Update Segment on Opportunity in order for sharing rules to work
+*					CIBDIGSALP-2403 - Sharing rule & Trigger Update - Agri 
 * @param            List<Opportunity> triggerNew, Map<Id, Opportunity> triggerOld
 * @Returns:         void
 * History
 * <Date>      <Authors Name>    <Brief Description of Change> 
 *------------------------------------------------------------*/
     
-    public static void updateOpportunitySegment(List<Opportunity> triggerNew, Map<Id, Opportunity> triggerOld) {
+    public static void updateOpportunitySegmentAndIndustry(List<Opportunity> triggerNew, Map<Id, Opportunity> triggerOld) {
         Boolean RunTrigger = false;
         Set<Id> accids = new Set<Id>();
         for(Opportunity o : triggerNew) {
-            if (!updateOpportunitySegment.contains(o.Id)) { 
-                updateOpportunitySegment.add(o.id);
+            if (
+                triggerOld == null || 
+                triggerOld.get(o.Id).AccountId != o.AccountId ||
+                o.Segment__c == 'FireOpportunityUpdate' ||
+                o.Industry__c == 'FireOpportunityUpdate'
+            )
+            {
+                accids.add(o.AccountId);
                 RunTrigger = true;
             }
-            accids.add(o.AccountId);
         }
         if (RunTrigger == false) return;
         
-        Map<Id, Account> accmapdetail = new  Map<Id, Account>([Select Id, OwnerId, Owner.UserRoleId, Owner.UserRole.Name, Segment__c FROM Account WHERE Id =: accids]);
+        Map<Id, Account> accmapdetail = new  Map<Id, Account>([Select Id, OwnerId, Owner.UserRoleId, Owner.UserRole.Name, Segment__c, Industry FROM Account WHERE Id =: accids]);
         // Go through the opportunities updated
         for(Opportunity opp : triggerNew) {
-            // Only check new opportunity/updated opportunity fields if account or segment is changed
+            // Only check new opportunity/updated opportunity fields if account, segment or industry is changed
             if (
                 triggerOld == null || 
                 triggerOld.get(opp.Id).AccountId != opp.AccountId ||
-                triggerOld.get(opp.Id).Segment__c != opp.Segment__c
+                opp.Segment__c == 'FireOpportunityUpdate' ||
+                opp.Industry__c == 'FireOpportunityUpdate'
             )
             {	
                 //Update Segment
@@ -566,9 +572,12 @@ public without sharing class OpportunityTrigger_Helper {
                 else if (opp.AccountId != null && accmapdetail.get(opp.AccountId).OwnerId != null && accmapdetail.get(opp.AccountId).Owner.UserRoleId != null && accmapdetail.get(opp.AccountId).Owner.UserRole.Name.Contains('Coverage - PS')) opp.Segment__c = 'Public Sector';
                 else if (opp.AccountId != null && accmapdetail.get(opp.AccountId).OwnerId != null && accmapdetail.get(opp.AccountId).Owner.UserRoleId != null && accmapdetail.get(opp.AccountId).Owner.UserRole.Name.Contains('Global Corporates')) opp.Segment__c = 'Global Corporate';
                 else opp.Segment__c = 'NULL';
+                //Update Industry
+                if (opp.AccountId != null && accmapdetail.get(opp.AccountId).Industry != null) opp.Industry__c = accmapdetail.get(opp.AccountId).Industry;
+                else opp.Industry__c = 'NULL';
                 //Update Relationship Owner Role Name if the account has changed
                 if ((triggerOld == null || triggerOld.get(opp.Id).AccountId != opp.AccountId) && opp.AccountId != null && accmapdetail.get(opp.AccountId).OwnerId != null && accmapdetail.get(opp.AccountId).Owner.UserRoleId != null) 
-                   opp.RelationshipOwnerRoleName__c = accmapdetail.get(opp.AccountId).Owner.UserRole.Name;
+                    opp.RelationshipOwnerRoleName__c = accmapdetail.get(opp.AccountId).Owner.UserRole.Name;
             }
         }
     }
@@ -679,7 +688,7 @@ public without sharing class OpportunityTrigger_Helper {
         //get list of all Opportunity Team Members in the opportunities in question
         List<OpportunityTeamMember> oppteammembers = [SELECT UserId, OpportunityId, TeamMemberRole FROM OpportunityTeamMember WHERE OpportunityId IN :triggerNew];
         List<OpportunityTeamMember> oppTeamMembersToDelete = new List<OpportunityTeamMember>();
-           
+        
         for(Opportunity opp : triggerNew)
         {
             // If the Product Partner Approval Status has changed
@@ -709,23 +718,133 @@ public without sharing class OpportunityTrigger_Helper {
         } 
     }
     
+    public static void AddNewOpportunityShare(Map<Id,Opportunity> opportunityMap)
+    {
+        Set<ID> AccountIDSet = new Set<ID>();
+        List<OpportunityShare> oppShareList = new List<OpportunityShare>();
+        
+        //Tonga MM : get All account Ids.
+        for(Opportunity opp : opportunityMap.values())
+        {
+            AccountIDSet.add(opp.AccountID);
+        }
+        //Tonga MM : get Owner of Global Parent ti be shared with 
+        Map<ID,Account> AccountMap = new Map<ID,Account>([Select recordTypeID, ID,Parent.OwnerID,OwnerID from Account where ID IN :AccountIDSet]);
+        
+        for(ID OpportunityID : opportunityMap.keySet())
+        {
+            Opportunity currentOpportunity = opportunityMap.get(OpportunityID);
+            Account currentAccount = AccountMap.get(currentOpportunity.AccountID);
+            
+            if(currentAccount.recordTypeID==Schema.SObjectType.Account.getRecordTypeInfosByName().get('Relationship Group').getRecordTypeId())
+                if(currentOpportunity.RecordTypeId!=Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Private opportunity').getRecordTypeId())
+            {
+                if(currentOpportunity.OwnerID!=currentAccount.OwnerID && currentOpportunity.OwnerID !=currentAccount.Parent.OwnerID)
+                {
+                    oppShareList.add(AccountTrigger_Helper.addOpportunityShare(currentOpportunity,currentAccount.Parent.OwnerID));
+                }
+            }
+        }
+        
+        if(oppShareList.size()>0)
+        {
+            database.insert(oppShareList,false) ;
+        }
+    }
+    
+    public static void updateOpportunityShare(Map<ID,Opportunity> newOppTriggerMap,Map<Id,Opportunity> oldOppTriggerMap)
+    {
+        Map<ID,Opportunity> newOpportunityMap = new Map<ID,Opportunity>(); 
+        Map<ID,Opportunity> oldOpportunityMap = new Map<ID,Opportunity>(); 
+        for(Opportunity currentOpportunity : newOppTriggerMap.values())
+        {
+            //Tonga MM : Check is the opportunity accountID has changed
+            if(currentOpportunity.RecordTypeId!=Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('Private opportunity').getRecordTypeId())
+            {
+                if(currentOpportunity.AccountId !=oldOppTriggerMap.get(currentOpportunity.ID).AccountId)
+                {
+                    newOpportunityMap.put(currentOpportunity.ID,currentOpportunity);
+                    oldOpportunityMap.put(currentOpportunity.ID,oldOppTriggerMap.get(currentOpportunity.ID));
+                }
+            }           
+        }
+        
+        //Tonga MM : if AccountID has changed on Opportunity, send records to methof to recalculate new sharing entries
+        if(newOpportunityMap.size()>0)
+        { 
+            recalculateSharing(newOpportunityMap,oldOpportunityMap);
+        }
+    }
+    
+    //Tonga MM : Re-shuffle manual sharing entries
+    private static void recalculateSharing(Map<ID,Opportunity> newOpportunityMap,Map<Id,Opportunity> oldOpportunityMap)
+    {
+        List<OpportunityShare> oppSharetoInsert = new List<OpportunityShare>();
+        
+        //Tonga MM : Sets for old values
+        Set<ID> oldOwnerID = new Set<ID>();
+        Set<ID> OldAccountID = new Set<ID>();
+        
+        //Tonga MM : Sets for new Values
+        Set<ID> newAccountID = new Set<ID>();
+        for(Opportunity oldOpp :[Select id,AccountID,account.ParentID,account.Parent.OwnerID from Opportunity where Id IN : newOpportunityMap.values()])
+        {
+            OldAccountID.add(oldOpp.accountID);
+            oldOwnerID.add(oldOpp.Account.Parent.OwnerID);
+        }
+        for(Opportunity opp :newOpportunityMap.values())
+        {
+            newAccountID.add(opp.AccountID);
+        }
+        
+        Map<ID,Account> newAccountOwnerList = new Map<ID,Account>([select id,Parent.ownerID,OwnerId from Account where ID IN:newAccountID]);
+        
+        List<OpportunityShare> opportunityShare = [Select ID 
+                                                   from OpportunityShare 
+                                                   where OpportunityID IN: oldOpportunityMap.keySet()
+                                                   AND UserOrGroupID IN: oldOwnerID
+                                                   AND rowCause='Manual'];
+        
+        //Tonga : MM Add new opportunity share required for Global parent
+        
+        for(Opportunity currentOpportunity :newOpportunityMap.values())
+        {
+            Account currentAccount = newAccountOwnerList.get(currentOpportunity.AccountID);
+            if(currentOpportunity.OwnerID!=currentAccount.OwnerID && currentOpportunity.OwnerID !=currentAccount.Parent.OwnerID)
+            {
+                oppSharetoInsert.add(AccountTrigger_Helper.addOpportunityShare(currentOpportunity,currentAccount.Parent.OwnerID));
+            }
+        }
+        
+        if(opportunityShare.size()>0)
+        {
+            delete opportunityShare;
+        }
+        
+        if(oppSharetoInsert.size()>0)
+        {
+            Database.insert(oppSharetoInsert,false);
+        }
+    }
+    
+    
     //Dino Scarcella: Method to mark a Project Name as used should it be in Project names Object and Unused
     public static void flagProjectNameAsUsed(List<Opportunity> triggerNew, Map<Id, Opportunity> triggerOld)
-   	{
+    {
         Set<String> projectNames = new Set<String>();
         // Get the names of opportunities we have inserted
-    	for(Opportunity opp : triggerNew)
+        for(Opportunity opp : triggerNew)
         {
             if ((triggerOld == null || triggerOld.get(opp.Id).Name.toLowerCase() != opp.Name.toLowerCase()) 
                 && opp.Name.length() > 8
                 && opp.Name.substring(0,8).toLowerCase() == 'project '
                 && opp.RecordTypeId == getOpportunityRT(OpportunityRT.PrivateOpp))
-        	projectNames.add(opp.Name.substring(8,opp.Name.length()));
+                projectNames.add(opp.Name.substring(8,opp.Name.length()));
         }
         
         List<ProjectName__c> projectNamesToUpdate = new List<ProjectName__c>();
         if (projectNames.size()> 0) {
-        	// Check if the Project Name is marked as not used in our list of potential project names and flag it as used
+            // Check if the Project Name is marked as not used in our list of potential project names and flag it as used
             for(ProjectName__c projectName : [SELECT Id, Name FROM ProjectName__c WHERE Used__c = false AND Name =: projectNames]) {
                 projectNamesToUpdate.add(new ProjectName__c(Id = projectName.Id, Used__c = true));
             }
@@ -736,9 +855,9 @@ public without sharing class OpportunityTrigger_Helper {
         } catch(Exception e) {
             System.debug('We were not able to update Project Names:' + e);
         }
-	}
+    }
     
-            /**
+    /**
 * @Author:          Dino Scarcella
 * @Company:         Absa Capital
 * @Description:     Warns a user that they haven't added an attachment if they have significant pitch set (supports lightning and classic)
@@ -749,13 +868,13 @@ public without sharing class OpportunityTrigger_Helper {
     public static void AttachmentCheckSignificantPitch(List<Opportunity> triggerNew, Map<Id, Opportunity> triggerOld)
     {
         Set<Id> oppids = new Set<Id>();
-    	Boolean RunTrigger = false;
+        Boolean RunTrigger = false;
         for(Opportunity opp : triggerNew)
         {
             // If the Significant Pitch is set and none of fields related to when you 
             // add a product are changed (this avoids validation when adding a product)
             if (opp.Significant_Pitch__c == true
-               	&& triggerOld != NULL
+                && triggerOld != NULL
                 && triggerOld.containsKey(opp.Id)
                 && triggerOld.get(opp.Id).ProductList__c == opp.ProductList__c
                 && triggerOld.get(opp.Id).ProductLevel2List__c == opp.ProductLevel2List__c
@@ -784,15 +903,15 @@ public without sharing class OpportunityTrigger_Helper {
         if (!RunTrigger) return;
         
         //Classic
-		List<AggregateResult> attachments = [SELECT ParentId, Count(Id) ATTCOUNTER
-											 FROM Attachment
+        List<AggregateResult> attachments = [SELECT ParentId, Count(Id) ATTCOUNTER
+                                             FROM Attachment
                                              WHERE ParentId =: oppIds
-											 GROUP BY ParentId];
+                                             GROUP BY ParentId];
         //Lightning
         List<AggregateResult> files = [SELECT LinkedEntityId, Count(Id) FILECOUNTER
-									   FROM ContentDocumentLink
+                                       FROM ContentDocumentLink
                                        WHERE LinkedEntityId =: oppIds
-									   GROUP BY LinkedEntityId];
+                                       GROUP BY LinkedEntityId];
         
         Map<Id, Integer> oppsattfilescountsmap = new Map<Id, Integer>();
         for(AggregateResult att : attachments) {
@@ -804,8 +923,8 @@ public without sharing class OpportunityTrigger_Helper {
         
         for(Opportunity opp : triggerNew)
         {
-       		if (!oppsattfilescountsmap.containsKey(opp.Id) && opp.Call_Report__c == NULL)
-                    opp.addError(Label.errMsg_SignificantPitchValidation);	
+            if (!oppsattfilescountsmap.containsKey(opp.Id) && opp.Call_Report__c == NULL)
+                opp.addError(Label.errMsg_SignificantPitchValidation);	
         }
     }
 }

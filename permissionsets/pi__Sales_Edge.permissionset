@@ -818,7 +818,15 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>pi__MicroCampaignOpportunity</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>pi__MicroCampaignPersonAccount</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>pi__MicroCampaignSingleCampaign</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
@@ -827,6 +835,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>pi__MicroCampaignSingleLead</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>pi__MicroCampaignSingleOpportunity</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>

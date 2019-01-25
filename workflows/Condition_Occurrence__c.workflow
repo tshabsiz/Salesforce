@@ -8,7 +8,7 @@
             <field>Responsible_Person__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/TMG_Upcoming_Condition_7_Days_Before_Email_Notification</template>
     </alerts>
@@ -20,7 +20,7 @@
             <field>Participant_User__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/TMG_Upcoming_Condition_7_Days_Before_Email_Notification</template>
     </alerts>
@@ -35,7 +35,7 @@
             <recipient>alison@absa1.com</recipient>
             <type>user</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/Information_Undertaking_Overdue_Email_Notification</template>
     </alerts>
@@ -46,7 +46,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/TMG_Overdue_Conditions</template>
     </alerts>
@@ -57,7 +57,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/TMG_Overdue_Conditions</template>
     </alerts>
@@ -68,7 +68,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/TMG_Overdue_Conditions</template>
     </alerts>
@@ -79,7 +79,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/TMG_Overdue_Conditions</template>
     </alerts>
@@ -90,7 +90,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/TMG_Overdue_Conditions</template>
     </alerts>
@@ -101,7 +101,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/TMG_Overdue_Conditions</template>
     </alerts>
@@ -112,7 +112,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/TMG_Overdue_Conditions</template>
     </alerts>
@@ -124,7 +124,7 @@
             <field>Participant_User__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/TMG_Overdue_Conditions</template>
     </alerts>
@@ -135,7 +135,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/Overdue_Financial_Covenants_New</template>
     </alerts>
@@ -146,7 +146,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/Financial_Covenants</template>
     </alerts>

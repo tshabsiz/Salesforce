@@ -198,6 +198,7 @@
     <tabs>standard-Dashboard</tabs>
     <tabs>Case_Checklist_Template__c</tabs>
     <tabs>Service_Mapping__c</tabs>
+    <tabs>standard-OmniSupervisor</tabs>
     <workspaceConfig>
         <mappings>
             <tab>Case_Checklist_Template__c</tab>
@@ -216,6 +217,9 @@
         </mappings>
         <mappings>
             <tab>standard-Dashboard</tab>
+        </mappings>
+        <mappings>
+            <tab>standard-OmniSupervisor</tab>
         </mappings>
         <mappings>
             <tab>standard-report</tab>

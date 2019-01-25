@@ -230,6 +230,11 @@
                     <default>false</default>
                     <label>Melisa Willemse</label>
                 </value>
+                <value>
+                    <fullName>Vanitha Moodley</fullName>
+                    <default>false</default>
+                    <label>Vanitha Moodley</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -500,6 +505,26 @@ The date when this service mapping with SLA is effective from</description>
                     <default>false</default>
                     <label>Wholesale Client Service Centre</label>
                 </value>
+                <value>
+                    <fullName>inward payments Client service and support</fullName>
+                    <default>false</default>
+                    <label>inward payments Client service and support</label>
+                </value>
+                <value>
+                    <fullName>Cash Send</fullName>
+                    <default>false</default>
+                    <label>Cash Send</label>
+                </value>
+                <value>
+                    <fullName>Refresh</fullName>
+                    <default>false</default>
+                    <label>Refresh</label>
+                </value>
+                <value>
+                    <fullName>COB Client Mandates</fullName>
+                    <default>false</default>
+                    <label>COB Client Mandates</label>
+                </value>
             </valueSetDefinition>
             <valueSettings>
                 <controllingFieldValue>Cash Operations</controllingFieldValue>
@@ -564,13 +589,29 @@ The date when this service mapping with SLA is effective from</description>
                 <valueName>Digital Ops Support</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>TRI Recon</controllingFieldValue>
+                <valueName>inward payments Client service and support</valueName>
+            </valueSettings>
+            <valueSettings>
                 <controllingFieldValue>EBSH ROA</controllingFieldValue>
                 <valueName>Botswana CCC SA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cash Send</controllingFieldValue>
+                <valueName>Cash Send</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Investigations</controllingFieldValue>
                 <controllingFieldValue>ITC</controllingFieldValue>
                 <valueName>Payments Operations</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Refresh</controllingFieldValue>
+                <valueName>Refresh</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>COB Client Mandates</controllingFieldValue>
+                <valueName>COB Client Mandates</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>TRI</controllingFieldValue>
@@ -978,6 +1019,7 @@ Comma separate multiple values:  e.g. Closed Duplicate,Awaiting Feedback - Clien
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>CMT</controllingFieldValue>
+                <controllingFieldValue>Complaints</controllingFieldValue>
                 <valueName>Soomayya Omar</valueName>
             </valueSettings>
             <valueSettings>
@@ -987,6 +1029,7 @@ Comma separate multiple values:  e.g. Closed Duplicate,Awaiting Feedback - Clien
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>WCSC</controllingFieldValue>
+                <controllingFieldValue>Complaints</controllingFieldValue>
                 <valueName>Daryn Britz</valueName>
             </valueSettings>
             <valueSettings>
@@ -995,10 +1038,20 @@ Comma separate multiple values:  e.g. Closed Duplicate,Awaiting Feedback - Clien
                 <valueName>Sue Nicholson</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>TRI Recon</controllingFieldValue>
+                <controllingFieldValue>Complaints</controllingFieldValue>
+                <valueName>Samuel Masiya</valueName>
+            </valueSettings>
+            <valueSettings>
                 <controllingFieldValue>EBSH ROA</controllingFieldValue>
                 <controllingFieldValue>EBSH</controllingFieldValue>
                 <controllingFieldValue>Complaints</controllingFieldValue>
                 <valueName>Tanya Theunissen</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cash Send</controllingFieldValue>
+                <controllingFieldValue>Complaints</controllingFieldValue>
+                <valueName>Bathabile Dimbaza</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Investigations</controllingFieldValue>
@@ -1006,9 +1059,17 @@ Comma separate multiple values:  e.g. Closed Duplicate,Awaiting Feedback - Clien
                 <valueName>Eleanor Snyders</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Refresh</controllingFieldValue>
+                <valueName>Anisa Salejee</valueName>
+            </valueSettings>
+            <valueSettings>
                 <controllingFieldValue>ITC</controllingFieldValue>
                 <controllingFieldValue>Complaints</controllingFieldValue>
                 <valueName>Noni Ngobeni</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>COB Client Mandates</controllingFieldValue>
+                <valueName>Cynthia Myburgh</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>TRI</controllingFieldValue>
@@ -1182,6 +1243,18 @@ Comma separate multiple values:  e.g. Closed Duplicate,Awaiting Feedback - Clien
                 <controllingFieldValue>Complaints</controllingFieldValue>
                 <valueName>Noeleen Hendricks</valueName>
             </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Complaints</controllingFieldValue>
+                <valueName>Michael Joseph</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Complaints</controllingFieldValue>
+                <valueName>William Mononyana</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Complaints</controllingFieldValue>
+                <valueName>Ronel Snyders</valueName>
+            </valueSettings>
         </valueSet>
     </fields>
     <fields>
@@ -1260,6 +1333,11 @@ Email Template API name - utilized in the Case trigger</description>
         <columns>Queue__c</columns>
         <columns>Business_Hours__c</columns>
         <filterScope>Everything</filterScope>
+        <filters>
+            <field>Queue__c</field>
+            <operation>equals</operation>
+            <value>Complaints Client</value>
+        </filters>
         <label>Business Hrs View</label>
     </listViews>
     <listViews>
@@ -1270,11 +1348,12 @@ Email Template API name - utilized in the Case trigger</description>
         <columns>Template_Name_Email_Receipt__c</columns>
         <columns>Template_Name_Case_Creation__c</columns>
         <columns>Template_Name_Case_Close__c</columns>
+        <columns>Response_From_Email_Address__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>Queue__c</field>
             <operation>equals</operation>
-            <value>ClientCare Bloem</value>
+            <value>DOS Pocketflow</value>
         </filters>
         <label>Email Template View</label>
     </listViews>
@@ -1288,11 +1367,15 @@ Email Template API name - utilized in the Case trigger</description>
         <columns>Template_Name_Case_Close__c</columns>
         <columns>Service_Type__c</columns>
         <columns>Service_Sub_Category__c</columns>
+        <columns>Support_Email_Address__c</columns>
+        <columns>Response_From_Email_Address__c</columns>
+        <columns>Effective_Date__c</columns>
+        <columns>Business_Hours__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>Queue__c</field>
             <operation>equals</operation>
-            <value>CIB FCC Correspondent</value>
+            <value>DOS Pocketflow</value>
         </filters>
         <label>SLA View</label>
     </listViews>
@@ -1308,7 +1391,7 @@ Email Template API name - utilized in the Case trigger</description>
         <filters>
             <field>Queue__c</field>
             <operation>equals</operation>
-            <value>EBSH - Botswana</value>
+            <value>RSC Corp PTA PS 1</value>
         </filters>
         <label>Team Managers</label>
     </listViews>

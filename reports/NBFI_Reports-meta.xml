@@ -42,6 +42,11 @@
     </folderShares>
     <folderShares>
         <accessLevel>View</accessLevel>
+        <sharedTo>nothando.ndebele@absa1.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
         <sharedTo>Financial_Services_Africa</sharedTo>
         <sharedToType>RoleAndSubordinatesInternal</sharedToType>
     </folderShares>

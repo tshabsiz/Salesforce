@@ -175,6 +175,26 @@
         <default>false</default>
         <label>WCSC</label>
     </customValue>
+    <customValue>
+        <fullName>TRI Recon</fullName>
+        <default>false</default>
+        <label>TRI Recon</label>
+    </customValue>
+    <customValue>
+        <fullName>Cash Send</fullName>
+        <default>false</default>
+        <label>Cash Send</label>
+    </customValue>
+    <customValue>
+        <fullName>Refresh</fullName>
+        <default>false</default>
+        <label>Refresh</label>
+    </customValue>
+    <customValue>
+        <fullName>COB Client Mandates</fullName>
+        <default>false</default>
+        <label>COB Client Mandates</label>
+    </customValue>
     <masterLabel>Department</masterLabel>
     <sorted>false</sorted>
 </GlobalValueSet>

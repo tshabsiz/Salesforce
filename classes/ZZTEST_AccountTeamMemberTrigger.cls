@@ -41,7 +41,7 @@ private class ZZTEST_AccountTeamMemberTrigger {
 									Organisation__c = acc.Id, 
 									Team_Member__c=u.Id, 
 									Organisation_Access__c='Read Only',
-									Team_Role__c = 'Analysts'
+									Team_Role__c = 'Coverage Support Manager'
 			));
 			accIds.add(acc.Id);
 		}
@@ -55,7 +55,7 @@ private class ZZTEST_AccountTeamMemberTrigger {
 		//System.assertEquals(newAccTeamMembers.size(), batchSize+1);
 		//System.assertEquals(accSharings.size(), 0);
 		for(AccountTeamMember accTeamMember : newAccTeamMembers){
-			System.assertEquals(accTeamMember.TeamMemberRole, 'Analysts');
+			System.assertEquals(accTeamMember.TeamMemberRole, 'Coverage Support Manager');
 		}
 
 		for(Account_Team_Member__c accTeamMember : accTeamMembers){
@@ -116,7 +116,7 @@ private class ZZTEST_AccountTeamMemberTrigger {
                                         Organisation__c = acc.Id, 
                                         Team_Member__c=u.Id, 
                                         Organisation_Access__c='Read/Write',
-                                        Team_Role__c = 'Analysts'
+                                        Team_Role__c = 'Coverage Support Manager'
         			));
         			accIds.add(acc.Id);
         		}

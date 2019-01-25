@@ -11,7 +11,7 @@
         <chartType>HorizontalBar</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>USERS.NAME</groupingColumn>
+        <groupingColumn>User.Team__c</groupingColumn>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
@@ -63,7 +63,7 @@
             <column>User.Team__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Midcorp Western Cape</value>
+            <value>Large Local Corporate WC,Midcorp Western Cape</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

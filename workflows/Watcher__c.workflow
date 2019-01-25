@@ -8,7 +8,7 @@
             <field>Notification_User__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/TMG_Margin_Ratchet_7_Days_after_DueDate</template>
     </alerts>
@@ -20,7 +20,7 @@
             <field>Notification_User__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/TMG_Margin_Ratchet_7_Days_before_DueDate</template>
     </alerts>
@@ -32,7 +32,7 @@
             <field>Notification_User__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/TMG_Col_Val_30_Days_after_Due_Date</template>
     </alerts>
@@ -44,7 +44,7 @@
             <field>Notification_User__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/TMG_Col_Val_30_Days_before_Due_Date</template>
     </alerts>
@@ -56,7 +56,7 @@
             <field>Notification_User__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/TMG_Col_Mon_30_Days_after_Due_Date</template>
     </alerts>
@@ -68,7 +68,7 @@
             <field>Notification_User__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/TMG_Collateral_Monitoring_30_Days_before_Due_Date</template>
     </alerts>
@@ -80,7 +80,7 @@
             <field>Notification_User__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/TMG_Col_Mon_30_Days_before_Due_Date</template>
     </alerts>
@@ -92,7 +92,7 @@
             <field>Notification_User__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/TMG_Trigger_7_Days_after_DueDate</template>
     </alerts>
@@ -104,7 +104,7 @@
             <field>Notification_User__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/TMG_Trigger_7_Days_before_DueDate</template>
     </alerts>

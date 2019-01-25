@@ -4,6 +4,9 @@
         <field>OPPORTUNITY_NAME</field>
     </columns>
     <columns>
+        <field>Opportunity.CSM_Initiator__c</field>
+    </columns>
+    <columns>
         <field>TYPE</field>
     </columns>
     <columns>
@@ -13,22 +16,10 @@
         <field>STAGE_NAME</field>
     </columns>
     <columns>
-        <field>AMOUNT</field>
-    </columns>
-    <columns>
         <field>CLOSE_DATE</field>
     </columns>
     <columns>
-        <field>LEAD_SOURCE</field>
-    </columns>
-    <columns>
-        <field>NEXT_STEP</field>
-    </columns>
-    <columns>
         <field>PROBABILITY</field>
-    </columns>
-    <columns>
-        <field>FISCAL_QUARTER</field>
     </columns>
     <columns>
         <field>AGE</field>
@@ -43,9 +34,9 @@
     <filter>
         <criteriaItems>
             <column>User.Hub__c</column>
-            <isUnlocked>false</isUnlocked>
+            <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value></value>
+            <value>Coverage South Africa - CSM</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

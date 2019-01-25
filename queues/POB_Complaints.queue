@@ -3,6 +3,9 @@
     <doesSendEmailToMembers>true</doesSendEmailToMembers>
     <name>POB Complaints</name>
     <queueMembers>
+        <publicGroups>
+            <publicGroup>POB_Complaints</publicGroup>
+        </publicGroups>
         <users>
             <user>oral.ruiters@absa1.com</user>
             <user>thabithajennifer.mathole@absa1.com</user>

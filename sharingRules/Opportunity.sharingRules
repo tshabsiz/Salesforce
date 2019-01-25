@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
     <sharingCriteriaRules>
+        <fullName>Agri_Opportunities</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>CIBDIGSALP-2403 Sharing rule &amp; Trigger Update - Agri</description>
+        <label>Agri Opportunities</label>
+        <sharedTo>
+            <role>ZAF_CIB_Coverage_Inland_LLC_Midcorp_Midcorp_Agri</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Industry__c</field>
+            <operation>equals</operation>
+            <value>Agriculture</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
         <fullName>Cash_Sharing_Rule</fullName>
         <accessLevel>Edit</accessLevel>
         <label>Cash Sharing Rule</label>
@@ -337,6 +351,34 @@
         </criteriaItems>
     </sharingCriteriaRules>
     <sharingCriteriaRules>
+        <fullName>Opp_GC_Segment_with_GC_and_Subordinates</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>All Opportunity linked to clients owned by Users with Role containing &quot;GC&quot; shared with ZAF - CIB - Coverage - Global Clients - GC and subordinates</description>
+        <label>Opp- GC Segment with GC and Subordinates</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Global_Clients_Global_Corporates</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>equals</operation>
+            <value>GC</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Opp_GDO_Segment_with_GDO_and_Subordinates</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>All Opportunity linked to clients owned by Users with Role containing &quot;GDO&quot; shared with ZAF - CIB - Coverage - Global Clients - GDO and subordinates</description>
+        <label>Opp- GDO Segment with GDO and Subordinates</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>GDOs</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>equals</operation>
+            <value>GDO</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
         <fullName>Product_level_3_to_International_Banking_Team</fullName>
         <accessLevel>Read</accessLevel>
         <description>Create sharing rule where product level 3 = fx, international payments, TROs, TRIs and CFC</description>
@@ -577,6 +619,276 @@
             <field>BB_CIB_user__c</field>
             <operation>equals</operation>
             <value>CIB User</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ZAF_CIB_Coverage_Global_Clients</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>CIBDIGSALP-2725 - Global Parent sharing rules update</description>
+        <label>ZAF - CIB - Coverage - Global Clients</label>
+        <sharedTo>
+            <role>Global_Corporate</role>
+        </sharedTo>
+        <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13 OR 14 OR 15 OR 16 OR 17 OR 18 OR 19 OR 20 OR 21 OR 22 OR 23 OR 24) AND 25</booleanFilter>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>BWA - CIB - Coverage - GC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>BWA - CIB - Coverage - GDO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>GHA - CIB - Coverage - GC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>GHA - CIB - Coverage - GDO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>KEN - CIB - Coverage - GC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>KEN - CIB - Coverage - GDO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>MOZ - CIB - Coverage - GC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>MOZ - CIB - Coverage - GDO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>SYC - CIB - Coverage - GC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>SYC - CIB - Coverage - GDO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>TZA - BBT - CIB - Coverage - GC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>TZA - BBT - CIB - Coverage - GDO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>TZA - NBC - CIB - Coverage - GC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>TZA - NBC - CIB - Coverage - GDO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>UGA - CIB - Coverage - GC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>UGA - CIB - Coverage - GDO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>ZMB - CIB - Coverage - GC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>ZMB - CIB - Coverage - GDO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>ZWE - CIB - Coverage - GC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>ZWE - CIB - Coverage - GDO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>ZAF - CIB - Coverage - Global Clients - GDO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>equals</operation>
+            <value>ZAF - CIB - Coverage - Global Clients - Global Corporates</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>equals</operation>
+            <value>ZAF - CIB - Coverage - Global Clients - PUI</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>equals</operation>
+            <value>ZAF - CIB - Coverage - Inland LLC Midcorp - PUI - TM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Private opportunity,Public opportunity</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ZAF_CIB_Coverage_Global_Clients_Global_Corporates_Corridors</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>CIBDIGSALP-2725 - Global Parent sharing rules update</description>
+        <label>ZAF - CIB - Coverage - Global Clients - Global Corporates - Corridors</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Global_Clients_Global_Corporates_Corridors</roleAndSubordinatesInternal>
+        </sharedTo>
+        <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13 OR 14 OR 15 OR 16 OR 17 OR 18 OR 19 OR 20 OR 21 OR 22 OR 23 OR 24) AND 25</booleanFilter>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>BWA - CIB - Coverage - GC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>BWA - CIB - Coverage - GDO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>GHA - CIB - Coverage - GC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>GHA - CIB - Coverage - GDO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>KEN - CIB - Coverage - GC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>KEN - CIB - Coverage - GDO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>MOZ - CIB - Coverage - GC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>MOZ - CIB - Coverage - GDO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>SYC - CIB - Coverage - GC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>SYC - CIB - Coverage - GDO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>TZA - BBT - CIB - Coverage - GC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>TZA - BBT - CIB - Coverage - GDO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>TZA - NBC - CIB - Coverage - GC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>TZA - NBC - CIB - Coverage - GDO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>UGA - CIB - Coverage - GC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>UGA - CIB - Coverage - GDO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>ZMB - CIB - Coverage - GC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>ZMB - CIB - Coverage - GDO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>ZWE - CIB - Coverage - GC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>ZWE - CIB - Coverage - GDO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>contains</operation>
+            <value>ZAF - CIB - Coverage - Global Clients - GDO</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>equals</operation>
+            <value>ZAF - CIB - Coverage - Global Clients - Global Corporates</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>equals</operation>
+            <value>ZAF - CIB - Coverage - Global Clients - PUI</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>equals</operation>
+            <value>ZAF - CIB - Coverage - Inland LLC Midcorp - PUI - TM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Public opportunity</value>
         </criteriaItems>
     </sharingCriteriaRules>
 </SharingRules>

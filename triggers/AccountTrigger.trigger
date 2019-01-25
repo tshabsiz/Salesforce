@@ -13,7 +13,7 @@ trigger AccountTrigger on Account (before insert, after insert, before update, a
     // after update
     if(trigger.isAfter && trigger.isUpdate){
         AccountTrigger_Helper.checkOpportunityCallReportShareParentChange(Trigger.NewMap,Trigger.oldmap);
-		AccountTrigger_Helper.updateOpportunitySegment(Trigger.new, Trigger.oldMap);
+		AccountTrigger_Helper.updateOpportunitySegmentAndIndustry(Trigger.new, Trigger.oldMap);
         AccountTrigger_Helper.updateClientPlanSharing(Trigger.new, Trigger.oldMap);
         AccountTrigger_Helper.updateOpportunityRelationshipOwnerRole(Trigger.new, Trigger.oldMap);
     }

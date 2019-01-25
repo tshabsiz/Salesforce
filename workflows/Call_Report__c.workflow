@@ -23,7 +23,7 @@
             <recipient>marshajean.dewet@absa1.com</recipient>
             <type>user</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/Notification_to_Owner_Manager_of_new_Call_Report</template>
     </alerts>
@@ -49,7 +49,7 @@
             <recipient>ZAF_CIB_Markets_RAISS</recipient>
             <type>roleSubordinatesInternal</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/Call_Report_META_Notification_to_Team</template>
     </alerts>

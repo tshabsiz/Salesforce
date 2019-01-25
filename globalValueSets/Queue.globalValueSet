@@ -1506,6 +1506,26 @@
         <label>WCSC Talk To Us</label>
     </customValue>
     <customValue>
+        <fullName>TRICoverfileClearing</fullName>
+        <default>false</default>
+        <label>TRICoverfileClearing</label>
+    </customValue>
+    <customValue>
+        <fullName>TRI collections</fullName>
+        <default>false</default>
+        <label>TRI collections</label>
+    </customValue>
+    <customValue>
+        <fullName>Refresh</fullName>
+        <default>false</default>
+        <label>Refresh</label>
+    </customValue>
+    <customValue>
+        <fullName>COB Client Mandates</fullName>
+        <default>false</default>
+        <label>COB Client Mandates</label>
+    </customValue>
+    <customValue>
         <fullName>Client engagement - CPT Complaints</fullName>
         <default>false</default>
         <isActive>false</isActive>

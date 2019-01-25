@@ -8,7 +8,7 @@
             <field>LastModifiedById</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_BAGL_Legal_Document_received_as_part_of_quote_request</template>
     </alerts>
@@ -20,7 +20,7 @@
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_BAGL_Legal_Law_firm_rejection_notification</template>
     </alerts>
@@ -32,7 +32,7 @@
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_BAGL_Legal_Request_for_Service</template>
     </alerts>
@@ -43,7 +43,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_BAGL_Legal_Supplier_Has_Uploaded_Document_to_invoice_Folder</template>
     </alerts>
@@ -55,7 +55,7 @@
             <field>Contact__c</field>
             <type>contactLookup</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_BAGL_Legal_Request2_for_Quotation_Law_Firm</template>
     </alerts>

@@ -29,7 +29,7 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowValueDescending</sortBy>
-            <title>Cases Created by Origin</title>
+            <title>Cases Created by Origin YTD</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -49,7 +49,7 @@
             <showPicturesOnCharts>false</showPicturesOnCharts>
             <showValues>true</showValues>
             <sortBy>RowValueDescending</sortBy>
-            <title>Top 20 Service Types requested</title>
+            <title>This Month</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -102,6 +102,30 @@
             <title>MoM TREND - Manual Payments</title>
             <useReportChart>false</useReportChart>
         </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <axisBinding>y</axisBinding>
+                <column>RowCount</column>
+            </chartSummary>
+            <componentType>BarGrouped</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingColumn>ACCOUNT.NAME</groupingColumn>
+            <groupingColumn>Case.Resolving_Team__c</groupingColumn>
+            <header>CORP NATIONAL - Complaints Volume</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>Complaints_Reports/CSS_Complaints_Resolving_Area_By_Client</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>YTD</title>
+            <useReportChart>false</useReportChart>
+        </components>
     </leftSection>
     <middleSection>
         <columnSize>Wide</columnSize>
@@ -127,7 +151,7 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Overall SLA Performance</title>
+            <title>Overall SLA Performance This Month</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -152,6 +176,7 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
+            <title>Overall SLA Performance This Month</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -176,6 +201,7 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowValueDescending</sortBy>
+            <title>Overall SLA Performance This Month</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -200,6 +226,7 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
+            <title>Overall SLA Performance This Month</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -224,6 +251,7 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
+            <title>Overall SLA Performance This Month</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -248,6 +276,7 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
+            <title>Overall SLA Performance This Month</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -272,6 +301,7 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
+            <title>Overall SLA Performance This Month</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -296,6 +326,7 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
+            <title>Overall SLA Performance This Month</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -320,6 +351,7 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
+            <title>Overall SLA Performance This Month</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -344,6 +376,7 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
+            <title>Overall SLA Performance This Month</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -368,6 +401,7 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
+            <title>Overall SLA Performance This Month</title>
             <useReportChart>false</useReportChart>
         </components>
     </middleSection>
@@ -394,7 +428,7 @@
             <showPercentage>true</showPercentage>
             <showValues>true</showValues>
             <sortBy>RowLabelDescending</sortBy>
-            <title>Case Volumes per Business Unit</title>
+            <title>Case Volumes per Bus Unit This Month</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>

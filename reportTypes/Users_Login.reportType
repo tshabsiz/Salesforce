@@ -673,11 +673,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Manager.Manager</field>
-            <table>User</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Manager.MiddleName</field>
             <table>User</table>
         </columns>

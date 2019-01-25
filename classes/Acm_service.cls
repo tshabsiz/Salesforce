@@ -27,10 +27,12 @@ global class Acm_service {
             
         List<Collateral_Relationship__c> collateralRelationships =  [SELECT Collateral__c,Relationship__c,isPrimaryRelationship__c,Collateral_Type__c,Active__c, Relationship_Type__c,relationship__r.SDS__c FROM Collateral_Relationship__c where Collateral__c IN: collateralIds];
         List<Collateral_Facility__c> collateralFacilities = [SELECT Collateral__c, Saved_To_Acm__c,Active__c, Facility_Client__c, Acm_Facility__c,Acm_Facility__r.Facility_Id__c, Acm_Facility__r.Bank_Application_key__c FROM Collateral_Facility__c where Collateral__c IN :collateralIds];
-        CallAcm(AcmStatuses, collaterals,collateralRelationships,collateralFacilities);   
+        List<Collateral_Monitoring__c> collateralMonitorings = AcmMitigantCRUDService.getAllMonitoringsForCollateral(collateralIds);
+
+        CallAcm(AcmStatuses, collaterals,collateralRelationships,collateralFacilities,collateralMonitorings);   
     }
     
-    public static void CallAcm(List<Acm_Collateral_Status__c> AcmStatuses, List<Collateral__c> collaterals,List<Collateral_Relationship__c> collateralRelationships,List<Collateral_Facility__c> collateralFacilities) {
-        AcmMitigantCRUDService.createOrUpdateMitigantsList(AcmStatuses, collaterals, collateralRelationships, collateralFacilities);
+    public static void CallAcm(List<Acm_Collateral_Status__c> AcmStatuses, List<Collateral__c> collaterals,List<Collateral_Relationship__c> collateralRelationships,List<Collateral_Facility__c> collateralFacilities,List<Collateral_Monitoring__c> collateralMonitorings) {
+        AcmMitigantCRUDService.createOrUpdateMitigantsList(AcmStatuses, collaterals, collateralRelationships, collateralFacilities,collateralMonitorings);
     }
 }

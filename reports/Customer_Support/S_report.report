@@ -49,7 +49,16 @@
         <field>CLOSED</field>
     </columns>
     <columns>
+        <field>Case.Subcategory__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_35841415</field>
+    </columns>
+    <columns>
         <field>CLOSED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
     </columns>
     <columns>
         <field>Case.SLA_Status__c</field>

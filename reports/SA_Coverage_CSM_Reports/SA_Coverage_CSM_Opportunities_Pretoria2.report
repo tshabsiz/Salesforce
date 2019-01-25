@@ -13,6 +13,9 @@
         <field>OpportunityLineItem.Balance__c.CONVERT</field>
     </columns>
     <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
         <field>CLOSE_DATE</field>
     </columns>
     <columns>
@@ -40,56 +43,10 @@
         <field>PROBABILITY</field>
     </columns>
     <columns>
-        <field>CREATED_DATE</field>
-    </columns>
-    <columns>
-        <field>QUANTITY</field>
-    </columns>
-    <columns>
-        <field>UNIT_PRICE</field>
-    </columns>
-    <columns>
-        <field>Opportunity.Owner_Role__c</field>
-    </columns>
-    <columns>
-        <field>UNIT_PRICE.CONVERT</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>TOTAL_PRICE</field>
-    </columns>
-    <columns>
-        <field>TOTAL_PRICE.CONVERT</field>
-    </columns>
-    <columns>
-        <field>SERVICE_DATE</field>
-    </columns>
-    <columns>
-        <field>SERVICE_MONTH</field>
-    </columns>
-    <columns>
-        <field>PRODUCT_DESCRIPTION</field>
-    </columns>
-    <columns>
-        <field>PRODUCT_PRICE</field>
-    </columns>
-    <columns>
-        <field>PRODUCT_PRICE.CONVERT</field>
-    </columns>
-    <columns>
-        <field>PRODUCT_CUSTOMER_ID</field>
-    </columns>
-    <columns>
-        <field>PRODUCT_ACTIVE</field>
-    </columns>
-    <columns>
-        <field>ROLLUP_DESCRIPTION</field>
+        <field>ACCOUNT_NAME</field>
     </columns>
     <columns>
         <field>Account.SDS__c</field>
-    </columns>
-    <columns>
-        <field>ACCOUNT_NAME</field>
     </columns>
     <columns>
         <field>Account.CIF__c</field>
@@ -106,7 +63,13 @@
             <column>Opportunity.CSM_Initiator__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Bonita Jacobus,Aletta Claassen,Anne-marie Klynhans,Cathy Morgan,Danette Paul,Frikkie Bruwer,Koos Khosabo Ntuli,Michelle De Wet,Ziyaad Omar,Jaco Joubert,Miranda Botes,Chevonne Dickson</value>
+            <value>aletta claassen,Anne-marie Klynhans,aurelia samson,cathy morgan,danette paul,frikkie bruwer,jaco joubert,koos ntuli,lizette scheepers,margaret mahuma,michelle de wet,miranda botes,ziyaad omar</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closed Lost</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -129,6 +92,7 @@
         <value>1</value>
     </params>
     <reportType>OpportunityProduct</reportType>
+    <roleHierarchyFilter>BAGL_Management</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>

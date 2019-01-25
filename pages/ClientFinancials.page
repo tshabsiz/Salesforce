@@ -321,7 +321,7 @@
                     monthValue = $('#financialsTable tr:nth-child(1) th:nth-child(' + index +') .monthValueHeader').text().trim().split(' ')[0];
                     $('#monthValue').val(monthValue);
                     
-                     periodValue = $('#financialsTable tr:nth-child(1) th:nth-child(' + index +') .periodValueHeader').text().trim().split(' ')[1];
+                    periodValue = $('#financialsTable tr:nth-child(1) th:nth-child(' + index +') .periodValueHeader').text().trim().split(' ')[0].replace('(', '');
                     $('#periodValue').val(periodValue);
             
                     
@@ -458,7 +458,7 @@
                     monthValue = $('#financialsTable tr:nth-child(1) th:nth-child(' + index +') .monthValueHeader').text().trim().split(' ')[0];
                     $('#monthValue').val(monthValue);
                     
-                    periodValue = $('#financialsTable tr:nth-child(1) th:nth-child(' + index +') .periodValueHeader').text().trim().split(' ')[1];
+                    periodValue = $('#financialsTable tr:nth-child(1) th:nth-child(' + index +') .periodValueHeader').text().trim().split(' ')[0].replace('(', '');
                     $('#periodValue').val(periodValue);
                     
                     financialResults = $('#financialsTable tr:nth-child(1) td:nth-child(' + index +') span').text().trim();
@@ -1163,9 +1163,9 @@
                 margin-top: 3em;
             }
             
-            #financialsTable tr td {
+            <!--#financialsTable tr td {
                 font-weight: bold;
-            }
+            }-->
             
             #pageLabel {
                 margin-bottom: 2em;
@@ -1180,9 +1180,9 @@
             #finValueModal .slds-modal__container {
                 width: 30em;
             }
-            #financialsTable tbody th {
+            <!--#financialsTable tbody th {
                 text-transform: uppercase;
-            }
+            }-->
             .editButton {
                 float: right;
             }
@@ -1439,9 +1439,9 @@
                                                             {!f.Year__c}
                                                         </span>
                                                         <span class="periodValueHeader">
-                                                            <apex:outputText value="( " rendered="{!f.Financial_Results__c != null && f.Financial_Results__c == 'Management Accounts' && f.Period_Of_Months__c != null}" />
+                                                            <apex:outputText value="(" rendered="{!f.Financial_Results__c != null && f.Financial_Results__c == 'Management Accounts' && f.Period_Of_Months__c != null}" />
                                                             <apex:outputText value="{!f.Period_Of_Months__c}" rendered="{!f.Financial_Results__c != null && f.Financial_Results__c == 'Management Accounts' && f.Period_Of_Months__c != null}" />
-                                                            <apex:outputText value="month period)" rendered="{!f.Financial_Results__c != null && f.Financial_Results__c == 'Management Accounts' && f.Period_Of_Months__c != null}" />
+                                                            <apex:outputText value=" month period)" rendered="{!f.Financial_Results__c != null && f.Financial_Results__c == 'Management Accounts' && f.Period_Of_Months__c != null}" />
                                                         </span>
                                                         <div class="slds-dropdown-trigger editButton">
                                                             <button class="slds-button slds-button--icon-bare" onclick="return false;">
@@ -1470,7 +1470,7 @@
                                                     <apex:outputText value="{!$ObjectType.Financial_Information__c.fields.Financial_Results__c.Label}"/></th>
                                                 <apex:repeat value="{!financeList}" var="f">
                                                     <td>
-                                                        <apex:outputField value="{!f.Financial_Results__c}" rendered="{!f.Financial_Results__c != null}"/>
+                                                        <b><apex:outputField value="{!f.Financial_Results__c}" rendered="{!f.Financial_Results__c != null}"/></b>
                                                         
                                                     </td>
                                                 </apex:repeat>
@@ -1484,7 +1484,6 @@
                                                 <apex:repeat value="{!financeList}" var="f">
                                                     <td>
                                                         <apex:outputField value="{!f.Turnover__c}" rendered="{!f.Turnover__c != null}"/>
-                                                        
                                                     </td>
                                                 </apex:repeat>
                                             </tr>              
@@ -1494,7 +1493,6 @@
                                                 <apex:repeat value="{!financeList}" var="f">
                                                     <td>
                                                         <apex:outputField value="{!f.EBITDA__c}" rendered="{!f.EBITDA__c != null}"/>
-                                                        
                                                     </td>
                                                 </apex:repeat>
                                             </tr>
@@ -1510,9 +1508,8 @@
                                             <tr class="slds-hint-parent" style="display: {!IF(!ISBLANK(plan.Financial_Information_Image_ID__c), 'none', 'table-row')};">
                                                     <th scope="row"><apex:outputText value="{!$ObjectType.Financial_Information__c.fields.Net_Interest_Expense_Income__c.Label}" /></th>
                                                     <apex:repeat value="{!financeList}" var="f">
-                                                        <td> 
+                                                        <td>
                                                             <apex:outputField value="{!f.Net_Interest_Expense_Income__c}" rendered="{!f.Net_Interest_Expense_Income__c != null}"/>
-                                                            
                                                         </td>
                                                     </apex:repeat>
                                                 </tr>
@@ -1521,7 +1518,6 @@
                                                     <apex:repeat value="{!financeList}" var="f">
                                                         <td> 
                                                             <apex:outputField value="{!f.Net_Interest_Expense_BAGL_facilities__c}" rendered="{!f.Net_Interest_Expense_BAGL_facilities__c != null}"/>
-                                                            
                                                         </td>
                                                     </apex:repeat>
                                                 </tr>
@@ -1530,7 +1526,6 @@
                                                     <apex:repeat value="{!financeList}" var="f">
                                                         <td> 
                                                             <apex:outputField value="{!f.PAT__c}" rendered="{!f.PAT__c != null}"/>
-                                                            
                                                         </td>
                                                     </apex:repeat>
                                                 </tr>
@@ -1542,7 +1537,6 @@
                                                 <apex:repeat value="{!financeList}" var="f">
                                                     <td>
                                                         <apex:outputField value="{!f.Total_Assets__c}" rendered="{!f.Total_Assets__c != null}"/>
-                                                        
                                                     </td>
                                                 </apex:repeat>
                                             </tr>
@@ -1551,7 +1545,6 @@
                                                     <apex:repeat value="{!financeList}" var="f">
                                                         <td> 
                                                             <apex:outputField value="{!f.Total_Tangible_Assets__c}" rendered="{!f.Total_Tangible_Assets__c != null}"/>
-                                                            
                                                         </td>
                                                     </apex:repeat>
                                                 </tr>
@@ -1560,7 +1553,6 @@
                                                     <apex:repeat value="{!financeList}" var="f">
                                                         <td> 
                                                             <apex:outputField value="{!f.Gross_Debt__c}" rendered="{!f.Gross_Debt__c != null}"/>
-                                                            
                                                         </td>
                                                     </apex:repeat>
                                                 </tr>
@@ -1577,7 +1569,6 @@
                                                     <apex:repeat value="{!financeList}" var="f">
                                                         <td> 
                                                             <apex:outputField value="{!f.Cash_and_cash_equivalents__c}" rendered="{!f.Cash_and_cash_equivalents__c != null}"/>
-                                                            
                                                         </td>
                                                     </apex:repeat>
                                                 </tr>
@@ -1586,7 +1577,6 @@
                                                 <apex:repeat value="{!financeList}" var="f">
                                                     <td>
                                                         <apex:outputField value="{!f.Net_Debt__c}" rendered="{!f.Net_Debt__c != null}"/>
-                                                        
                                                     </td>
                                                 </apex:repeat>
                                             </tr>
@@ -1598,7 +1588,6 @@
                                                     <apex:repeat value="{!financeList}" var="f">
                                                         <td> 
                                                             <apex:outputField value="{!f.Net_Worth__c}" rendered="{!f.Net_Worth__c != null}"/>
-                                                            
                                                         </td>
                                                     </apex:repeat>
                                                 </tr>
@@ -1607,7 +1596,6 @@
                                                 <apex:repeat value="{!financeList}" var="f">
                                                     <td> 
                                                         <apex:outputField value="{!f.Tangible_Net_Worth__c}" rendered="{!f.Tangible_Net_Worth__c != null}"/>
-                                                        
                                                     </td>
                                                 </apex:repeat>
                                             </tr>
@@ -1616,7 +1604,6 @@
                                                 <apex:repeat value="{!financeList}" var="f">
                                                     <td> 
                                                         <apex:outputField value="{!f.Total_Liabilities__c}" rendered="{!f.Total_Liabilities__c != null}"/>
-                                                        
                                                     </td>
                                                 </apex:repeat>
                                             </tr>
@@ -1625,7 +1612,6 @@
                                                 <apex:repeat value="{!financeList}" var="f">
                                                     <td>
                                                         <apex:outputField value="{!f.Cash_Generated_by_Operations__c}" rendered="{!f.Cash_Generated_by_Operations__c != null}"/>
-                                                        
                                                     </td>
                                                 </apex:repeat>
                                             </tr>
@@ -1635,7 +1621,6 @@
                                                 <apex:repeat value="{!financeList}" var="f">
                                                     <td> 
                                                         <apex:outputField value="{!f.Cash_flow_from_operating_activities_Adj__c}" rendered="{!f.Cash_flow_from_operating_activities_Adj__c != null}"/>
-                                                        
                                                     </td>
                                                 </apex:repeat>
                                             </tr>
@@ -1644,7 +1629,6 @@
                                                 <apex:repeat value="{!financeList}" var="f">
                                                     <td> 
                                                         <apex:outputField value="{!f.Capex__c}" rendered="{!f.Capex__c != null}"/>
-                                                        
                                                     </td>
                                                 </apex:repeat>
                                             </tr>
@@ -1653,7 +1637,6 @@
                                                 <apex:repeat value="{!financeList}" var="f">
                                                     <td> 
                                                         <apex:outputField value="{!f.Free_Cash_Flow__c}" rendered="{!f.Free_Cash_Flow__c != null}"/>
-                                                        
                                                     </td>
                                                 </apex:repeat>
                                             </tr>
@@ -1662,7 +1645,6 @@
                                                 <apex:repeat value="{!financeList}" var="f">
                                                     <td> 
                                                         <apex:outputField value="{!f.Net_cash_generation_utilization__c}" rendered="{!f.Net_cash_generation_utilization__c != null}"/>
-                                                        
                                                     </td>
                                                 </apex:repeat>
                                             </tr>
@@ -1692,7 +1674,6 @@
                                                 <apex:repeat value="{!financeList}" var="f">
                                                     <td> 
                                                         <apex:outputField value="{!f.Gross_Debt_Cash_Ebitda__c}" rendered="{!f.Gross_Debt_Cash_Ebitda__c != null}"/>
-                                                        
                                                     </td>
                                                 </apex:repeat>
                                             </tr>
@@ -1713,7 +1694,6 @@
                                                 <apex:repeat value="{!financeList}" var="f">
                                                     <td>
                                                         <apex:outputField value="{!f.Net_Asset_Value__c}" rendered="{!f.Net_Asset_Value__c != null}"/>
-                                                        
                                                     </td>
                                                 </apex:repeat>
                                             </tr>
@@ -1722,7 +1702,6 @@
                                                 <apex:repeat value="{!financeList}" var="f">
                                                     <td>
                                                         <apex:outputField value="{!f.EPS__c}" rendered="{!f.EPS__c != null}"/>
-                                                        
                                                     </td>
                                                 </apex:repeat>
                                             </tr>
@@ -1731,7 +1710,6 @@
                                                     <apex:repeat value="{!financeList}" var="f">
                                                         <td>
                                                             <apex:outputField value="{!f.EBIT__c}" rendered="{!f.EBIT__c != null}"/>
-                                                            
                                                         </td>
                                                     </apex:repeat>
                                                 </tr>
@@ -1740,7 +1718,6 @@
                                                     <apex:repeat value="{!financeList}" var="f">
                                                         <td> 
                                                             <apex:outputField value="{!f.Market_Cap__c}" rendered="{!f.Market_Cap__c != null}"/>
-                                                            
                                                         </td>
                                                     </apex:repeat>
                                                 </tr>

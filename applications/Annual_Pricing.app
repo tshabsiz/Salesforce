@@ -10,5 +10,6 @@
     <tabs>Pricing_Template__c</tabs>
     <tabs>Annual_Pricing__c</tabs>
     <tabs>Pending_Approvals</tabs>
+    <tabs>Annual_Pricing_Approver__c</tabs>
     <tabs>Roles__c</tabs>
 </CustomApplication>

@@ -8,7 +8,7 @@
             <field>Email</field>
             <type>email</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Deactivation_Notification3</template>
     </alerts>
@@ -53,7 +53,7 @@
             <field>Email</field>
             <type>email</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Deactivation_Notification1</template>
     </alerts>
@@ -65,7 +65,7 @@
             <field>Email</field>
             <type>email</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/Deactivation_Notification2</template>
     </alerts>

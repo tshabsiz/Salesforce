@@ -39,7 +39,7 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Call_Report__c.Meeting_Date__c</dateColumn>
-        <endDate>2018-12-31</endDate>
+        <endDate>2018-11-30</endDate>
         <interval>INTERVAL_CUSTOM</interval>
         <startDate>2018-01-01</startDate>
     </timeFrameFilter>

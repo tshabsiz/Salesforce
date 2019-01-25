@@ -37,6 +37,88 @@
         });
     },
     
+    salesNavigation : function(component, event, helper) {
+        var recordId =  component.get("v.recordId");
+        if(recordId != '')
+        {
+            helper.navigateToDetailPage(component, event, recordId);
+            
+        }else{
+            
+             var componentName = 'c:lscCscNewManualCase';
+              
+              if(component.get("v.pageReference").state.recordTypeId == '01224000000gQUVAA2' ||component.get("v.pageReference").state.recordTypeId == '01224000000gQUV'){
+                  componentName = 'c:lscDosNewManualCase';
+                  
+              }
+              
+              if(component.get("v.pageReference").state.recordTypeId == '01224000000gQ1NAAU' || component.get("v.pageReference").state.recordTypeId == '01224000000gQ1N'){
+                  componentName = 'c:lscCmNewManualCase';
+                  
+              }
+            
+            var evt = $A.get("e.force:navigateToComponent");
+            evt.setParams({
+                componentDef : componentName
+            });
+            evt.fire();
+            
+        }
+        
+    },
+    
+      serviceNavigation : function(component, event, helper) {
+        var recordId =  component.get("v.recordId");
+                var tabId =  component.get("v.tabId");
+        
+                if(recordId != '' && tabId != '')
+                {
+                    helper.closeThisTab(component, event, tabId);
+                    
+                    helper.focusNewTab(component, event, recordId);
+                    
+                    
+                    
+                   // helper.closeFocusedTab(component, event, helper);
+                }
+        
+          else{
+              
+              var componentName = 'c:lscCscNewManualCase';
+              
+              if(component.get("v.pageReference").state.recordTypeId == '01224000000gQUVAA2' ||component.get("v.pageReference").state.recordTypeId == '01224000000gQUV'){
+                  componentName = 'c:lscDosNewManualCase';
+                  
+              }
+              
+              if(component.get("v.pageReference").state.recordTypeId == '01224000000gQ1NAAU' || component.get("v.pageReference").state.recordTypeId == '01224000000gQ1N'){
+                  componentName = 'c:lscCmNewManualCase';
+                  
+              }
+              
+              //helper.closeFocusedTab(component, event, helper);
+              var evt = $A.get("e.force:navigateToComponent");
+              var workspaceAPI = component.find("workspace");
+              workspaceAPI.getFocusedTabInfo().
+              then(function(response) {
+                  var focusedTabId = response.tabId;
+                  evt.setParams({
+                      componentDef : componentName,
+                      componentAttributes: {
+                          tabId:focusedTabId
+                      }
+                  });
+                  evt.fire();
+              }).then(function(response) {
+                  
+              })
+              .catch(function(error) {
+                  console.log(error);
+              });
+              
+          }        
+    },
+    
     closeFocusedTab : function(component, event, helper) {
         var workspaceAPI = component.find("workspace");
         workspaceAPI.getFocusedTabInfo().then(function(response) {

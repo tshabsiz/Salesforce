@@ -15,15 +15,5 @@
         <sharedTo>dudu.mtsweni@absa1.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
-    <folderShares>
-        <accessLevel>Manage</accessLevel>
-        <sharedTo>isebeau.spies@absa1.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>Manage</accessLevel>
-        <sharedTo>morne.grobler@absa1.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
     <name>WCSC Manual Payments</name>
 </ReportFolder>

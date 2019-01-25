@@ -5,6 +5,7 @@ public class AcmControllerLogic {
         if(collateral.id != null) {
             Collateral_Type__c collateralType = [SELECT Id,Push_to_ACM__c, Credit_Code__c  FROM Collateral_Type__c WHERE Id = :collateral.Collateral_Type1__c];
             if(collateralType.Push_to_ACM__c) {
+                System.debug('Pushing to ACM');
                 AcmMitigantCRUDService.createOrUpdateMitigants(collateral.Id);
                 pageReferenceMessage.message = AcmMitigantCRUDService.MESSAGE;
                 pageReferenceMessage.redirectSuccess = redirect(sController, saveNewSelected, collateral);
@@ -98,24 +99,24 @@ public class AcmControllerLogic {
     }
     public static Date ConvertDate(String dateStr){
         
-        if(dateStr != null || dateStr != ''){
+        if(!String.isBlank(dateStr)){
             if(dateStr.contains('.')){
                 return (ConvertDateTime(dateStr)).date();
             } else{
                 Date rDate = null;
                 try{
-            		rDate = Date.valueOf(dateStr);
+                rDate = Date.valueOf(dateStr);
                 }catch(Exception e){
                     System.debug('COULD NOT CONVERT DATE : ' + e.getMessage());
                 }
                 return rDate;
             }
         } else {
-           	return null;
+             return null;
         }
     }
     public static DateTime ConvertDateTime(String dateString) {
-        if(dateString != '' || dateString != null) {
+        if(!String.isblank(dateString)) {
             System.debug('Converting Date : ' + dateString);
             try {
             String DatePart = (dateString.split('\\.'))[0];
@@ -139,7 +140,7 @@ public class AcmControllerLogic {
         System.debug('Starts is : '+facilityFromAcm.STARTDATE);
         System.debug('end is : '+facilityFromAcm.EXPIRYDATE);
         AcmFacility__c acmFacility = new AcmFacility__c(Name = facilityFromAcm.FACILITYID
-            										   ,MODIFIEDTIMESTAMP__c = ConvertDateTime(facilityFromAcm.MODIFIEDTIMESTAMP)
+                                   ,MODIFIEDTIMESTAMP__c = ConvertDateTime(facilityFromAcm.MODIFIEDTIMESTAMP)
                                                        ,Bank_Application_key__c = facilityFromAcm.BANKAPPLICATIONKEY
                                                        ,BANKRISKTAKER__c = facilityFromAcm.BANKRISKTAKER
                                                        ,CPTYID__c = facilityFromAcm.CPTYID

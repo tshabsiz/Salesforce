@@ -65,6 +65,12 @@ public with sharing class AddProductToOpportunityController {
         }
     }
     
+    public Boolean isForeignExchange {
+        get {
+            return oppLineItem.Product_Level_2__c != NULL && mapProductLevel2.containsKey(oppLineItem.Product_Level_2__c) && mapProductLevel2.get(oppLineItem.Product_Level_2__c) != NULL && mapProductLevel2.get(oppLineItem.Product_Level_2__c).Name == 'Foreign Exchange' ? true : false; 
+        }
+    }
+    
     public Boolean isBond {
         get {
             return oppLineItem.Product_Level_3__c != NULL && mapProductLevel3.containsKey(oppLineItem.Product_Level_3__c) && (mapProductLevel3.get(oppLineItem.Product_Level_3__c).Name == 'Bonds - Local Currency' || mapProductLevel3.get(oppLineItem.Product_Level_3__c).Name == 'Bonds - Hard Currency') ? true : false;
@@ -474,6 +480,12 @@ public with sharing class AddProductToOpportunityController {
         {
             Apexpages.addMessage(new ApexPages.Message(ApexPages.Severity.Error, System.Label.errMsg_PrimaryBankingTarget_Validation));
         }
+        
+        if(oppLineItem.MonthlyValue__c == NULL && oppLineItem.Product_Level_3__c != NULL && mapProductLevel3.containsKey(oppLineItem.Product_Level_3__c) && mapProductLevel3.get(oppLineItem.Product_Level_3__c).Name.Contains('Domestic Payments') && opportunityCountry != NULL && opportunityCountry == 'South Africa')
+        {
+            Apexpages.addMessage(new ApexPages.Message(ApexPages.Severity.Error, System.Label.errMsg_MonthlyValue_Validation));
+        }
+        
         if(String.isBlank(product)) {
             Apexpages.addMessage(new ApexPages.Message(ApexPages.Severity.Error, System.Label.errMsg_AddProductToOpportunitySelectProduct));
         } 
@@ -618,6 +630,8 @@ public with sharing class AddProductToOpportunityController {
 		newOppLineItem.RefinanceAmount__c = oppLineItem.RefinanceAmount__c;
 		newOppLineItem.SecondaryLoan__c = oppLineItem.SecondaryLoan__c;
         newOppLineItem.FlexiFee__c = oppLineItem.FlexiFee__c;
+        newOppLineItem.MonthlyValue__c = oppLineItem.MonthlyValue__c;
+        newOppLineItem.FX_Sales_Comment__c = oppLineItem.FX_Sales_Comment__c;
         
         DELETE new OpportunityLineItem(Id=oppLineItem.Id);
         INSERT newOppLineItem;

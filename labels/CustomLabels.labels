@@ -15,6 +15,13 @@
         <value>0.28</value>
     </labels>
     <labels>
+        <fullName>SalesforceSupportEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SalesforceSupportEmail</shortDescription>
+        <value>salesforcesupport@absa.africa</value>
+    </labels>
+    <labels>
         <fullName>Splits_Sum_Over_100_Percent</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -463,6 +470,13 @@
         <value>Gross Margin is Mandatory for SA Debt Deals</value>
     </labels>
     <labels>
+        <fullName>errMsg_MonthlyValue_Validation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>errMsg_MonthlyValue_Validation</shortDescription>
+        <value>Monthly Value is Mandatory if Level 3 Product is Domestic Payments on a South African opportunity</value>
+    </labels>
+    <labels>
         <fullName>errMsg_NameRequired</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -747,7 +761,7 @@
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>lblSupportUserName</shortDescription>
-        <value>Barclays Salesforce Support</value>
+        <value>Absa Support</value>
     </labels>
     <labels>
         <fullName>lblUnderlyingClientPlans</fullName>
@@ -1195,7 +1209,7 @@
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>lbl_BarclaysNotPresent</shortDescription>
-        <value>Barclays not present</value>
+        <value>Absa not present</value>
     </labels>
     <labels>
         <fullName>lbl_BasicInfo</fullName>

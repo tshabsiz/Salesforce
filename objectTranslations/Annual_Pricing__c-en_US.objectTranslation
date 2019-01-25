@@ -20,16 +20,16 @@
             <translation><!-- Letter Generated --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Not Submitted</masterLabel>
-            <translation><!-- Not Submitted --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Pending</masterLabel>
             <translation><!-- Pending --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Rejected</masterLabel>
             <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard Pricing</masterLabel>
+            <translation><!-- Standard Pricing --></translation>
         </picklistValues>
     </fields>
     <fields>

@@ -87,11 +87,11 @@
             <column>Case.Department__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>RSC Corporate PTA,RSCS Corporate PTA</value>
+            <value>RSC Corporate PTA</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
-    <name>Unattended Emails RSC/S CORP Inland</name>
+    <name>Unattended Emails RSC CORP Inland</name>
     <params>
         <name>units</name>
         <value>d</value>

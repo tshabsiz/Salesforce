@@ -144,6 +144,14 @@
                 <behavior>Edit</behavior>
                 <field>CF_Code_Status__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Creator_Hub__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Creator_Team__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -622,9 +630,6 @@
     <quickActionList>
         <quickActionListItems>
             <quickActionName>SendEmail</quickActionName>
-        </quickActionListItems>
-        <quickActionListItems>
-            <quickActionName>Case.Email</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
             <quickActionName>Case.SendEmail</quickActionName>

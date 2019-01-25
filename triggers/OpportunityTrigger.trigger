@@ -5,7 +5,7 @@ trigger OpportunityTrigger on Opportunity (after insert, after update, before up
         OpportunityTrigger_Helper.isInsert = true;
         OpportunityTrigger_Helper.setDefaultPriceBook(Trigger.new);
         OpportunityTrigger_Helper.setPrivateCheckboxes(Trigger.new);
-        OpportunityTrigger_Helper.updateOpportunitySegment(Trigger.new, null);
+        OpportunityTrigger_Helper.updateOpportunitySegmentAndIndustry(Trigger.new, null);
         OpportunityTrigger_Helper.checkOpportunityName(Trigger.new, null);
     } 
 
@@ -14,12 +14,14 @@ trigger OpportunityTrigger on Opportunity (after insert, after update, before up
         OpportunityTrigger_Helper.addAccountableBankerToOppTeam(Trigger.new);
         OpportunityTrigger_Helper.createDefaultOpportunitySplit(Trigger.new);
         OpportunityTrigger_Helper.modifyOpportunityForPrivateSideUser(Trigger.new, null);
+        OpportunityTrigger_Helper.AddNewOpportunityShare(Trigger.newMap);
         OpportunityTrigger_Helper.flagProjectNameAsUsed(Trigger.new, null);
     }
 
     //before update
     if(trigger.isBefore && trigger.isUpdate){
-    	OpportunityTrigger_Helper.updateOpportunitySegment(Trigger.new, Trigger.oldMap);
+        OpportunityTrigger_Helper.updateOpportunityShare(Trigger.NewMap,Trigger.oldMap);
+    	OpportunityTrigger_Helper.updateOpportunitySegmentAndIndustry(Trigger.new, Trigger.oldMap);
     	OpportunityTrigger_Helper.PromoteProductPartner(Trigger.new, Trigger.oldMap);
         if (OpportunityTrigger_Helper.FirstRun) {
             OpportunityTrigger_Helper.checkOpportunityName(Trigger.new, Trigger.oldMap);

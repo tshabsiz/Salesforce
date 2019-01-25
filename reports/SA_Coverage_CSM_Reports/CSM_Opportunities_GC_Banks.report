@@ -7,9 +7,6 @@
         <field>FULL_NAME</field>
     </columns>
     <columns>
-        <field>TYPE</field>
-    </columns>
-    <columns>
         <field>CAMPAIGN_SOURCE</field>
     </columns>
     <columns>
@@ -66,7 +63,13 @@
             <column>Opportunity.CSM_Initiator__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Jethan Dhaness,Lisa Boltina,Neal Henry,Jeremy Jaganath,Lucien Granger,Thomas Devonshire,Kagiso Marule,Lavanya Jaiswar,Shaheen Mahomed</value>
+            <value>Brian Mooi,Chifunda Muwila,Hildegard Snyman,Jethan Dhaness,Letta Phakathi,Lucien Granger,Melinda Buys,Rodney Rikhotso,Thomas Devonshire</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closed Lost</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -75,7 +78,12 @@
         <field>Opportunity.CSM_Initiator__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>CSM Opportunities - GC&amp;Banks</name>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>TYPE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>CSM Opportunities - NBFI &amp; Banks</name>
     <params>
         <name>open</name>
         <value>all</value>
@@ -89,6 +97,7 @@
         <value>1</value>
     </params>
     <reportType>OpportunityProduct</reportType>
+    <roleHierarchyFilter>BAGL_Management</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>

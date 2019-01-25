@@ -343,6 +343,10 @@
             <label>Connected to RFP / Tender</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlNZU</field>
+            <label>Contact Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N24000006bAlu</field>
             <label>Country of Booking 1</label>
         </opportunityListFieldsLabelMappings>
@@ -353,6 +357,22 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPgUt</field>
             <label>CPF Account Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMr</field>
+            <label>Creator Business Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMs</field>
+            <label>Creator Country</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMt</field>
+            <label>Creator Hub</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMu</field>
+            <label>Creator Team</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000Jl8m6</field>
@@ -423,6 +443,10 @@
             <label>Income this Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlHn7</field>
+            <label>Industry</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPeSC</field>
             <label>isExternal</label>
         </opportunityListFieldsLabelMappings>
@@ -441,6 +465,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAly</field>
             <label>Loss/Win Description</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyr</field>
+            <label>Mandate Won date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsM</field>
@@ -463,6 +491,10 @@
             <label>No of days past close date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyB</field>
+            <label>Notify ABSA Insurance Of This Deal</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsL</field>
             <label>Ongoing Fee (%)</label>
         </opportunityListFieldsLabelMappings>
@@ -477,6 +509,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IwTIS</field>
             <label>Opportunity Deal Value</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTys</field>
+            <label>Opportunity Owner Country</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAm3</field>
@@ -560,7 +596,11 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IvBze</field>
-            <label>Product Code (Won Opportunity)</label>
+            <label>Product Code (TB)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyv</field>
+            <label>ProductCount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000JWYSG</field>
@@ -647,6 +687,10 @@
             <label>Related Group Client Segment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyC</field>
+            <label>Relationship Contact</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JlAnb</field>
             <label>Relationship Group Segment</label>
         </opportunityListFieldsLabelMappings>
@@ -725,6 +769,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000AQRJO</field>
             <label>Total RoRWA</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyt</field>
+            <label>Transaction Type</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAmB</field>
@@ -824,9 +872,14 @@
             <field>00N24000006bAls</field>
             <field>00N2400000JWpeO</field>
             <field>00N24000006bAlt</field>
+            <field>00N1p00000JlNZU</field>
             <field>00N24000006bAlu</field>
             <field>00N24000006bAlv</field>
             <field>00N1p00000JPgUt</field>
+            <field>00N1p00000JlPMr</field>
+            <field>00N1p00000JlPMs</field>
+            <field>00N1p00000JlPMt</field>
+            <field>00N1p00000JlPMu</field>
             <field>00N1p00000Jl8m6</field>
             <field>00N2400000IwTIR</field>
             <field>00N2400000IFFsI</field>
@@ -844,20 +897,24 @@
             <field>00N24000006bAlx</field>
             <field>00N2400000Ir4Ic</field>
             <field>00N24000006bAn2</field>
+            <field>00N1p00000JlHn7</field>
             <field>00N1p00000JPeSC</field>
             <field>00N2400000JWyRY</field>
             <field>00N2400000EmGj1</field>
             <field>00N2400000Dvarh</field>
             <field>00N24000006bAly</field>
+            <field>00N1p00000JlTyr</field>
             <field>00N2400000IFFsM</field>
             <field>00N24000006bAlz</field>
             <field>00N24000006bAm0</field>
             <field>00N2400000DxkD2</field>
             <field>00N24000006bAm1</field>
+            <field>00N1p00000JlMyB</field>
             <field>00N2400000IFFsL</field>
             <field>00N24000006bAm2</field>
             <field>00N2400000IBTZx</field>
             <field>00N2400000IwTIS</field>
+            <field>00N1p00000JlTys</field>
             <field>00N24000006bAm3</field>
             <field>00N24000006bAm4</field>
             <field>00N2400000JWgCM</field>
@@ -879,6 +936,7 @@
             <field>00N24000006bAm5</field>
             <field>00N2400000JBvoa</field>
             <field>00N2400000IvBze</field>
+            <field>00N1p00000JlTyv</field>
             <field>00N2400000JWYSG</field>
             <field>00N2400000Ixo8C</field>
             <field>00N2400000JBncN</field>
@@ -900,6 +958,7 @@
             <field>00N2400000JWpeP</field>
             <field>00N2400000JWpeQ</field>
             <field>00N1p00000JlATd</field>
+            <field>00N1p00000JlMyC</field>
             <field>00N1p00000JlAnb</field>
             <field>00N2400000JUf4V</field>
             <field>00N2400000Hirps</field>
@@ -920,6 +979,7 @@
             <field>00N2400000IqUtI</field>
             <field>00N2400000BTQel</field>
             <field>00N2400000AQRJO</field>
+            <field>00N1p00000JlTyt</field>
             <field>00N24000006bAmB</field>
             <field>00N24000006bAmC</field>
             <field>00N2400000IFFsK</field>
@@ -1195,6 +1255,10 @@
             <label>Connected to RFP / Tender</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlNZU</field>
+            <label>Contact Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N24000006bAlu</field>
             <label>Country of Booking 1</label>
         </opportunityListFieldsLabelMappings>
@@ -1205,6 +1269,22 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPgUt</field>
             <label>CPF Account Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMr</field>
+            <label>Creator Business Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMs</field>
+            <label>Creator Country</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMt</field>
+            <label>Creator Hub</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMu</field>
+            <label>Creator Team</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000Jl8m6</field>
@@ -1275,6 +1355,10 @@
             <label>Income this Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlHn7</field>
+            <label>Industry</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPeSC</field>
             <label>isExternal</label>
         </opportunityListFieldsLabelMappings>
@@ -1293,6 +1377,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAly</field>
             <label>Loss/Win Description</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyr</field>
+            <label>Mandate Won date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsM</field>
@@ -1315,6 +1403,10 @@
             <label>No of days past close date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyB</field>
+            <label>Notify ABSA Insurance Of This Deal</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsL</field>
             <label>Ongoing Fee (%)</label>
         </opportunityListFieldsLabelMappings>
@@ -1329,6 +1421,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IwTIS</field>
             <label>Opportunity Deal Value</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTys</field>
+            <label>Opportunity Owner Country</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAm3</field>
@@ -1412,7 +1508,11 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IvBze</field>
-            <label>Product Code (Won Opportunity)</label>
+            <label>Product Code (TB)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyv</field>
+            <label>ProductCount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000JWYSG</field>
@@ -1499,6 +1599,10 @@
             <label>Related Group Client Segment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyC</field>
+            <label>Relationship Contact</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JlAnb</field>
             <label>Relationship Group Segment</label>
         </opportunityListFieldsLabelMappings>
@@ -1577,6 +1681,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000AQRJO</field>
             <label>Total RoRWA</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyt</field>
+            <label>Transaction Type</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAmB</field>
@@ -1675,9 +1783,14 @@
             <field>00N24000006bAls</field>
             <field>00N2400000JWpeO</field>
             <field>00N24000006bAlt</field>
+            <field>00N1p00000JlNZU</field>
             <field>00N24000006bAlu</field>
             <field>00N24000006bAlv</field>
             <field>00N1p00000JPgUt</field>
+            <field>00N1p00000JlPMr</field>
+            <field>00N1p00000JlPMs</field>
+            <field>00N1p00000JlPMt</field>
+            <field>00N1p00000JlPMu</field>
             <field>00N1p00000Jl8m6</field>
             <field>00N2400000IwTIR</field>
             <field>00N2400000IFFsI</field>
@@ -1695,20 +1808,24 @@
             <field>00N24000006bAlx</field>
             <field>00N2400000Ir4Ic</field>
             <field>00N24000006bAn2</field>
+            <field>00N1p00000JlHn7</field>
             <field>00N1p00000JPeSC</field>
             <field>00N2400000JWyRY</field>
             <field>00N2400000EmGj1</field>
             <field>00N2400000Dvarh</field>
             <field>00N24000006bAly</field>
+            <field>00N1p00000JlTyr</field>
             <field>00N2400000IFFsM</field>
             <field>00N24000006bAlz</field>
             <field>00N24000006bAm0</field>
             <field>00N2400000DxkD2</field>
             <field>00N24000006bAm1</field>
+            <field>00N1p00000JlMyB</field>
             <field>00N2400000IFFsL</field>
             <field>00N24000006bAm2</field>
             <field>00N2400000IBTZx</field>
             <field>00N2400000IwTIS</field>
+            <field>00N1p00000JlTys</field>
             <field>00N24000006bAm3</field>
             <field>00N24000006bAm4</field>
             <field>00N2400000JWgCM</field>
@@ -1730,6 +1847,7 @@
             <field>00N24000006bAm5</field>
             <field>00N2400000JBvoa</field>
             <field>00N2400000IvBze</field>
+            <field>00N1p00000JlTyv</field>
             <field>00N2400000JWYSG</field>
             <field>00N2400000Ixo8C</field>
             <field>00N2400000JBncN</field>
@@ -1751,6 +1869,7 @@
             <field>00N2400000JWpeP</field>
             <field>00N2400000JWpeQ</field>
             <field>00N1p00000JlATd</field>
+            <field>00N1p00000JlMyC</field>
             <field>00N1p00000JlAnb</field>
             <field>00N2400000JUf4V</field>
             <field>00N2400000Hirps</field>
@@ -1771,6 +1890,7 @@
             <field>00N2400000IqUtI</field>
             <field>00N2400000BTQel</field>
             <field>00N2400000AQRJO</field>
+            <field>00N1p00000JlTyt</field>
             <field>00N24000006bAmB</field>
             <field>00N24000006bAmC</field>
             <field>00N2400000IFFsK</field>
@@ -2046,6 +2166,10 @@
             <label>Connected to RFP / Tender</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlNZU</field>
+            <label>Contact Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N24000006bAlu</field>
             <label>Country of Booking 1</label>
         </opportunityListFieldsLabelMappings>
@@ -2056,6 +2180,22 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPgUt</field>
             <label>CPF Account Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMr</field>
+            <label>Creator Business Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMs</field>
+            <label>Creator Country</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMt</field>
+            <label>Creator Hub</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMu</field>
+            <label>Creator Team</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000Jl8m6</field>
@@ -2126,6 +2266,10 @@
             <label>Income this Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlHn7</field>
+            <label>Industry</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPeSC</field>
             <label>isExternal</label>
         </opportunityListFieldsLabelMappings>
@@ -2144,6 +2288,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAly</field>
             <label>Loss/Win Description</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyr</field>
+            <label>Mandate Won date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsM</field>
@@ -2166,6 +2314,10 @@
             <label>No of days past close date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyB</field>
+            <label>Notify ABSA Insurance Of This Deal</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsL</field>
             <label>Ongoing Fee (%)</label>
         </opportunityListFieldsLabelMappings>
@@ -2180,6 +2332,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IwTIS</field>
             <label>Opportunity Deal Value</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTys</field>
+            <label>Opportunity Owner Country</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAm3</field>
@@ -2263,7 +2419,11 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IvBze</field>
-            <label>Product Code (Won Opportunity)</label>
+            <label>Product Code (TB)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyv</field>
+            <label>ProductCount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000JWYSG</field>
@@ -2350,6 +2510,10 @@
             <label>Related Group Client Segment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyC</field>
+            <label>Relationship Contact</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JlAnb</field>
             <label>Relationship Group Segment</label>
         </opportunityListFieldsLabelMappings>
@@ -2428,6 +2592,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000AQRJO</field>
             <label>Total RoRWA</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyt</field>
+            <label>Transaction Type</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAmB</field>
@@ -2526,9 +2694,14 @@
             <field>00N24000006bAls</field>
             <field>00N2400000JWpeO</field>
             <field>00N24000006bAlt</field>
+            <field>00N1p00000JlNZU</field>
             <field>00N24000006bAlu</field>
             <field>00N24000006bAlv</field>
             <field>00N1p00000JPgUt</field>
+            <field>00N1p00000JlPMr</field>
+            <field>00N1p00000JlPMs</field>
+            <field>00N1p00000JlPMt</field>
+            <field>00N1p00000JlPMu</field>
             <field>00N1p00000Jl8m6</field>
             <field>00N2400000IwTIR</field>
             <field>00N2400000IFFsI</field>
@@ -2546,20 +2719,24 @@
             <field>00N24000006bAlx</field>
             <field>00N2400000Ir4Ic</field>
             <field>00N24000006bAn2</field>
+            <field>00N1p00000JlHn7</field>
             <field>00N1p00000JPeSC</field>
             <field>00N2400000JWyRY</field>
             <field>00N2400000EmGj1</field>
             <field>00N2400000Dvarh</field>
             <field>00N24000006bAly</field>
+            <field>00N1p00000JlTyr</field>
             <field>00N2400000IFFsM</field>
             <field>00N24000006bAlz</field>
             <field>00N24000006bAm0</field>
             <field>00N2400000DxkD2</field>
             <field>00N24000006bAm1</field>
+            <field>00N1p00000JlMyB</field>
             <field>00N2400000IFFsL</field>
             <field>00N24000006bAm2</field>
             <field>00N2400000IBTZx</field>
             <field>00N2400000IwTIS</field>
+            <field>00N1p00000JlTys</field>
             <field>00N24000006bAm3</field>
             <field>00N24000006bAm4</field>
             <field>00N2400000JWgCM</field>
@@ -2581,6 +2758,7 @@
             <field>00N24000006bAm5</field>
             <field>00N2400000JBvoa</field>
             <field>00N2400000IvBze</field>
+            <field>00N1p00000JlTyv</field>
             <field>00N2400000JWYSG</field>
             <field>00N2400000Ixo8C</field>
             <field>00N2400000JBncN</field>
@@ -2602,6 +2780,7 @@
             <field>00N2400000JWpeP</field>
             <field>00N2400000JWpeQ</field>
             <field>00N1p00000JlATd</field>
+            <field>00N1p00000JlMyC</field>
             <field>00N1p00000JlAnb</field>
             <field>00N2400000JUf4V</field>
             <field>00N2400000Hirps</field>
@@ -2622,6 +2801,7 @@
             <field>00N2400000IqUtI</field>
             <field>00N2400000BTQel</field>
             <field>00N2400000AQRJO</field>
+            <field>00N1p00000JlTyt</field>
             <field>00N24000006bAmB</field>
             <field>00N24000006bAmC</field>
             <field>00N2400000IFFsK</field>
@@ -2897,6 +3077,10 @@
             <label>Connected to RFP / Tender</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlNZU</field>
+            <label>Contact Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N24000006bAlu</field>
             <label>Country of Booking 1</label>
         </opportunityListFieldsLabelMappings>
@@ -2907,6 +3091,22 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPgUt</field>
             <label>CPF Account Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMr</field>
+            <label>Creator Business Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMs</field>
+            <label>Creator Country</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMt</field>
+            <label>Creator Hub</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMu</field>
+            <label>Creator Team</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000Jl8m6</field>
@@ -2977,6 +3177,10 @@
             <label>Income this Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlHn7</field>
+            <label>Industry</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPeSC</field>
             <label>isExternal</label>
         </opportunityListFieldsLabelMappings>
@@ -2995,6 +3199,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAly</field>
             <label>Loss/Win Description</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyr</field>
+            <label>Mandate Won date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsM</field>
@@ -3017,6 +3225,10 @@
             <label>No of days past close date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyB</field>
+            <label>Notify ABSA Insurance Of This Deal</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsL</field>
             <label>Ongoing Fee (%)</label>
         </opportunityListFieldsLabelMappings>
@@ -3031,6 +3243,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IwTIS</field>
             <label>Opportunity Deal Value</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTys</field>
+            <label>Opportunity Owner Country</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAm3</field>
@@ -3114,7 +3330,11 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IvBze</field>
-            <label>Product Code (Won Opportunity)</label>
+            <label>Product Code (TB)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyv</field>
+            <label>ProductCount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000JWYSG</field>
@@ -3201,6 +3421,10 @@
             <label>Related Group Client Segment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyC</field>
+            <label>Relationship Contact</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JlAnb</field>
             <label>Relationship Group Segment</label>
         </opportunityListFieldsLabelMappings>
@@ -3279,6 +3503,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000AQRJO</field>
             <label>Total RoRWA</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyt</field>
+            <label>Transaction Type</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAmB</field>
@@ -3377,9 +3605,14 @@
             <field>00N24000006bAls</field>
             <field>00N2400000JWpeO</field>
             <field>00N24000006bAlt</field>
+            <field>00N1p00000JlNZU</field>
             <field>00N24000006bAlu</field>
             <field>00N24000006bAlv</field>
             <field>00N1p00000JPgUt</field>
+            <field>00N1p00000JlPMr</field>
+            <field>00N1p00000JlPMs</field>
+            <field>00N1p00000JlPMt</field>
+            <field>00N1p00000JlPMu</field>
             <field>00N1p00000Jl8m6</field>
             <field>00N2400000IwTIR</field>
             <field>00N2400000IFFsI</field>
@@ -3397,20 +3630,24 @@
             <field>00N24000006bAlx</field>
             <field>00N2400000Ir4Ic</field>
             <field>00N24000006bAn2</field>
+            <field>00N1p00000JlHn7</field>
             <field>00N1p00000JPeSC</field>
             <field>00N2400000JWyRY</field>
             <field>00N2400000EmGj1</field>
             <field>00N2400000Dvarh</field>
             <field>00N24000006bAly</field>
+            <field>00N1p00000JlTyr</field>
             <field>00N2400000IFFsM</field>
             <field>00N24000006bAlz</field>
             <field>00N24000006bAm0</field>
             <field>00N2400000DxkD2</field>
             <field>00N24000006bAm1</field>
+            <field>00N1p00000JlMyB</field>
             <field>00N2400000IFFsL</field>
             <field>00N24000006bAm2</field>
             <field>00N2400000IBTZx</field>
             <field>00N2400000IwTIS</field>
+            <field>00N1p00000JlTys</field>
             <field>00N24000006bAm3</field>
             <field>00N24000006bAm4</field>
             <field>00N2400000JWgCM</field>
@@ -3432,6 +3669,7 @@
             <field>00N24000006bAm5</field>
             <field>00N2400000JBvoa</field>
             <field>00N2400000IvBze</field>
+            <field>00N1p00000JlTyv</field>
             <field>00N2400000JWYSG</field>
             <field>00N2400000Ixo8C</field>
             <field>00N2400000JBncN</field>
@@ -3453,6 +3691,7 @@
             <field>00N2400000JWpeP</field>
             <field>00N2400000JWpeQ</field>
             <field>00N1p00000JlATd</field>
+            <field>00N1p00000JlMyC</field>
             <field>00N1p00000JlAnb</field>
             <field>00N2400000JUf4V</field>
             <field>00N2400000Hirps</field>
@@ -3473,6 +3712,7 @@
             <field>00N2400000IqUtI</field>
             <field>00N2400000BTQel</field>
             <field>00N2400000AQRJO</field>
+            <field>00N1p00000JlTyt</field>
             <field>00N24000006bAmB</field>
             <field>00N24000006bAmC</field>
             <field>00N2400000IFFsK</field>
@@ -3752,6 +3992,10 @@
             <label>Connected to RFP / Tender</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlNZU</field>
+            <label>Contact Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N24000006bAlu</field>
             <label>Country of Booking 1</label>
         </opportunityListFieldsLabelMappings>
@@ -3762,6 +4006,22 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPgUt</field>
             <label>CPF Account Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMr</field>
+            <label>Creator Business Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMs</field>
+            <label>Creator Country</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMt</field>
+            <label>Creator Hub</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMu</field>
+            <label>Creator Team</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000Jl8m6</field>
@@ -3832,6 +4092,10 @@
             <label>Income this Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlHn7</field>
+            <label>Industry</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPeSC</field>
             <label>isExternal</label>
         </opportunityListFieldsLabelMappings>
@@ -3850,6 +4114,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAly</field>
             <label>Loss/Win Description</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyr</field>
+            <label>Mandate Won date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsM</field>
@@ -3872,6 +4140,10 @@
             <label>No of days past close date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyB</field>
+            <label>Notify ABSA Insurance Of This Deal</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsL</field>
             <label>Ongoing Fee (%)</label>
         </opportunityListFieldsLabelMappings>
@@ -3886,6 +4158,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IwTIS</field>
             <label>Opportunity Deal Value</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTys</field>
+            <label>Opportunity Owner Country</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAm3</field>
@@ -3969,7 +4245,11 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IvBze</field>
-            <label>Product Code (Won Opportunity)</label>
+            <label>Product Code (TB)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyv</field>
+            <label>ProductCount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000JWYSG</field>
@@ -4056,6 +4336,10 @@
             <label>Related Group Client Segment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyC</field>
+            <label>Relationship Contact</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JlAnb</field>
             <label>Relationship Group Segment</label>
         </opportunityListFieldsLabelMappings>
@@ -4134,6 +4418,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000AQRJO</field>
             <label>Total RoRWA</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyt</field>
+            <label>Transaction Type</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAmB</field>
@@ -4233,9 +4521,14 @@
             <field>00N24000006bAls</field>
             <field>00N2400000JWpeO</field>
             <field>00N24000006bAlt</field>
+            <field>00N1p00000JlNZU</field>
             <field>00N24000006bAlu</field>
             <field>00N24000006bAlv</field>
             <field>00N1p00000JPgUt</field>
+            <field>00N1p00000JlPMr</field>
+            <field>00N1p00000JlPMs</field>
+            <field>00N1p00000JlPMt</field>
+            <field>00N1p00000JlPMu</field>
             <field>00N1p00000Jl8m6</field>
             <field>00N2400000IwTIR</field>
             <field>00N2400000IFFsI</field>
@@ -4253,20 +4546,24 @@
             <field>00N24000006bAlx</field>
             <field>00N2400000Ir4Ic</field>
             <field>00N24000006bAn2</field>
+            <field>00N1p00000JlHn7</field>
             <field>00N1p00000JPeSC</field>
             <field>00N2400000JWyRY</field>
             <field>00N2400000EmGj1</field>
             <field>00N2400000Dvarh</field>
             <field>00N24000006bAly</field>
+            <field>00N1p00000JlTyr</field>
             <field>00N2400000IFFsM</field>
             <field>00N24000006bAlz</field>
             <field>00N24000006bAm0</field>
             <field>00N2400000DxkD2</field>
             <field>00N24000006bAm1</field>
+            <field>00N1p00000JlMyB</field>
             <field>00N2400000IFFsL</field>
             <field>00N24000006bAm2</field>
             <field>00N2400000IBTZx</field>
             <field>00N2400000IwTIS</field>
+            <field>00N1p00000JlTys</field>
             <field>00N24000006bAm3</field>
             <field>00N24000006bAm4</field>
             <field>00N2400000JWgCM</field>
@@ -4288,6 +4585,7 @@
             <field>00N24000006bAm5</field>
             <field>00N2400000JBvoa</field>
             <field>00N2400000IvBze</field>
+            <field>00N1p00000JlTyv</field>
             <field>00N2400000JWYSG</field>
             <field>00N2400000Ixo8C</field>
             <field>00N2400000JBncN</field>
@@ -4309,6 +4607,7 @@
             <field>00N2400000JWpeP</field>
             <field>00N2400000JWpeQ</field>
             <field>00N1p00000JlATd</field>
+            <field>00N1p00000JlMyC</field>
             <field>00N1p00000JlAnb</field>
             <field>00N2400000JUf4V</field>
             <field>00N2400000Hirps</field>
@@ -4329,6 +4628,7 @@
             <field>00N2400000IqUtI</field>
             <field>00N2400000BTQel</field>
             <field>00N2400000AQRJO</field>
+            <field>00N1p00000JlTyt</field>
             <field>00N24000006bAmB</field>
             <field>00N24000006bAmC</field>
             <field>00N2400000IFFsK</field>
@@ -4604,6 +4904,10 @@
             <label>Connected to RFP / Tender</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlNZU</field>
+            <label>Contact Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N24000006bAlu</field>
             <label>Country of Booking 1</label>
         </opportunityListFieldsLabelMappings>
@@ -4614,6 +4918,22 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPgUt</field>
             <label>CPF Account Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMr</field>
+            <label>Creator Business Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMs</field>
+            <label>Creator Country</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMt</field>
+            <label>Creator Hub</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMu</field>
+            <label>Creator Team</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000Jl8m6</field>
@@ -4684,6 +5004,10 @@
             <label>Income this Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlHn7</field>
+            <label>Industry</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPeSC</field>
             <label>isExternal</label>
         </opportunityListFieldsLabelMappings>
@@ -4702,6 +5026,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAly</field>
             <label>Loss/Win Description</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyr</field>
+            <label>Mandate Won date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsM</field>
@@ -4724,6 +5052,10 @@
             <label>No of days past close date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyB</field>
+            <label>Notify ABSA Insurance Of This Deal</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsL</field>
             <label>Ongoing Fee (%)</label>
         </opportunityListFieldsLabelMappings>
@@ -4738,6 +5070,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IwTIS</field>
             <label>Opportunity Deal Value</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTys</field>
+            <label>Opportunity Owner Country</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAm3</field>
@@ -4821,7 +5157,11 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IvBze</field>
-            <label>Product Code (Won Opportunity)</label>
+            <label>Product Code (TB)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyv</field>
+            <label>ProductCount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000JWYSG</field>
@@ -4908,6 +5248,10 @@
             <label>Related Group Client Segment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyC</field>
+            <label>Relationship Contact</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JlAnb</field>
             <label>Relationship Group Segment</label>
         </opportunityListFieldsLabelMappings>
@@ -4986,6 +5330,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000AQRJO</field>
             <label>Total RoRWA</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyt</field>
+            <label>Transaction Type</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAmB</field>
@@ -5084,9 +5432,14 @@
             <field>00N24000006bAls</field>
             <field>00N2400000JWpeO</field>
             <field>00N24000006bAlt</field>
+            <field>00N1p00000JlNZU</field>
             <field>00N24000006bAlu</field>
             <field>00N24000006bAlv</field>
             <field>00N1p00000JPgUt</field>
+            <field>00N1p00000JlPMr</field>
+            <field>00N1p00000JlPMs</field>
+            <field>00N1p00000JlPMt</field>
+            <field>00N1p00000JlPMu</field>
             <field>00N1p00000Jl8m6</field>
             <field>00N2400000IwTIR</field>
             <field>00N2400000IFFsI</field>
@@ -5104,20 +5457,24 @@
             <field>00N24000006bAlx</field>
             <field>00N2400000Ir4Ic</field>
             <field>00N24000006bAn2</field>
+            <field>00N1p00000JlHn7</field>
             <field>00N1p00000JPeSC</field>
             <field>00N2400000JWyRY</field>
             <field>00N2400000EmGj1</field>
             <field>00N2400000Dvarh</field>
             <field>00N24000006bAly</field>
+            <field>00N1p00000JlTyr</field>
             <field>00N2400000IFFsM</field>
             <field>00N24000006bAlz</field>
             <field>00N24000006bAm0</field>
             <field>00N2400000DxkD2</field>
             <field>00N24000006bAm1</field>
+            <field>00N1p00000JlMyB</field>
             <field>00N2400000IFFsL</field>
             <field>00N24000006bAm2</field>
             <field>00N2400000IBTZx</field>
             <field>00N2400000IwTIS</field>
+            <field>00N1p00000JlTys</field>
             <field>00N24000006bAm3</field>
             <field>00N24000006bAm4</field>
             <field>00N2400000JWgCM</field>
@@ -5139,6 +5496,7 @@
             <field>00N24000006bAm5</field>
             <field>00N2400000JBvoa</field>
             <field>00N2400000IvBze</field>
+            <field>00N1p00000JlTyv</field>
             <field>00N2400000JWYSG</field>
             <field>00N2400000Ixo8C</field>
             <field>00N2400000JBncN</field>
@@ -5160,6 +5518,7 @@
             <field>00N2400000JWpeP</field>
             <field>00N2400000JWpeQ</field>
             <field>00N1p00000JlATd</field>
+            <field>00N1p00000JlMyC</field>
             <field>00N1p00000JlAnb</field>
             <field>00N2400000JUf4V</field>
             <field>00N2400000Hirps</field>
@@ -5180,6 +5539,7 @@
             <field>00N2400000IqUtI</field>
             <field>00N2400000BTQel</field>
             <field>00N2400000AQRJO</field>
+            <field>00N1p00000JlTyt</field>
             <field>00N24000006bAmB</field>
             <field>00N24000006bAmC</field>
             <field>00N2400000IFFsK</field>
@@ -5455,6 +5815,10 @@
             <label>Connected to RFP / Tender</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlNZU</field>
+            <label>Contact Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N24000006bAlu</field>
             <label>Country of Booking 1</label>
         </opportunityListFieldsLabelMappings>
@@ -5465,6 +5829,22 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPgUt</field>
             <label>CPF Account Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMr</field>
+            <label>Creator Business Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMs</field>
+            <label>Creator Country</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMt</field>
+            <label>Creator Hub</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMu</field>
+            <label>Creator Team</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000Jl8m6</field>
@@ -5535,6 +5915,10 @@
             <label>Income this Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlHn7</field>
+            <label>Industry</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPeSC</field>
             <label>isExternal</label>
         </opportunityListFieldsLabelMappings>
@@ -5553,6 +5937,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAly</field>
             <label>Loss/Win Description</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyr</field>
+            <label>Mandate Won date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsM</field>
@@ -5575,6 +5963,10 @@
             <label>No of days past close date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyB</field>
+            <label>Notify ABSA Insurance Of This Deal</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsL</field>
             <label>Ongoing Fee (%)</label>
         </opportunityListFieldsLabelMappings>
@@ -5589,6 +5981,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IwTIS</field>
             <label>Opportunity Deal Value</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTys</field>
+            <label>Opportunity Owner Country</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAm3</field>
@@ -5672,7 +6068,11 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IvBze</field>
-            <label>Product Code (Won Opportunity)</label>
+            <label>Product Code (TB)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyv</field>
+            <label>ProductCount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000JWYSG</field>
@@ -5759,6 +6159,10 @@
             <label>Related Group Client Segment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyC</field>
+            <label>Relationship Contact</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JlAnb</field>
             <label>Relationship Group Segment</label>
         </opportunityListFieldsLabelMappings>
@@ -5837,6 +6241,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000AQRJO</field>
             <label>Total RoRWA</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyt</field>
+            <label>Transaction Type</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAmB</field>
@@ -5935,9 +6343,14 @@
             <field>00N24000006bAls</field>
             <field>00N2400000JWpeO</field>
             <field>00N24000006bAlt</field>
+            <field>00N1p00000JlNZU</field>
             <field>00N24000006bAlu</field>
             <field>00N24000006bAlv</field>
             <field>00N1p00000JPgUt</field>
+            <field>00N1p00000JlPMr</field>
+            <field>00N1p00000JlPMs</field>
+            <field>00N1p00000JlPMt</field>
+            <field>00N1p00000JlPMu</field>
             <field>00N1p00000Jl8m6</field>
             <field>00N2400000IwTIR</field>
             <field>00N2400000IFFsI</field>
@@ -5955,20 +6368,24 @@
             <field>00N24000006bAlx</field>
             <field>00N2400000Ir4Ic</field>
             <field>00N24000006bAn2</field>
+            <field>00N1p00000JlHn7</field>
             <field>00N1p00000JPeSC</field>
             <field>00N2400000JWyRY</field>
             <field>00N2400000EmGj1</field>
             <field>00N2400000Dvarh</field>
             <field>00N24000006bAly</field>
+            <field>00N1p00000JlTyr</field>
             <field>00N2400000IFFsM</field>
             <field>00N24000006bAlz</field>
             <field>00N24000006bAm0</field>
             <field>00N2400000DxkD2</field>
             <field>00N24000006bAm1</field>
+            <field>00N1p00000JlMyB</field>
             <field>00N2400000IFFsL</field>
             <field>00N24000006bAm2</field>
             <field>00N2400000IBTZx</field>
             <field>00N2400000IwTIS</field>
+            <field>00N1p00000JlTys</field>
             <field>00N24000006bAm3</field>
             <field>00N24000006bAm4</field>
             <field>00N2400000JWgCM</field>
@@ -5990,6 +6407,7 @@
             <field>00N24000006bAm5</field>
             <field>00N2400000JBvoa</field>
             <field>00N2400000IvBze</field>
+            <field>00N1p00000JlTyv</field>
             <field>00N2400000JWYSG</field>
             <field>00N2400000Ixo8C</field>
             <field>00N2400000JBncN</field>
@@ -6011,6 +6429,7 @@
             <field>00N2400000JWpeP</field>
             <field>00N2400000JWpeQ</field>
             <field>00N1p00000JlATd</field>
+            <field>00N1p00000JlMyC</field>
             <field>00N1p00000JlAnb</field>
             <field>00N2400000JUf4V</field>
             <field>00N2400000Hirps</field>
@@ -6031,6 +6450,7 @@
             <field>00N2400000IqUtI</field>
             <field>00N2400000BTQel</field>
             <field>00N2400000AQRJO</field>
+            <field>00N1p00000JlTyt</field>
             <field>00N24000006bAmB</field>
             <field>00N24000006bAmC</field>
             <field>00N2400000IFFsK</field>
@@ -6306,6 +6726,10 @@
             <label>Connected to RFP / Tender</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlNZU</field>
+            <label>Contact Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N24000006bAlu</field>
             <label>Country of Booking 1</label>
         </opportunityListFieldsLabelMappings>
@@ -6316,6 +6740,22 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPgUt</field>
             <label>CPF Account Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMr</field>
+            <label>Creator Business Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMs</field>
+            <label>Creator Country</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMt</field>
+            <label>Creator Hub</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMu</field>
+            <label>Creator Team</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000Jl8m6</field>
@@ -6386,6 +6826,10 @@
             <label>Income this Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlHn7</field>
+            <label>Industry</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPeSC</field>
             <label>isExternal</label>
         </opportunityListFieldsLabelMappings>
@@ -6404,6 +6848,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAly</field>
             <label>Loss/Win Description</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyr</field>
+            <label>Mandate Won date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsM</field>
@@ -6426,6 +6874,10 @@
             <label>No of days past close date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyB</field>
+            <label>Notify ABSA Insurance Of This Deal</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsL</field>
             <label>Ongoing Fee (%)</label>
         </opportunityListFieldsLabelMappings>
@@ -6440,6 +6892,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IwTIS</field>
             <label>Opportunity Deal Value</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTys</field>
+            <label>Opportunity Owner Country</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAm3</field>
@@ -6523,7 +6979,11 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IvBze</field>
-            <label>Product Code (Won Opportunity)</label>
+            <label>Product Code (TB)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyv</field>
+            <label>ProductCount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000JWYSG</field>
@@ -6610,6 +7070,10 @@
             <label>Related Group Client Segment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyC</field>
+            <label>Relationship Contact</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JlAnb</field>
             <label>Relationship Group Segment</label>
         </opportunityListFieldsLabelMappings>
@@ -6688,6 +7152,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000AQRJO</field>
             <label>Total RoRWA</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyt</field>
+            <label>Transaction Type</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAmB</field>
@@ -6786,9 +7254,14 @@
             <field>00N24000006bAls</field>
             <field>00N2400000JWpeO</field>
             <field>00N24000006bAlt</field>
+            <field>00N1p00000JlNZU</field>
             <field>00N24000006bAlu</field>
             <field>00N24000006bAlv</field>
             <field>00N1p00000JPgUt</field>
+            <field>00N1p00000JlPMr</field>
+            <field>00N1p00000JlPMs</field>
+            <field>00N1p00000JlPMt</field>
+            <field>00N1p00000JlPMu</field>
             <field>00N1p00000Jl8m6</field>
             <field>00N2400000IwTIR</field>
             <field>00N2400000IFFsI</field>
@@ -6806,20 +7279,24 @@
             <field>00N24000006bAlx</field>
             <field>00N2400000Ir4Ic</field>
             <field>00N24000006bAn2</field>
+            <field>00N1p00000JlHn7</field>
             <field>00N1p00000JPeSC</field>
             <field>00N2400000JWyRY</field>
             <field>00N2400000EmGj1</field>
             <field>00N2400000Dvarh</field>
             <field>00N24000006bAly</field>
+            <field>00N1p00000JlTyr</field>
             <field>00N2400000IFFsM</field>
             <field>00N24000006bAlz</field>
             <field>00N24000006bAm0</field>
             <field>00N2400000DxkD2</field>
             <field>00N24000006bAm1</field>
+            <field>00N1p00000JlMyB</field>
             <field>00N2400000IFFsL</field>
             <field>00N24000006bAm2</field>
             <field>00N2400000IBTZx</field>
             <field>00N2400000IwTIS</field>
+            <field>00N1p00000JlTys</field>
             <field>00N24000006bAm3</field>
             <field>00N24000006bAm4</field>
             <field>00N2400000JWgCM</field>
@@ -6841,6 +7318,7 @@
             <field>00N24000006bAm5</field>
             <field>00N2400000JBvoa</field>
             <field>00N2400000IvBze</field>
+            <field>00N1p00000JlTyv</field>
             <field>00N2400000JWYSG</field>
             <field>00N2400000Ixo8C</field>
             <field>00N2400000JBncN</field>
@@ -6862,6 +7340,7 @@
             <field>00N2400000JWpeP</field>
             <field>00N2400000JWpeQ</field>
             <field>00N1p00000JlATd</field>
+            <field>00N1p00000JlMyC</field>
             <field>00N1p00000JlAnb</field>
             <field>00N2400000JUf4V</field>
             <field>00N2400000Hirps</field>
@@ -6882,6 +7361,7 @@
             <field>00N2400000IqUtI</field>
             <field>00N2400000BTQel</field>
             <field>00N2400000AQRJO</field>
+            <field>00N1p00000JlTyt</field>
             <field>00N24000006bAmB</field>
             <field>00N24000006bAmC</field>
             <field>00N2400000IFFsK</field>
@@ -7157,6 +7637,10 @@
             <label>Connected to RFP / Tender</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlNZU</field>
+            <label>Contact Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N24000006bAlu</field>
             <label>Country of Booking 1</label>
         </opportunityListFieldsLabelMappings>
@@ -7167,6 +7651,22 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPgUt</field>
             <label>CPF Account Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMr</field>
+            <label>Creator Business Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMs</field>
+            <label>Creator Country</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMt</field>
+            <label>Creator Hub</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMu</field>
+            <label>Creator Team</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000Jl8m6</field>
@@ -7237,6 +7737,10 @@
             <label>Income this Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlHn7</field>
+            <label>Industry</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPeSC</field>
             <label>isExternal</label>
         </opportunityListFieldsLabelMappings>
@@ -7255,6 +7759,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAly</field>
             <label>Loss/Win Description</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyr</field>
+            <label>Mandate Won date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsM</field>
@@ -7277,6 +7785,10 @@
             <label>No of days past close date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyB</field>
+            <label>Notify ABSA Insurance Of This Deal</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsL</field>
             <label>Ongoing Fee (%)</label>
         </opportunityListFieldsLabelMappings>
@@ -7291,6 +7803,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IwTIS</field>
             <label>Opportunity Deal Value</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTys</field>
+            <label>Opportunity Owner Country</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAm3</field>
@@ -7374,7 +7890,11 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IvBze</field>
-            <label>Product Code (Won Opportunity)</label>
+            <label>Product Code (TB)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyv</field>
+            <label>ProductCount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000JWYSG</field>
@@ -7461,6 +7981,10 @@
             <label>Related Group Client Segment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyC</field>
+            <label>Relationship Contact</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JlAnb</field>
             <label>Relationship Group Segment</label>
         </opportunityListFieldsLabelMappings>
@@ -7539,6 +8063,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000AQRJO</field>
             <label>Total RoRWA</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyt</field>
+            <label>Transaction Type</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAmB</field>
@@ -7637,9 +8165,14 @@
             <field>00N24000006bAls</field>
             <field>00N2400000JWpeO</field>
             <field>00N24000006bAlt</field>
+            <field>00N1p00000JlNZU</field>
             <field>00N24000006bAlu</field>
             <field>00N24000006bAlv</field>
             <field>00N1p00000JPgUt</field>
+            <field>00N1p00000JlPMr</field>
+            <field>00N1p00000JlPMs</field>
+            <field>00N1p00000JlPMt</field>
+            <field>00N1p00000JlPMu</field>
             <field>00N1p00000Jl8m6</field>
             <field>00N2400000IwTIR</field>
             <field>00N2400000IFFsI</field>
@@ -7657,20 +8190,24 @@
             <field>00N24000006bAlx</field>
             <field>00N2400000Ir4Ic</field>
             <field>00N24000006bAn2</field>
+            <field>00N1p00000JlHn7</field>
             <field>00N1p00000JPeSC</field>
             <field>00N2400000JWyRY</field>
             <field>00N2400000EmGj1</field>
             <field>00N2400000Dvarh</field>
             <field>00N24000006bAly</field>
+            <field>00N1p00000JlTyr</field>
             <field>00N2400000IFFsM</field>
             <field>00N24000006bAlz</field>
             <field>00N24000006bAm0</field>
             <field>00N2400000DxkD2</field>
             <field>00N24000006bAm1</field>
+            <field>00N1p00000JlMyB</field>
             <field>00N2400000IFFsL</field>
             <field>00N24000006bAm2</field>
             <field>00N2400000IBTZx</field>
             <field>00N2400000IwTIS</field>
+            <field>00N1p00000JlTys</field>
             <field>00N24000006bAm3</field>
             <field>00N24000006bAm4</field>
             <field>00N2400000JWgCM</field>
@@ -7692,6 +8229,7 @@
             <field>00N24000006bAm5</field>
             <field>00N2400000JBvoa</field>
             <field>00N2400000IvBze</field>
+            <field>00N1p00000JlTyv</field>
             <field>00N2400000JWYSG</field>
             <field>00N2400000Ixo8C</field>
             <field>00N2400000JBncN</field>
@@ -7713,6 +8251,7 @@
             <field>00N2400000JWpeP</field>
             <field>00N2400000JWpeQ</field>
             <field>00N1p00000JlATd</field>
+            <field>00N1p00000JlMyC</field>
             <field>00N1p00000JlAnb</field>
             <field>00N2400000JUf4V</field>
             <field>00N2400000Hirps</field>
@@ -7733,6 +8272,7 @@
             <field>00N2400000IqUtI</field>
             <field>00N2400000BTQel</field>
             <field>00N2400000AQRJO</field>
+            <field>00N1p00000JlTyt</field>
             <field>00N24000006bAmB</field>
             <field>00N24000006bAmC</field>
             <field>00N2400000IFFsK</field>
@@ -8008,6 +8548,10 @@
             <label>Connected to RFP / Tender</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlNZU</field>
+            <label>Contact Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N24000006bAlu</field>
             <label>Country of Booking 1</label>
         </opportunityListFieldsLabelMappings>
@@ -8018,6 +8562,22 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPgUt</field>
             <label>CPF Account Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMr</field>
+            <label>Creator Business Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMs</field>
+            <label>Creator Country</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMt</field>
+            <label>Creator Hub</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMu</field>
+            <label>Creator Team</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000Jl8m6</field>
@@ -8088,6 +8648,10 @@
             <label>Income this Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlHn7</field>
+            <label>Industry</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPeSC</field>
             <label>isExternal</label>
         </opportunityListFieldsLabelMappings>
@@ -8106,6 +8670,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAly</field>
             <label>Loss/Win Description</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyr</field>
+            <label>Mandate Won date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsM</field>
@@ -8128,6 +8696,10 @@
             <label>No of days past close date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyB</field>
+            <label>Notify ABSA Insurance Of This Deal</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsL</field>
             <label>Ongoing Fee (%)</label>
         </opportunityListFieldsLabelMappings>
@@ -8142,6 +8714,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IwTIS</field>
             <label>Opportunity Deal Value</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTys</field>
+            <label>Opportunity Owner Country</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAm3</field>
@@ -8225,7 +8801,11 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IvBze</field>
-            <label>Product Code (Won Opportunity)</label>
+            <label>Product Code (TB)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyv</field>
+            <label>ProductCount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000JWYSG</field>
@@ -8312,6 +8892,10 @@
             <label>Related Group Client Segment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyC</field>
+            <label>Relationship Contact</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JlAnb</field>
             <label>Relationship Group Segment</label>
         </opportunityListFieldsLabelMappings>
@@ -8390,6 +8974,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000AQRJO</field>
             <label>Total RoRWA</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyt</field>
+            <label>Transaction Type</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAmB</field>
@@ -8488,9 +9076,14 @@
             <field>00N24000006bAls</field>
             <field>00N2400000JWpeO</field>
             <field>00N24000006bAlt</field>
+            <field>00N1p00000JlNZU</field>
             <field>00N24000006bAlu</field>
             <field>00N24000006bAlv</field>
             <field>00N1p00000JPgUt</field>
+            <field>00N1p00000JlPMr</field>
+            <field>00N1p00000JlPMs</field>
+            <field>00N1p00000JlPMt</field>
+            <field>00N1p00000JlPMu</field>
             <field>00N1p00000Jl8m6</field>
             <field>00N2400000IwTIR</field>
             <field>00N2400000IFFsI</field>
@@ -8508,20 +9101,24 @@
             <field>00N24000006bAlx</field>
             <field>00N2400000Ir4Ic</field>
             <field>00N24000006bAn2</field>
+            <field>00N1p00000JlHn7</field>
             <field>00N1p00000JPeSC</field>
             <field>00N2400000JWyRY</field>
             <field>00N2400000EmGj1</field>
             <field>00N2400000Dvarh</field>
             <field>00N24000006bAly</field>
+            <field>00N1p00000JlTyr</field>
             <field>00N2400000IFFsM</field>
             <field>00N24000006bAlz</field>
             <field>00N24000006bAm0</field>
             <field>00N2400000DxkD2</field>
             <field>00N24000006bAm1</field>
+            <field>00N1p00000JlMyB</field>
             <field>00N2400000IFFsL</field>
             <field>00N24000006bAm2</field>
             <field>00N2400000IBTZx</field>
             <field>00N2400000IwTIS</field>
+            <field>00N1p00000JlTys</field>
             <field>00N24000006bAm3</field>
             <field>00N24000006bAm4</field>
             <field>00N2400000JWgCM</field>
@@ -8543,6 +9140,7 @@
             <field>00N24000006bAm5</field>
             <field>00N2400000JBvoa</field>
             <field>00N2400000IvBze</field>
+            <field>00N1p00000JlTyv</field>
             <field>00N2400000JWYSG</field>
             <field>00N2400000Ixo8C</field>
             <field>00N2400000JBncN</field>
@@ -8564,6 +9162,7 @@
             <field>00N2400000JWpeP</field>
             <field>00N2400000JWpeQ</field>
             <field>00N1p00000JlATd</field>
+            <field>00N1p00000JlMyC</field>
             <field>00N1p00000JlAnb</field>
             <field>00N2400000JUf4V</field>
             <field>00N2400000Hirps</field>
@@ -8584,6 +9183,7 @@
             <field>00N2400000IqUtI</field>
             <field>00N2400000BTQel</field>
             <field>00N2400000AQRJO</field>
+            <field>00N1p00000JlTyt</field>
             <field>00N24000006bAmB</field>
             <field>00N24000006bAmC</field>
             <field>00N2400000IFFsK</field>
@@ -8863,6 +9463,10 @@
             <label>Connected to RFP / Tender</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlNZU</field>
+            <label>Contact Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N24000006bAlu</field>
             <label>Country of Booking 1</label>
         </opportunityListFieldsLabelMappings>
@@ -8873,6 +9477,22 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPgUt</field>
             <label>CPF Account Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMr</field>
+            <label>Creator Business Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMs</field>
+            <label>Creator Country</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMt</field>
+            <label>Creator Hub</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMu</field>
+            <label>Creator Team</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000Jl8m6</field>
@@ -8943,6 +9563,10 @@
             <label>Income this Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlHn7</field>
+            <label>Industry</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPeSC</field>
             <label>isExternal</label>
         </opportunityListFieldsLabelMappings>
@@ -8961,6 +9585,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAly</field>
             <label>Loss/Win Description</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyr</field>
+            <label>Mandate Won date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsM</field>
@@ -8983,6 +9611,10 @@
             <label>No of days past close date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyB</field>
+            <label>Notify ABSA Insurance Of This Deal</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsL</field>
             <label>Ongoing Fee (%)</label>
         </opportunityListFieldsLabelMappings>
@@ -8997,6 +9629,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IwTIS</field>
             <label>Opportunity Deal Value</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTys</field>
+            <label>Opportunity Owner Country</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAm3</field>
@@ -9080,7 +9716,11 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IvBze</field>
-            <label>Product Code (Won Opportunity)</label>
+            <label>Product Code (TB)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyv</field>
+            <label>ProductCount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000JWYSG</field>
@@ -9167,6 +9807,10 @@
             <label>Related Group Client Segment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyC</field>
+            <label>Relationship Contact</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JlAnb</field>
             <label>Relationship Group Segment</label>
         </opportunityListFieldsLabelMappings>
@@ -9245,6 +9889,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000AQRJO</field>
             <label>Total RoRWA</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyt</field>
+            <label>Transaction Type</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAmB</field>
@@ -9344,9 +9992,14 @@
             <field>00N24000006bAls</field>
             <field>00N2400000JWpeO</field>
             <field>00N24000006bAlt</field>
+            <field>00N1p00000JlNZU</field>
             <field>00N24000006bAlu</field>
             <field>00N24000006bAlv</field>
             <field>00N1p00000JPgUt</field>
+            <field>00N1p00000JlPMr</field>
+            <field>00N1p00000JlPMs</field>
+            <field>00N1p00000JlPMt</field>
+            <field>00N1p00000JlPMu</field>
             <field>00N1p00000Jl8m6</field>
             <field>00N2400000IwTIR</field>
             <field>00N2400000IFFsI</field>
@@ -9364,20 +10017,24 @@
             <field>00N24000006bAlx</field>
             <field>00N2400000Ir4Ic</field>
             <field>00N24000006bAn2</field>
+            <field>00N1p00000JlHn7</field>
             <field>00N1p00000JPeSC</field>
             <field>00N2400000JWyRY</field>
             <field>00N2400000EmGj1</field>
             <field>00N2400000Dvarh</field>
             <field>00N24000006bAly</field>
+            <field>00N1p00000JlTyr</field>
             <field>00N2400000IFFsM</field>
             <field>00N24000006bAlz</field>
             <field>00N24000006bAm0</field>
             <field>00N2400000DxkD2</field>
             <field>00N24000006bAm1</field>
+            <field>00N1p00000JlMyB</field>
             <field>00N2400000IFFsL</field>
             <field>00N24000006bAm2</field>
             <field>00N2400000IBTZx</field>
             <field>00N2400000IwTIS</field>
+            <field>00N1p00000JlTys</field>
             <field>00N24000006bAm3</field>
             <field>00N24000006bAm4</field>
             <field>00N2400000JWgCM</field>
@@ -9399,6 +10056,7 @@
             <field>00N24000006bAm5</field>
             <field>00N2400000JBvoa</field>
             <field>00N2400000IvBze</field>
+            <field>00N1p00000JlTyv</field>
             <field>00N2400000JWYSG</field>
             <field>00N2400000Ixo8C</field>
             <field>00N2400000JBncN</field>
@@ -9420,6 +10078,7 @@
             <field>00N2400000JWpeP</field>
             <field>00N2400000JWpeQ</field>
             <field>00N1p00000JlATd</field>
+            <field>00N1p00000JlMyC</field>
             <field>00N1p00000JlAnb</field>
             <field>00N2400000JUf4V</field>
             <field>00N2400000Hirps</field>
@@ -9440,6 +10099,7 @@
             <field>00N2400000IqUtI</field>
             <field>00N2400000BTQel</field>
             <field>00N2400000AQRJO</field>
+            <field>00N1p00000JlTyt</field>
             <field>00N24000006bAmB</field>
             <field>00N24000006bAmC</field>
             <field>00N2400000IFFsK</field>
@@ -9715,6 +10375,10 @@
             <label>Connected to RFP / Tender</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlNZU</field>
+            <label>Contact Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N24000006bAlu</field>
             <label>Country of Booking 1</label>
         </opportunityListFieldsLabelMappings>
@@ -9725,6 +10389,22 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPgUt</field>
             <label>CPF Account Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMr</field>
+            <label>Creator Business Area</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMs</field>
+            <label>Creator Country</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMt</field>
+            <label>Creator Hub</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlPMu</field>
+            <label>Creator Team</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N1p00000Jl8m6</field>
@@ -9795,6 +10475,10 @@
             <label>Income this Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlHn7</field>
+            <label>Industry</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JPeSC</field>
             <label>isExternal</label>
         </opportunityListFieldsLabelMappings>
@@ -9813,6 +10497,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAly</field>
             <label>Loss/Win Description</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyr</field>
+            <label>Mandate Won date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsM</field>
@@ -9835,6 +10523,10 @@
             <label>No of days past close date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyB</field>
+            <label>Notify ABSA Insurance Of This Deal</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2400000IFFsL</field>
             <label>Ongoing Fee (%)</label>
         </opportunityListFieldsLabelMappings>
@@ -9849,6 +10541,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IwTIS</field>
             <label>Opportunity Deal Value</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTys</field>
+            <label>Opportunity Owner Country</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAm3</field>
@@ -9932,7 +10628,11 @@
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000IvBze</field>
-            <label>Product Code (Won Opportunity)</label>
+            <label>Product Code (TB)</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyv</field>
+            <label>ProductCount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2400000JWYSG</field>
@@ -10019,6 +10719,10 @@
             <label>Related Group Client Segment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlMyC</field>
+            <label>Relationship Contact</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1p00000JlAnb</field>
             <label>Relationship Group Segment</label>
         </opportunityListFieldsLabelMappings>
@@ -10097,6 +10801,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2400000AQRJO</field>
             <label>Total RoRWA</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1p00000JlTyt</field>
+            <label>Transaction Type</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N24000006bAmB</field>
@@ -10195,9 +10903,14 @@
             <field>00N24000006bAls</field>
             <field>00N2400000JWpeO</field>
             <field>00N24000006bAlt</field>
+            <field>00N1p00000JlNZU</field>
             <field>00N24000006bAlu</field>
             <field>00N24000006bAlv</field>
             <field>00N1p00000JPgUt</field>
+            <field>00N1p00000JlPMr</field>
+            <field>00N1p00000JlPMs</field>
+            <field>00N1p00000JlPMt</field>
+            <field>00N1p00000JlPMu</field>
             <field>00N1p00000Jl8m6</field>
             <field>00N2400000IwTIR</field>
             <field>00N2400000IFFsI</field>
@@ -10215,20 +10928,24 @@
             <field>00N24000006bAlx</field>
             <field>00N2400000Ir4Ic</field>
             <field>00N24000006bAn2</field>
+            <field>00N1p00000JlHn7</field>
             <field>00N1p00000JPeSC</field>
             <field>00N2400000JWyRY</field>
             <field>00N2400000EmGj1</field>
             <field>00N2400000Dvarh</field>
             <field>00N24000006bAly</field>
+            <field>00N1p00000JlTyr</field>
             <field>00N2400000IFFsM</field>
             <field>00N24000006bAlz</field>
             <field>00N24000006bAm0</field>
             <field>00N2400000DxkD2</field>
             <field>00N24000006bAm1</field>
+            <field>00N1p00000JlMyB</field>
             <field>00N2400000IFFsL</field>
             <field>00N24000006bAm2</field>
             <field>00N2400000IBTZx</field>
             <field>00N2400000IwTIS</field>
+            <field>00N1p00000JlTys</field>
             <field>00N24000006bAm3</field>
             <field>00N24000006bAm4</field>
             <field>00N2400000JWgCM</field>
@@ -10250,6 +10967,7 @@
             <field>00N24000006bAm5</field>
             <field>00N2400000JBvoa</field>
             <field>00N2400000IvBze</field>
+            <field>00N1p00000JlTyv</field>
             <field>00N2400000JWYSG</field>
             <field>00N2400000Ixo8C</field>
             <field>00N2400000JBncN</field>
@@ -10271,6 +10989,7 @@
             <field>00N2400000JWpeP</field>
             <field>00N2400000JWpeQ</field>
             <field>00N1p00000JlATd</field>
+            <field>00N1p00000JlMyC</field>
             <field>00N1p00000JlAnb</field>
             <field>00N2400000JUf4V</field>
             <field>00N2400000Hirps</field>
@@ -10291,6 +11010,7 @@
             <field>00N2400000IqUtI</field>
             <field>00N2400000BTQel</field>
             <field>00N2400000AQRJO</field>
+            <field>00N1p00000JlTyt</field>
             <field>00N24000006bAmB</field>
             <field>00N24000006bAmC</field>
             <field>00N2400000IFFsK</field>

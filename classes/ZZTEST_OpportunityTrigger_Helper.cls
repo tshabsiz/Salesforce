@@ -432,7 +432,8 @@ private class ZZTEST_OpportunityTrigger_Helper {
 	        insertedOpp.StageName = 'Closed Won';
 	        insertedOpp.Reason_Won_Lost__c = 'Test Won/Lost Reason';
             insertedOpp.ProductLevel3Count__c = 1;
-	        update insertedOpp;
+             insertedOpp.Notify_ABSA_Insurance_Of_This_Deal__c = 'No';
+			 update insertedOpp;
 	        
 	        insertedOpp = [SELECT Id, AccountId FROM Opportunity WHERE Id = :opp.Id LIMIT 1];
 	        System.assertEquals(insertedOpp.AccountId, opp.AccountId);
@@ -448,7 +449,7 @@ private class ZZTEST_OpportunityTrigger_Helper {
         }
     }
     
-    public static testMethod void testUpdateOpportunitySegment() {
+    public static testMethod void testUpdateOpportunitySegmentAndIndustry() {
     	ZZTEST_DataContainer dataContainer = new ZZTEST_DataContainer();
         ZZTEST_F_Opportunity opportunityFactory = ZZTEST_DataFactoryFacade.opportunity;
 		
@@ -460,12 +461,13 @@ private class ZZTEST_OpportunityTrigger_Helper {
 	        insert opp;
 	        Account acc = new Account(Id = opp.AccountId);
 	        acc.Segment__c = 'Global Corporate';
+            acc.Industry = 'Agriculture';
             acc.OwnerId = anotherUser.Id;
             acc.Relationship_Corridor__c = 'CHINA';
-            OpportunityTrigger_Helper.updateOpportunitySegment.clear();
 	        update acc;
-	        Opportunity insertedOpp = [SELECT Id, Segment__c, RelationshipOwnerRoleName__c FROM Opportunity WHERE Id = :opp.Id LIMIT 1];
+	        Opportunity insertedOpp = [SELECT Id, Segment__c, Industry__c, RelationshipOwnerRoleName__c FROM Opportunity WHERE Id = :opp.Id LIMIT 1];
 	        System.assertEquals(insertedOpp.Segment__c, 'Global Corporate');
+            System.assertEquals(insertedOpp.Industry__c, 'Agriculture');
             System.assertEquals(anotherUser.UserRole.Name, insertedOpp.RelationshipOwnerRoleName__c);
         }
     }

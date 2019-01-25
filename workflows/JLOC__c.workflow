@@ -8,7 +8,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Wealth_Email_Templates/JLOC_Email_Notification_on_creation</template>
     </alerts>

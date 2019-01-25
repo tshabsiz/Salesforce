@@ -32,7 +32,8 @@ private class ZZTEST_APT_PendingApprovalInboxCtr{
                 Annual_Pricing__c annualPricing = new Annual_Pricing__c();
                 annualPricing.Organisation__c = account.Id;
                 annualPricing.Pricing_Template__c = pricingTemplate.Id;
-                annualPricing.Approval_Status__c = APT_AnnualPricingUtils.STATUS_NOT_SUBMITTED;
+                //annualPricing.Approval_Status__c = APT_AnnualPricingUtils.STATUS_NOT_SUBMITTED;
+                annualPricing.Approval_Status__c = APT_AnnualPricingUtils.STATUS_STANDARD_PRICING;
                 insert annualPricing;
 
                 List<Annual_Pricing_Item__c> annualPricingItems = new List<Annual_Pricing_Item__c>();

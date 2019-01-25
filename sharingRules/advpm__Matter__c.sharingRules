@@ -210,6 +210,17 @@
         </sharedFrom>
     </sharingOwnerRules>
     <sharingOwnerRules>
+        <fullName>Same_Role_CNSG</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Same Role CNSG</label>
+        <sharedTo>
+            <role>TMG_TA_Deal_Management_CNSG_TM</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>TMG_TA_Deal_Management_CNSG_TM</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
         <fullName>Security_Deal_Management</fullName>
         <accessLevel>Read</accessLevel>
         <label>Security Deal Management</label>

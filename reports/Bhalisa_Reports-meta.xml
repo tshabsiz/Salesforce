@@ -15,5 +15,10 @@
         <sharedTo>tshidi.phangeni@absa1.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>zaheer.ismail@absa1.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
     <name>Bhalisa Reports</name>
 </ReportFolder>

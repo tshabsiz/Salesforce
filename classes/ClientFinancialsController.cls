@@ -101,7 +101,7 @@ public class ClientFinancialsController extends ClientPlanUtils{
             queryPlan(planId);
             if(planLoaded) {
                 userCurrencyCode = UserInfo.getDefaultCurrency();
-                financeList = queryFinancialInformation(plan);
+                financeList = queryFinancialInformation(plan, System.Today().year()-5, 6);
                 
                 
                 queryAbsaFacility();
@@ -238,7 +238,7 @@ public class ClientFinancialsController extends ClientPlanUtils{
             setErrorMessage(Label.errMsg_ErrorDuringDeleting);
         }
         
-        financeList = queryFinancialInformation(plan);
+        financeList = queryFinancialInformation(plan, System.Today().year()-5, 6);
        
         
         return null;
@@ -611,7 +611,7 @@ public class ClientFinancialsController extends ClientPlanUtils{
             System.debug(e);
             setErrorMessage(Label.errMsg_ErrorDuringAddingPotOpty);
         }
-        financeList = queryFinancialInformation(plan);
+        financeList = queryFinancialInformation(plan, System.Today().year()-5, 6);
         
     }
     
@@ -666,7 +666,7 @@ public class ClientFinancialsController extends ClientPlanUtils{
                     System.debug(e);
                     setErrorMessage(Label.errMsg_ErrorDuringEditingPotOpty);
                 }
-                financeList = queryFinancialInformation(plan);
+                financeList = queryFinancialInformation(plan, System.Today().year()-5, 6);
                 
                 
                 break;
@@ -839,14 +839,14 @@ public class ClientFinancialsController extends ClientPlanUtils{
 * History
 * <Date>      <Authors Name>     <Brief Description of Change>
 *------------------------------------------------------------*/
-    public static List<Financial_Information__c> queryFinancialInformation(Client_Plan__c plan) {
+    public static List<Financial_Information__c> queryFinancialInformation(Client_Plan__c plan, Integer greaterthan, Integer RecordLimit) {
         List<Financial_Information__c>financialList = [
             SELECT    Id, Year__c, Month__c, Period_Of_Months__c,Tangible_Gearing_Net_Debt_TNW__c,Net_Debt_Cash_Ebitda__c,Gross_Debt_Cash_Ebitda__c,LastModifiedDate ,EBITDA_Net_Interest_cover__c ,Cash_flow_from_operating_activities_Adj__c ,PAT__c,Financial_Results__c,Net_cash_generation_utilization__c,Capex__c,Free_Cash_Flow__c,Cash_flow_from_operating_activities__c,Total_Liabilities__c,Tangible_Net_Worth__c,Cash_and_cash_equivalents__c,Net_Worth__c,Subordinated_Shareholder_Loans__c,Gross_Debt__c,Total_Tangible_Assets__c,Net_Interest_Expense_BAGL_facilities__c,Net_Interest_Expense_Income__c,Turnover__c, Market_Cap__c, Total_Assets__c, Net_Asset_Value__c, Total_Interest_Bearing_Debt__c, Cash_Generated_by_Operations__c, EBITDA__c, EBIT__c, EBITDA_Margin__c, ROE__c, ROA__c, Debt_Equity__c, Current_Ratio__c, EPS__c, Interest_Cover_Ratio__c, Net_Debt__c
             FROM      Financial_Information__c
             WHERE     Relationship__c = :plan.Relationship__c
-            AND Year__c > :String.valueOf(System.Today().year()-4)
-            ORDER BY  Year__c DESC
-            LIMIT 5
+            AND Year__c > :String.valueOf(greaterthan)
+            ORDER BY  YearString__c DESC
+            LIMIT :RecordLimit
         ];
         
         if(financialList.size()>0)

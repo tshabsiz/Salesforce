@@ -15,6 +15,8 @@ private class ZZTEST_WS_SDS {
 		ZZTEST_F_Account accountFactory = ZZTEST_DataFactoryFacade.account;  
 		
 		Account testSdsAcc = accountFactory.getInsertedProduct(ZZTEST_F_Account.AccountRecordType.SDS_ACCOUNT, dataContainer);
+        testSdsAcc.SDS__c = '10000650';
+        update testSdsAcc;
         
         // Check initial fields of account (before update)
         System.assertEquals(testSdsAcc.SDS__c,'10000650');
@@ -71,6 +73,8 @@ private class ZZTEST_WS_SDS {
 		ZZTEST_F_Account accountFactory = ZZTEST_DataFactoryFacade.account;  
 		
 		Account testSdsAcc = accountFactory.getInsertedProduct(ZZTEST_F_Account.AccountRecordType.SDS_ACCOUNT, dataContainer);
+        testSdsAcc.SDS__c = '10000650';
+        update testSdsAcc;
         
         // Check initial fields of account (before update)
         System.assertEquals(testSdsAcc.SDS__c,'10000650');

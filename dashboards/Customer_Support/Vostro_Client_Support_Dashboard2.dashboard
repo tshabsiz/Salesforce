@@ -4,34 +4,6 @@
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
     <backgroundStartColor>#FFFFFF</backgroundStartColor>
     <dashboardFilters>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>TODAY</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>YESTERDAY</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>THIS_WEEK</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>LAST_WEEK</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>THIS_MONTH</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>LAST_MONTH</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>THIS_YEAR</values>
-        </dashboardFilterOptions>
         <name>Opened Date</name>
     </dashboardFilters>
     <dashboardType>SpecifiedUser</dashboardType>
@@ -170,7 +142,7 @@
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>
-    <runningUser>taye.sibanda@absa1.com</runningUser>
+    <runningUser>nakedi.mashapa@absa1.com</runningUser>
     <textColor>#000000</textColor>
     <title>Vostro Client Support Dashboard</title>
     <titleColor>#000000</titleColor>

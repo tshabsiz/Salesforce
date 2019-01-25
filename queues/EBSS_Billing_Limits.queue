@@ -4,10 +4,19 @@
     <email>dummy@invalid.com</email>
     <name>EBSS - Billing &amp; Limits</name>
     <queueMembers>
-        <roleAndSubordinatesInternal>
-            <roleAndSubordinateInternal>Client_Service_Centre</roleAndSubordinateInternal>
-        </roleAndSubordinatesInternal>
+        <users>
+            <user>cecilia.mvelase@absa1.com</user>
+            <user>dalene.moodliar@absa1.com</user>
+            <user>faika.cassim@absa1.com</user>
+            <user>lerato.magagula@absa1.com</user>
+            <user>lutticia.montjane@absa1.com</user>
+            <user>maria.buchner@absa1.com</user>
+            <user>monica.repolho@absa1.com</user>
+            <user>ntebaleng.mashaba@absa1.com</user>
+            <user>patronella.marokwa@absa1.com</user>
+        </users>
     </queueMembers>
+    <queueRoutingConfig>EBSS_Billing_Limits</queueRoutingConfig>
     <queueSobject>
         <sobjectType>Case</sobjectType>
     </queueSobject>

@@ -115,7 +115,7 @@ public with sharing class ClientPlanSummaryPrintViewController   extends ClientP
     }
 
     private void queryClientFinancials() {
-        clientPlanFinancials = ClientFinancialsController.queryFinancialInformation(clientPlan);
+        clientPlanFinancials = ClientFinancialsController.queryFinancialInformation(clientPlan, 0, 5);
     }
 
     private void queryClientExistingProducts() {

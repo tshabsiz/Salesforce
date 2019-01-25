@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
     <sharingCriteriaRules>
+        <fullName>Call_Report_GC_Segment_with_GC_and_Internal_Subordinates</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Call reports where Share with Banker is true owned by any role containing GC or where the owner&apos;s team = GC should be shared with ZAF - CIB - Coverage - Global Clients - GDO and internal subordinates</description>
+        <label>Call Report -GC Segment with GC and Internal Subordinates</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Global_Clients_Global_Corporates</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>RelationshipOwnerRoleName__c</field>
+            <operation>equals</operation>
+            <value>GC</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
         <fullName>Call_Reports_shared_with_Central_if_shared_with_Banker</fullName>
         <accessLevel>Read</accessLevel>
         <label>Call Reports shared with Central if shared with Banker</label>
@@ -95,6 +109,20 @@
             <field>RecordTypeId</field>
             <operation>equals</operation>
             <value>META - Call Report</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Sharing_with_Market_Institution</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>When Share With Markets Institution is true Share with ZAF - CIB - Markets - Institutions role</description>
+        <label>Sharing with Market Institution</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>SA_Markets_Institutions</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>Share_With_Markets_Institu__c</field>
+            <operation>equals</operation>
+            <value>True</value>
         </criteriaItems>
     </sharingCriteriaRules>
 </SharingRules>

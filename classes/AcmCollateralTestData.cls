@@ -214,7 +214,7 @@ public class AcmCollateralTestData
         TestAccountChanged = new Account(); 
         TestAccountChanged.Name = generateRandomStringBlob();
         TestAccountChanged.Type = 'Client';
-        TestAccountChanged.SDS__c = 'SDS';
+        TestAccountChanged.SDS__c = generateRandomStringBlob();
         TestAccountChanged.Financial_Year_End_Month__c = todaysDate_nextMonth.format('MMMM');
         TestAccountChanged.RecordTypeId = mapAccountRecordTypes.get('Prospect').getRecordTypeId();
         insert TestAccountChanged;

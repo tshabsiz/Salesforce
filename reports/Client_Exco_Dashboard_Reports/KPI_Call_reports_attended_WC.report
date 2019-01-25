@@ -11,10 +11,10 @@
         <chartType>VerticalColumnStacked</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Call_Report__c.Attendees__r$Barclays_Attendee__c</groupingColumn>
+        <groupingColumn>Call_Report__c.Attendees__r$Barclays_Attendee__c.Team__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
-        <secondaryGroupingColumn>Call_Report__c.Attendees__r$Barclays_Attendee__c.Team__c</secondaryGroupingColumn>
+        <secondaryGroupingColumn>Call_Report__c.Attendees__r$Barclays_Attendee__c</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -56,7 +56,7 @@
             <column>Call_Report__c.Attendees__r$Barclays_Attendee__c.Team__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Midcorp Western Cape</value>
+            <value>Large Local Corporate WC,Midcorp Western Cape</value>
         </criteriaItems>
         <criteriaItems>
             <column>Call_Report__c.Attendees__r$Barclays_Attendee__c.Profile</column>

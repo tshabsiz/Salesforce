@@ -52,12 +52,6 @@
             <operator>equals</operator>
             <value>Case.CSC_Emails</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>Case.Email_Action__c</column>
-            <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>New Case Created</value>
-        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
@@ -96,6 +90,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_PREVCURFY</interval>
+        <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

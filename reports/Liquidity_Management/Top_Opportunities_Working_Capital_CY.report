@@ -47,9 +47,6 @@
         <field>OpportunityLineItem.Weighted_Income_this_Year__c</field>
     </columns>
     <columns>
-        <field>CREATED_DATE</field>
-    </columns>
-    <columns>
         <field>CLOSE_DATE</field>
     </columns>
     <columns>
@@ -60,6 +57,18 @@
     </columns>
     <columns>
         <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>STAGE_DURATION</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_STAGE_CHANGE_DATE</field>
     </columns>
     <currency>ZAR</currency>
     <filter>
@@ -85,7 +94,7 @@
     <name>Top Opportunities - Working Capital CY</name>
     <params>
         <name>open</name>
-        <value>open</value>
+        <value>all</value>
     </params>
     <params>
         <name>probability</name>
@@ -96,13 +105,13 @@
         <value>1</value>
     </params>
     <reportType>OpportunityProduct</reportType>
+    <roleHierarchyFilter>BAGL_Management</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
-        <endDate>2016-12-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

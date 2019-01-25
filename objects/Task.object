@@ -209,6 +209,130 @@
     </fields>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypes>
+        <fullName>Campaign_Task</fullName>
+        <active>true</active>
+        <description>Task used for Campaigns</description>
+        <label>Campaign Task</label>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Contacted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Converted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Identified</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Not Taken Up</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_Reason__c</picklist>
+            <values>
+                <fullName>Client need change %2F not taken up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Policy Decision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product %2F Solution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regulatory %2F Compliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Relationship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Leave</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Team Building Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Working Offsite</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
         <fullName>Collateral_Valuation</fullName>
         <active>true</active>
         <description>Used to Schedule Collateral Valuations.</description>
@@ -228,6 +352,217 @@
             <picklist>Status</picklist>
             <values>
                 <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_Reason__c</picklist>
+            <values>
+                <fullName>Client need change %2F not taken up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Policy Decision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product %2F Solution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regulatory %2F Compliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Relationship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Leave</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Team Building Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Working Offsite</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Default_Task</fullName>
+        <active>true</active>
+        <description>Default Task for CIB</description>
+        <label>Default Task</label>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Confirm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contacted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Converted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Effect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Forward</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Identified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Liaise</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monitor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Taken Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Notify</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Prepare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Receive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_Reason__c</picklist>
+            <values>
+                <fullName>Client need change %2F not taken up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Policy Decision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product %2F Solution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regulatory %2F Compliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Relationship</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -310,6 +645,41 @@
             <values>
                 <fullName>Open</fullName>
                 <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status_Reason__c</picklist>
+            <values>
+                <fullName>Client need change %2F not taken up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Policy Decision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product %2F Solution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regulatory %2F Compliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Relationship</fullName>
+                <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
@@ -434,6 +804,41 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Status_Reason__c</picklist>
+            <values>
+                <fullName>Client need change %2F not taken up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Policy Decision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product %2F Solution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regulatory %2F Compliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Relationship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Subject</picklist>
             <values>
                 <fullName>Call</fullName>
@@ -531,6 +936,41 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Status_Reason__c</picklist>
+            <values>
+                <fullName>Client need change %2F not taken up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Policy Decision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product %2F Solution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regulatory %2F Compliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Relationship</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Subject</picklist>
             <values>
                 <fullName>Call</fullName>
@@ -620,6 +1060,14 @@
         <active>true</active>
         <errorConditionFormula>ISNEW() = FALSE &amp;&amp;RecordType.DeveloperName == &quot;Collateral_Valuation&quot; &amp;&amp;  (Description == NULL || ISBLANK(Actual_Completion_Date__c) = TRUE) &amp;&amp; Subject != &quot;Contact Client to Schedule Valuation&quot;</errorConditionFormula>
         <errorMessage>Please ensure that you have specified an Actual Completion Date and Comments.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Status_Reason_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(Status, &apos;Not Taken Up&apos;) &amp;&amp; ISBLANK(TEXT(Status_Reason__c)) &amp;&amp;
+OR(ISBLANK(RecordType.DeveloperName),RecordType.DeveloperName = &quot;Default_Task&quot;,RecordType.DeveloperName = &quot;Campaign_Task&quot;)</errorConditionFormula>
+        <errorDisplayField>Status_Reason__c</errorDisplayField>
+        <errorMessage>Status Reason required for this Status</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>advpm__Validate_Time_Log</fullName>

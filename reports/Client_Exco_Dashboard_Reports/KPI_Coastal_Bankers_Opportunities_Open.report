@@ -71,10 +71,10 @@
         <field>RECORDTYPE</field>
     </columns>
     <columns>
-        <field>Opportunity.Opportunity_Country__c</field>
+        <field>ACCOUNT_NAME</field>
     </columns>
     <columns>
-        <field>Account.Hub_F__c</field>
+        <field>Opportunity.Opportunity_Country__c</field>
     </columns>
     <columns>
         <field>User.Hub__c</field>
@@ -84,6 +84,10 @@
     </columns>
     <columns>
         <field>TYPE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Significant_Pitch__c</field>
     </columns>
     <columns>
         <field>STAGE_NAME</field>
@@ -124,9 +128,6 @@
     </columns>
     <columns>
         <field>OpportunityLineItem.Balance__c.CONVERT</field>
-    </columns>
-    <columns>
-        <field>ACCOUNT_NAME</field>
     </columns>
     <currency>ZAR</currency>
     <filter>
@@ -173,6 +174,7 @@
         <value>1</value>
     </params>
     <reportType>OpportunityProduct</reportType>
+    <roleHierarchyFilter>BAGL_Management</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>

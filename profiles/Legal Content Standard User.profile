@@ -455,6 +455,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>Batch_Opportunities_Without_Products</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>Batch_ProductPartnerReminder</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -724,6 +728,14 @@
     </classAccesses>
     <classAccesses>
         <apexClass>BoxUserTests</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>BriefingNoteController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>BriefingNoteControllerTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -1819,14 +1831,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>DefermentApprovalTrigger_helper</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>DefermentTrigger_Helper</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>DocumentTypeSelect_Con</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -2331,6 +2335,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>LsceEmailOutput_test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>Margin_Ratchet_Conditions_Bulk</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -2516,6 +2524,14 @@
     </classAccesses>
     <classAccesses>
         <apexClass>MyProfilePageControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>NewOpportunityFromTaskController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>NewOpportunityFromTaskController_Test</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -3087,6 +3103,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>ZZTEST_Batch_Opps_Without_Products</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ZZTEST_BatchableUserLoginUpdate</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -3603,6 +3623,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>evCalendarLinkGenerator</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>evCalendarLinkGeneratorTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>evDelegateCreation_Controller</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -3768,6 +3796,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>lscDropzoneExt_test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>lscEmailOutputFromExchangeTest</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -4406,12 +4438,42 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.OriginalSalesforceID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Owner_Country__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.Ownership</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.ParentId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Parent_Banker_Team__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Parent_Banker__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Parent_Hub__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Parent__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4663,6 +4725,26 @@
         <editable>false</editable>
         <field>Account.UK_Barclays_Org_ID__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Ultimate_Parent_Banker_Team__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Ultimate_Parent_Banker__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Ultimate_Parent_Hub__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Ultimate_Parent__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -6226,6 +6308,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Attendee__c.Attendee_Mobile__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Attendee__c.Attendee_Name__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -7631,6 +7718,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Call_Report__c.Share_With_Markets_Institu__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Call_Report__c.Subject__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -7911,6 +8003,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Case.Approver_Photo__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Approver__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Case.AssetId</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -8007,6 +8109,21 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.CSS_Rating__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Call_Report__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Capturer_Photo__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Capturer__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -8188,6 +8305,21 @@
         <editable>false</editable>
         <field>Case.Created_Hour__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Creator_Country__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Creator_Hub__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Creator_Team__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -8437,6 +8569,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Case.IsEscalated</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Issue_Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -10458,6 +10595,11 @@
         <editable>false</editable>
         <field>Client_Plan__c.DG__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Client_Plan__c.Executive_Summary__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -12496,6 +12638,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Contact.Categories_of_contacts__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Contact.Client_ID__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -12608,6 +12755,11 @@
         <editable>true</editable>
         <field>Contact.Image__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.Inactive_Contact__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -13750,81 +13902,6 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Deferment_Approval__c.Credit__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Deferment_Approval__c.Legal__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Deferment_Approval__c.Product_Partner__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Deferment_Approval__c.Status__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Deferment_Approval__c.first_approval__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Deferment_Approval__c.second_approval__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Deferment_Approval__c.third_approval__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Deferment__c.Approved__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Deferment__c.Credit_Approver__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Deferment__c.Deferment_Age__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Deferment__c.Deferment_Stage__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Deferment__c.Defferal_due_date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Deferment__c.Legal_Approver__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Deferment__c.Product_Approver__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Deferment__c.Status__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Delegate_Attendance__c.Date__c</field>
         <readable>false</readable>
@@ -14545,6 +14622,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Description_Tracking__c.Description__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Distribution_Group__c.Description__c</field>
         <readable>false</readable>
@@ -15071,6 +15153,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Event.Campaign__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Event.Comments__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -15122,6 +15209,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Event.Status_Icon__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Event.Status_Reason__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -16902,6 +16994,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Financial_Information__c.Turnover__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Financial_Information__c.YearString__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -20406,6 +20503,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.Contact_Number__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.ContractId</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -20417,6 +20519,26 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Country_of_booking_2__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Creator_Business_Area__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Creator_Country__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Creator_Hub__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Creator_Team__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -20511,6 +20633,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.Industry__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.IsPrivate</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -20537,6 +20664,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Loss_Win_Description__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Mandate_Won_date__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -20572,6 +20704,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.No_of_days_past_close_date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Notify_ABSA_Insurance_Of_This_Deal__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -20622,6 +20759,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.OwnerOccupied__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Owner_Country__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -20698,6 +20840,11 @@
         <editable>true</editable>
         <field>Opportunity.Probability</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.ProductCount__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -20821,6 +20968,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.Relationship_Contact__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.Relationship_Group_Segment__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -20922,6 +21074,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Total_RoRWA__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Transaction_Type__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -21151,6 +21308,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>OpportunityLineItem.FX_Sales_Comment__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>OpportunityLineItem.Facilities_Off_Balance__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -21242,6 +21404,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>OpportunityLineItem.Margin__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>OpportunityLineItem.MonthlyValue__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -24931,6 +25098,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Task.Campaign__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Task.Comments__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -24972,6 +25144,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Task.Status_Icon__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Task.Status_Reason__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -25383,6 +25560,11 @@
         <editable>false</editable>
         <field>User.Division__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.Document_URL__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -36871,6 +37053,236 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>knowledge_Ownership_Assignment__mdt.Queue__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Action_User_Preference__c.lightningbuddy__Dismissed_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Action_User_Preference__c.lightningbuddy__User__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Action_Text__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Enabled_Profiles__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__External_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__File_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Image_Carousel_Config__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Lightning_Flow_API_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Popover_Text__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Quick_Action_API_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Record_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Record_Type_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Record_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Record_Update_Criteria__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Recurrence_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Recurrence_Days__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Recurrence__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Toaster_Alert_Duration__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Toaster_Alert_Icon__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Toaster_Alert_Message__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Toaster_Alert_Mode__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Toaster_Alert_Param_Config__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Toaster_Alert_Title__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Toaster_Alert_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Video_Link__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Video_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Welcome_Mat_Background_Image__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Welcome_Mat_Body__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Welcome_Mat_Main_Image__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Welcome_Mat_Tile_Config__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Actions__c.lightningbuddy__Welcome_Mat_Title__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Carousel_Image__c.lightningbuddy__Description__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Carousel_Image__c.lightningbuddy__Image_Url__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Record_Criteria__c.lightningbuddy__Field_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Record_Criteria__c.lightningbuddy__Field_Value__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Toaster_Alert_Param__c.lightningbuddy__Link__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Toaster_Alert_Param__c.lightningbuddy__Order__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Url_Path_Mapping__mdt.lightningbuddy__Object__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Url_Path_Mapping__mdt.lightningbuddy__Query_String__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Url_Path_Mapping__mdt.lightningbuddy__Url__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Welcome_Mat_Tile__c.lightningbuddy__Body__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Welcome_Mat_Tile__c.lightningbuddy__Icon__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Welcome_Mat_Tile__c.lightningbuddy__Link__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>lightningbuddy__Welcome_Mat_Tile__c.lightningbuddy__Title__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>pi__AsyncRequest__c.pi__AsyncType__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -37360,6 +37772,21 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Acm_Facility__c-Acm Facility Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ActionPlan-Action Plan Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ActionPlanTemplate-Action Plan Template Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ActionPlanTemplateItem-Action Plan Template Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ActionPlanTemplateItemValue-Action Plan Template Item Value Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ActionPlanTemplateVersion-Action Plan Template Version Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Action_Assignment__c-Assignment Layout</layout>
@@ -37995,24 +38422,6 @@
         <layout>Decision__c-Decision Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Deferment_Approval__c-Credit</layout>
-        <recordType>Deferment_Approval__c.Credit_Sanctioner</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Deferment_Approval__c-Deferment Approval Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Deferment_Approval__c-Legal</layout>
-        <recordType>Deferment_Approval__c.Legal</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Deferment_Approval__c-Product</layout>
-        <recordType>Deferment_Approval__c.Product_Specialist</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Deferment__c-Deferment Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Delegate_Attendance__c-Delegate Attendance Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -38039,6 +38448,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Delivered__c-Delivered Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Description_Tracking__c-Description Tracking Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Distribution_Group__c-Distribution Group Layout</layout>
@@ -38833,6 +39245,14 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Task-Task Layout</layout>
+        <recordType>Task.Campaign_Task</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-Task Layout</layout>
+        <recordType>Task.Default_Task</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-Task Layout</layout>
         <recordType>Task.Matter_Status_History</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -38863,6 +39283,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>UserAlt-User Profile Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserAppMenuItem-Application Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>UserRequestSetting__mdt-User Request Setting Layout</layout>
@@ -38945,6 +39368,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>items_Box__x-items_Box Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>knowledge_Ownership_Assignment__mdt-knowledge Ownership Assignment Layout</layout>
     </layoutAssignments>
     <loginHours/>
     <loginIpRanges>
@@ -39101,6 +39527,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>Contract</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Description_Tracking__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -39406,6 +39841,60 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
+        <object>lightningbuddy__Action_User_Preference__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>lightningbuddy__Actions__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>lightningbuddy__Carousel_Image__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>lightningbuddy__Record_Criteria__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>lightningbuddy__Toaster_Alert_Param__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>lightningbuddy__Welcome_Mat_Tile__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
         <object>ltngsharing__PrivateTestObject__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
@@ -39452,6 +39941,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>APT_ViewAnnualPricing</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>AbsaMiningShowcase2019Agenda</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
@@ -39568,6 +40061,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>BoxDocumentView</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>BriefingNote</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
@@ -40411,6 +40908,10 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>briefingNoteMobile</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>dealPartyOverride</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
@@ -40936,21 +41437,6 @@
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>true</default>
-        <recordType>Deferment_Approval__c.Credit_Sanctioner</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Deferment_Approval__c.Legal</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Deferment_Approval__c.Product_Specialist</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
         <default>false</default>
         <recordType>Delegate__c.Attendee</recordType>
         <visible>false</visible>
@@ -41385,7 +41871,17 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
+        <recordType>Task.Campaign_Task</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
         <recordType>Task.Collateral_Valuation</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Task.Default_Task</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -41683,6 +42179,51 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>agf__Release_Signoff_Infrastructure__c.agf__Splits_Migrations</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>lightningbuddy__Actions__c.lightningbuddy__File</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>lightningbuddy__Actions__c.lightningbuddy__Flow</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>lightningbuddy__Actions__c.lightningbuddy__Image_Carousel</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>lightningbuddy__Actions__c.lightningbuddy__Object_Quick_Action</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>lightningbuddy__Actions__c.lightningbuddy__Popover</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>lightningbuddy__Actions__c.lightningbuddy__Rich_Text</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>lightningbuddy__Actions__c.lightningbuddy__Toaster_Alert</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>lightningbuddy__Actions__c.lightningbuddy__Video</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>lightningbuddy__Actions__c.lightningbuddy__Welcome_Mat</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <tabVisibilities>

@@ -90,13 +90,13 @@
             <column>User.Team_Role__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Coverage/Product Leadership,Coverage Banker(RM),Leadership,CSM (CMA/ARM)</value>
+            <value>Coverage Banker(RM),Leadership</value>
         </criteriaItems>
         <criteriaItems>
             <column>User.Team__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Midcorp Western Cape</value>
+            <value>Large Local Corporate WC,Midcorp Western Cape</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

@@ -12,7 +12,7 @@
             <field>advpm__Staff__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Missing_Weekly_Time_Quota</template>
     </alerts>

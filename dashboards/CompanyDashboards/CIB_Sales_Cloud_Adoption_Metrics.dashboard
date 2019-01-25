@@ -9,161 +9,46 @@
             <columnIndex>0</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-                <componentType>Table</componentType>
-                <dashboardTableColumn>
-                    <column>ADDRESS_COUNTRY_CODE</column>
-                    <sortBy>RowLabelAscending</sortBy>
-                </dashboardTableColumn>
-                <dashboardTableColumn>
-                    <calculatePercent>false</calculatePercent>
-                    <column>User.Business_Area__c</column>
-                    <showTotal>false</showTotal>
-                </dashboardTableColumn>
-                <dashboardTableColumn>
-                    <calculatePercent>false</calculatePercent>
-                    <column>RowCount</column>
-                    <showTotal>true</showTotal>
-                </dashboardTableColumn>
-                <displayUnits>Integer</displayUnits>
+                <chartAxisRange>Auto</chartAxisRange>
+                <componentType>Bar</componentType>
+                <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
-                <footer>Sales Cloud licenses allocated to CIB users</footer>
-                <header>Usage KPIs</header>
-                <indicatorHighColor>#54C254</indicatorHighColor>
-                <indicatorLowColor>#C25454</indicatorLowColor>
-                <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-                <report>DashboardReportsAdoption/KPI_of_CIB_Sales_Cloud_users</report>
-                <showPicturesOnTables>false</showPicturesOnTables>
-                <title>CIB Sales Cloud users - Biz Area</title>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <header>Log-in rate by Country - Last 30 days</header>
+                <report>DashboardReportsAdoption/Log_in_rate_by_Country</report>
+                <showPercentage>false</showPercentage>
+                <showPicturesOnCharts>false</showPicturesOnCharts>
+                <showValues>false</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <useReportChart>true</useReportChart>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
-            <rowSpan>4</rowSpan>
+            <rowSpan>6</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>3</colSpan>
             <columnIndex>3</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-                <componentType>Table</componentType>
-                <dashboardTableColumn>
-                    <column>Opportunity.Opportunity_Country__c</column>
-                    <sortBy>RowLabelAscending</sortBy>
-                </dashboardTableColumn>
-                <dashboardTableColumn>
-                    <calculatePercent>false</calculatePercent>
-                    <column>RowCount</column>
-                    <showTotal>true</showTotal>
-                </dashboardTableColumn>
-                <displayUnits>Integer</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
-                <header>Data Quality KPIs</header>
-                <indicatorHighColor>#54C254</indicatorHighColor>
-                <indicatorLowColor>#C25454</indicatorLowColor>
-                <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-                <report>Data_Management_Dashboards_Reports/All_Open_Opportunities</report>
-                <showPicturesOnTables>false</showPicturesOnTables>
-                <title>Open Opportunities</title>
-            </dashboardComponent>
-            <rowIndex>0</rowIndex>
-            <rowSpan>4</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>3</colSpan>
-            <columnIndex>6</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-                <componentType>Table</componentType>
-                <dashboardTableColumn>
-                    <column>Opportunity.Opportunity_Country__c</column>
-                    <sortBy>RowLabelAscending</sortBy>
-                </dashboardTableColumn>
-                <dashboardTableColumn>
-                    <calculatePercent>false</calculatePercent>
-                    <column>RowCount</column>
-                    <showTotal>true</showTotal>
-                </dashboardTableColumn>
-                <dashboardTableColumn>
-                    <aggregateType>Sum</aggregateType>
-                    <calculatePercent>false</calculatePercent>
-                    <column>Opportunity.Income_this_Year__c</column>
-                    <showTotal>true</showTotal>
-                </dashboardTableColumn>
+                <chartAxisRange>Auto</chartAxisRange>
+                <componentType>Bar</componentType>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
-                <header>Business Performance KPIs</header>
-                <indicatorHighColor>#54C254</indicatorHighColor>
-                <indicatorLowColor>#C25454</indicatorLowColor>
-                <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-                <report>DashboardReportsAdoption/KPI_Opportunities_created_CM</report>
-                <showPicturesOnTables>false</showPicturesOnTables>
-                <title>Created this month</title>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <header>Contacts modified rate - YTD</header>
+                <report>DashboardReportsAdoption/KPI_Contacts_created_modified_by_CIB</report>
+                <showPercentage>false</showPercentage>
+                <showPicturesOnCharts>false</showPicturesOnCharts>
+                <showValues>false</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <useReportChart>true</useReportChart>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
-            <rowSpan>4</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>3</colSpan>
-            <columnIndex>0</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-                <componentType>Table</componentType>
-                <dashboardTableColumn>
-                    <column>ADDRESS_COUNTRY_CODE</column>
-                    <sortBy>RowLabelAscending</sortBy>
-                </dashboardTableColumn>
-                <dashboardTableColumn>
-                    <calculatePercent>false</calculatePercent>
-                    <column>User.Business_Area__c</column>
-                    <showTotal>false</showTotal>
-                </dashboardTableColumn>
-                <dashboardTableColumn>
-                    <calculatePercent>false</calculatePercent>
-                    <column>RowCount</column>
-                    <showTotal>true</showTotal>
-                </dashboardTableColumn>
-                <displayUnits>Auto</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
-                <indicatorHighColor>#54C254</indicatorHighColor>
-                <indicatorLowColor>#C25454</indicatorLowColor>
-                <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-                <report>DashboardReportsAdoption/KPI_Logged_in_last_month</report>
-                <showPicturesOnTables>false</showPicturesOnTables>
-                <title>Logged-in past month - Biz Area</title>
-            </dashboardComponent>
-            <rowIndex>4</rowIndex>
-            <rowSpan>4</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>3</colSpan>
-            <columnIndex>3</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-                <componentType>Table</componentType>
-                <dashboardTableColumn>
-                    <column>Opportunity.Opportunity_Country__c</column>
-                    <sortBy>RowLabelAscending</sortBy>
-                </dashboardTableColumn>
-                <dashboardTableColumn>
-                    <calculatePercent>true</calculatePercent>
-                    <column>RowCount</column>
-                    <showTotal>true</showTotal>
-                </dashboardTableColumn>
-                <displayUnits>Integer</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
-                <footer>Past expected close date</footer>
-                <indicatorHighColor>#54C254</indicatorHighColor>
-                <indicatorLowColor>#C25454</indicatorLowColor>
-                <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-                <report>Data_Management_Dashboards_Reports/Overdue_Opportunities</report>
-                <showPicturesOnTables>false</showPicturesOnTables>
-                <title>Overdue Opportunities</title>
-            </dashboardComponent>
-            <rowIndex>4</rowIndex>
-            <rowSpan>4</rowSpan>
+            <rowSpan>6</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>3</colSpan>
@@ -196,69 +81,7 @@
                 <showPicturesOnTables>false</showPicturesOnTables>
                 <title>Won this month</title>
             </dashboardComponent>
-            <rowIndex>4</rowIndex>
-            <rowSpan>4</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>3</colSpan>
-            <columnIndex>0</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-                <componentType>Table</componentType>
-                <dashboardTableColumn>
-                    <column>ADDRESS_COUNTRY_CODE</column>
-                </dashboardTableColumn>
-                <dashboardTableColumn>
-                    <calculatePercent>false</calculatePercent>
-                    <column>BucketField_91941163</column>
-                    <showTotal>false</showTotal>
-                    <sortBy>RowLabelAscending</sortBy>
-                </dashboardTableColumn>
-                <dashboardTableColumn>
-                    <calculatePercent>false</calculatePercent>
-                    <column>RowCount</column>
-                    <showTotal>true</showTotal>
-                </dashboardTableColumn>
-                <displayUnits>Integer</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
-                <indicatorHighColor>#54C254</indicatorHighColor>
-                <indicatorLowColor>#C25454</indicatorLowColor>
-                <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-                <report>DashboardReportsAdoption/KPI_Sales_users_not_logged_in_30_day</report>
-                <showPicturesOnTables>false</showPicturesOnTables>
-                <title>Not logging in - last 30 days</title>
-            </dashboardComponent>
-            <rowIndex>8</rowIndex>
-            <rowSpan>4</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>3</colSpan>
-            <columnIndex>3</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-                <componentType>Table</componentType>
-                <dashboardTableColumn>
-                    <column>Opportunity.Opportunity_Country__c</column>
-                    <sortBy>RowLabelAscending</sortBy>
-                </dashboardTableColumn>
-                <dashboardTableColumn>
-                    <calculatePercent>false</calculatePercent>
-                    <column>RowCount</column>
-                    <showTotal>true</showTotal>
-                </dashboardTableColumn>
-                <displayUnits>Integer</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
-                <footer>Not updated for 60 days or more</footer>
-                <indicatorHighColor>#54C254</indicatorHighColor>
-                <indicatorLowColor>#C25454</indicatorLowColor>
-                <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-                <report>Data_Management_Dashboards_Reports/Opportunities_Neglected</report>
-                <showPicturesOnTables>false</showPicturesOnTables>
-                <title>Neglected Opportunities</title>
-            </dashboardComponent>
-            <rowIndex>8</rowIndex>
+            <rowIndex>0</rowIndex>
             <rowSpan>4</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -292,71 +115,68 @@
                 <showPicturesOnTables>false</showPicturesOnTables>
                 <title>Lost this month</title>
             </dashboardComponent>
-            <rowIndex>8</rowIndex>
+            <rowIndex>4</rowIndex>
             <rowSpan>4</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>3</colSpan>
             <columnIndex>0</columnIndex>
             <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-                <componentType>Table</componentType>
-                <dashboardTableColumn>
-                    <column>User$CountryCode</column>
-                    <sortBy>RowLabelAscending</sortBy>
-                </dashboardTableColumn>
-                <dashboardTableColumn>
-                    <calculatePercent>false</calculatePercent>
-                    <column>User*User$Business_Area__c</column>
-                    <showTotal>false</showTotal>
-                </dashboardTableColumn>
-                <dashboardTableColumn>
-                    <calculatePercent>false</calculatePercent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <axisBinding>y</axisBinding>
                     <column>RowCount</column>
-                    <showTotal>true</showTotal>
-                </dashboardTableColumn>
+                </chartSummary>
+                <componentType>Donut</componentType>
                 <displayUnits>Integer</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
-                <footer>Meetings held during the past month</footer>
-                <header>Call reports (logged for the month)</header>
-                <indicatorHighColor>#54C254</indicatorHighColor>
-                <indicatorLowColor>#C25454</indicatorLowColor>
-                <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-                <report>DashboardReportsAdoption/KPI_Call_reports_created_by_CIB_users</report>
-                <showPicturesOnTables>false</showPicturesOnTables>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>Contact$Owner.CountryCode</groupingColumn>
+                <header>Contacts loaded YTD</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>DashboardReportsAdoption/KPI_Contacts_owned_by_CIB</report>
+                <showPercentage>true</showPercentage>
+                <showTotal>true</showTotal>
+                <showValues>true</showValues>
+                <sortBy>RowValueAscending</sortBy>
+                <title>Contacts owned by CIB</title>
+                <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>12</rowIndex>
-            <rowSpan>4</rowSpan>
+            <rowIndex>6</rowIndex>
+            <rowSpan>6</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>3</colSpan>
             <columnIndex>3</columnIndex>
             <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-                <componentType>Table</componentType>
-                <dashboardTableColumn>
-                    <column>Opportunity.Opportunity_Country__c</column>
-                    <sortBy>RowLabelAscending</sortBy>
-                </dashboardTableColumn>
-                <dashboardTableColumn>
-                    <calculatePercent>false</calculatePercent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <axisBinding>y</axisBinding>
                     <column>RowCount</column>
-                    <decimalPlaces>0</decimalPlaces>
-                    <showTotal>true</showTotal>
-                </dashboardTableColumn>
+                </chartSummary>
+                <componentType>Donut</componentType>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
-                <indicatorHighColor>#54C254</indicatorHighColor>
-                <indicatorLowColor>#C25454</indicatorLowColor>
-                <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-                <report>Data_Management_Dashboards_Reports/Opportunities_w_o_Products</report>
-                <showPicturesOnTables>true</showPicturesOnTables>
-                <title>Opportunities w/o Products</title>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>Opportunity.Opportunity_Country__c</groupingColumn>
+                <header>CIB FO Opportunities - Open</header>
+                <legendPosition>Bottom</legendPosition>
+                <maxValuesDisplayed>6</maxValuesDisplayed>
+                <report>DashboardReportsAdoption/CIB_FO_Opportunities_Open1</report>
+                <showPercentage>true</showPercentage>
+                <showTotal>true</showTotal>
+                <showValues>true</showValues>
+                <sortBy>RowValueDescending</sortBy>
+                <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>12</rowIndex>
-            <rowSpan>4</rowSpan>
+            <rowIndex>6</rowIndex>
+            <rowSpan>6</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>3</colSpan>
@@ -389,7 +209,7 @@
                 <showPicturesOnTables>false</showPicturesOnTables>
                 <title>Shifted this month</title>
             </dashboardComponent>
-            <rowIndex>12</rowIndex>
+            <rowIndex>8</rowIndex>
             <rowSpan>4</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -397,52 +217,55 @@
             <columnIndex>0</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
                 <chartSummary>
+                    <axisBinding>y</axisBinding>
                     <column>RowCount</column>
                 </chartSummary>
-                <componentType>Metric</componentType>
-                <displayUnits>Integer</displayUnits>
-                <footer>Created / modified during the past month</footer>
-                <header>Contacts created / modified</header>
-                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
-                <indicatorHighColor>#00716B</indicatorHighColor>
-                <indicatorLowColor>#C23934</indicatorLowColor>
-                <indicatorMiddleColor>#E2CE7D</indicatorMiddleColor>
-                <metricLabel>Contacts created / modified</metricLabel>
-                <report>DashboardReportsAdoption/KPI_Contacts_created_modified_by_CIB</report>
-                <showRange>false</showRange>
+                <componentType>Donut</componentType>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>FK_$Account.Client_Country__c</groupingColumn>
+                <header># of Client Plans</header>
+                <legendPosition>Bottom</legendPosition>
+                <maxValuesDisplayed>6</maxValuesDisplayed>
+                <report>DashboardReportsAdoption/KPI_of_Client_Plans</report>
+                <showPercentage>true</showPercentage>
+                <showTotal>true</showTotal>
+                <showValues>true</showValues>
+                <sortBy>RowValueDescending</sortBy>
+                <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>16</rowIndex>
-            <rowSpan>2</rowSpan>
+            <rowIndex>12</rowIndex>
+            <rowSpan>6</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>3</colSpan>
             <columnIndex>3</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-                <componentType>Table</componentType>
-                <dashboardTableColumn>
-                    <column>Opportunity.Opportunity_Country__c</column>
-                    <sortBy>RowLabelAscending</sortBy>
-                </dashboardTableColumn>
-                <dashboardTableColumn>
-                    <calculatePercent>false</calculatePercent>
-                    <column>RowCount</column>
-                    <showTotal>true</showTotal>
-                </dashboardTableColumn>
+                <chartAxisRange>Auto</chartAxisRange>
+                <componentType>Bar</componentType>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
-                <indicatorHighColor>#54C254</indicatorHighColor>
-                <indicatorLowColor>#C25454</indicatorLowColor>
-                <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-                <report>Data_Management_Dashboards_Reports/Opportunities_w_o_Products_40</report>
-                <showPicturesOnTables>false</showPicturesOnTables>
-                <title>Opportunities w/o Products &gt;40%</title>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <footer>Past expected close date</footer>
+                <header>Opportunities Overdue</header>
+                <report>DashboardReportsAdoption/CIB_FO_Opportunities_Open</report>
+                <showPercentage>false</showPercentage>
+                <showPicturesOnCharts>false</showPicturesOnCharts>
+                <showValues>false</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <title>Running late</title>
+                <useReportChart>true</useReportChart>
             </dashboardComponent>
-            <rowIndex>16</rowIndex>
-            <rowSpan>4</rowSpan>
+            <rowIndex>12</rowIndex>
+            <rowSpan>6</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>3</colSpan>
@@ -475,7 +298,7 @@
                 <showPicturesOnTables>false</showPicturesOnTables>
                 <title>NTB created this month</title>
             </dashboardComponent>
-            <rowIndex>16</rowIndex>
+            <rowIndex>12</rowIndex>
             <rowSpan>4</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -483,40 +306,131 @@
             <columnIndex>0</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
                 <chartSummary>
+                    <axisBinding>y</axisBinding>
                     <column>RowCount</column>
                 </chartSummary>
-                <componentType>Metric</componentType>
+                <componentType>Donut</componentType>
                 <displayUnits>Integer</displayUnits>
-                <header>Contacts owned by CIB</header>
-                <indicatorHighColor>#00716B</indicatorHighColor>
-                <indicatorLowColor>#C23934</indicatorLowColor>
-                <indicatorMiddleColor>#E2CE7D</indicatorMiddleColor>
-                <metricLabel>Contacts owned by CIB</metricLabel>
-                <report>DashboardReportsAdoption/KPI_Contacts_owned_by_CIB</report>
-                <showRange>false</showRange>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>User$CountryCode</groupingColumn>
+                <header>Call reports logged - YTD</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>DashboardReportsAdoption/KPI_Call_reports_created_by_CIB_users</report>
+                <showPercentage>true</showPercentage>
+                <showTotal>true</showTotal>
+                <showValues>true</showValues>
+                <sortBy>RowValueDescending</sortBy>
+                <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>18</rowIndex>
-            <rowSpan>2</rowSpan>
+            <rowSpan>6</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>3</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <componentType>Bar</componentType>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <footer>Stage not updated in more than 30 days</footer>
+                <header>Opportunities Neglected</header>
+                <report>DashboardReportsAdoption/CIB_FO_Opportunities_Neglected</report>
+                <showPercentage>false</showPercentage>
+                <showPicturesOnCharts>false</showPicturesOnCharts>
+                <showValues>false</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <title>Losing steam</title>
+                <useReportChart>true</useReportChart>
+            </dashboardComponent>
+            <rowIndex>18</rowIndex>
+            <rowSpan>6</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>0</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <axisBinding>y</axisBinding>
+                    <column>RowCount</column>
+                </chartSummary>
+                <componentType>Column</componentType>
+                <displayUnits>Integer</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <footer>excludes income recovery &amp; duplicates</footer>
+                <groupingColumn>Opportunity$Owner.CountryCode</groupingColumn>
+                <header>Opportunities created YTD</header>
+                <legendPosition>Bottom</legendPosition>
+                <maxValuesDisplayed>10</maxValuesDisplayed>
+                <report>DashboardReportsAdoption/CIB_FO_Opportunities_created_YTD</report>
+                <showPercentage>false</showPercentage>
+                <showValues>true</showValues>
+                <sortBy>RowValueDescending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>24</rowIndex>
+            <rowSpan>6</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>3</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <componentType>Bar</componentType>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <header>Opportunities without Products</header>
+                <report>DashboardReportsAdoption/CIB_FO_Opportunities_without_Products</report>
+                <showPercentage>false</showPercentage>
+                <showPicturesOnCharts>false</showPicturesOnCharts>
+                <showValues>false</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <title>No revenue</title>
+                <useReportChart>true</useReportChart>
+            </dashboardComponent>
+            <rowIndex>24</rowIndex>
+            <rowSpan>6</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>3</colSpan>
             <columnIndex>0</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-                <componentType>Metric</componentType>
+                <chartAxisRange>Auto</chartAxisRange>
+                <componentType>Bar</componentType>
                 <displayUnits>Auto</displayUnits>
-                <footer>Where strategy and relationship count &gt; 0</footer>
-                <header>Completed Client plans</header>
-                <indicatorHighColor>#00716B</indicatorHighColor>
-                <indicatorLowColor>#C23934</indicatorLowColor>
-                <indicatorMiddleColor>#E2CE7D</indicatorMiddleColor>
-                <metricLabel>Completed Client plans</metricLabel>
-                <report>DashboardReportsAdoption/KPI_of_Client_Plans</report>
-                <showRange>false</showRange>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <header>Percentage of Reports used - last 90 days</header>
+                <report>DashboardReportsAdoption/CIB_FO_Reports_Report</report>
+                <showPercentage>false</showPercentage>
+                <showPicturesOnCharts>false</showPicturesOnCharts>
+                <showValues>false</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <useReportChart>true</useReportChart>
             </dashboardComponent>
-            <rowIndex>20</rowIndex>
-            <rowSpan>2</rowSpan>
+            <rowIndex>30</rowIndex>
+            <rowSpan>6</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>3</colSpan>
@@ -534,7 +448,7 @@
                 <report>Data_Management_Dashboards_Reports/KPI_Call_Report_capture_lag_time1</report>
                 <showRange>false</showRange>
             </dashboardComponent>
-            <rowIndex>20</rowIndex>
+            <rowIndex>30</rowIndex>
             <rowSpan>2</rowSpan>
         </dashboardGridComponents>
         <numberOfColumns>9</numberOfColumns>
@@ -544,7 +458,7 @@
     <isGridLayout>true</isGridLayout>
     <runningUser>zaheer.ismail@absa1.com</runningUser>
     <textColor>#000000</textColor>
-    <title>CIB Sales Cloud Adoption Metrics</title>
+    <title>CIB Adoption Metrics</title>
     <titleColor>#000000</titleColor>
     <titleSize>12</titleSize>
 </Dashboard>

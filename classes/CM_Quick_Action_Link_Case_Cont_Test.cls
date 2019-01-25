@@ -19,9 +19,9 @@ public class CM_Quick_Action_Link_Case_Cont_Test {
         
         list<Case> Cases = CSC_TestDataFactory.getTestCaseList('Complaint', u.Id);
         Cases[0].Queue__c = 'Complaints Client';
-       	Cases[0].Service_Type__c = 'Delays';
-        Cases[0].Service_Sub_Category__c = 'Takes to Long';
-        Cases[0].Service_Category__c = 'Complaint';
+       	//Cases[0].Service_Type__c = 'Absa Wealth ';
+        //Cases[0].Service_Sub_Category__c = 'Takes to Long';
+        //Cases[0].Service_Category__c = 'Complaint';
         insert Cases[0];
         Test.startTest();
          //inbound email and envelope objects
@@ -32,9 +32,9 @@ public class CM_Quick_Action_Link_Case_Cont_Test {
         
          list<Case> caseInsertList = CSC_TestDataFactory.getTestCaseList( 'Complaint' , UserInfo.getUserId() );
         caseInsertList[0].Queue__c = 'Complaints Client';
-       	caseInsertList[0].Service_Type__c = 'Delays';
-        caseInsertList[0].Service_Sub_Category__c = 'Takes to Long';
-        caseInsertList[0].Service_Category__c = 'Complaint';
+       	//caseInsertList[0].Service_Type__c = 'Delays';
+       // caseInsertList[0].Service_Sub_Category__c = 'Takes to Long';
+        //caseInsertList[0].Service_Category__c = 'Complaint';
         insert caseInsertList[0];
         
         

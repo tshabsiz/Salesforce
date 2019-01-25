@@ -8,14 +8,18 @@
             <colSpan>3</colSpan>
             <columnIndex>0</columnIndex>
             <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartSummary>
+                    <axisBinding>y</axisBinding>
+                    <column>RowCount</column>
+                </chartSummary>
                 <componentType>Gauge</componentType>
                 <displayUnits>Auto</displayUnits>
-                <gaugeMax>8.0</gaugeMax>
+                <gaugeMax>11.0</gaugeMax>
                 <gaugeMin>0.0</gaugeMin>
                 <header>Usage KPIs</header>
-                <indicatorBreakpoint1>6.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>7.0</indicatorBreakpoint2>
+                <indicatorBreakpoint1>9.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>10.0</indicatorBreakpoint2>
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#E2CE7D</indicatorMiddleColor>

@@ -40,6 +40,18 @@
             <operator>notContain</operator>
             <value>Test</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>CHILD_CREATED_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Mpho</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CHILD_CREATED_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Yandisa</value>
+        </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsDown>

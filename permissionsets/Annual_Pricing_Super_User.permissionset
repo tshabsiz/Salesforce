@@ -330,6 +330,15 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
+        <object>Annual_Pricing_Approver__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
         <object>Annual_Pricing_Item__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
@@ -410,6 +419,10 @@
         <apexPage>APT_ViewAnnualPricing</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
+    <tabSettings>
+        <tab>Annual_Pricing_Approver__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
     <tabSettings>
         <tab>Annual_Pricing__c</tab>
         <visibility>Visible</visibility>

@@ -66,6 +66,17 @@ public void filesfromBox() {
     }
 }    
 
+    public static Map<string,string> getLegalDivisionOwnerMap()
+    {
+        Map<string,string> legalDivisionToOwnerMap = new Map<string,string>();
+        
+        for(knowledge_Ownership_Assignment__mdt setting: [Select Label,Queue__c from knowledge_Ownership_Assignment__mdt])
+        {
+            legalDivisionToOwnerMap.put(setting.Label,setting.Queue__c);
+        }
+         return legalDivisionToOwnerMap;
+        
+    }
 public PageReference ConvertMatterToCase() {
   
     convertedMatter = true;    
@@ -74,8 +85,19 @@ public PageReference ConvertMatterToCase() {
     MatterCase.Matter__c = MatterId;
     
     //Set case owner to knowledge queue.
-    QueueSobject[] QueueID = [SELECT CreatedById,Id,QueueId,SobjectType,queue.Name FROM QueueSobject where queue.Name='Knowledge Request Queue' limit 1];
-    MatterCase.OwnerId=QueueID[0].QueueId;
+    Map<string,string> LegalDivisionToOwner= getLegalDivisionOwnerMap();
+    QueueSobject[] QueueID = [SELECT CreatedById,Id,QueueId,SobjectType,queue.Name FROM QueueSobject where queue.Name =:LegalDivisionToOwner.get(MatterCase.LegalDivision__c)];
+
+    if(QueueID.size()>0)
+    {
+        MatterCase.OwnerId=QueueID[0].QueueId;
+    }
+    else
+    {
+            ApexPages.addmessage(new ApexPages.message(ApexPages.severity.FATAL,'Please contact support, owner Mapping table is missing'));
+			return null;
+    }
+    
     
     //Set case record type to knowledge request.
     RecordType rt = [Select id From RecordType where Name= 'Knowledge Request' limit 1];

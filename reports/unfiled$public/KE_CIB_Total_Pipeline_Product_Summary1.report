@@ -41,6 +41,15 @@
             <sourceValues>
                 <sourceValue>Multi-Option</sourceValue>
             </sourceValues>
+            <sourceValues>
+                <sourceValue>Money Market Short Term Lending ( Corp )</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Structured Trade and Commodity Finance</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Property Loans</sourceValue>
+            </sourceValues>
             <value>ASSETS</value>
         </values>
         <values>

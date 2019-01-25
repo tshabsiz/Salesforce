@@ -8,7 +8,7 @@
             <field>Email_From_Address__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>CSC_Auto_Response_Templates/CSC_Case_Closure_General</template>
     </alerts>
@@ -20,7 +20,7 @@
             <field>Email_From_Address__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>CSC_Auto_Response_Templates/CSC_Case_Creation_General</template>
     </alerts>
@@ -47,7 +47,7 @@
             <field>Email_From_Address__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>CSC_Auto_Response_Templates/CSC_Email_Receipt_General</template>
     </alerts>
@@ -73,7 +73,7 @@
         <recipients>
             <type>creator</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Complaints_Email_Templates/Complaint_Case_Closure_Created_by</template>
     </alerts>
@@ -84,7 +84,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Complaints_Email_Templates/Complaint_Case_Closure_Owner</template>
     </alerts>
@@ -106,7 +106,7 @@
             <field>Complaint_Notification_Address__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Complaints_Email_Templates/Complaints_Case_Creation_Internal2</template>
     </alerts>
@@ -117,7 +117,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Legal_Request_CIB_Chief_of_Staff_Auto_response_email</template>
     </alerts>
@@ -128,7 +128,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Legal_Request_CIB_Chief_of_Staff_Auto_response_email</template>
     </alerts>
@@ -139,7 +139,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Legal_Request_CIB_Regulatory_Knowledge_Auto_response_email</template>
     </alerts>
@@ -150,7 +150,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Legal_Request_CIB_Wholesale_Legal_Auto_response_email</template>
     </alerts>
@@ -161,7 +161,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Legal_Request_CIB_Banking_Auto_response_email</template>
     </alerts>
@@ -172,7 +172,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Legal_Request_RBB_ARBB_Auto_response_email</template>
     </alerts>
@@ -183,7 +183,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Legal_Request_Shared_Services_Commercial_Legal_Auto_response_email</template>
     </alerts>
@@ -194,7 +194,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Legal_Request_Shared_Services_Group_Corporate_Leg_Auto_response_email</template>
     </alerts>
@@ -205,7 +205,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Legal_Request_Shared_Services_HR_EIP_Auto_response_email</template>
     </alerts>
@@ -216,7 +216,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Legal_Request_Shared_Services_Intellectual_Prop_Auto_response_email</template>
     </alerts>
@@ -227,7 +227,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Legal_Request_Shared_Services_Litigation_Auto_response_email</template>
     </alerts>
@@ -238,7 +238,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Legal_Request_Shared_Services_Regulatory_Legal_Auto_response_email</template>
     </alerts>
@@ -249,7 +249,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Legal_Request_WIMI_Fiduciary_Auto_response_email</template>
     </alerts>
@@ -260,7 +260,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Legal_Request_WIMI_Insurance_Auto_response_email</template>
     </alerts>
@@ -271,7 +271,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Legal_Request_WIMI_Investment_Cluster_Auto_response_email</template>
     </alerts>
@@ -282,7 +282,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Legal_Request_WIMI_Investment_Cluster_Auto_response_email</template>
     </alerts>
@@ -293,7 +293,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Legal_Request_WIMI_Wealth_Managment_Dist_Auto_response_email</template>
     </alerts>
@@ -305,7 +305,7 @@
             <field>User__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Reject_KM_Submission_Reponse</template>
     </alerts>
@@ -327,7 +327,7 @@
         <recipients>
             <type>creator</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Complaints_Email_Templates/Complaints_Case_Creation_Logger</template>
     </alerts>
@@ -338,7 +338,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_BAGL_Legal_Allocation_of_KM_Work</template>
     </alerts>
@@ -349,7 +349,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_BAGL_Request_to_Approve_Knowledge_Request</template>
     </alerts>
@@ -361,7 +361,7 @@
             <field>Content_Reviewer__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/BAGL_Legal_Artifact_ready_for_review</template>
     </alerts>
@@ -376,7 +376,7 @@
             <field>Content_Reviewer__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/BAGL_Legal_Artifact_Automation_ready_to_be_tested</template>
     </alerts>
@@ -388,7 +388,7 @@
             <recipient>Leap - Document Automation Team</recipient>
             <type>caseTeam</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/BAGL_Legal_Artifact_ready_for_automation</template>
     </alerts>
@@ -399,7 +399,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_BAGL_Legal_Allocation_of_KM_Work</template>
     </alerts>
@@ -411,7 +411,7 @@
             <field>User__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Notification_to_Matter_Owner_Matter_Allocated</template>
     </alerts>
@@ -422,7 +422,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Complaints_Email_Templates/Complaints_Case_Creation_Internal2</template>
     </alerts>
@@ -434,7 +434,7 @@
             <field>Email_From_Address__c</field>
             <type>email</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/Notification_to_Requestor_Matter_Allocated</template>
     </alerts>
@@ -449,7 +449,7 @@
             <field>Team_Manager_User__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Complaints_Email_Templates/Complaints_Case_Escalation</template>
     </alerts>
@@ -464,7 +464,7 @@
             <field>Team_Manager_User__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Complaints_Email_Templates/Complaints_Case_Reminder</template>
     </alerts>
@@ -483,7 +483,7 @@
             <field>Team_Manager_User__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Complaints_Email_Templates/Complaints_Case_Escalation_2</template>
     </alerts>
@@ -502,7 +502,7 @@
             <field>Team_Manager_User__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Complaints_Email_Templates/Complaints_Case_Escalation_1</template>
     </alerts>

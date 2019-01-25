@@ -43,4 +43,8 @@
         <label><!-- ViewCampaignInfluenceReport --></label>
         <name>ViewCampaignInfluenceReport</name>
     </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
 </CustomObjectTranslation>

@@ -8,7 +8,7 @@
             <recipient>steven.palmer@absa1.com</recipient>
             <type>user</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Litigation_Matter_Claim_against_Barclays</template>
     </alerts>
@@ -19,7 +19,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Owner_of_Rejected_Litigation_Matter_notified</template>
     </alerts>
@@ -30,7 +30,7 @@
         <recipients>
             <type>creator</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Owner_of_Approved_Litigation_Matter_notified</template>
     </alerts>
@@ -42,7 +42,7 @@
             <recipient>steven.palmer@absa1.com</recipient>
             <type>user</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Litigation_Matter_Claim_against_Barclays_Escalated_to_GC</template>
     </alerts>

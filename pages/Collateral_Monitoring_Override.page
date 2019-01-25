@@ -2,7 +2,7 @@
 *** CHANGE LOG ***
 
 27/11/2017 - Tdb   - Created VF page.
-				   - Fields, add Page Block Sections for Participanys and Groups. Show/Hide fields based on Collateral Type selected
+           - Fields, add Page Block Sections for Participanys and Groups. Show/Hide fields based on Collateral Type selected
 
 -->
 
@@ -12,7 +12,8 @@
         <apex:pageBlock id="pblock" >
             <apex:pageMessages ></apex:pageMessages>
             <apex:pageBlockButtons >
-                <apex:commandButton value="Save" action="{!saveRecord}" />
+                <apex:commandButton value="Save" action="{!saveRecord}" oncomplete="CallWebService_JS()"/>
+                <apex:actionFunction action="{!CallWebService}" name="CallWebService_JS" status="acmSaveStatus"/>
                 <apex:commandButton value="Cancel" action="{!cancel}" />
             </apex:pageBlockButtons>
             <apex:pageBlockSection id="pblocksec_info" title="Information" columns="2"> 

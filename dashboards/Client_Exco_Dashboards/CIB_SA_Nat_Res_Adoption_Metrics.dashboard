@@ -174,32 +174,32 @@
             <colSpan>3</colSpan>
             <columnIndex>6</columnIndex>
             <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-                <componentType>Table</componentType>
-                <dashboardTableColumn>
-                    <column>Account.Team_F__c</column>
-                    <sortBy>RowLabelAscending</sortBy>
-                </dashboardTableColumn>
-                <dashboardTableColumn>
-                    <calculatePercent>false</calculatePercent>
-                    <column>ACCOUNT_OWNER</column>
-                    <showTotal>false</showTotal>
-                </dashboardTableColumn>
-                <dashboardTableColumn>
-                    <aggregateType>Sum</aggregateType>
-                    <calculatePercent>false</calculatePercent>
-                    <column>OpportunityLineItem.Income_this_Year__c</column>
-                    <showTotal>true</showTotal>
-                </dashboardTableColumn>
-                <displayUnits>Auto</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
-                <indicatorHighColor>#54C254</indicatorHighColor>
-                <indicatorLowColor>#C25454</indicatorLowColor>
-                <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-                <report>Client_Exco_Dashboard_Reports/KPI_NatRes_Opportunities_Open_70</report>
-                <showPicturesOnTables>false</showPicturesOnTables>
-                <title>Open Opportunities CY = &gt;=70% (Manco)</title>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <componentType>FlexTable</componentType>
+                <flexComponentProperties>
+                    <flexTableColumn>
+                        <reportColumn>ACCOUNT_OWNER</reportColumn>
+                        <showTotal>true</showTotal>
+                        <type>grouping</type>
+                    </flexTableColumn>
+                    <flexTableColumn>
+                        <reportColumn>RowCount</reportColumn>
+                        <showTotal>false</showTotal>
+                        <type>aggregate</type>
+                    </flexTableColumn>
+                    <flexTableColumn>
+                        <reportColumn>s!OpportunityLineItem.Income_this_Year__c.CONVERT</reportColumn>
+                        <showTotal>false</showTotal>
+                        <type>aggregate</type>
+                    </flexTableColumn>
+                    <flexTableSortInfo>
+                        <sortColumn>ACCOUNT_OWNER</sortColumn>
+                        <sortOrder>1</sortOrder>
+                    </flexTableSortInfo>
+                    <hideChatterPhotos>true</hideChatterPhotos>
+                </flexComponentProperties>
+                <report>Client_Exco_Dashboard_Reports/KPI_NatRes_Sig_Pitches</report>
+                <title>Significant Pitches Open &amp; Closed</title>
             </dashboardComponent>
             <rowIndex>4</rowIndex>
             <rowSpan>4</rowSpan>
@@ -290,18 +290,18 @@
                 <dashboardTableColumn>
                     <aggregateType>Sum</aggregateType>
                     <calculatePercent>false</calculatePercent>
-                    <column>Opportunity.Annualised_Income__c</column>
+                    <column>OpportunityLineItem.Income_this_Year__c</column>
                     <showTotal>true</showTotal>
                 </dashboardTableColumn>
-                <displayUnits>Millions</displayUnits>
+                <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <indicatorHighColor>#54C254</indicatorHighColor>
                 <indicatorLowColor>#C25454</indicatorLowColor>
                 <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-                <report>Client_Exco_Dashboard_Reports/KPI_NatRes_Opps_created_CM</report>
+                <report>Client_Exco_Dashboard_Reports/KPI_NatRes_Opportunities_Open_70</report>
                 <showPicturesOnTables>false</showPicturesOnTables>
-                <title>Created this month - MTD</title>
+                <title>Open Opportunities CY = &gt;=70% (Manco)</title>
             </dashboardComponent>
             <rowIndex>8</rowIndex>
             <rowSpan>4</rowSpan>
@@ -380,6 +380,7 @@
                 <componentType>Table</componentType>
                 <dashboardTableColumn>
                     <column>Account.Team_F__c</column>
+                    <sortBy>RowLabelAscending</sortBy>
                 </dashboardTableColumn>
                 <dashboardTableColumn>
                     <calculatePercent>false</calculatePercent>
@@ -389,18 +390,18 @@
                 <dashboardTableColumn>
                     <aggregateType>Sum</aggregateType>
                     <calculatePercent>false</calculatePercent>
-                    <column>Opportunity.Income_this_Year__c</column>
+                    <column>Opportunity.Annualised_Income__c</column>
                     <showTotal>true</showTotal>
                 </dashboardTableColumn>
-                <displayUnits>Auto</displayUnits>
+                <displayUnits>Millions</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <indicatorHighColor>#54C254</indicatorHighColor>
                 <indicatorLowColor>#C25454</indicatorLowColor>
                 <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-                <report>Client_Exco_Dashboard_Reports/KPI_NatRes_Opps_closing_CM</report>
+                <report>Client_Exco_Dashboard_Reports/KPI_NatRes_Opps_created_CM</report>
                 <showPicturesOnTables>false</showPicturesOnTables>
-                <title>Closing this month</title>
+                <title>Created this month - MTD</title>
             </dashboardComponent>
             <rowIndex>12</rowIndex>
             <rowSpan>4</rowSpan>
@@ -493,6 +494,39 @@
                     <column>Opportunity.Income_this_Year__c</column>
                     <showTotal>true</showTotal>
                 </dashboardTableColumn>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <indicatorHighColor>#54C254</indicatorHighColor>
+                <indicatorLowColor>#C25454</indicatorLowColor>
+                <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+                <report>Client_Exco_Dashboard_Reports/KPI_NatRes_Opps_closing_CM</report>
+                <showPicturesOnTables>false</showPicturesOnTables>
+                <title>Closing this month</title>
+            </dashboardComponent>
+            <rowIndex>16</rowIndex>
+            <rowSpan>4</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>6</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+                <componentType>Table</componentType>
+                <dashboardTableColumn>
+                    <column>Account.Team_F__c</column>
+                </dashboardTableColumn>
+                <dashboardTableColumn>
+                    <calculatePercent>false</calculatePercent>
+                    <column>ACCOUNT_OWNER</column>
+                    <showTotal>false</showTotal>
+                </dashboardTableColumn>
+                <dashboardTableColumn>
+                    <aggregateType>Sum</aggregateType>
+                    <calculatePercent>false</calculatePercent>
+                    <column>Opportunity.Income_this_Year__c</column>
+                    <showTotal>true</showTotal>
+                </dashboardTableColumn>
                 <displayUnits>Thousands</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -502,40 +536,6 @@
                 <report>Client_Exco_Dashboard_Reports/KPI_NatRes_Opps_won_CM</report>
                 <showPicturesOnTables>false</showPicturesOnTables>
                 <title>Won this month - MTD</title>
-            </dashboardComponent>
-            <rowIndex>16</rowIndex>
-            <rowSpan>4</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>3</colSpan>
-            <columnIndex>0</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <componentType>FlexTable</componentType>
-                <flexComponentProperties>
-                    <flexTableColumn>
-                        <reportColumn>ACCOUNT_OWNER</reportColumn>
-                        <showTotal>true</showTotal>
-                        <type>grouping</type>
-                    </flexTableColumn>
-                    <flexTableColumn>
-                        <reportColumn>RowCount</reportColumn>
-                        <showTotal>false</showTotal>
-                        <type>aggregate</type>
-                    </flexTableColumn>
-                    <flexTableColumn>
-                        <reportColumn>s!OpportunityLineItem.Income_this_Year__c.CONVERT</reportColumn>
-                        <showTotal>false</showTotal>
-                        <type>aggregate</type>
-                    </flexTableColumn>
-                    <flexTableSortInfo>
-                        <sortColumn>ACCOUNT_OWNER</sortColumn>
-                        <sortOrder>1</sortOrder>
-                    </flexTableSortInfo>
-                    <hideChatterPhotos>true</hideChatterPhotos>
-                </flexComponentProperties>
-                <report>Client_Exco_Dashboard_Reports/KPI_NatRes_Sig_Pitches</report>
-                <title>Significant Pitches Open &amp; Closed</title>
             </dashboardComponent>
             <rowIndex>20</rowIndex>
             <rowSpan>4</rowSpan>
@@ -570,7 +570,7 @@
                 <showPicturesOnTables>false</showPicturesOnTables>
                 <title>Lost this month - MTD</title>
             </dashboardComponent>
-            <rowIndex>20</rowIndex>
+            <rowIndex>24</rowIndex>
             <rowSpan>4</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -609,7 +609,7 @@
                 <showPicturesOnTables>false</showPicturesOnTables>
                 <title>NTB created this month - MTD</title>
             </dashboardComponent>
-            <rowIndex>24</rowIndex>
+            <rowIndex>28</rowIndex>
             <rowSpan>4</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -648,7 +648,7 @@
                 <showPicturesOnTables>false</showPicturesOnTables>
                 <title>Overdue Opportunities</title>
             </dashboardComponent>
-            <rowIndex>28</rowIndex>
+            <rowIndex>32</rowIndex>
             <rowSpan>4</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -681,7 +681,7 @@
                 <showPicturesOnTables>false</showPicturesOnTables>
                 <title>Opportunities w/o Products</title>
             </dashboardComponent>
-            <rowIndex>32</rowIndex>
+            <rowIndex>36</rowIndex>
             <rowSpan>4</rowSpan>
         </dashboardGridComponents>
         <numberOfColumns>9</numberOfColumns>

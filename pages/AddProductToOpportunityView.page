@@ -148,6 +148,8 @@
                         <apex:outputField id="Volume" value="{!OpportunityLineItem.Volume__c}"/>
                         <apex:outputField id="FeePerTransaction" value="{!OpportunityLineItem.Transaction_Value__c}"/>
                         <apex:outputField value="{!OpportunityLineItem.Primary_Banking_Target__c}" id="PrimaryBanking" />
+                        <apex:outputField id="MonthlyValue" value="{!OpportunityLineItem.MonthlyValue__c}" />
+                        <apex:outputField id="FXSalesComment" value="{!OpportunityLineItem.FX_Sales_Comment__c}" rendered="{!isForeignExchange}"/>
                     </apex:pageblockSection>
                 </apex:outputPanel>
                 <apex:outputPanel id="debtFinanceInformation" styleClass="debtFinanceInformation">

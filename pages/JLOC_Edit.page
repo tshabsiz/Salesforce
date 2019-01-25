@@ -2036,6 +2036,7 @@
                                                 <div class="label">{!$ObjectType.JLOC__c.fields.Pricing_and_Returns__c.Label}</div>
                                                 <div>
                                                     <apex:commandButton id="upload-image" styleClass="inline-button" action="{!uploadPricingAndReturnsDocument}" value="Upload Document" status="processing" reRender="pgMsg"/>
+                                                    <apex:commandButton id="delete-image" styleClass="inline-button" action="{!removePricingAndReturnsDocument}" value="Delete Document" status="processing" rendered="{!JLOC__c.Pricing_and_Returns_Document_ID__c != null}" reRender="pgMsg"/>
                                                 </div>
                                             </div>
                                         </td>

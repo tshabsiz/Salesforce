@@ -99,7 +99,16 @@ public class ClientOverviewController extends ClientPlanUtils{
             return null;
         }
     }
-    
+    @RemoteAction
+    public static String getExecutiveSummary(String planId) {
+        List<Client_Plan__c> plans = [SELECT Executive_Summary__c FROM Client_Plan__c WHERE Id = :planId];
+        
+        if (!plans.isEmpty()) {
+            return plans[0].Executive_Summary__c == null ? '' : plans[0].Executive_Summary__c;
+        } else {
+            return null;
+        }
+    }
     /**
       * @Author:          Marek Cech
       * @Company:         Deloitte
@@ -136,7 +145,29 @@ public class ClientOverviewController extends ClientPlanUtils{
         }
         return false;
     }
-    
+    @RemoteAction
+    public static Boolean saveExecutiveSummary(String planId, String data) {
+        List<Client_Plan__c> plans = [
+            SELECT Id, Client_Overview__c, Sector_Overview__c,Executive_Summary__c
+            FROM Client_Plan__c 
+            WHERE Id = :planId];
+        
+        if (plans.isEmpty()) {
+            return true;
+        }
+        
+        Client_Plan__c plan = plans[0];
+        
+        plan.Executive_Summary__c = data;
+        
+        try {
+            update plan;
+        } catch (DmlException e) {
+            System.debug(e);
+            return true;
+        }
+        return false;
+    }
     /**
       * @Author:          Marek Cech
       * @Company:         Deloitte

@@ -21,6 +21,26 @@
         <operation>LookupValue</operation>
         <protected>false</protected>
     </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Original_Salesforce_ID</fullName>
+        <field>OriginalSalesforceID__c</field>
+        <formula>CASESAFEID(Id)</formula>
+        <name>Update Original Salesforce ID</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Copy Original Salesforce ID</fullName>
+        <actions>
+            <name>Update_Original_Salesforce_ID</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Copy Original Salesforce ID</description>
+        <formula>true</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
     <rules>
         <fullName>Prospect Individual to Individual Client Wealth</fullName>
         <actions>

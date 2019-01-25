@@ -24,6 +24,12 @@
             <operator>equals</operator>
             <value>Trade</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>Fit_To_Lend_Checklist__c.Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Approved</value>
+        </criteriaItems>
     </filter>
     <format>Tabular</format>
     <name>Trade Deals Closed Report</name>
@@ -38,6 +44,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Fit_To_Lend_Checklist__c.Status_Change_Stamp__c</dateColumn>
-        <interval>INTERVAL_LASTTHISMONTH</interval>
+        <interval>INTERVAL_LASTMONTH</interval>
     </timeFrameFilter>
 </Report>

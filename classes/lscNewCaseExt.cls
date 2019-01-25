@@ -322,6 +322,8 @@ public class lscNewCaseExt {
         complainCase.Resolution_Detail__c = instance.resolutionDetail;
         complainCase.Resolved_In_Favour_Of__c = instance.resolvedInFavourOf;
         complainCase.RecordTypeId = instance.RecordTypeId;
+        if(instance.callReportId != null && instance.callReportId != '')
+            complainCase.call_Report__c = instance.callReportId;
         
         //complainCase.Queue__c = '-None-';
         
@@ -661,7 +663,7 @@ return allOpts;
         rel = new list<Account>();
         
         
-        if(!String.isBlank(recordId)){
+        if(!String.isBlank(recordId) && recordId.startsWith('500')){
             theCase = [Select Id, AccountId, OwnerId, Owner.Name, Owner.Type, Account.Name, Email_Sender_Name__c, Email_From_Address__c,
                        RecordTypeId, Status, Priority, Incident_Date__c, Origin__c, MNPI__c, Opportunity_Name__c,
                        Subject, Description, Queue__c, Type_Of_Complaint__c, Service_Type__c, Severity__c, Service_Sub_Category__c,
@@ -719,6 +721,16 @@ return allOpts;
                 RecordType compRecId = [Select Id, Name From RecordType Where Developername = 'Complaint'];
                 theCase.RecordTypeId =compRecId.Id;
                 recordTypeDescription = compRecId.name;
+                
+                if(!String.isBlank(recordId) && recordId.startsWith('a0D')){
+                    
+                    ID RelationshipId = [SELECT Relationship__c FROM Call_Report__c where Id =: recordId   limit 1].Relationship__c;
+                    if(!String.isBlank(RelationshipId )){
+                        rel = [Select Id, Name, CIF__c From Account Where ID =: RelationshipId];
+                        accountOptions_c = new List<Dictionary>{};
+                            accountOptions_c.add(new Dictionary(rel[0].Name , rel[0].CIF__c , rel[0].Id));
+                    }
+                }
             }
             else
             {
@@ -944,7 +956,7 @@ recordTypeDescription = compRecId.name;
                     for(Account a :rel){
                         accountOptions_c.add(new Dictionary(a.Name , a.CIF__c, a.Id));
                     }
-                    ResponseMessage ='Could not find a CIF Number in Salesforce for this Relationship'; //ApexPages.addMessage(new ApexPages.message(ApexPages.severity.WARNING,'Could not find a CIF Number in Salesforce for this Relationship'));
+                    //ResponseMessage ='Could not find a CIF Number in Salesforce for this Relationship'; //ApexPages.addMessage(new ApexPages.message(ApexPages.severity.WARNING,'Could not find a CIF Number in Salesforce for this Relationship'));
                 }
                 
             }else if(rel.size() == 0){
@@ -1036,7 +1048,7 @@ recordTypeDescription = compRecId.name;
                         UpdateAccountInfo(relID, relCIF);
                     }else{
                        // ApexPages.addMessage(new ApexPages.message(ApexPages.severity.WARNING,'Could not find a CIF Number in Salesforce for this Relationship'));
-                        ResponseMessage = 'Could not find a CIF Number in Salesforce for this Relationship';
+                        //ResponseMessage = 'Could not find a CIF Number in Salesforce for this Relationship';
                     }
                 }else if(rel.size() == 0){
                     
@@ -1209,7 +1221,7 @@ ResponseMessage = 'There is no CIF data for this CIF number : ' + relCIF;//ApexP
 ResponseMessage ='Found CIF Data For : ' + relName ;// ApexPages.addMessage(new ApexPages.message(ApexPages.severity.INFO,'Found CIF Data For : ' + relName ));
 }*/
         }else{
-            ResponseMessage = 'Could not find a CIF Number in Salesforce for this Relationship';//ApexPages.addMessage(new ApexPages.message(ApexPages.severity.WARNING,'Could not find a CIF Number in Salesforce for this Relationship'));
+            //ResponseMessage = 'Could not find a CIF Number in Salesforce for this Relationship';//ApexPages.addMessage(new ApexPages.message(ApexPages.severity.WARNING,'Could not find a CIF Number in Salesforce for this Relationship'));
         }
         
     }
@@ -1714,6 +1726,7 @@ ResponseMessage ='Found CIF Data For : ' + relName ;// ApexPages.addMessage(new 
         public String resolvingArea = '';
         public String complaintServiceType = '';
         public String resolvingTeam = '';
+        public String callReportId = '';
         
         
     } 

@@ -7,7 +7,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Owner_of_Rejected_Litigation_Matter_notified</template>
     </alerts>
@@ -19,7 +19,7 @@
             <recipient>mersha.shaik@absa1.com</recipient>
             <type>user</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Litigation_Matter_Claim_against_Barclays</template>
     </alerts>
@@ -31,7 +31,7 @@
             <recipient>COO_Legal_Litigation_Shared_Services_Counsel</recipient>
             <type>role</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Head_of_Litigation_Matter_flagged_as_Reputational_Risk</template>
     </alerts>
@@ -43,7 +43,7 @@
             <recipient>steven.palmer@absa1.com</recipient>
             <type>user</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Claim_Against_Barlcays_Notification</template>
     </alerts>
@@ -54,7 +54,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Owner_of_Approved_Litigation_Matter_notified</template>
     </alerts>
@@ -65,7 +65,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Notification_to_Matter_Owner_Matter_Allocated_Litigation</template>
     </alerts>
@@ -76,7 +76,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Litigation_Matter_Next_Review_Reminder</template>
     </alerts>
@@ -87,7 +87,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Notification_to_Matter_Owner_Matter_Allocated_Convert_and_Change</template>
     </alerts>
@@ -98,7 +98,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Litigation_Matter_Overdue_Reminder</template>
     </alerts>
@@ -109,7 +109,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Matter_Status_Open_Closed_Notification_new</template>
     </alerts>
@@ -121,7 +121,7 @@
             <recipient>tshidi.phangeni@absa1.com</recipient>
             <type>user</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/Matter_Owner_Notification</template>
     </alerts>
@@ -133,7 +133,7 @@
             <recipient>steven.palmer@absa1.com</recipient>
             <type>user</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Litigation_Matter_Claim_against_Barclays</template>
     </alerts>

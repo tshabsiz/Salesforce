@@ -305,11 +305,19 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Document URL --></label>
+        <name>Document_URL__c</name>
+    </fields>
+    <fields>
         <label><!-- Hub --></label>
         <name>Hub__c</name>
         <picklistValues>
             <masterLabel>ARBB</masterLabel>
             <translation><!-- ARBB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Absa Linked Investments</masterLabel>
+            <translation><!-- Absa Linked Investments --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Agency Deal Management</masterLabel>
@@ -702,6 +710,10 @@
         <picklistValues>
             <masterLabel>EDC South Africa</masterLabel>
             <translation><!-- EDC South Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Distribution Channel</masterLabel>
+            <translation><!-- External Distribution Channel --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Finance HR</masterLabel>

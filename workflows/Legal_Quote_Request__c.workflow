@@ -8,7 +8,7 @@
             <recipient>LEAP_Admin_Users_to_add_Off_Panel</recipient>
             <type>group</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Admin_informed_to_add_Off_Panel_Counsel</template>
     </alerts>
@@ -20,7 +20,7 @@
             <recipient>LEAP_Admin_Users_to_add_Off_Panel</recipient>
             <type>group</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Admin_informed_to_add_Off_Panel_Counsel</template>
     </alerts>
@@ -32,7 +32,7 @@
             <recipient>LEAP_Admin_Users_to_add_Off_Panel</recipient>
             <type>group</type>
         </recipients>
-        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>AdvoLogix/LEAP_Admin_informed_to_add_Off_Panel_Counsel</template>
     </alerts>

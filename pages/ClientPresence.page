@@ -94,7 +94,7 @@
                     query = addEngagedToQuery(query, 'Present But Not Banking');
                 }
                 if (notPresent) {
-                    query = addEngagedToQuery(query, 'Barclays Not Present');
+                    query = addEngagedToQuery(query, 'Absa Not Present');
                 }
                 query += ')';
                 

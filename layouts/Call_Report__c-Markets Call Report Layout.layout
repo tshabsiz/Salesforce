@@ -50,6 +50,10 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
+                <field>Meeting_Reason2__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Meeting_Reason__c</field>
             </layoutItems>
             <layoutItems>

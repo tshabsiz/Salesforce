@@ -416,9 +416,6 @@
             <quickActionName>FeedItem.TextPost</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
-            <quickActionName>Case.Email</quickActionName>
-        </quickActionListItems>
-        <quickActionListItems>
             <quickActionName>Case.Transfer</quickActionName>
         </quickActionListItems>
         <quickActionListItems>

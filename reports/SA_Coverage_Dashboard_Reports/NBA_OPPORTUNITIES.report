@@ -50,11 +50,24 @@
     </columns>
     <currency>ZAR</currency>
     <filter>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
         <criteriaItems>
-            <column>Account.Team_F__c</column>
+            <column>ACCOUNT_OWNER</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Client Acquisition</value>
+            <value>Deon Pillay,Colin Gilmartin,Dean Johnston,Tshepo Ramokgopa,Lebogang Mashabane</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Deon Pillay,Colin Gilmartin,Dean Johnston,Tshepo Ramokgopa,Lebogang Mashabane</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Deon Pillay,Colin Gilmartin,Dean Johnston,Tshepo Ramokgopa,Lebogang Mashabane</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -77,14 +90,13 @@
         <value>1</value>
     </params>
     <reportType>OpportunityProduct</reportType>
+    <roleHierarchyFilter>BAGL_Management</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
-        <endDate>2018-12-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2017-01-01</startDate>
     </timeFrameFilter>
 </Report>

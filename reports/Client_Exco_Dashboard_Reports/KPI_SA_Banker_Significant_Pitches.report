@@ -38,15 +38,10 @@
         <backgroundColor2>#FFFFFF</backgroundColor2>
         <backgroundFadeDir>Diagonal</backgroundFadeDir>
         <chartSummaries>
-            <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>OpportunityLineItem.Income_this_Year__c</column>
-        </chartSummaries>
-        <chartSummaries>
-            <axisBinding>y2</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>VerticalColumnGroupedLine</chartType>
+        <chartType>VerticalColumnGrouped</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
         <groupingColumn>Account.Team_F__c</groupingColumn>
@@ -66,6 +61,9 @@
     </chart>
     <columns>
         <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
     </columns>
     <columns>
         <field>RECORDTYPE</field>
@@ -107,26 +105,19 @@
         <field>PRODUCT_NAME</field>
     </columns>
     <columns>
-        <aggregateTypes>Sum</aggregateTypes>
         <field>OpportunityLineItem.Income_this_Year__c</field>
     </columns>
     <columns>
-        <aggregateTypes>Sum</aggregateTypes>
         <field>OpportunityLineItem.Income_this_Year__c.CONVERT</field>
     </columns>
     <columns>
-        <aggregateTypes>Sum</aggregateTypes>
         <field>OpportunityLineItem.Annualised_Income__c</field>
     </columns>
     <columns>
-        <aggregateTypes>Sum</aggregateTypes>
         <field>OpportunityLineItem.Annualised_Income__c.CONVERT</field>
     </columns>
     <columns>
         <field>OpportunityLineItem.Balance__c.CONVERT</field>
-    </columns>
-    <columns>
-        <field>ACCOUNT_NAME</field>
     </columns>
     <currency>ZAR</currency>
     <filter>
@@ -168,14 +159,15 @@
         <value>1</value>
     </params>
     <reportType>OpportunityProduct</reportType>
+    <roleHierarchyFilter>BAGL_Management</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
-    <showSubTotals>true</showSubTotals>
+    <showSubTotals>false</showSubTotals>
     <sortColumn>OpportunityLineItem.Income_this_Year__c</sortColumn>
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
-        <dateColumn>CLOSE_DATE</dateColumn>
+        <dateColumn>CREATED_DATE</dateColumn>
         <interval>INTERVAL_CURFY</interval>
     </timeFrameFilter>
 </Report>

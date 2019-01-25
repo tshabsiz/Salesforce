@@ -88,6 +88,18 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Contact Category --></label>
+        <name>Categories_of_contacts__c</name>
+        <picklistValues>
+            <masterLabel>Decision Maker</masterLabel>
+            <translation><!-- Decision Maker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operational</masterLabel>
+            <translation><!-- Operational --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label><!-- Client ID --></label>
         <name>Client_ID__c</name>
     </fields>
@@ -279,6 +291,10 @@
         <help><!-- Image size must be 50 x 50 pixels or roughly 1.5cm x 1.5cm --></help>
         <label><!-- Image --></label>
         <name>Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inactive Contact --></label>
+        <name>Inactive_Contact__c</name>
     </fields>
     <fields>
         <label><!-- Primary Role --></label>

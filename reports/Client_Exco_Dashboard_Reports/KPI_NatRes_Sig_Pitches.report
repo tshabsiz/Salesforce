@@ -67,6 +67,9 @@
         <field>OPPORTUNITY_NAME</field>
     </columns>
     <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
         <field>RECORDTYPE</field>
     </columns>
     <columns>
@@ -124,9 +127,6 @@
     <columns>
         <field>OpportunityLineItem.Balance__c.CONVERT</field>
     </columns>
-    <columns>
-        <field>ACCOUNT_NAME</field>
-    </columns>
     <currency>ZAR</currency>
     <filter>
         <booleanFilter>(1 OR 2) AND 3</booleanFilter>
@@ -169,6 +169,7 @@
         <value>1</value>
     </params>
     <reportType>OpportunityProduct</reportType>
+    <roleHierarchyFilter>BAGL_Management</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
@@ -176,7 +177,7 @@
     <sortColumn>OpportunityLineItem.Income_this_Year__c</sortColumn>
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
-        <dateColumn>CLOSE_DATE</dateColumn>
+        <dateColumn>CREATED_DATE</dateColumn>
         <interval>INTERVAL_CURFY</interval>
     </timeFrameFilter>
 </Report>

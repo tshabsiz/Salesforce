@@ -59,7 +59,7 @@
             <column>Call_Report__c.Owner_Team__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Markets - Institutions</value>
+            <value>Institutional Sales</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

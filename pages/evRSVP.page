@@ -445,6 +445,24 @@ DP: Added Transport required field and showTransportInfo JS function
                                 </div> 
                             </apex:outputpanel>
                             
+                            <apex:outputpanel rendered="{!sessionWrapperList.size > 0}">
+                                <br/>
+                                <b>Please select one or more of the Event Days/Sessions listed below</b>
+                                <apex:repeat value="{!sessionWrapperList}" var="sessionWrapper">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3" >{!sessionWrapper.session.name}</label> 
+                                        <div class="col-sm-9">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <apex:inputcheckbox id="sessions" value="{!sessionWrapper.selected}" onchange="sessionsInfo(this)" />
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </apex:repeat>
+                            </apex:outputpanel>
+                            
+                            
                             <div class="page-section">
                                 <label>
                                     <apex:inputcheckbox value="{!accept1}"/>&nbsp;
@@ -491,6 +509,7 @@ DP: Added Transport required field and showTransportInfo JS function
                 <apex:outputPanel id="MultiContact" rendered="{!thisDelegate.Registration_Status__c == 'Accepted' || thisDelegate.Registration_Status__c == 'Confirmed'}">
                     <div class="page-section">
                         <p>Thank you for accepting, we look forward to seeing you at the event. </p>
+                        <c:evCalendarLinkGenerator inputDelegateId="{!thisDelegate.id}" inputLinkText="Click here" inputLinkImage="https://absa1--c.eu15.content.force.com/servlet/servlet.ImageServer?id=0151p000006z0xU&oid=00D24000000JOMz&lastMod=1546854748000"></c:evCalendarLinkGenerator> 
                     </div>
                     <apex:outputPanel rendered="{!thisEvent.Allow_Partners__c == true && PartnersInserted ==  true}" >
                          <p>Thank you for registering your partners. </p>

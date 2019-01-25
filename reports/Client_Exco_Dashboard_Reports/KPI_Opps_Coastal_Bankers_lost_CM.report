@@ -154,7 +154,7 @@
         <field>FULL_NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>KPI - Opps Coastal Bankers lost - CM</name>
+    <name>KPI - Opps Coastal Bankers lost - CY</name>
     <params>
         <name>open</name>
         <value>closed</value>
@@ -168,12 +168,13 @@
         <value>1</value>
     </params>
     <reportType>Opportunity</reportType>
+    <roleHierarchyFilter>BAGL_Management</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CLOSE_DATE</dateColumn>
-        <interval>INTERVAL_THISMONTH</interval>
+        <interval>INTERVAL_CURFY</interval>
     </timeFrameFilter>
 </Report>

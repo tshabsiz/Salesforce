@@ -23,11 +23,11 @@ public without sharing class AccountTrigger_Helper {
 * <Date>      <Authors Name>    <Brief Description of Change> 
 *------------------------------------------------------------*/
     private static Set<ID> callReportIDSet {get;set;}
-    public static void updateOpportunitySegment(List<Account> triggerNew, Map<Id, Account> triggerOld) {
+    public static void updateOpportunitySegmentAndIndustry(List<Account> triggerNew, Map<Id, Account> triggerOld) {
         Boolean RunTrigger = false;
         for(Account acc : triggerNew) {
-            // Only run if the segment has changed
-            if (triggerOld.get(acc.Id).Segment__c != acc.Segment__c)
+            // Only run if the segment/industry has changed
+            if (triggerOld.get(acc.Id).Segment__c != acc.Segment__c || triggerOld.get(acc.Id).Industry != acc.Industry)
             {
                 RunTrigger = true;
             }
@@ -38,13 +38,14 @@ public without sharing class AccountTrigger_Helper {
         // Get all opportunities linked to the accounts being updated
         List<Opportunity> oppsPerAccount = [Select Id, AccountId FROM Opportunity WHERE AccountId =: triggerNew];
         // Go through the accounts being updated
-        for(Account acc : [Select Id, Segment__c, OwnerId FROM Account WHERE Id =: triggerNew]) {
-            // If the segment has changed
-            if (triggerOld.get(acc.Id).Segment__c != acc.Segment__c) {
+        for(Account acc : [Select Id, Segment__c, Industry, OwnerId FROM Account WHERE Id =: triggerNew]) {
+            // If the segment/industry has changed
+            if (triggerOld.get(acc.Id).Segment__c != acc.Segment__c || triggerOld.get(acc.Id).Industry != acc.Industry) {
                 // Go through the opportunities for the account being updated
                 for(Opportunity opp : oppsPerAccount) {
                     if (opp.AccountId != null && opp.AccountId == acc.Id) {
-                        opp.Segment__c = 'FireOpportunityUpdate';
+                        if (triggerOld.get(acc.Id).Segment__c != acc.Segment__c) opp.Segment__c = 'FireOpportunityUpdate';
+                        if (triggerOld.get(acc.Id).Industry != acc.Industry) opp.Industry__c = 'FireOpportunityUpdate';
                         oppsToUpdate.add(opp);
                     }
                 }

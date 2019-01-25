@@ -18,8 +18,10 @@ public class AcmMitigantCRUDService_test {
             
         List<Collateral_Relationship__c> collateralRelationships =  [SELECT Collateral__c,relationship__r.CIF__c,Relationship__c,isPrimaryRelationship__c,Collateral_Type__c,Active__c, Relationship_Type__c,relationship__r.SDS__c FROM Collateral_Relationship__c];
         List<Collateral_Facility__c> collateralFacilities = [SELECT Collateral__c, Saved_To_Acm__c,Active__c, Facility_Client__c, AcmFacility__c,AcmFacility__r.Facility_Id__c, AcmFacility__r.Bank_Application_key__c FROM Collateral_Facility__c];
+        List<Collateral_Monitoring__c> collateralMonitorings = [Select id,Collateral_Type__c,Account_Number__c,Account_Type__c From Collateral_Monitoring__c];
         
-        AcmMitigantCRUDService.createOrUpdateMitigantsList(AcmStatuses, collaterals, collateralRelationships, collateralFacilities);
+        
+        AcmMitigantCRUDService.createOrUpdateMitigantsList(AcmStatuses, collaterals, collateralRelationships, collateralFacilities,collateralMonitorings);
         
         Test.stopTest();
     }

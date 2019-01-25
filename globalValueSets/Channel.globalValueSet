@@ -341,9 +341,9 @@
         <label>Internet Banking</label>
     </customValue>
     <customValue>
-        <fullName>Investment Account</fullName>
+        <fullName>Investment</fullName>
         <default>false</default>
-        <label>Investment Account</label>
+        <label>Investment</label>
     </customValue>
     <customValue>
         <fullName>Inward SSI</fullName>
@@ -616,9 +616,9 @@
         <label>Statement Delivery</label>
     </customValue>
     <customValue>
-        <fullName>STF</fullName>
+        <fullName>STF_SA</fullName>
         <default>false</default>
-        <label>STF</label>
+        <label>STF SA</label>
     </customValue>
     <customValue>
         <fullName>Strate SSI</fullName>
@@ -799,6 +799,56 @@
         <fullName>Csretail</fullName>
         <default>false</default>
         <label>Csretail</label>
+    </customValue>
+    <customValue>
+        <fullName>CPF</fullName>
+        <default>false</default>
+        <label>CPF</label>
+    </customValue>
+    <customValue>
+        <fullName>STF ROA</fullName>
+        <default>false</default>
+        <label>STF ROA</label>
+    </customValue>
+    <customValue>
+        <fullName>Leap</fullName>
+        <default>false</default>
+        <label>Leap</label>
+    </customValue>
+    <customValue>
+        <fullName>Box</fullName>
+        <default>false</default>
+        <label>Box</label>
+    </customValue>
+    <customValue>
+        <fullName>Ascot</fullName>
+        <default>false</default>
+        <label>Ascot</label>
+    </customValue>
+    <customValue>
+        <fullName>Wealth</fullName>
+        <default>false</default>
+        <label>Wealth</label>
+    </customValue>
+    <customValue>
+        <fullName>Event</fullName>
+        <default>false</default>
+        <label>Event</label>
+    </customValue>
+    <customValue>
+        <fullName>CSC</fullName>
+        <default>false</default>
+        <label>CSC</label>
+    </customValue>
+    <customValue>
+        <fullName>PocketFlow</fullName>
+        <default>false</default>
+        <label>PocketFlow</label>
+    </customValue>
+    <customValue>
+        <fullName>Pricing Tool</fullName>
+        <default>false</default>
+        <label>Pricing Tool</label>
     </customValue>
     <masterLabel>Channel</masterLabel>
     <sorted>false</sorted>

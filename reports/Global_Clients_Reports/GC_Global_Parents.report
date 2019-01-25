@@ -71,6 +71,12 @@
             <operator>equals</operator>
             <value>Global Parent</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>USERS.NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Coverage Unmanaged</value>
+        </criteriaItems>
     </filter>
     <format>Tabular</format>
     <name>GC Global Parents</name>

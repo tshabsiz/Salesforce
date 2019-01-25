@@ -107,6 +107,11 @@
         <label>EDC Consultant</label>
     </standardValue>
     <standardValue>
+        <fullName>FX Salesperson</fullName>
+        <default>false</default>
+        <label>FX Salesperson</label>
+    </standardValue>
+    <standardValue>
         <fullName>Host Specialist</fullName>
         <default>false</default>
         <label>Host Specialist</label>

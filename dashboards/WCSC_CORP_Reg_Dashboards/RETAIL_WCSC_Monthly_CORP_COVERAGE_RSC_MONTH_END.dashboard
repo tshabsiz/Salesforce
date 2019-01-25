@@ -379,20 +379,21 @@
                     <axisBinding>y</axisBinding>
                     <column>RowCount</column>
                 </chartSummary>
-                <componentType>Donut</componentType>
+                <componentType>BarGrouped</componentType>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
-                <expandOthers>true</expandOthers>
+                <expandOthers>false</expandOthers>
                 <groupingColumn>Case.Resolving_Team__c</groupingColumn>
-                <header>RSC CORP NATIONAL - Complaints Volume</header>
+                <groupingColumn>ACCOUNT.NAME</groupingColumn>
+                <header>CORP NATIONAL - Complaints Volume</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>WCSC_CORP_Reg_Reports/RSC_CORP_Complaints_Resolving_Area</report>
-                <showPercentage>true</showPercentage>
-                <showTotal>true</showTotal>
+                <report>Complaints_Reports/CSS_Complaints_Resolving_Area_By_Client</report>
+                <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowValueDescending</sortBy>
+                <title>YTD</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>16</rowIndex>

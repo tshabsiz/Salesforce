@@ -561,7 +561,7 @@ public class OpportunityLineItemTrigger_Helper {
             {
                 if (opsline.Product_Level_2_Name__c == 'Electronic Banking' && opsline.Product_Level_3_Name__c != NULL && opsline.Product_Level_3_Name__c.Contains('Domestic Payments') && opsline.OpportunityCountry__c == 'South Africa' && opsline.AccountSegment__c != 'Business Banking' && opsline.CrossSellOpportunity__c == false) parentoppsforinsertion.add(opsline.OpportunityId);
             }
-            if (oldOppLineItems == null && opsline.Product_Level_2_Name__c == 'Electronic Banking' && opsline.Product_Level_3_Name__c.Contains('Domestic Payments') && opsline.OpportunityCountry__c == 'South Africa' && opsline.AccountSegment__c != 'Business Banking' && opsline.CrossSellOpportunity__c == false) {
+            if (oldOppLineItems == null && opsline.Product_Level_2_Name__c == 'Electronic Banking' && opsline.Product_Level_3_Name__c != NULL && opsline.Product_Level_3_Name__c.Contains('Domestic Payments') && opsline.OpportunityCountry__c == 'South Africa' && opsline.AccountSegment__c != 'Business Banking' && opsline.CrossSellOpportunity__c == false) {
             	parentoppsforinsertion.add(opsline.OpportunityId);
             }
         }

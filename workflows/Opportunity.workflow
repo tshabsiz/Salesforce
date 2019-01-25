@@ -28,7 +28,7 @@
             <recipient>vanessa.naidoo@absa1.com</recipient>
             <type>user</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/Big_Deal_Alert</template>
     </alerts>
@@ -50,7 +50,7 @@
         <recipients>
             <type>creator</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/Creator_Alert_Approved</template>
     </alerts>
@@ -61,7 +61,7 @@
         <recipients>
             <type>creator</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/Creator_Alert_Rejected</template>
     </alerts>
@@ -110,7 +110,7 @@
             <recipient>Liquidity_And_Working_Capital_Team</recipient>
             <type>group</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/Liquidity_And_Working_Capital_Alert</template>
     </alerts>
@@ -125,7 +125,7 @@
             <field>ProductPartner__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/Product_Partner_Approval_Rejection</template>
     </alerts>
@@ -140,7 +140,7 @@
             <field>Owner_Manager_Id__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/Opportunity_passed_Close_Date</template>
     </alerts>
@@ -174,7 +174,7 @@
             <recipient>Accountable Banker</recipient>
             <type>opportunityTeam</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/Notify_Accountable_Banker_of_assignment_to_Opp</template>
     </alerts>
@@ -188,7 +188,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/Opportunity_flagged_as_Priority</template>
     </alerts>
@@ -202,7 +202,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/Opportunity_not_under_Review</template>
     </alerts>
@@ -216,7 +216,7 @@
         <recipients>
             <type>owner</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/Opportunity_under_Review</template>
     </alerts>
@@ -231,7 +231,7 @@
             <field>Accountable_Banker__c</field>
             <type>userLookup</type>
         </recipients>
-        <senderAddress>xrasalesforcesuppor1@barclayscapital.com</senderAddress>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
         <senderType>OrgWideEmailAddress</senderType>
         <template>Worklfow_Email_Templates/Overdue_Opportunity_Reminder_Private_Side</template>
     </alerts>
@@ -278,6 +278,22 @@
         <template>Worklfow_Email_Templates/MMDC_Email_Opportunity_confirmation</template>
     </alerts>
     <alerts>
+        <fullName>Send_To_Insuarance</fullName>
+        <ccEmails>virtualshortterm@absa.co.za</ccEmails>
+        <description>Send To Insurance For Private Clients</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>Worklfow_Email_Templates/Email_To_Insurance_For_Closed_CPF_Deals</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_To_Insurance_For_Public_Clients</fullName>
+        <ccEmails>virtualshortterm@absa.co.za</ccEmails>
+        <description>Send To Insurance For Public Clients</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>Worklfow_Email_Templates/Email_To_Insurance_For_Closed_CPF_Deals_For_Public_Opps</template>
+    </alerts>
+    <alerts>
         <fullName>Send_notification_email_to_Accountable_Banker</fullName>
         <description>Send notification email to Accountable Banker</description>
         <protected>false</protected>
@@ -287,6 +303,19 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Worklfow_Email_Templates/Accountable_Banker_Approval_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_notification_email_to_Relationship_and_opportunity_owner</fullName>
+        <description>Send notification email to Relationship and opportunity owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Opportunity_Created</template>
     </alerts>
     <alerts>
         <fullName>Sends_email_to_on_boarding_team</fullName>
@@ -405,6 +434,15 @@
         <operation>Formula</operation>
         <protected>false</protected>
         <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Mandate_Won_date</fullName>
+        <field>Mandate_Won_date__c</field>
+        <formula>TODAY()</formula>
+        <name>Mandate Won date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Overdue_Reminder_Sent_False</fullName>
@@ -757,6 +795,21 @@ Campaign.Name =&apos;Money Market Deposit Campaign&apos;,  ISCHANGED(Accountable
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
+        <fullName>Mandate won field update</fullName>
+        <actions>
+            <name>Mandate_Won_date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Mandate Won</value>
+        </criteriaItems>
+        <description>Update with time when mandate is won</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
         <fullName>Notification to Banker of Closed Lost MM Opportunities</fullName>
         <actions>
             <name>Notification_to_Banker_of_Closed_Lost_MM_Opportunities</name>
@@ -878,6 +931,22 @@ Campaign.Name =&apos;Money Market Deposit Campaign&apos;,  ISCHANGED(Accountable
         </criteriaItems>
         <description>Opportunity owner to perform conflict check for private opportunities</description>
         <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Private Closed opp</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Private opportunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <description>Send an email alert when a private side opportunity is closed</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
     <rules>
         <fullName>ProductPartnerApprovalStatusUpdater</fullName>

@@ -105,7 +105,7 @@ public class lscLinkCaseExt {
             emsg.ParentId = selectedCaseId;
             
             //clone only the FeedItems pointing to the content and link to the related cases
-            for(FeedItem f : [Select RelatedRecordId, Type, Body, ParentId From FeedItem 
+            for(CollaborationGroupFeed  f : [Select RelatedRecordId, Type, Body, ParentId From CollaborationGroupFeed  
                               Where ParentId = :linkCaseId and Type = 'ContentPost']){
                                   
                                   FeedItem post = new FeedItem();

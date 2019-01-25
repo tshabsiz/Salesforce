@@ -11,11 +11,13 @@
 *------------------------------------------------------------*/
 public class APT_AnnualPricingUtils {
 	public static String STATUS_NOT_SUBMITTED = 'Not Submitted';
+    public static String STATUS_STANDARD_PRICING = 'Standard Pricing';
 	public static String STATUS_PENDING = 'Pending';
 	public static String STATUS_APPROVED = 'Approved';
 	public static String STATUS_REJECTED = 'Rejected';
 	public static String STATUS_PENDING_FIRST_APPROVAL = 'Pending 1st line Approval';
 	public static String STATUS_PENDING_SECOND_APPROVAL = 'Pending 2nd line Approval';
+    private static final String EDIT = 'edit';
 
 	public APT_AnnualPricingUtils() {}
 
@@ -300,4 +302,22 @@ public class APT_AnnualPricingUtils {
 			this.annualPricingItem = annualPricingItem;
 		}
 	}
+    
+    
+    public static Annual_Pricing__Share createSharingInstance(String planId, String userId) {
+        
+        Annual_Pricing__Share shRec = new Annual_Pricing__Share();
+        shRec.AccessLevel = EDIT;
+        shRec.RowCause = Schema.Annual_Pricing__Share.RowCause.Manual;
+        
+        try {
+            shRec.ParentId = planId;
+            shRec.UserOrGroupId = userId;
+        } catch (StringException e) {
+            system.debug(e);
+            return null;
+        }
+        
+        return shRec;
+    }
 }

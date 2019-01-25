@@ -101,7 +101,7 @@
         <field>OWNER</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>RSC/RSCS Inalnd Case Tracking Cases</name>
+    <name>RSC/RSCS Inland Case Handoff Tracking</name>
     <params>
         <name>units</name>
         <value>h</value>

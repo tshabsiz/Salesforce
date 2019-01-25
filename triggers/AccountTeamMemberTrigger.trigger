@@ -9,6 +9,7 @@ trigger AccountTeamMemberTrigger on Account_Team_Member__c (before insert, after
 		AccountTeamMemberTrigger_Helper.followAccountByTeamMember(Trigger.new);
 		AccountTeamMemberTrigger_Helper.addPostToAttendee(Trigger.newMap.keySet());
 		AccountTeamMemberTrigger_Helper.shareClientPlans(Trigger.new);
+        AccountTeamMemberTrigger_Helper.shareAnnualPricing(Trigger.new);
 	}
 	//after update
 	if(Trigger.isAfter && Trigger.isUpdate){

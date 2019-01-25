@@ -2,7 +2,7 @@
 *** CHANGE LOG ***
 
 20/11/2017 - TdB   - Created Class.
-01/08/2018 - TdB	- Remove commeneted code
+01/08/2018 - TdB  - Remove commeneted code
 **/ 
 
 public with sharing class Collateral_Monitoring_Override {
@@ -12,17 +12,23 @@ public with sharing class Collateral_Monitoring_Override {
     public List<sObject_Scheduling_Occurences.ParticipantWrapper> participantsWrapper { get; set; }
     public List<sObject_Scheduling_Occurences.DistroGroupWrapper> distroGroupsWrapper { get; set; }
     
+    private String errorMessage {get ; set; }
+     private ApexPages.StandardController sController;
+    private Collateral__c collateral;
+    
     public Collateral_Monitoring_Override(ApexPages.StandardController stdController) 
-	{
+  {
+        sController = stdController;
         //Empty wrappers
         participantsWrapper = new List<sObject_Scheduling_Occurences.ParticipantWrapper>();
         distroGroupsWrapper = new List<sObject_Scheduling_Occurences.DistroGroupWrapper>();
         
+        
         List<Agreement__c> agreementRecord = new List<Agreement__c>();
         
-		List<String> fields = new List<String>{
+    List<String> fields = new List<String>{
             'Id',
-			'Name',
+      'Name',
             'Deal__c',
             'Person_Responsible__c',
             'Agreement__c',
@@ -50,16 +56,18 @@ public with sharing class Collateral_Monitoring_Override {
             'LastModifiedById',
             'CreatedDate',
             'LastModifiedDate'
-		};
+    };
 
-		//Query fields.
-		if(!Test.isRunningTest())
-		{
-			stdController.addFields(fields); 
-		}
+    //Query fields.
+    if(!Test.isRunningTest())
+    {
+      stdController.addFields(fields); 
+    }
 
-		//Fetch object record.
-		this.collateralMonitoringRecord = (Collateral_Monitoring__c)stdController.getRecord();
+        
+    //Fetch object record.
+    this.collateralMonitoringRecord = (Collateral_Monitoring__c)stdController.getRecord();
+        collateral = AcmMitigantCRUDService.getCollateralFromId(collateralMonitoringRecord.Collateral__c);
         
         //Get Matter/Deal Id
         agreementRecord = [SELECT Id, Matter_Deal__c FROM Agreement__c WHERE Id = :collateralMonitoringRecord.Agreement__c];
@@ -104,7 +112,7 @@ public with sharing class Collateral_Monitoring_Override {
         standardPage.setRedirect(true);
         
         //Redirect.
-        return standardPage;
+        return null;
     }
     
      public void DealParticipants()
@@ -117,7 +125,26 @@ public with sharing class Collateral_Monitoring_Override {
              participantsWrapper = sObject_Scheduling_Occurences.getParticipantsList(collateralMonitoringRecord.Deal__c);
         }
     }
-    
+    public PageReference CallWebService() {
+        PageReference redirectSuccess = null;
+        System.debug('Web service Call' +errorMessage);
+        PageReferenceMessage pageReferenceMessage = new PageReferenceMessage();
+        if(String.isBlank(errorMessage)) {
+            System.debug('Save to ACM');
+            pageReferenceMessage = AcmControllerLogic.saveToACM(sController, collateral, false, errorMessage);
+            if(pageReferenceMessage.message == 'Mitigant successfully created/update') {
+                redirectSuccess = pageReferenceMessage.redirectSuccess;
+            } else if(pageReferenceMessage.message == 'Not Saving to ACM') {
+                redirectSuccess = pageReferenceMessage.redirectSuccess;
+            } else {
+                System.debug('My messages are here : ' + pageReferenceMessage.message);
+                ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR, pageReferenceMessage.message));
+                return null; 
+            }
+        }
+        redirectSuccess = new ApexPages.StandardController(sController.getRecord()).view();
+        return redirectSuccess; 
+    }
     public PageReference createBoxPermission()
     {
         System.debug('### Collateral_Monitoring_Override : createBoxPermission : ' + collateralMonitoringRecord.Id);

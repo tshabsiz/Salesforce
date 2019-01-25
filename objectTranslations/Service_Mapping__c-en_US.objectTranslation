@@ -118,6 +118,10 @@
             <translation><!-- Tanya DeBeer --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Vanitha Moodley</masterLabel>
+            <translation><!-- Vanitha Moodley --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Zunthia Rossouw</masterLabel>
             <translation><!-- Zunthia Rossouw --></translation>
         </picklistValues>
@@ -184,6 +188,14 @@
             <translation><!-- CIB Financial Crime Compliance --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>COB Client Mandates</masterLabel>
+            <translation><!-- COB Client Mandates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash Send</masterLabel>
+            <translation><!-- Cash Send --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Channel Specialist</masterLabel>
             <translation><!-- Channel Specialist --></translation>
         </picklistValues>
@@ -214,6 +226,10 @@
         <picklistValues>
             <masterLabel>RBB Cash Operations</masterLabel>
             <translation><!-- RBB Cash Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refresh</masterLabel>
+            <translation><!-- Refresh --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Regional Service Centre Commercial Cape Town</masterLabel>
@@ -274,6 +290,10 @@
         <picklistValues>
             <masterLabel>Wholesale Client Service Centre</masterLabel>
             <translation><!-- Wholesale Client Service Centre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>inward payments Client service and support</masterLabel>
+            <translation><!-- inward payments Client service and support --></translation>
         </picklistValues>
     </fields>
     <fields>

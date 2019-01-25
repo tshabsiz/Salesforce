@@ -18,6 +18,21 @@
     <columns>
         <field>PARENT_ID</field>
     </columns>
+    <columns>
+        <field>CREATED</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE_BY</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
     <currency>ZAR</currency>
     <filter>
         <booleanFilter>((1 or 2) AND 3) AND 4</booleanFilter>
@@ -36,8 +51,8 @@
         <criteriaItems>
             <column>RECORDTYPE</column>
             <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value>Account.Related_Party,Account.Client_Individual,Account.Client_Legal_Entity,Account.Prospect_Individual,Account.Prospect_Legal_Entity,Account.EDC_Client</value>
+            <operator>equals</operator>
+            <value>Account.Client</value>
         </criteriaItems>
         <criteriaItems>
             <column>PARENT.NAME</column>

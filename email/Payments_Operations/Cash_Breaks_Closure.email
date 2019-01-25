@@ -9,8 +9,8 @@ your request relating to&nbsp;</span></p><p class="MsoNormal" style="margin-bott
 
 <p class="MsoNormal"><span style="font-size: 12pt; line-height: 115%; font-family: 'Expert Sans Regular', sans-serif;">Thank you<br>
 <br>
-{!User.Name} {!User.Surname}<br>
-<b>Cash Breaks</b></span><span style="font-size:12.0pt;line-height:115%;
-font-family:&quot;Expert Sans Regular&quot;,&quot;sans-serif&quot;"><o:p></o:p></span></p>]]></td>
+{!User.Name} {!User.Surname}<br></span></p><p class="MsoNormal"><span class="apple-converted-space"><span style="font-size:
+6.5pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#333333;
+background:white">&nbsp;</span></span><b><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#333333;background:white">TRI Reconciliation<span class="apple-converted-space">&nbsp;Team</span><o:p></o:p></span></b></p>]]></td>
 </tr>
 </table>

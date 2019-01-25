@@ -8,13 +8,11 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>HorizontalBarStacked</chartType>
+        <chartType>HorizontalBar</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
         <groupingColumn>Delegate__c.Contact__c</groupingColumn>
-        <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
-        <secondaryGroupingColumn>Delegate__c.Contact_Relationship__c</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -71,13 +69,13 @@
             <column>CUST_NAME</column>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
-            <value>CIB Mid-Corporate Coverage Economic Update</value>
+            <value>Aid to the Last Mile</value>
         </criteriaItems>
         <criteriaItems>
             <column>Delegate__c.Status__c</column>
             <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>No Show</value>
+            <operator>notEqual</operator>
+            <value>Attended</value>
         </criteriaItems>
         <criteriaItems>
             <column>Delegate__c.Contact_Relationship__c</column>
@@ -85,19 +83,8 @@
             <operator>contains</operator>
             <value>Event Delegate Account,Absa</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>Delegate__c.RSVP_Status__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>Yes</value>
-        </criteriaItems>
     </filter>
     <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Day</dateGranularity>
-        <field>Delegate__c.Host__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>Delegate__c.Contact__c</field>
@@ -105,7 +92,7 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Delegate__c.Contact_Relationship__c</field>
+        <field>Delegate__c.Contact_Company__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>EM No Show RSVP Yes - Staff</name>

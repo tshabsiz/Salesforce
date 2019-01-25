@@ -122,6 +122,10 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Executive Summary --></label>
+        <name>Executive_Summary__c</name>
+    </fields>
+    <fields>
         <label><!-- Credit Exposure Policy --></label>
         <name>Expansion_Policy__c</name>
         <picklistValues>

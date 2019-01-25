@@ -37,6 +37,7 @@
 
             var planLoaded = {!planLoaded};
             if(planLoaded) {
+                prepareExecutiveSummary();
                 prepareSector();
                 replaceNewLines();
             }
@@ -71,13 +72,24 @@
                     showLoadingErrorMessage('{!$Label.errMsg_ErrorLoadingData}');
                 } else {
                     CKEDITOR.instances['thepageid:theformid:clientOverviewEditor'].setData(result);
+                    
+                }
+                prepareOnChangeEvents();
+            },
+            { escape: false });
+        }
+        function prepareExecutiveSummary() {
+            ClientOverviewController.getExecutiveSummary('{!plan.Id}', function(result, event) {
+                if (result == null || result.status == false) {
+                    showLoadingErrorMessage('{!$Label.errMsg_ErrorLoadingData}');
+                } else {
+                    CKEDITOR.instances['thepageid:theformid:executiveSummary'].setData(result);
                     //$('.clientOverviewEditor').html(result);
                 }
                 prepareOnChangeEvents();
             },
             { escape: false });
         }
-        
         function prepareOnChangeEvents() {
             for(var i in CKEDITOR.instances) {
                 CKEDITOR.instances[i].on('blur', function() {
@@ -140,6 +152,7 @@
                     showLoadingErrorMessage('{!$Label.errMsg_SectorOverviewTooBig}');
                 }
                 saveClient();
+                saveExecutiveSummary();
             },
             { escape: false });
         }
@@ -155,7 +168,17 @@
             },
             { escape: false });
         }
-        
+        function saveExecutiveSummary(){
+            var executiveSummary = CKEDITOR.instances['thepageid:theformid:executiveSummary'].getData();
+            
+            ClientOverviewController.saveExecutiveSummary('{!plan.Id}', executiveSummary, function(result) {
+                if (result == null || result.status == false || result == true) {
+                    showLoadingErrorMessage('{!$Label.errMsg_ClientOverviewTooBig}');
+                }
+                endLoading();
+            },
+            { escape: false });
+        }
         
         //score functions
         function replaceNewLines() {
@@ -485,7 +508,15 @@
                     <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
                     <span id="topMsgsText" />
                 </div>
-                
+                <div class="bold">
+                    <apex:outputText value="{!$ObjectType.Client_Plan__c.fields.Executive_Summary__c.Label}" />
+                </div>
+                <div class="">
+                    <apex:inputtextarea id="executiveSummary" styleClass="ckeditor sectorOverviewEditor" richtext="false" />
+                </div>
+                <div>
+                    <apex:outputText styleClass="richTextAlert" value="{!$Label.lbl_CopyPasteRichTextAlert}"/>
+                </div>
                 <div class="bold">
                     <apex:outputText value="{!$ObjectType.Client_Plan__c.fields.Sector_Overview__c.Label}" />
                 </div>

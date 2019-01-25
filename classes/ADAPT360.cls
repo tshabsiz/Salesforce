@@ -643,6 +643,7 @@ public class ADAPT360 {
             }
         }
         
+        CleanLargeAccountLists();
         
         auditCIFSearch(queryType, regId, UserInfo.getUserId(), caseId, caseCIF,caseRelationshipName);
         
@@ -683,7 +684,7 @@ public class ADAPT360 {
             if (PrimaryClient != null && PrimaryClient.account != null && PrimaryClient.account.size() > 0) {
                 Map<AccountInfo, String> accounts = new Map<AccountInfo, String>();
                 for(AccountInfo acc : PrimaryClient.account) {
-                    accounts.put(acc, '');
+                	accounts.put(acc, '');
                 }
                 return accounts;
             }
@@ -875,6 +876,19 @@ public class ADAPT360 {
         	}    
         }
         return null;
+    }
+    
+    private void CleanLargeAccountLists() {
+    	// Piece to clear out big account Lists
+        for (ClientDetail cd : ClientDetails) {
+            if (cd.account != NULL && cd.account.size() > 500) {
+                for(Integer j = 0; j < cd.account.size(); j++) {
+                    if (cd.account[j].accountStatus != NULL && cd.account[j].accountStatus.value != NULL && cd.account[j].accountStatus.value == 'CLOSED') {
+                        cd.account.remove(j);                        
+                    }
+                }
+            }    
+        }    
     }
     
     // Class which defines the Client details returned in Adapt360 Service

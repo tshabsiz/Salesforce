@@ -202,25 +202,47 @@
         });
         
     },
-    openCaseRecordType : function(component, event, cid) {        
+    openCaseRecordType : function(component, event, cid) { 
+        
         var workspaceAPI = component.find("workspace");
-        workspaceAPI.getFocusedTabInfo().then(function(response) {
-            var focusedTabId = response.tabId;
+        workspaceAPI.isConsoleNavigation().then(function(response) {
             
-            var evt = $A.get("e.force:navigateToComponent");
-            evt.setParams({
-                componentDef : "c:NewCaseRecordTypeSelection",
-                componentAttributes: {
-                    'recordId' : cid,
-                    'tabId': focusedTabId
-                }
-            });
-            
-            evt.fire();
+            if(response){
+                var workspaceAPI = component.find("workspace");
+                workspaceAPI.getFocusedTabInfo().then(function(response) {
+                    var focusedTabId = response.tabId;
+                    
+                    var evt = $A.get("e.force:navigateToComponent");
+                    evt.setParams({
+                        componentDef : "c:NewCaseRecordTypeSelection",
+                        componentAttributes: {
+                            'recordId' : cid,
+                            'tabId': focusedTabId
+                        }
+                    });
+                    
+                    evt.fire();
+                })
+                .catch(function(error) {
+                    console.log(error);
+                });      
+            }else{
+                var evt = $A.get("e.force:navigateToComponent");
+                evt.setParams({
+                    componentDef : "c:NewCaseRecordTypeSelection",
+                    componentAttributes: {
+                        'recordId' : cid
+                    }
+                });
+                
+                evt.fire();
+                
+            }
         })
         .catch(function(error) {
             console.log(error);
-        });       
+        });
+        
         
     },
     
