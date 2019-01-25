@@ -12636,6 +12636,9 @@
     <layoutAssignments>
         <layout>WorkThanks-Thanks Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>testDeployment__c-testDeployment Layout</layout>
+    </layoutAssignments>
     <loginIpRanges>
         <description>Teraco Breakout</description>
         <endAddress>169.202.235.5</endAddress>
