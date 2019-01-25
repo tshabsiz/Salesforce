@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Deferment Approval</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Deferment Approvals</value>
+    </caseValues>
+    <fields>
+        <label><!-- Credit --></label>
+        <name>Credit__c</name>
+        <relationshipLabel><!-- Deferment Approvals (Credit) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Deferment --></label>
+        <name>Deferment__c</name>
+        <relationshipLabel><!-- Deferment Approvals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Legal --></label>
+        <name>Legal__c</name>
+        <relationshipLabel><!-- Deferment Approvals (Legal) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Partner --></label>
+        <name>Product_Partner__c</name>
+        <relationshipLabel><!-- Deferment Approvals (Product Partner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- first approval --></label>
+        <name>first_approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- second approval --></label>
+        <name>second_approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- third approval --></label>
+        <name>third_approval__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Credit Sanctioner --></label>
+        <name>Credit_Sanctioner</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Legal --></label>
+        <name>Legal</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Product Specialist --></label>
+        <name>Product_Specialist</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

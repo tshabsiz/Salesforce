@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>ABSA_internal_notification</letterhead>
+    <name>5 Days Reminder</name>
+    <style>freeForm</style>
+    <subject>Deferment Due in 5 Days</subject>
+    <textOnly>Good Day,
+
+Please note that you have a deferment that is due in 7 Days.
+
+Relationship Name : {!Account.Name}
+Opportunity Name  : {!Opportunity.Name}
+Defferal Date : {!Deferment__c.Defferal_due_date__c}
+
+
+
+
+
+
+
+Kind Regards
+Salesforce Support</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

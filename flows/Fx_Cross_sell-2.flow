@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <interviewLabel>Fx Cross_sell {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Fx Cross_sell</label>
+    <processType>Flow</processType>
+    <screens>
+        <name>Fx_Cross_Sell</name>
+        <label>Fx Cross-Sell</label>
+        <locationX>512</locationX>
+        <locationY>184</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Notice</name>
+            <fieldText>You have chosen one of the FX products.
+Do you what to cross-sell</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Foreign_Exchange</name>
+            <dataType>Boolean</dataType>
+            <fieldText>Foreign Exchange</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Letter_Of_Credit</name>
+            <dataType>Boolean</dataType>
+            <fieldText>Letter Of Credit</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Foreing_Currency_Overdraft</name>
+            <dataType>Boolean</dataType>
+            <fieldText>Foreing Currency Overdraft</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>International_Payment</name>
+            <dataType>Boolean</dataType>
+            <fieldText>International Payment</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Document_Trade_BGI</name>
+            <dataType>Boolean</dataType>
+            <fieldText>Document Trade BGI</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Travel</name>
+            <dataType>Boolean</dataType>
+            <fieldText>Travel</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>Fx_Cross_Sell</startElementReference>
+    <variables>
+        <name>Id</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Last_Notification</fullName>
+        <description>Last Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <field>Credit_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Legal_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Product_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Worklfow_Email_Templates/Last_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_To_Deferment_Requester</fullName>
+        <description>Send Email To Deferment Requester</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderAddress>xracscsupport@barclayscapital.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Worklfow_Email_Templates/X7_Days_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_To_Deferment_Requester_And_Approvers</fullName>
+        <description>3 Days Reminder</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <field>Credit_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Legal_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Product_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Worklfow_Email_Templates/X3_Days_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>X5_Day_Deferment</fullName>
+        <description>5 Day Deferment</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <field>Credit_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Legal_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>Product_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Worklfow_Email_Templates/X5_Days_Reminder</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Approval_Update</fullName>
+        <field>Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Approval Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Rejection</fullName>
+        <field>Status__c</field>
+        <literalValue>Reject</literalValue>
+        <name>Update Rejection</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Deferment Notifier - 7 Days</fullName>
+        <actions>
+            <name>Send_Email_To_Deferment_Requester</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Deferment__c.Deferment_Age__c</field>
+            <operation>equals</operation>
+            <value>7</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Deferment__c.Deferment_Stage__c</field>
+            <operation>notEqual</operation>
+            <value>Documents Received</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Deferment Rule 5 Days</fullName>
+        <actions>
+            <name>X5_Day_Deferment</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Deferment__c.Deferment_Stage__c</field>
+            <operation>notEqual</operation>
+            <value>Documents Received</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Deferment__c.Deferment_Age__c</field>
+            <operation>equals</operation>
+            <value>5</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

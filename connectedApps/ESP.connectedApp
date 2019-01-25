@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>mabhedle.tonga@barclays.com</contactEmail>
+    <label>ESP</label>
+    <oauthConfig>
+        <callbackUrl>https://login.salesforce.com/services/oauth2/callback</callbackUrl>
+        <consumerKey>3MVG9uAc45HBYUriLzgLaqctzgG2jM_Rj73qrazK3VB6YUSiHGVVDVEY3MAaeL7fUmI.VnusO_q1C3qitk5Gs</consumerKey>
+        <scopes>Api</scopes>
+    </oauthConfig>
+</ConnectedApp>

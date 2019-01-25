@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Deferment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Deferments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Approved --></label>
+        <name>Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Justification --></label>
+        <name>Business_Justification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Approver --></label>
+        <name>Credit_Approver__c</name>
+        <relationshipLabel><!-- Deferments (Credit Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Deferment Age --></label>
+        <name>Deferment_Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deferment Stage --></label>
+        <name>Deferment_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Documents Not Received</masterLabel>
+            <translation><!-- Documents Not Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documents Overdue</masterLabel>
+            <translation><!-- Documents Overdue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documents Received</masterLabel>
+            <translation><!-- Documents Received --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Deferal due date --></label>
+        <name>Defferal_due_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Category --></label>
+        <name>Document_Category__c</name>
+        <picklistValues>
+            <masterLabel>Agreements</masterLabel>
+            <translation><!-- Agreements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CP&apos;s/Governance</masterLabel>
+            <translation><!-- CP&apos;s/Governance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collateral</masterLabel>
+            <translation><!-- Collateral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supporting Docs</masterLabel>
+            <translation><!-- Supporting Docs --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Document Name --></label>
+        <name>Document_Name__c</name>
+        <picklistValues>
+            <masterLabel>Bonds</masterLabel>
+            <translation><!-- Bonds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cessions/Policy Document/Vetting</masterLabel>
+            <translation><!-- Cessions/Policy Document/Vetting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance Rule 63</masterLabel>
+            <translation><!-- Compliance Rule 63 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confirmations</masterLabel>
+            <translation><!-- Confirmations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDD Form</masterLabel>
+            <translation><!-- EDD Form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXCON Approval</masterLabel>
+            <translation><!-- EXCON Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facility Letter</masterLabel>
+            <translation><!-- Facility Letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fica Docs/Casa</masterLabel>
+            <translation><!-- Fica Docs/Casa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guarantees</masterLabel>
+            <translation><!-- Guarantees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JLOC/Pricing</masterLabel>
+            <translation><!-- JLOC/Pricing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lapsed Insurance</masterLabel>
+            <translation><!-- Lapsed Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal Opinions</masterLabel>
+            <translation><!-- Legal Opinions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letter of Undertaking</masterLabel>
+            <translation><!-- Letter of Undertaking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letters of Comfort</masterLabel>
+            <translation><!-- Letters of Comfort --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan Agreements</masterLabel>
+            <translation><!-- Loan Agreements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOI/Public Documents</masterLabel>
+            <translation><!-- MOI/Public Documents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Notting Letter</masterLabel>
+            <translation><!-- Notting Letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PoA to Register Bond</masterLabel>
+            <translation><!-- PoA to Register Bond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolution</masterLabel>
+            <translation><!-- Resolution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subordination</masterLabel>
+            <translation><!-- Subordination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suretyship</masterLabel>
+            <translation><!-- Suretyship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Agreements</masterLabel>
+            <translation><!-- Trade Agreements --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Legal Approver --></label>
+        <name>Legal_Approver__c</name>
+        <relationshipLabel><!-- Deferments (Legal Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Deferments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Approver --></label>
+        <name>Product_Approver__c</name>
+        <relationshipLabel><!-- Deferments (Product Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reason for Deferral --></label>
+        <name>Reason_for_Deferral__c</name>
+        <picklistValues>
+            <masterLabel>x</masterLabel>
+            <translation><!-- x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>y</masterLabel>
+            <translation><!-- y --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>z</masterLabel>
+            <translation><!-- z --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reject</masterLabel>
+            <translation><!-- Reject --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

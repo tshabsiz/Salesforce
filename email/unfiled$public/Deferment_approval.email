@@ -1,0 +1,4 @@
+You have been assigned to approve a Deferment request.
+Approvals name: {!Name}
+Deferment: {!Deferment__c}
+Stage: {!Deferment__c.StageName}

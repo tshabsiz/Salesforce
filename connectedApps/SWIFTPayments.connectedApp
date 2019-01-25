@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>rudolf@cloudsmiths.co.za</contactEmail>
+    <contactPhone>+27823343386</contactPhone>
+    <description>RESTful endpoint for SWIFT Payments</description>
+    <label>SWIFTPayments</label>
+    <oauthConfig>
+        <callbackUrl>https://localhost:8080</callbackUrl>
+        <consumerKey>3MVG9uAc45HBYUriLzgLaqctzgG2jM_Rj73qrpTnpwhY_rX_cVrABxpVmAc9Mo1AWCRRadzaBmuq2W5YUUpp_</consumerKey>
+        <scopes>Full</scopes>
+    </oauthConfig>
+</ConnectedApp>
