@@ -4,7 +4,7 @@
     <label>ESP</label>
     <oauthConfig>
         <callbackUrl>https://login.salesforce.com/services/oauth2/callback</callbackUrl>
-        <consumerKey>3MVG9llQY5kM9T6ft1Y9n7M2VbRr_KoMBhlDH_Mvp9znoYdMUrEXUx.j.e1XdR56TYm7pt5mZ5WXm8UGUghE7</consumerKey>
+        <consumerKey>3MVG95AcBeaB55lX.v7LGIE3EZCFgNFThsbbkGauGHuR78ZDhwKTL5DdZ6Evm9wKMLtOxPthj341bns6sacxm</consumerKey>
         <scopes>Api</scopes>
     </oauthConfig>
 </ConnectedApp>

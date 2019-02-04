@@ -47,7 +47,6 @@
     <description>Used to create linkage between the custom work object and users. This will be queried later to be used when sending out notification emails.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableReports>true</enableReports>

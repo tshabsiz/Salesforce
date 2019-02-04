@@ -1,4 +1,4 @@
-<apex:page extensions="BriefingNoteController" standardController="Call_Report__c" applyBodyTag="false"  renderAs="PDF">
+<apex:page renderAs="PDF" standardController="Call_Report__c" applyBodyTag="false" extensions="BriefingNoteController" >
     <head>
         <style type="text/css" media="print">
                        @page {

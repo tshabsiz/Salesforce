@@ -47,7 +47,6 @@
     <description>Test Plan object which gives information about the User Story,Test Execution and Test Case which spread across different Sprints</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableReports>true</enableReports>

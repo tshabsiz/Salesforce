@@ -1,11 +1,11 @@
-<messaging:emailTemplate subject="New BIO SM loaded" recipientType="Contact" relatedToType="Case">
+<messaging:emailTemplate subject="Request completed" recipientType="Contact" relatedToType="Case">
  <messaging:htmlEmailBody >
      <body>   
         <table width="640" style="font-family: Arial" align="center">      
            <tr>
              <td width="640"><img src="https://absa1--dev2--c.cs107.content.force.com/servlet/servlet.ImageServer?id=0151q000000A9qh&oid=00D1q0000008aSu"/></td>
           </tr>
-          <tr>
+          <tr style="padding-bottom: 50px">
              <td>
                 <h4 style="color:#dc0032; font-size: 15px;">
                    Your request Case #{!relatedTo.CaseNumber} was proudly processed by {!relatedTo.Capturer__r.Name} and {!relatedTo.Approver__r.Name} 
@@ -26,7 +26,7 @@
         
         <br></br>
         <br></br>
-       <tr>
+       <tr style="padding-top: 50px">
          <td width="640" style="font-size: 12px">
            Please contact the Electronic Banking Helpdesk on 0860 227 232 should you require any further assistance.
           <p style="color:#dc0032"> Please take a minute to rate our service </p>

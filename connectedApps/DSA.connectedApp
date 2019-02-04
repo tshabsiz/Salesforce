@@ -4,7 +4,7 @@
     <label>DSA</label>
     <oauthConfig>
         <callbackUrl>acme:///dsa</callbackUrl>
-        <consumerKey>3MVG9llQY5kM9T6ft1Y9n7M2VbRr_KoMBhlDHO6gJwUALkQJjbr4WfEYRALI.TW0U6PjOdnX4D.Jo.UHLIaSG</consumerKey>
+        <consumerKey>3MVG95AcBeaB55lX.v7LGIE3EZCFgNFThsbbkZuHJ0jW8IZrs4elP.p_9dSuXSCrXrMVElZ0dBlivy48EHZ8G</consumerKey>
         <scopes>Basic</scopes>
         <scopes>Api</scopes>
         <scopes>Web</scopes>

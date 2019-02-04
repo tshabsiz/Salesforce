@@ -31,20 +31,21 @@
                 <axisBinding>y</axisBinding>
                 <column>RowCount</column>
             </chartSummary>
-            <componentType>Bar</componentType>
+            <componentType>BarGrouped</componentType>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>Case.Email_From_Address__c</groupingColumn>
+            <groupingColumn>Case.SLA_Status__c</groupingColumn>
             <header>TRIS Escalations Open E-mail by CLIENT/Stakeholder</header>
             <legendPosition>Bottom</legendPosition>
             <report>WCSC_Queue_Management_Reports/Unattended_Emails_TRI_CORP</report>
             <showPercentage>false</showPercentage>
-            <showPicturesOnCharts>false</showPicturesOnCharts>
-            <showValues>false</showValues>
+            <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
+            <title>by SLA Status</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -170,6 +171,7 @@
             <showPicturesOnCharts>false</showPicturesOnCharts>
             <showValues>true</showValues>
             <sortBy>RowValueDescending</sortBy>
+            <title>Last 90 days</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -194,6 +196,7 @@
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowValueDescending</sortBy>
+            <title>Last 90 days</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -204,19 +207,18 @@
                 <axisBinding>y</axisBinding>
                 <column>Case.Number_of_Requests__c</column>
             </chartSummary>
-            <componentType>ColumnStacked</componentType>
+            <componentType>Column</componentType>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>CREATED_DATE</groupingColumn>
-            <groupingColumn>STATUS</groupingColumn>
             <header>TRI Complaints Monthly trend</header>
             <legendPosition>Bottom</legendPosition>
             <report>WCSC_Report_Folder/TRI_Escalations_Q_Monthly_Vol</report>
             <showPercentage>false</showPercentage>
-            <showValues>false</showValues>
+            <showValues>true</showValues>
             <sortBy>RowLabelDescending</sortBy>
             <useReportChart>false</useReportChart>
         </components>

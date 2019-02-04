@@ -168,7 +168,7 @@
                 <height>600</height>
                 <page>Matter_Box_Section</page>
                 <showLabel>false</showLabel>
-                <showScrollbars>true</showScrollbars>
+                <showScrollbars>false</showScrollbars>
                 <width>100%</width>
             </layoutItems>
         </layoutColumns>

@@ -16,6 +16,7 @@
                  helper.hideSpinner(component, event, helper);              
                 var model = JSON.parse(response.getReturnValue());              
                 component.set("v.model", model);
+                console.log(model);
                 
                 if(model.errorMsg != null && model.errorMsg != ''){
                     var toastEvent = $A.get("e.force:showToast");

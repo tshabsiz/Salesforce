@@ -5,7 +5,7 @@
     <logoUrl>https://barclaysafrica--sfdev--c.cs80.content.force.com/servlet/servlet.ImageServer?id=015250000008xxf&amp;oid=00D25000000DFPM</logoUrl>
     <oauthConfig>
         <callbackUrl>https://flow.manywho.com/api/run/1/oauth2</callbackUrl>
-        <consumerKey>3MVG9llQY5kM9T6ft1Y9n7M2VbRr_KoMBhlDH.rwVFgC.p0_BU9utL240FhrJwp_n9YiAySZM_K2flgELBSt1</consumerKey>
+        <consumerKey>3MVG95AcBeaB55lX.v7LGIE3EZCFgNFThsbbkBVnAQuaEeTDC_eXyX8oHCg5ilgsZ7amzAFwyfgUnw1GT2rZc</consumerKey>
         <scopes>Full</scopes>
         <scopes>RefreshToken</scopes>
     </oauthConfig>

@@ -178,6 +178,11 @@
         <name>Certificate_Title__c</name>
     </fields>
     <fields>
+        <label><!-- Check-In Configuration --></label>
+        <name>Check_In_Configuration__c</name>
+        <relationshipLabel><!-- Events/Functions (Event Check-In Configuration) --></relationshipLabel>
+    </fields>
+    <fields>
         <label><!-- Check In Confirmation Fields --></label>
         <name>Check_In_Confirmation_Fields__c</name>
     </fields>
@@ -554,6 +559,11 @@
         <label><!-- Event Configuration --></label>
         <name>Event_Configuration__c</name>
         <relationshipLabel><!-- Events/Functions (Event Configuration) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- A URL that points to a folder where the content of the event is published.  This can be used to email the delegates after the event to give them access to the content. --></help>
+        <label><!-- Event Content Folder URL --></label>
+        <name>Event_Content_Folder_URL__c</name>
     </fields>
     <fields>
         <help><!-- Override event start/end time on web pages and emails --></help>

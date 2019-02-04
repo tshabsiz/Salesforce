@@ -66,7 +66,7 @@
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>advpm__Matter__c.Status_Change_Stamp__c</dateColumn>
+        <dateColumn>CHILD_LAST_UPDATE</dateColumn>
         <interval>INTERVAL_CURFY</interval>
     </timeFrameFilter>
 </Report>

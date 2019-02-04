@@ -48,7 +48,6 @@
 Each project is assigned a project team and this app is used to define the project, track it&apos;s stage, open issues, and estimated completion date.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableReports>true</enableReports>

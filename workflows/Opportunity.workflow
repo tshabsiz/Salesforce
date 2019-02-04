@@ -287,7 +287,7 @@
     </alerts>
     <alerts>
         <fullName>Send_To_Insurance_For_Public_Clients</fullName>
-        <ccEmails>sizwe.tshabala@absacapital.com</ccEmails>
+        <ccEmails>virtualshortterm@absa.co.za</ccEmails>
         <description>Send To Insurance For Public Clients</description>
         <protected>false</protected>
         <senderType>CurrentUser</senderType>

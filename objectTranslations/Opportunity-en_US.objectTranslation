@@ -1901,4 +1901,12 @@ Please contact SF Support for assistance. --></errorMessage>
         <label><!-- Verify_with_DNB --></label>
         <name>dsfs__Verify_with_DNB</name>
     </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
 </CustomObjectTranslation>

@@ -70,11 +70,11 @@
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <sortColumn>CASE_COMMENT_CREATED_BY</sortColumn>
-    <sortOrder>Desc</sortOrder>
+    <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>COMMENT_CREATED_DATE</dateColumn>
-        <endDate>2018-11-30</endDate>
+        <endDate>2018-01-03</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2018-11-01</startDate>
+        <startDate>2018-01-03</startDate>
     </timeFrameFilter>
 </Report>

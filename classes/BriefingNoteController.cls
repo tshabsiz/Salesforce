@@ -8,13 +8,6 @@ public class BriefingNoteController {
 
     public Call_Report__c callReport{get;set;}
     public List<Client_Plan_Relationship__c> clientPlanStakeholders {get;set;}
-    public BriefingNoteController()
-    {
-        String callReportID = apexpages.currentpage().getparameters().get('ID');
-
-        callReport = new Call_Report__c();
-        callReport.Id = callReportID;
-    }
     public BriefingNoteController(ApexPages.StandardController SC)
     {
         

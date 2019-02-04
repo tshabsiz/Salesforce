@@ -826,6 +826,11 @@
         <label>Ascot</label>
     </customValue>
     <customValue>
+        <fullName>Wealth</fullName>
+        <default>false</default>
+        <label>Wealth</label>
+    </customValue>
+    <customValue>
         <fullName>Event</fullName>
         <default>false</default>
         <label>Event</label>
@@ -836,11 +841,6 @@
         <label>CSC</label>
     </customValue>
     <customValue>
-        <fullName>Wealth</fullName>
-        <default>false</default>
-        <label>Wealth</label>
-    </customValue>
-    <customValue>
         <fullName>PocketFlow</fullName>
         <default>false</default>
         <label>PocketFlow</label>
@@ -849,6 +849,21 @@
         <fullName>Pricing Tool</fullName>
         <default>false</default>
         <label>Pricing Tool</label>
+    </customValue>
+    <customValue>
+        <fullName>Coverage</fullName>
+        <default>false</default>
+        <label>Coverage</label>
+    </customValue>
+    <customValue>
+        <fullName>SF TMG</fullName>
+        <default>false</default>
+        <label>SF TMG</label>
+    </customValue>
+    <customValue>
+        <fullName>SF LEAP</fullName>
+        <default>false</default>
+        <label>SF LEAP</label>
     </customValue>
     <masterLabel>Channel</masterLabel>
     <sorted>false</sorted>

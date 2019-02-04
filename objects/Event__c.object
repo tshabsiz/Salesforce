@@ -56,7 +56,6 @@
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableReports>true</enableReports>
@@ -486,6 +485,19 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Check_In_Configuration__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Check-In Configuration</label>
+        <referenceTo>Event_Configuration__c</referenceTo>
+        <relationshipLabel>Events/Functions (Event Check-In Configuration)</relationshipLabel>
+        <relationshipName>Events_Functions_Check_In_Config</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Check_In_Confirmation_Fields__c</fullName>
@@ -1286,6 +1298,17 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Event_Content_Folder_URL__c</fullName>
+        <description>19-01-30 DH Added for user story W-001777</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A URL that points to a folder where the content of the event is published.  This can be used to email the delegates after the event to give them access to the content.</inlineHelpText>
+        <label>Event Content Folder URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
     </fields>
     <fields>
         <fullName>Event_Display_Time__c</fullName>

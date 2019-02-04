@@ -141,19 +141,6 @@
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
         <workflowTimeTriggers>
             <actions>
-                <name>Deactivate_User</name>
-                <type>Alert</type>
-            </actions>
-            <actions>
-                <name>Deactivate</name>
-                <type>FieldUpdate</type>
-            </actions>
-            <offsetFromField>User.Last_Login_Date__c</offsetFromField>
-            <timeLength>90</timeLength>
-            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
-        </workflowTimeTriggers>
-        <workflowTimeTriggers>
-            <actions>
                 <name>User_Notification_30</name>
                 <type>Alert</type>
             </actions>
@@ -168,6 +155,19 @@
             </actions>
             <offsetFromField>User.Last_Login_Date__c</offsetFromField>
             <timeLength>60</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Deactivate_User</name>
+                <type>Alert</type>
+            </actions>
+            <actions>
+                <name>Deactivate</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>User.Last_Login_Date__c</offsetFromField>
+            <timeLength>90</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
     </rules>

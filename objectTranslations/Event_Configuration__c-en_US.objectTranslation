@@ -18,8 +18,28 @@
         <name>Agenda_Logo__c</name>
     </fields>
     <fields>
+        <label><!-- Background Image URL --></label>
+        <name>Background_Image_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Badge Background Image URL --></label>
+        <name>Badge_Background_Image_URL__c</name>
+    </fields>
+    <fields>
         <label><!-- Badge Font Family --></label>
         <name>Badge_Font_Family__c</name>
+    </fields>
+    <fields>
+        <label><!-- Badge Format --></label>
+        <name>Badge_Format__c</name>
+        <picklistValues>
+            <masterLabel>Double Sided (2 Page)</masterLabel>
+            <translation><!-- Double Sided (2 Page) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Sided (1 Page)</masterLabel>
+            <translation><!-- Single Sided (1 Page) --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <help><!-- The gutter margin between the two areas of a double sided badge --></help>
@@ -27,8 +47,44 @@
         <name>Badge_Gutter__c</name>
     </fields>
     <fields>
+        <label><!-- Badge Height --></label>
+        <name>Badge_Height__c</name>
+    </fields>
+    <fields>
         <label><!-- Badge Optional --></label>
         <name>Badge_Optional__c</name>
+    </fields>
+    <fields>
+        <label><!-- Badge Orientation --></label>
+        <name>Badge_Orientation__c</name>
+        <picklistValues>
+            <masterLabel>Landscape</masterLabel>
+            <translation><!-- Landscape --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portrait</masterLabel>
+            <translation><!-- Portrait --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Badge Scanner Image --></label>
+        <name>Badge_Scanner_Image__c</name>
+        <picklistValues>
+            <masterLabel>Barcode</masterLabel>
+            <translation><!-- Barcode --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QR Code (Text)</masterLabel>
+            <translation><!-- QR Code (Text) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QR Code (vCard)</masterLabel>
+            <translation><!-- QR Code (vCard) --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Badge Title --></label>
@@ -58,6 +114,10 @@
         <name>Booking_Page_URL__c</name>
     </fields>
     <fields>
+        <label><!-- Check In Confirmation Fields --></label>
+        <name>Check_In_Confirmation_Fields__c</name>
+    </fields>
+    <fields>
         <help><!-- Indicate if this is the default record for its record type --></help>
         <label><!-- Default --></label>
         <name>Default__c</name>
@@ -73,6 +133,26 @@
     <fields>
         <label><!-- Hyperlink Color --></label>
         <name>Hyperlink_Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- Badge Margin Bottom --></label>
+        <name>Margin_Bottom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Badge Margin Left --></label>
+        <name>Margin_Left__c</name>
+    </fields>
+    <fields>
+        <label><!-- Badge Margin Right --></label>
+        <name>Margin_Right__c</name>
+    </fields>
+    <fields>
+        <label><!-- Badge Margin Top --></label>
+        <name>Margin_Top__c</name>
+    </fields>
+    <fields>
+        <label><!-- Page Background --></label>
+        <name>Page_Background__c</name>
     </fields>
     <fields>
         <label><!-- Primary Button Background Color - Hover --></label>

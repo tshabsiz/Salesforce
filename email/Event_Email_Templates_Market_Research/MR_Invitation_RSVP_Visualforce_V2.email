@@ -10,7 +10,7 @@
                 <tr>
                     <td>
                         <a href="{!relatedTo.Event__r.Event_Configuration__r.RSVP_Page_URL__c}?delid={!relatedTo.Id}">
-                            <img width="600" src="{!relatedTo.Email_Setup_To_Use__r.Banner_URL__c}"/>
+                            <img width="700" src="{!relatedTo.Email_Setup_To_Use__r.Banner_URL__c}"/>
                         </a>
                     </td>
                 </tr>   
@@ -18,12 +18,10 @@
                     <td style="padding: 25px">
                     
                         <apex:outputText value="{!relatedTo.Email_Setup_To_Use__r.Heading__c}" escape="false" />
-                        <apex:outputPanel rendered="{!relatedTo.Contact__r.Salutation == ''}" layout="none">
-                            Dear {!relatedTo.Contact__r.FirstName} {!relatedTo.Contact__r.LastName},<br/>
+                        <apex:outputPanel layout="none">
+                            Dear {!relatedTo.Contact__r.FirstName},<br/>
                         </apex:outputPanel>
-                        <apex:outputPanel rendered="{!relatedTo.Contact__r.Salutation != ''}" layout="none">
-                            Dear {!relatedTo.Contact__r.Salutation} {!relatedTo.Contact__r.LastName},<br/>
-                        </apex:outputPanel>
+                        
                         
                         <apex:outputText value="{!SUBSTITUTE(relatedTo.Email_Setup_To_Use__r.Body__c, '<p><br></p>', '')}" escape="false" />
                         
@@ -121,8 +119,8 @@
                         </table>
                         <br/><br/> 
                         <apex:outputPanel rendered="{!relatedTo.Email_Setup_To_Use__r.Add_to_Outlook__c == true}" layout="none">
-                            <a href="http://addtocalendar.com/atc/outlook?f=m&e[0][date_start]={!relatedTo.Event__r.Calendar_Start_Date__c}&e[0][date_end]={!relatedTo.Event__r.Calendar_End_Date__c}&e[0][timezone]=Africa%2FJohannesburg&e[0][title]={!relatedTo.Event__r.Name}&e[0][description]=&e[0][location]={!relatedTo.Event__r.Venue__r.Name}&e[0][organizer]={!relatedTo.Event__r.Calendar_Organiser_Name__c}&e[0][organizer_email]={!relatedTo.Event__r.Calendar_Organiser_Email__c}&e[0][privacy]=public">
-                                <img src="https://c.eu5.content.force.com/servlet/servlet.ImageServer?id=01524000002Q56a&oid=00D24000000ajGo&lastMod=1488973782000" style="margin-bottom:4px;"/>
+                            <a href="http://addtocalendar.com/atc/outlook?f=m&e[0][date_start]=02/04/2019 06:00 PM&e[0][date_end]=02/04/2019 10:00 PM&e[0][timezone]=Africa%2FJohannesburg&e[0][title]={!relatedTo.Event__r.Name}&e[0][description]=&e[0][location]={!relatedTo.Event__r.Venue__r.Name}&e[0][organizer]={!relatedTo.Event__r.Calendar_Organiser_Name__c}&e[0][organizer_email]={!relatedTo.Event__r.Calendar_Organiser_Email__c}&e[0][privacy]=public">
+                                <img src="https://absa1--c.eu15.content.force.com/servlet/servlet.ImageServer?id=0151p000006z0xU&oid=00D24000000JOMz&lastMod=1546854748000" style="margin-bottom:4px;"/>
                             </a><br/>
                         </apex:outputPanel>
 

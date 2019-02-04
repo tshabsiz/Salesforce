@@ -4,7 +4,7 @@
     <label>DSG Mid API</label>
     <oauthConfig>
         <callbackUrl>https://login.salesforce.com/services/oauth2/callback</callbackUrl>
-        <consumerKey>3MVG9llQY5kM9T6ft1Y9n7M2VbRr_KoMBhlDHO_.ka0j2ghRjgDRhICLcJDtHe5Z4oVQFt7qRlJstEy3vrpar</consumerKey>
+        <consumerKey>3MVG95AcBeaB55lX.v7LGIE3EZCFgNFThsbbk6AnhVeBTbg3jYyOnal5pPWv828ue5HZO9cJf.TqxNcx16bEU</consumerKey>
         <scopes>Basic</scopes>
         <scopes>Api</scopes>
     </oauthConfig>

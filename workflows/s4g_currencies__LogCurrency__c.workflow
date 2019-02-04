@@ -6,7 +6,7 @@
         <endpointUrl>http://currencyupdater2.appspot.com/currency_updater_2_0</endpointUrl>
         <fields>Id</fields>
         <includeSessionId>true</includeSessionId>
-        <integrationUser>copado@absa0.com.uav</integrationUser>
+        <integrationUser>sizwe.tshabalala@absa1.com</integrationUser>
         <name>CallCurrencyUpdater</name>
         <protected>false</protected>
         <useDeadLetterQueue>false</useDeadLetterQueue>

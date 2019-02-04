@@ -69,10 +69,16 @@
         <field>Call_Report__c$Type__c</field>
     </columns>
     <columns>
+        <field>Call_Report__c$Meeting_Reason2__c</field>
+    </columns>
+    <columns>
         <field>Call_Report__c$Meeting_Reason__c</field>
     </columns>
     <columns>
         <field>Call_Report__c$Relationship__c</field>
+    </columns>
+    <columns>
+        <field>Call_Report__c$Relationship__c.RecordType</field>
     </columns>
     <columns>
         <field>Call_Report__c.Attendees__r$Barclays_Attendee__c.Team_Role__c</field>
@@ -82,6 +88,9 @@
     </columns>
     <columns>
         <field>Call_Report__c.Attendees__r$Barclays_Attendee__c.Team__c</field>
+    </columns>
+    <columns>
+        <field>Call_Report__c.Attendees__r$Client_Attendee__c</field>
     </columns>
     <currency>ZAR</currency>
     <filter>

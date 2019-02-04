@@ -34,6 +34,9 @@
         <field>Call_Report__c$Subject__c</field>
     </columns>
     <columns>
+        <field>Call_Report__c$Proposed_Products__c</field>
+    </columns>
+    <columns>
         <field>Call_Report__c.Attendees__r$Barclays_Attendee__c.Hub__c</field>
     </columns>
     <columns>

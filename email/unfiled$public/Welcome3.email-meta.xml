@@ -13,7 +13,7 @@
 1.  Your Salesforce account has been created. Please look out for the email from Salesforce, click on the link and set up a new password and security question
 
 
-2.  The next time you want to log on you can do so by clicking on the Barclays Africa button (no need to enter your username and password) on the page: https://barclaysafrica.my.salesforce.com
+2.  The next time you want to log on you can do so by clicking on the Barclays Africa button (no need to enter your username and password) on the page: https://absa1.my.salesforce.com
 
 
 3.  Add this page to your Favourites
@@ -27,21 +27,20 @@
 
 iOS
 
-https://barclaysafrica.my.salesforce.com/06924000000ABTa
+https://absa1.my.salesforce.com
 
 
 Android
 
-https://barclaysafrica.my.salesforce.com/06924000000ABTV
+https://absa1.my.salesforce.com
 
-
-6.  For Mobile Device access you will use your username (in the form of firstname.surname@barclaysafrica.com) and the password you created when you logged in for the first time
+6.  For Mobile Device access you will use your username (in the form of firstname.surname@absa1.com) and the password you created when you logged in for the first time
 
 
 7.  To access the training go to My Learning System and search for the ‘Salesforce Fundamentals’ training course
 
 
-8.  Please email all queries to Salesforce Support - Barclays Africa (xraSalesforceSuppor1@barclayscapital.com) or, preferably, post your questions to the Salesforce Help and Support Chatter group</textOnly>
+8.  Please email all queries to Salesforce Support - Barclays Africa (SalesforceSupport@absa.co.za) or, preferably, post your questions to the Salesforce Help and Support Chatter group</textOnly>
     <type>html</type>
     <uiType>Aloha</uiType>
 </EmailTemplate>

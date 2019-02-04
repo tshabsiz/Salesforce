@@ -225,6 +225,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Account.Team_F__c</reportColumn>
                         <showTotal>true</showTotal>

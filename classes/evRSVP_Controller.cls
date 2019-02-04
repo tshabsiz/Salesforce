@@ -12,6 +12,7 @@ DP - Added custom metadata settings
 public class evRSVP_Controller  
 {
     public class MyException extends Exception {} 
+    public string updateRSVPStatus{get;set;}
     public Id                       DelegateID ;
     public evSetting__mdt   customMeta;
     public Contact                  thisContact                     {get;set;} 
@@ -58,6 +59,7 @@ public class evRSVP_Controller
         {
             DelegateID = ApexPages.currentPage().getParameters().get('delid'); 
             RSVP = ApexPages.currentPage().getParameters().get('rsvp');
+            updateRSVPStatus = ApexPages.currentPage().getParameters().get('overrideStatus');
             
             system.debug('DelegateID: '+DelegateID);
             system.debug('RSVP: '+RSVP);
@@ -162,6 +164,9 @@ public class evRSVP_Controller
         }
         
         String rs = String.isBlank(thisDelegate.Registration_Status__c) ? '' : thisDelegate.Registration_Status__c;
+        
+        if(!string.isBlank(updateRSVPStatus)&&updateRSVPStatus.equalsIgnoreCase('Yes'))
+            rs = ''; 
         
         // Is this registration already complete?
         if (rs == 'Accepted' || rs == 'Declined' || rs == 'Confirmed' || rs == 'Cancelled')

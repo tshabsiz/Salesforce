@@ -3,7 +3,7 @@
       extensions="pi.MarketingActionSummaryController,pi.MarketingActionsController,pi.VisitController"
       >
     
-<apex:stylesheet value="{!URLFOR($Resource.pi__jquery_ui_1_11_1_custom_has_dialog, 'jquery-ui.min.css')}"></apex:stylesheet>
+<apex:stylesheet value="{!URLFOR($Resource.pi__jquery_ui_1_12_1, 'jquery-ui.min.css')}"></apex:stylesheet>
 <apex:stylesheet value="{!URLFOR($Resource.pi__ProximaNovaSoft, 'proxima-nova-soft-fonts.css')}"></apex:stylesheet>
 <apex:stylesheet value="{!URLFOR($Resource.pi__MarketingActions, 'css/app.css')}"></apex:stylesheet>
 <apex:stylesheet value="{!URLFOR($Resource.pi__font_awesome_4_2_0, 'font-awesome-4.2.0/css/font-awesome.min.css')}"></apex:stylesheet>

@@ -46,7 +46,6 @@
     <description>Object to Capture Service Process and Resulting Service Category, Sub-Category and Type Applicable Information to Render on Cases Page</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableReports>true</enableReports>
@@ -697,166 +696,6 @@ The date when this service mapping with SLA is effective from</description>
         </valueSet>
     </fields>
     <fields>
-        <fullName>Issue_Type__c</fullName>
-        <externalId>false</externalId>
-        <label>Issue Type</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Opportunity</fullName>
-                    <default>false</default>
-                    <label>Opportunity</label>
-                </value>
-                <value>
-                    <fullName>Scout Access</fullName>
-                    <default>false</default>
-                    <label>Scout Access</label>
-                </value>
-                <value>
-                    <fullName>Box Installation</fullName>
-                    <default>false</default>
-                    <label>Box Installation</label>
-                </value>
-                <value>
-                    <fullName>Changing Ownership</fullName>
-                    <default>false</default>
-                    <label>Changing Ownership</label>
-                </value>
-                <value>
-                    <fullName>Call Report</fullName>
-                    <default>false</default>
-                    <label>Call Report</label>
-                </value>
-                <value>
-                    <fullName>Client Plan</fullName>
-                    <default>false</default>
-                    <label>Client Plan</label>
-                </value>
-                <value>
-                    <fullName>JLOC</fullName>
-                    <default>false</default>
-                    <label>JLOC</label>
-                </value>
-                <value>
-                    <fullName>Africa Access</fullName>
-                    <default>false</default>
-                    <label>Africa Access</label>
-                </value>
-                <value>
-                    <fullName>Access Setup</fullName>
-                    <default>false</default>
-                    <label>Access Setup</label>
-                </value>
-                <value>
-                    <fullName>Troubleshooting</fullName>
-                    <default>false</default>
-                    <label>Troubleshooting</label>
-                </value>
-                <value>
-                    <fullName>Feedback</fullName>
-                    <default>false</default>
-                    <label>Feedback</label>
-                </value>
-                <value>
-                    <fullName>Matter</fullName>
-                    <default>false</default>
-                    <label>Matter</label>
-                </value>
-                <value>
-                    <fullName>Box</fullName>
-                    <default>false</default>
-                    <label>Box</label>
-                </value>
-                <value>
-                    <fullName>Batch Time Entry</fullName>
-                    <default>false</default>
-                    <label>Batch Time Entry</label>
-                </value>
-                <value>
-                    <fullName>Bulk Upload</fullName>
-                    <default>false</default>
-                    <label>Bulk Upload</label>
-                </value>
-                <value>
-                    <fullName>Relationship</fullName>
-                    <default>false</default>
-                    <label>Relationship</label>
-                </value>
-                <value>
-                    <fullName>Queue Access</fullName>
-                    <default>false</default>
-                    <label>Queue Access</label>
-                </value>
-                <value>
-                    <fullName>Compliment</fullName>
-                    <default>false</default>
-                    <label>Compliment</label>
-                </value>
-                <value>
-                    <fullName>Complaint</fullName>
-                    <default>false</default>
-                    <label>Complaint</label>
-                </value>
-                <value>
-                    <fullName>Cases</fullName>
-                    <default>false</default>
-                    <label>Cases</label>
-                </value>
-                <value>
-                    <fullName>Reports &amp; Dashboard</fullName>
-                    <default>false</default>
-                    <label>Reports &amp; Dashboard</label>
-                </value>
-                <value>
-                    <fullName>Technical</fullName>
-                    <default>false</default>
-                    <label>Technical</label>
-                </value>
-                <value>
-                    <fullName>Other</fullName>
-                    <default>false</default>
-                    <label>Other</label>
-                </value>
-                <value>
-                    <fullName>Data query</fullName>
-                    <default>false</default>
-                    <label>Data query</label>
-                </value>
-                <value>
-                    <fullName>Transaction query</fullName>
-                    <default>false</default>
-                    <label>Transaction query</label>
-                </value>
-                <value>
-                    <fullName>Delete beneficiary</fullName>
-                    <default>false</default>
-                    <label>Delete beneficiary</label>
-                </value>
-                <value>
-                    <fullName>Investigation</fullName>
-                    <default>false</default>
-                    <label>Investigation</label>
-                </value>
-                <value>
-                    <fullName>Request</fullName>
-                    <default>false</default>
-                    <label>Request</label>
-                </value>
-                <value>
-                    <fullName>Service types</fullName>
-                    <default>false</default>
-                    <label>Service types</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Priority__c</fullName>
         <externalId>false</externalId>
         <label>Priority</label>
@@ -1501,17 +1340,7 @@ Email Template API name - utilized in the Case trigger</description>
         <label>Business Hrs View</label>
     </listViews>
     <listViews>
-        <fullName>Email_Address_Compare</fullName>
-        <columns>NAME</columns>
-        <columns>Queue__c</columns>
-        <columns>Support_Email_Address__c</columns>
-        <columns>Response_From_Email_Address__c</columns>
-        <filterScope>Mine</filterScope>
-        <label>Email Address Compare</label>
-    </listViews>
-    <listViews>
         <fullName>Email_Template_View</fullName>
-        <columns>Issue_Type__c</columns>
         <columns>NAME</columns>
         <columns>Queue__c</columns>
         <columns>Support_Email_Address__c</columns>
@@ -1523,7 +1352,7 @@ Email Template API name - utilized in the Case trigger</description>
         <filters>
             <field>Queue__c</field>
             <operation>equals</operation>
-            <value>DOS - Pricing Tool</value>
+            <value>DOS Pocketflow</value>
         </filters>
         <label>Email Template View</label>
     </listViews>
@@ -1535,15 +1364,12 @@ Email Template API name - utilized in the Case trigger</description>
         <columns>SLA_Time_Measure__c</columns>
         <columns>SLA_Units__c</columns>
         <columns>Template_Name_Case_Close__c</columns>
-        <columns>Effective_Date__c</columns>
         <columns>Service_Type__c</columns>
-        <columns>Business_Hours__c</columns>
-        <columns>Convert_To_RecordType__c</columns>
         <columns>Service_Sub_Category__c</columns>
         <columns>Support_Email_Address__c</columns>
         <columns>Response_From_Email_Address__c</columns>
-        <columns>Channel__c</columns>
-        <columns>Template_Name_Case_Creation__c</columns>
+        <columns>Effective_Date__c</columns>
+        <columns>Business_Hours__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>Queue__c</field>
@@ -1564,11 +1390,7 @@ Email Template API name - utilized in the Case trigger</description>
         <filters>
             <field>Queue__c</field>
             <operation>equals</operation>
-        </filters>
-        <filters>
-            <field>Support_Email_Address__c</field>
-            <operation>equals</operation>
-            <value>rsc.comje@absa.co.za</value>
+            <value>RSC Corp PTA PS 1</value>
         </filters>
         <label>Team Managers</label>
     </listViews>

@@ -161,6 +161,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>ACCOUNT_OWNER</reportColumn>
                         <showTotal>true</showTotal>
@@ -596,6 +597,7 @@
                     <column>RowCount</column>
                     <showTotal>true</showTotal>
                 </dashboardTableColumn>
+                <decimalPrecision>0</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>

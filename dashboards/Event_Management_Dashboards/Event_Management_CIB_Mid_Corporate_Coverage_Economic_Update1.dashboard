@@ -31,6 +31,7 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>Gauge</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <gaugeMax>35.0</gaugeMax>
                 <gaugeMin>0.0</gaugeMin>
@@ -76,6 +77,7 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>Gauge</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <gaugeMax>11.0</gaugeMax>
                 <gaugeMin>0.0</gaugeMin>
@@ -101,6 +103,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Delegate__c.Contact__c</reportColumn>
                         <showTotal>true</showTotal>
@@ -130,6 +133,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Delegate__c.Contact__c</reportColumn>
                         <showTotal>true</showTotal>
@@ -159,6 +163,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Delegate__c.Contact__c</reportColumn>
                         <showTotal>true</showTotal>
@@ -183,6 +188,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Delegate__c.Contact__c</reportColumn>
                         <showTotal>true</showTotal>

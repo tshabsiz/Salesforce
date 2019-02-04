@@ -9,7 +9,7 @@
 </div>
 <apex:includeLightning ></apex:includeLightning>
 <apex:includeScript value="{!URLFOR($Resource.pi__MarketingActions, 'js/jquery-3.3.1.min.js')}"></apex:includeScript>
-<apex:includeScript value="{!URLFOR($Resource.pi__jquery_ui_1_11_1_custom_has_dialog, 'jquery-ui.min.js')}"></apex:includeScript>
+<apex:includeScript value="{!URLFOR($Resource.pi__jquery_ui_1_12_1, 'jquery-ui.min.js')}"></apex:includeScript>
 <apex:includeScript value="{!URLFOR($Resource.pi__ckeditorSalesReach, 'ckeditor/ckeditor.js')}"></apex:includeScript>
 <script type="text/javascript">
   window.SessionId = '{!$Api.Session_ID}';
@@ -70,6 +70,7 @@
 	window.PardotBaseUrl = '{!pardotBaseUrl}/' + 'api/';
 	<!-- Recipients on this page can be either leads or contacts, so keep this generic-->
 	window.SyncedProspectType = 'Recipient';
+	window.OriginObject = '{!JSENCODE(originObject)}';
 	window.SendEmailActionLocation = '{!$RemoteAction.MicroCampaignCustomCtrl.sendMicrocampaignV2}';
 	window.GetRemainingPardotEmailSendsActionLocation = '{!$RemoteAction.MicroCampaignCustomCtrl.getRemainingPardotEmailSends}';
 	window.TemplateHtmlActionLocation = '{!$RemoteAction.MicroCampaignCustomCtrl.getEmailTemplate}';

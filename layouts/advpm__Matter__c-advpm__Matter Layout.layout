@@ -275,6 +275,20 @@
         <label>Files and Content</label>
         <layoutColumns>
             <layoutItems>
+                <height>200</height>
+                <page>Matter_BoxDocument_RelatedList</page>
+                <showLabel>false</showLabel>
+                <showScrollbars>false</showScrollbars>
+                <width>100%</width>
+            </layoutItems>
+            <layoutItems>
+                <height>200</height>
+                <page>Matter_Box_Section</page>
+                <showLabel>false</showLabel>
+                <showScrollbars>false</showScrollbars>
+                <width>100%</width>
+            </layoutItems>
+            <layoutItems>
                 <height>400</height>
                 <page>advpm__ContentDocuments</page>
                 <showLabel>false</showLabel>

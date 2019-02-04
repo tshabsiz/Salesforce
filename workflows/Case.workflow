@@ -36,7 +36,8 @@
             <recipient>Team Manager</recipient>
             <type>caseTeam</type>
         </recipients>
-        <senderType>CurrentUser</senderType>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
         <template>CSC_Auto_Response_Templates/Escalation_Notification</template>
     </alerts>
     <alerts>
@@ -63,7 +64,8 @@
             <recipient>Team Manager</recipient>
             <type>caseTeam</type>
         </recipients>
-        <senderType>CurrentUser</senderType>
+        <senderAddress>salesforcesupport@absa.africa</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
         <template>CSC_Auto_Response_Templates/Escalation_Notification</template>
     </alerts>
     <alerts>
@@ -976,7 +978,7 @@ null)</formula>
             <name>Notification_received_by_new_owner_if_KM_work_owner_changed</name>
             <type>Alert</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>Case.OwnerId</field>
             <operation>notEqual</operation>
@@ -996,7 +998,7 @@ null)</formula>
             <name>LEAP_Email_Notification_of_Allocation_of_Work</name>
             <type>Alert</type>
         </actions>
-        <active>false</active>
+        <active>true</active>
         <criteriaItems>
             <field>Case.OwnerId</field>
             <operation>equals</operation>

@@ -102,12 +102,6 @@
         <style>OneColumn</style>
     </layoutSections>
     <relatedLists>
-        <fields>VERSION.TITLE</fields>
-        <fields>VERSION.CREATED_DATE</fields>
-        <fields>VERSION.LAST_UPDATE</fields>
-        <relatedList>ContentDocumentRelatedList</relatedList>
-    </relatedLists>
-    <relatedLists>
         <fields>NAME</fields>
         <relatedList>Barclays_SA__Category__c.Barclays_SA__Parent_Category__c</relatedList>
     </relatedLists>

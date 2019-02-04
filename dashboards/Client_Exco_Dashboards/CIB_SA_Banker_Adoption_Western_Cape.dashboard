@@ -14,6 +14,7 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>Gauge</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <footer>Includes Bankers, Sector Heads &amp; CSMs</footer>
                 <gaugeMax>8.0</gaugeMax>
@@ -41,6 +42,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Call_Report__c.Relationship__c.Owner.Name</reportColumn>
                         <showTotal>true</showTotal>
@@ -104,6 +106,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>FULL_NAME</reportColumn>
                         <showTotal>true</showTotal>
@@ -195,6 +198,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>USERS.NAME</reportColumn>
                         <showTotal>true</showTotal>
@@ -375,6 +379,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Contact.Owner.Contact.Name</reportColumn>
                         <showTotal>true</showTotal>
@@ -551,6 +556,7 @@
                     <column>RowCount</column>
                     <showTotal>false</showTotal>
                 </dashboardTableColumn>
+                <decimalPrecision>0</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>

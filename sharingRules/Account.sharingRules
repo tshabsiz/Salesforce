@@ -181,22 +181,4 @@
             <value>&quot; &quot;</value>
         </criteriaItems>
     </sharingCriteriaRules>
-    <sharingCriteriaRules>
-        <fullName>csc_Migration</fullName>
-        <accessLevel>Read</accessLevel>
-        <accountSettings>
-            <caseAccessLevel>Edit</caseAccessLevel>
-            <contactAccessLevel>Read</contactAccessLevel>
-            <opportunityAccessLevel>None</opportunityAccessLevel>
-        </accountSettings>
-        <label>csc Migration</label>
-        <sharedTo>
-            <roleAndSubordinatesInternal>CSC_Migration</roleAndSubordinatesInternal>
-        </sharedTo>
-        <criteriaItems>
-            <field>Name</field>
-            <operation>notEqual</operation>
-            <value>&quot; &quot;</value>
-        </criteriaItems>
-    </sharingCriteriaRules>
 </SharingRules>

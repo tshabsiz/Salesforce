@@ -1181,6 +1181,11 @@
         <label>xracobclientmandates@absa.co.za</label>
     </customValue>
     <customValue>
+        <fullName>ProductOnBoarding@absa.co.za</fullName>
+        <default>false</default>
+        <label>ProductOnBoarding@absa.co.za</label>
+    </customValue>
+    <customValue>
         <fullName>Vostro</fullName>
         <default>false</default>
         <isActive>false</isActive>

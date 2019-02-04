@@ -64,10 +64,10 @@
         <field>DESCRIPTION</field>
     </columns>
     <columns>
-        <field>NEXT_STEP</field>
+        <field>LAST_UPDATE</field>
     </columns>
     <columns>
-        <field>LAST_UPDATE</field>
+        <field>Opportunity.Next_Steps__c</field>
     </columns>
     <currency>ZAR</currency>
     <filter>
@@ -78,7 +78,7 @@
             <value>Financial Institutions</value>
         </criteriaItems>
     </filter>
-    <format>Summary</format>
+    <format>Tabular</format>
     <name>FI Pipeline</name>
     <params>
         <name>open</name>

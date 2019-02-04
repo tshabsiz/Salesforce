@@ -47,7 +47,6 @@
 Object where a developers can track running and system limits that are not available in Apex. e.g. Single Outbound Email limits</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableReports>true</enableReports>

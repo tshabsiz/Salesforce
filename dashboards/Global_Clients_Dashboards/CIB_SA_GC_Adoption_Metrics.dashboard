@@ -36,6 +36,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Attendee__c.Barclays_Attendee__c.Name</reportColumn>
                         <showTotal>true</showTotal>
@@ -262,6 +263,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>ACCOUNT_OWNER</reportColumn>
                         <showTotal>true</showTotal>
@@ -627,6 +629,7 @@
                     <column>RowCount</column>
                     <showTotal>true</showTotal>
                 </dashboardTableColumn>
+                <decimalPrecision>0</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>

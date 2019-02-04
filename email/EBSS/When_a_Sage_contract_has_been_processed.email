@@ -5,7 +5,7 @@
            <tr>
              <td width="640"><img src="https://absa1--dev2--c.cs107.content.force.com/servlet/servlet.ImageServer?id=0151q000000A9qh&oid=00D1q0000008aSu"/></td>
           </tr>
-          <tr>
+          <tr style="padding-bottom: 50px">
              <td>
                 <h4 style="color:#dc0032; font-size: 15px;">
                    Your request Case #{!relatedTo.CaseNumber} was proudly processed by {!relatedTo.Capturer__r.Name} and {!relatedTo.Approver__r.Name} 
@@ -24,7 +24,7 @@
         
       
         <br></br>
-       <tr>
+       <tr style="padding-top: 50px">
          <td width="640" style="font-size: 12px">
            You have been successfully activated to receive your statements in Sage. 
            <br>Your statement frequency has been changed to daily to allow for your automated statements to be delivered daily in Sage</br>

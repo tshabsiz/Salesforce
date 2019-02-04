@@ -225,7 +225,6 @@ User Code
         var cat = document.getElementById('{!$Component.newCaseForm.pgblock.blocksec.cat}');
         var cha = document.getElementById('{!$Component.newCaseForm.pgblock.blocksec.cha}');
         var nrReq = document.getElementById('{!$Component.newCaseForm.pgblock.blocksec.requests}');
-        var Iss = document.getElementById('{!$Component.newCaseForm.pgblock.blocksec.Iss}');
         
         
         if(document.getElementById('{!$Component.newCaseForm.opsblock.reloptsec.relops}') == null || (!relops.checked)){

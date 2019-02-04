@@ -1950,8 +1950,6 @@ YEAR( CloseDate ) )
     </fields>
     <fields>
         <fullName>PartnerAccountId</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
@@ -3764,6 +3762,29 @@ IF(RecordTypeId = &apos;01224000000TOY1&apos;,( Days_Remaining__c ) * ( Annualis
             <value>1</value>
         </filters>
         <label>Won</label>
+    </listViews>
+    <listViews>
+        <fullName>X1_My_Open_Opportunities_pipeline</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Related_Group_Client__c</columns>
+        <columns>Annualised_Income__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Private_Side__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notEqual</operation>
+            <value>Closed Won</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>notEqual</operation>
+            <value>Closed Lost</value>
+        </filters>
+        <label>My Open Opportunities (Pipeline)</label>
     </listViews>
     <listViews>
         <fullName>X2_My_Won_Opportunities_YTD</fullName>
@@ -10827,5 +10848,28 @@ $g(function() {
 	$g(&quot;.ui-dialog&quot;).css(&apos;z-index&apos;, &apos;10000&apos;);
 	$g(&quot;.ui-dialog&quot;).css(&apos;border-radius&apos;, &apos;0px&apos;);
 });</url>
+    </webLinks>
+    <webLinks>
+        <fullName>pi__Send_Pardot_Emails</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send Engage Email</masterLabel>
+        <openType>sidebar</openType>
+        <page>pi__MicroCampaignOpportunity</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>pi__Send_Single_Pardot_Email</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send Engage Email</masterLabel>
+        <openType>sidebar</openType>
+        <page>pi__MicroCampaignSingleOpportunity</page>
+        <protected>false</protected>
     </webLinks>
 </CustomObject>

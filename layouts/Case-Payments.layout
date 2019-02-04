@@ -89,7 +89,7 @@
         </feedFilters>
         <fullWidthFeed>true</fullWidthFeed>
         <hideSidebar>true</hideSidebar>
-        <highlightExternalFeedItems>true</highlightExternalFeedItems>
+        <highlightExternalFeedItems>false</highlightExternalFeedItems>
         <rightComponents>
             <componentType>HelpAndToolLinks</componentType>
         </rightComponents>
@@ -299,9 +299,6 @@
             <quickActionName>Case.Deal_Enquiry</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
-            <quickActionName>Case.SWIFT</quickActionName>
-        </quickActionListItems>
-        <quickActionListItems>
             <quickActionName>Case.Vostro_Statement</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
@@ -321,6 +318,9 @@
         </quickActionListItems>
         <quickActionListItems>
             <quickActionName>Case.Checklist_QA</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>Case.SWIFT</quickActionName>
         </quickActionListItems>
     </quickActionList>
     <relatedContent>

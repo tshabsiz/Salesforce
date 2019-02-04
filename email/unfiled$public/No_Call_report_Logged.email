@@ -5,7 +5,7 @@
 
      <body>
      
-     <img border="0" bEditID="r1sp1" bLabel="headerImage" id="r1sp1" src="https://barclaysafrica--c.eu5.content.force.com/servlet/servlet.ImageServer?id=01524000000JyRq&oid=00D1l0000008age"/>
+     <img border="0" bEditID="r1sp1" bLabel="headerImage" id="r1sp1" src="https://barclaysafrica--c.eu5.content.force.com/servlet/servlet.ImageServer?id=01524000000JyRq&oid=00D1j0000008apt"/>
 <br/><br/>
   <p>Hi {!relatedTo.Owner.FirstName},<br/><br/>
   

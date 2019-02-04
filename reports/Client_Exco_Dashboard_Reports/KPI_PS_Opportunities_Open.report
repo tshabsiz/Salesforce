@@ -42,7 +42,7 @@
             <axisBinding>y</axisBinding>
             <column>OpportunityLineItem.Income_this_Year__c</column>
         </chartSummaries>
-        <chartType>Pie</chartType>
+        <chartType>Donut</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>false</expandOthers>
         <groupingColumn>Account.Team_F__c</groupingColumn>
@@ -136,6 +136,12 @@
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
             <value>Coverage South Africa - Public Sector</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closed Won,Closed Lost</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

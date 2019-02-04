@@ -5,7 +5,6 @@
             <alignment>right</alignment>
             <components>Console.BuiltInComponent.knowledgeOne</components>
             <components>Console.BuiltInComponent.mostRecentlyUsed</components>
-            <components>Console.BuiltInComponent.servicePresence</components>
         </componentList>
         <detailPageRefreshMethod>flag</detailPageRefreshMethod>
         <keyboardShortcuts>
@@ -199,13 +198,9 @@
     <tabs>Case_Checklist_Template__c</tabs>
     <tabs>Service_Mapping__c</tabs>
     <tabs>standard-OmniSupervisor</tabs>
-    <tabs>SWIFT_Message__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>Case_Checklist_Template__c</tab>
-        </mappings>
-        <mappings>
-            <tab>SWIFT_Message__c</tab>
         </mappings>
         <mappings>
             <tab>Service_Mapping__c</tab>

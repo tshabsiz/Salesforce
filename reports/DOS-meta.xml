@@ -5,10 +5,5 @@
         <sharedTo>refilwe.manoto@absa1.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
-    <folderShares>
-        <accessLevel>Manage</accessLevel>
-        <sharedTo>sfisopaul.mashabela@absa1.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
     <name>DOS</name>
 </ReportFolder>

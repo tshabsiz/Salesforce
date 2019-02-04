@@ -351,6 +351,14 @@
                 <behavior>Edit</behavior>
                 <field>RSVPInformation__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Check_In_Confirmation_Fields__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Event_Content_Folder_URL__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -364,6 +372,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>SupportEmailAddress__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Check_In_Confirmation_Mandatory_Fields__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -472,6 +484,11 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
+            <actionName>FeedItem.TextPost</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>0</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>Edit</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>1</sortOrder>
@@ -485,11 +502,6 @@
             <actionName>Clone</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>3</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>FeedItem.TextPost</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>0</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>Add_Delegate</actionName>
@@ -547,6 +559,13 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Date__c</fields>
+        <fields>Start_Time_Text__c</fields>
+        <fields>End_Time_Text__c</fields>
+        <fields>Type__c</fields>
+        <fields>Number_of_Scheduled_Delegates__c</fields>
+        <fields>CREATEDBY_USER</fields>
+        <fields>CREATED_DATE</fields>
         <relatedList>Event_Session__c.Event_Function__c</relatedList>
     </relatedLists>
     <relatedLists>

@@ -34,7 +34,13 @@
         <field>ACCOUNT.NAME</field>
     </columns>
     <columns>
+        <field>Charge__c.Charge_Account_No__c</field>
+    </columns>
+    <columns>
         <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Case.ChargeAccountNo__c</field>
     </columns>
     <currency>ZAR</currency>
     <filter>
@@ -49,12 +55,6 @@
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>Case.CSC_Default_Support_Cases,Case.CSC_Manual_Cases</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>Charge__c.Charge_Amount__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>notEqual</operator>
-            <value></value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
@@ -74,6 +74,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
+        <endDate>2019-01-14</endDate>
         <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-12-14</startDate>
     </timeFrameFilter>
 </Report>

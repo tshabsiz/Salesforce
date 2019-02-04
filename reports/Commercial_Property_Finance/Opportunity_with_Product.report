@@ -245,6 +245,15 @@
     <columns>
         <field>Account.Last_Coverage_Banker_call_report__c</field>
     </columns>
+    <columns>
+        <field>Product2.Product_Code_ID__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.ProductPartner__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunity_Source__c</field>
+    </columns>
     <currency>ZAR</currency>
     <filter>
         <criteriaItems>

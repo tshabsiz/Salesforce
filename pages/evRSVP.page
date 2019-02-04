@@ -509,7 +509,7 @@ DP: Added Transport required field and showTransportInfo JS function
                 <apex:outputPanel id="MultiContact" rendered="{!thisDelegate.Registration_Status__c == 'Accepted' || thisDelegate.Registration_Status__c == 'Confirmed'}">
                     <div class="page-section">
                         <p>Thank you for accepting, we look forward to seeing you at the event. </p>
-                        <c:evCalendarLinkGenerator inputDelegateId="{!thisDelegate.id}" inputLinkText="Click here" inputLinkImage="https://c.eu5.content.force.com/servlet/servlet.ImageServer?id=01524000002Q56a&oid=00D24000000ajGo&lastMod=1488973782000"></c:evCalendarLinkGenerator> 
+                        <c:evCalendarLinkGenerator inputDelegateId="{!thisDelegate.id}" inputLinkText="Click here" inputLinkImage="https://absa1--c.eu15.content.force.com/servlet/servlet.ImageServer?id=0151p000006z0xU&oid=00D24000000JOMz&lastMod=1546854748000"></c:evCalendarLinkGenerator> 
                     </div>
                     <apex:outputPanel rendered="{!thisEvent.Allow_Partners__c == true && PartnersInserted ==  true}" >
                          <p>Thank you for registering your partners. </p>

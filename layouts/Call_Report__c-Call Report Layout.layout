@@ -295,6 +295,9 @@
         <quickActionListItems>
             <quickActionName>FeedItem.ContentPost</quickActionName>
         </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>Call_Report__c.BriefingNote</quickActionName>
+        </quickActionListItems>
     </quickActionList>
     <relatedLists>
         <customButtons>Add_Barclays_Attendee</customButtons>

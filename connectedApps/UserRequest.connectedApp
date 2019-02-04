@@ -4,7 +4,7 @@
     <label>UserRequest</label>
     <oauthConfig>
         <callbackUrl>https://login.salesforce.com/services/oauth2/callback</callbackUrl>
-        <consumerKey>3MVG9llQY5kM9T6ft1Y9n7M2VbY1N2cQdwkK2cLp7rRAO3Ip.6N.lCgSc0NjQmenQkjbusXAFZckxYQPbMRQF</consumerKey>
+        <consumerKey>3MVG95AcBeaB55lX.v7LGIE3EZCFgNFThsbbk2vgvzxRUas75MD1O5otRmuTanbjauhtDvdAgvHqwE6zW8rFf</consumerKey>
         <scopes>Basic</scopes>
         <scopes>Api</scopes>
     </oauthConfig>

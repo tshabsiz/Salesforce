@@ -16,7 +16,7 @@
             <column>ALIAS</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>mariab,faikac,mmantsam,patronem,ntebalem,ceciliam</value>
+            <value>mariab,faikac,patronem,ntebalem,ceciliam,leratomm,lutticim</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

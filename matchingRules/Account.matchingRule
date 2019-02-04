@@ -40,7 +40,7 @@
             <fieldName>Registration_Number__c</fieldName>
             <matchingMethod>Exact</matchingMethod>
         </matchingRuleItems>
-        <ruleStatus>ActivationFailed</ruleStatus>
+        <ruleStatus>Active</ruleStatus>
     </matchingRules>
     <matchingRules>
         <fullName>Organisation_Name_and_SDS</fullName>
@@ -50,6 +50,6 @@
             <fieldName>Name</fieldName>
             <matchingMethod>CompanyName</matchingMethod>
         </matchingRuleItems>
-        <ruleStatus>ActivationFailed</ruleStatus>
+        <ruleStatus>Active</ruleStatus>
     </matchingRules>
 </MatchingRules>

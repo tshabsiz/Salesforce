@@ -5345,7 +5345,6 @@ This code will be used to search for Relationships in SF from the CIF integratio
     </listViews>
     <listViews>
         <fullName>X2_All_Clients</fullName>
-        <columns>CIF__c</columns>
         <columns>ACCOUNT.NAME</columns>
         <columns>ACCOUNT.RECORDTYPE</columns>
         <columns>CORE.USERS.ALIAS</columns>

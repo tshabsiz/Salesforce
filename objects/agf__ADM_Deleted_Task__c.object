@@ -47,7 +47,6 @@
     <description>Due to a lack of &quot;deletion&quot; events in the streaming API, we have to store the deleted tasks so subscribers can be notified.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>

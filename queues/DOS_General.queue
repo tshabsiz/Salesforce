@@ -8,8 +8,8 @@
             <role>CSC_Digital_Ops_Support_TM</role>
         </roles>
         <users>
-            <user>refilwe.manoto@absa1.com</user>
             <user>sfisopaul.mashabela@absa1.com</user>
+            <user>refilwe.manoto@absa1.com</user>
         </users>
     </queueMembers>
     <queueSobject>

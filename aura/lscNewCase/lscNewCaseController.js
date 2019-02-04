@@ -98,7 +98,6 @@
         var serviceCategory = component.find("cat").get("v.value");
         var department = component.find("dept").get("v.value");
       
-      
         
         
         if(component.get("v.model.relName_r") == null || component.get("v.model.relName_r") == '' || component.get("v.model.relName_r") ==='None'){

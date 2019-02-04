@@ -47,7 +47,6 @@
     <description>Used for action chaining since you can no longer create a setup object when conducting any type of DML with a custom object. Specifically we will later look at all of the scrum team cache objects that we&apos;ve inserted to create Groups</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableReports>false</enableReports>

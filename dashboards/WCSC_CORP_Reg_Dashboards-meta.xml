@@ -137,11 +137,6 @@
     </folderShares>
     <folderShares>
         <accessLevel>View</accessLevel>
-        <sharedTo>marietjie.meyer@absa1.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>View</accessLevel>
         <sharedTo>may-ellen.davis@absa1.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
@@ -158,11 +153,6 @@
     <folderShares>
         <accessLevel>View</accessLevel>
         <sharedTo>mikyle.allgeier@absa1.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>Manage</accessLevel>
-        <sharedTo>morne.grobler@absa1.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
@@ -198,6 +188,11 @@
     <folderShares>
         <accessLevel>View</accessLevel>
         <sharedTo>ronel.snyders@absa1.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>roslyn.john@absa1.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>

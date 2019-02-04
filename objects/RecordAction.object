@@ -18,9 +18,6 @@
         <fullName>IsMandatory</fullName>
     </fields>
     <fields>
-        <fullName>IsUiRemoveHidden</fullName>
-    </fields>
-    <fields>
         <fullName>Order</fullName>
     </fields>
     <fields>

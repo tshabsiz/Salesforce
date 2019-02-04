@@ -18,6 +18,11 @@
             <start>185.81.100.1</start>
         </ipRanges>
         <ipRanges>
+            <description>Pretoria CSC IP Address</description>
+            <end>169.202.235.5</end>
+            <start>169.202.235.1</start>
+        </ipRanges>
+        <ipRanges>
             <end>162.248.187.255</end>
             <start>162.248.184.1</start>
         </ipRanges>
@@ -70,7 +75,7 @@
         <lockoutInterval>ThirtyMinutes</lockoutInterval>
         <maxLoginAttempts>ThreeAttempts</maxLoginAttempts>
         <minimumPasswordLength>8</minimumPasswordLength>
-        <minimumPasswordLifetime>false</minimumPasswordLifetime>
+        <minimumPasswordLifetime>true</minimumPasswordLifetime>
         <obscureSecretAnswer>true</obscureSecretAnswer>
         <questionRestriction>DoesNotContainPassword</questionRestriction>
     </passwordPolicies>
@@ -97,6 +102,8 @@
         <identityConfirmationOnTwoFactorRegistrationEnabled>true</identityConfirmationOnTwoFactorRegistrationEnabled>
         <lockSessionsToDomain>true</lockSessionsToDomain>
         <lockSessionsToIp>false</lockSessionsToIp>
+        <lockerServiceCSP>false</lockerServiceCSP>
+        <lockerServiceFrozenRealm>false</lockerServiceFrozenRealm>
         <redirectionWarning>false</redirectionWarning>
         <referrerPolicy>false</referrerPolicy>
         <requireHttpOnly>false</requireHttpOnly>

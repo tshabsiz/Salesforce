@@ -129,6 +129,7 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Integer</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -159,6 +160,7 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -223,6 +225,7 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -312,6 +315,7 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Integer</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -366,6 +370,7 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>Column</componentType>
+                <decimalPrecision>0</decimalPrecision>
                 <displayUnits>Integer</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>

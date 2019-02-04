@@ -1143,6 +1143,10 @@
             <translation><!-- Bulk Upload --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>CPF</masterLabel>
+            <translation><!-- CPF --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Call Report</masterLabel>
             <translation><!-- Call Report --></translation>
         </picklistValues>

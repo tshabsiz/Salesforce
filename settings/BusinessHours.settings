@@ -169,6 +169,11 @@
         <name>Family Day</name>
     </holidays>
     <holidays>
+        <activityDate>2019-04-22</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>Family Day</name>
+    </holidays>
+    <holidays>
         <activityDate>2018-04-02</activityDate>
         <isRecurring>false</isRecurring>
         <name>Family Day</name>
@@ -190,6 +195,11 @@
     </holidays>
     <holidays>
         <activityDate>2017-04-14</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>Good Friday</name>
+    </holidays>
+    <holidays>
+        <activityDate>2019-04-19</activityDate>
         <isRecurring>false</isRecurring>
         <name>Good Friday</name>
     </holidays>
@@ -287,5 +297,10 @@
         <recurrenceMonthOfYear>June</recurrenceMonthOfYear>
         <recurrenceStartDate>2017-06-16</recurrenceStartDate>
         <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2019-06-17</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>Youth Day Holiday</name>
     </holidays>
 </BusinessHoursSettings>

@@ -14,6 +14,7 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>Gauge</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <footer>Includes Bankers &amp; Sector Heads</footer>
                 <gaugeMax>21.0</gaugeMax>
@@ -172,6 +173,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>ACCOUNT_OWNER</reportColumn>
                         <showTotal>false</showTotal>
@@ -269,6 +271,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>ACCOUNT_OWNER</reportColumn>
                         <showTotal>true</showTotal>
@@ -541,6 +544,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>ACCOUNT_OWNER</reportColumn>
                         <showTotal>true</showTotal>
@@ -607,6 +611,7 @@
                     <decimalPlaces>0</decimalPlaces>
                     <showTotal>true</showTotal>
                 </dashboardTableColumn>
+                <decimalPrecision>0</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>

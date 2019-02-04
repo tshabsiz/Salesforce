@@ -1,7 +1,7 @@
 <messaging:emailTemplate subject="{!RelatedTo.Name} requires updates" recipientType="User" relatedToType="Opportunity">
 <messaging:htmlEmailBody >
  <body style="font-family:Arial;">
-<apex:image url="https://barclaysafrica--c.eu5.content.force.com/servlet/servlet.ImageServer?id=01524000001uPz6&oid=00D1l0000008age"/>
+<apex:image url="https://barclaysafrica--c.eu5.content.force.com/servlet/servlet.ImageServer?id=01524000001uPz6&oid=00D1j0000008apt"/>
 <p>Dear {!RelatedTo.Owner.Name},
 <br/>
 Your private  opportunity  <b>{!RelatedTo.Name}</b> related to <b>{!RelatedTo.Account.Name}</b>, is about to reach the Expected Close Date and the Stage remains:  <b>{!RelatedTo.StageName}.</b>

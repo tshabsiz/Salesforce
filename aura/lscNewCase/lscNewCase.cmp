@@ -92,11 +92,11 @@
               <lightning:layout horizontalAlign="center">
                  <lightning:layoutItem size="6">
                     <div style="width: 80%">
-                            <lightning:inputField aura:id="cha" fieldName="Channel__c" />
                     </div>
-                *</lightning:layoutItem>
+                </lightning:layoutItem>
                   <lightning:layoutItem size="6">
                     <div style="width: 80%">
+                        <lightning:inputField aura:id="cha" fieldName="Channel__c" />
                     </div>
                 </lightning:layoutItem>                  
                   </lightning:layout>

@@ -6,7 +6,7 @@
     <label>SWIFTPayments</label>
     <oauthConfig>
         <callbackUrl>https://localhost:8080</callbackUrl>
-        <consumerKey>3MVG9llQY5kM9T6ft1Y9n7M2VbRr_KoMBhlDHMzgqEcXqaxUNQ2RilcZb5Hc4NuCu2Mw1qjq52LggFM7Wu0S3</consumerKey>
+        <consumerKey>3MVG95AcBeaB55lX.v7LGIE3EZCFgNFThsbbkWBGxbQ2VVcQhkJVLMyilobakxZ7UvHP_t2amFJFL0ke.sjSY</consumerKey>
         <scopes>Full</scopes>
     </oauthConfig>
 </ConnectedApp>

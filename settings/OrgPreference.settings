@@ -97,10 +97,6 @@
         <settingValue>true</settingValue>
     </preferences>
     <preferences>
-        <settingName>PortalUserShareOnCase</settingName>
-        <settingValue>true</settingValue>
-    </preferences>
-    <preferences>
         <settingName>CompileOnDeploy</settingName>
         <settingValue>false</settingValue>
     </preferences>
@@ -122,14 +118,6 @@
     </preferences>
     <preferences>
         <settingName>LocalNames</settingName>
-        <settingValue>false</settingValue>
-    </preferences>
-    <preferences>
-        <settingName>CallDispositionEnabled</settingName>
-        <settingValue>false</settingValue>
-    </preferences>
-    <preferences>
-        <settingName>VoiceConferencingEnabled</settingName>
         <settingValue>false</settingValue>
     </preferences>
     <preferences>
@@ -166,19 +154,11 @@
     </preferences>
     <preferences>
         <settingName>NotesReservedPref01</settingName>
-        <settingValue>false</settingValue>
-    </preferences>
-    <preferences>
-        <settingName>ConsentManagementEnabled</settingName>
-        <settingValue>false</settingValue>
+        <settingValue>true</settingValue>
     </preferences>
     <preferences>
         <settingName>ApexApprovalLockUnlock</settingName>
         <settingValue>true</settingValue>
-    </preferences>
-    <preferences>
-        <settingName>PRMAccRelPref</settingName>
-        <settingValue>false</settingValue>
     </preferences>
     <preferences>
         <settingName>OfflineDraftsEnabled</settingName>

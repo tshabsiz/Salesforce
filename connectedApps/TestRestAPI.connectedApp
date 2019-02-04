@@ -4,7 +4,7 @@
     <label>TestRestAPI</label>
     <oauthConfig>
         <callbackUrl>https://ldnpsr36815.intranet.barcapint.com:8210/callback</callbackUrl>
-        <consumerKey>3MVG9llQY5kM9T6ft1Y9n7M2VbRr_KoMBhlDH0_8tR0KelaAowLOSUnRdeNeyTvQFTvwGdMLOxNEMQC3IiU9U</consumerKey>
+        <consumerKey>3MVG95AcBeaB55lX.v7LGIE3EZCFgNFThsbbkkwLiKZf7ttdwrrbi0mHMVw.JT37lDDXUL.rcqKhkQiBNd8Wf</consumerKey>
         <scopes>Api</scopes>
     </oauthConfig>
 </ConnectedApp>

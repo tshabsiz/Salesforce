@@ -28,6 +28,10 @@
         <field>CUST_NAME</field>
     </columns>
     <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>Client_Plan__c.Progress__c</field>
+    </columns>
+    <columns>
         <field>FK_NAME</field>
     </columns>
     <columns>
@@ -37,22 +41,7 @@
         <field>FK_$Account.Team_F__c</field>
     </columns>
     <columns>
-        <field>Client_Plan__c.Status__c</field>
-    </columns>
-    <columns>
         <field>CUST_OWNER_NAME</field>
-    </columns>
-    <columns>
-        <field>Client_Plan__c.Potential_Opportunities_Count__c</field>
-    </columns>
-    <columns>
-        <field>Client_Plan__c.Strategies_Count__c</field>
-    </columns>
-    <columns>
-        <field>Client_Plan__c.Relationships_Count__c</field>
-    </columns>
-    <columns>
-        <field>Client_Plan__c.Last_Review_Date__c</field>
     </columns>
     <columns>
         <field>CUST_CREATED_DATE</field>

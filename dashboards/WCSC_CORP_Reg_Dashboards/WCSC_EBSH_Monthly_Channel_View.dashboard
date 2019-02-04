@@ -22,13 +22,14 @@
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>Case.Channel__c</groupingColumn>
+            <header>EBSH Monthly Channel View %</header>
             <legendPosition>Bottom</legendPosition>
             <maxValuesDisplayed>10</maxValuesDisplayed>
             <report>WCSC_Queue_Management_Reports/WCSC_EBSH_Channel_View</report>
             <showPercentage>false</showPercentage>
             <showValues>true</showValues>
             <sortBy>RowValueDescending</sortBy>
-            <title>EBSH Monthly Channel View %</title>
+            <title>This Month</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -46,13 +47,14 @@
             <enableHover>false</enableHover>
             <expandOthers>true</expandOthers>
             <groupingColumn>Case.Channel__c</groupingColumn>
+            <header>EBSH Monthly Channel View %</header>
             <legendPosition>Bottom</legendPosition>
             <report>WCSC_Queue_Management_Reports/WCSC_EBSH_Channel_View</report>
             <showPercentage>false</showPercentage>
             <showTotal>true</showTotal>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>EBSH Monthly Channel View %</title>
+            <title>This Month</title>
             <useReportChart>false</useReportChart>
         </components>
     </leftSection>
@@ -73,13 +75,14 @@
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>Case.Service_Type__c</groupingColumn>
+            <header>EBSH Monthly Service Type View</header>
             <legendPosition>Bottom</legendPosition>
             <maxValuesDisplayed>10</maxValuesDisplayed>
             <report>WCSC_Queue_Management_Reports/WCSC_EBSH_Monthly_Service_Type_View</report>
             <showPercentage>false</showPercentage>
             <showValues>true</showValues>
             <sortBy>RowValueDescending</sortBy>
-            <title>EBSH Monthly Service Type View</title>
+            <title>This Month</title>
             <useReportChart>false</useReportChart>
         </components>
     </middleSection>
@@ -100,20 +103,21 @@
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>ACCOUNT.NAME</groupingColumn>
+            <header>EBSH Monthly Top 10 Client vol View</header>
             <legendPosition>Bottom</legendPosition>
-            <maxValuesDisplayed>10</maxValuesDisplayed>
+            <maxValuesDisplayed>20</maxValuesDisplayed>
             <report>WCSC_Queue_Management_Reports/WCSC_EBSH_Monthly_Top_10_Client_vol_View</report>
             <showPercentage>false</showPercentage>
             <showPicturesOnCharts>true</showPicturesOnCharts>
             <showValues>true</showValues>
             <sortBy>RowValueDescending</sortBy>
-            <title>EBSH Monthly Top 10 Client vol View</title>
+            <title>This Month</title>
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>
     <runningUser>daryn.britz@absa1.com</runningUser>
     <textColor>#000000</textColor>
-    <title>WCSC EBSH Monthly Channel View - To populate Corp Gab pack</title>
+    <title>WCSC EBSH Monthly Channel View - To populate Corp Gab pack - This Month</title>
     <titleColor>#000000</titleColor>
     <titleSize>12</titleSize>
 </Dashboard>

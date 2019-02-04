@@ -41,6 +41,9 @@
             <sourceValues>
                 <sourceValue>Multi-Option</sourceValue>
             </sourceValues>
+            <sourceValues>
+                <sourceValue>Structured Trade and Commodity Finance</sourceValue>
+            </sourceValues>
             <value>ASSETS</value>
         </values>
         <values>
@@ -276,6 +279,9 @@
         </values>
     </buckets>
     <columns>
+        <field>Opportunity.Income_this_Year__c.CONVERT</field>
+    </columns>
+    <columns>
         <field>ACCOUNT_NAME</field>
     </columns>
     <columns>
@@ -351,7 +357,7 @@
     </params>
     <reportType>OpportunityProduct</reportType>
     <scope>organization</scope>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>

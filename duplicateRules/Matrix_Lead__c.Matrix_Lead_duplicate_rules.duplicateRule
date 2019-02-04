@@ -30,7 +30,7 @@
             <outputObject>Account</outputObject>
         </objectMapping>
     </duplicateRuleMatchRules>
-    <isActive>false</isActive>
+    <isActive>true</isActive>
     <masterLabel>Matrix Lead duplicate rules</masterLabel>
     <securityOption>BypassSharingRules</securityOption>
     <sortOrder>1</sortOrder>

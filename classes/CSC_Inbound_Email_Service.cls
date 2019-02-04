@@ -21,8 +21,6 @@ with email notification to Case owner
 *2017-05-16: RN - CloudSmiths - Add flexi email SLA times
 *2017-06-06: RN - CloudSmiths - Fix for the 32000 chr limit on emails
 *2017-11-20: MM - Barclays  -  Add method call to add the sender of an email if they are already a user in SF
-*2019-01-08: RN - CloudSmiths - Update email linking feature to create a new case if the fullteam is different on the 
-                                related case then the incoming email
 =================================================================
 TO DO: CSC PHASE 2
 1- 
@@ -63,7 +61,6 @@ global class CSC_Inbound_Email_Service implements Messaging.InboundEmailHandler 
         //}
         //System.debug(' ---------------- EMAIL DEBUG SECTION STOP ------------------');
         //------------------------------
-
         System.debug('Inbound email received');
         Messaging.InboundEmailResult result = new Messaging.InboundEmailresult();
         
@@ -72,8 +69,7 @@ global class CSC_Inbound_Email_Service implements Messaging.InboundEmailHandler 
         System.debug('THREAD ID = ' + threadId);
         
         //if no id was found, try the email body
-        if(String.isBlank(threadId)) {
-
+        if(String.isBlank(threadId)){
             if (String.isEmpty(email.htmlBody)){
                 threadId = extractThreadID(email.plainTextBody);
             }else{
@@ -141,58 +137,46 @@ global class CSC_Inbound_Email_Service implements Messaging.InboundEmailHandler 
             //If yes, link the email to the existing Case
             //IF no, create a new Case and link email to the new case
             //
-            if(String.isBlank(threadId)) {
-
+            if(String.isBlank(threadId)){
                 CaseID = createCase(email, envelope);
-
             }else{
                 
                 CaseID = Cases.getCaseIdFromEmailThreadId(threadId);
                 
                 existingCase = [Select Id, OwnerId, IsClosed, Queue__c, CaseNumber, Owner.Type, hHasClientUpdate__c From Case Where Id = :CaseID limit 1];
                 
-                //RN : get related Case's full team and determine the email it was sent to originaly
-                //this is to avoid the email to greate a case in the general queue
-                list<Service_Mapping__c> existingMap = [Select Support_Email_Address__c From Service_Mapping__c 
-                                                        Where Queue__c = :existingCase[0].Queue__c Order By Effective_Date__c DESC limit 1];
-
-                String emailAddress = envelope.toAddress;
-                String[] splitEmail = emailAddress.split('@');
-                String emailPrefix = splitEmail[0];
-                
-                //Cater for netsupport between ABSA and Barcalys
-                if(emailPrefix.contains('barclaysafrica') && emailPrefix.contains('barclays.netsupport')){
-
-                    emailPrefix = 'barclays.netsupport@barclaysafrica';
-
-                }else if(emailPrefix.contains('absa') && emailPrefix.contains('barclays.netsupport')){
-
-                    emailPrefix = 'barclays.netsupport@absa';
-
-                }else{
-
-                    emailPrefix+= '@';
-                }
-
-                 String emailSupportAddress = '';
-                     
-                if(existingMap.size() > 0){
-                   emailSupportAddress = existingMap[0].Support_Email_Address__c;
-                }
-
-                //20170317 - RN
+                //20170317 - RN - Keep this code if Business decides they want the rule enforced again.
                 if(existingCase[0].IsClosed){
-
-                    //RN compare 'To' address in mail to support email in mapping, if different rout to mapping queueu else leave
-                    if(String.isNotBlank(emailSupportAddress)){
-
-                        if(!emailSupportAddress.startsWith(emailPrefix)){
-                            
+                    
+                    //RN : get related Case's full team and determine the email it was sent to originaly
+                    //this is to avoid the email to greate a case in the general queue
+                    list<Service_Mapping__c> existingMap = [Select Support_Email_Address__c From Service_Mapping__c 
+                                                            Where Queue__c = :existingCase[0].Queue__c Order By Effective_Date__c DESC limit 1];
+                    //RN
+                    //compare 'To' address in mail to support email in mapping, if different rout to mapping queueu else leave
+                    if(existingMap.size() > 0){
+                        String emailAddress = envelope.toAddress;
+                        String[] splitEmail = emailAddress.split('@');
+                        String emailPrefix = splitEmail[0];
+                        
+                        //Cater for netsupport between ABSA and Barcalys
+                        if(emailPrefix.contains('barclaysafrica') && emailPrefix.contains('barclays.netsupport')){
+                            emailPrefix = 'barclays.netsupport@barclaysafrica';
+                        }else if(emailPrefix.contains('absa') && emailPrefix.contains('barclays.netsupport')){
+                            emailPrefix = 'barclays.netsupport@absa';
+                        }else{
+                            emailPrefix+= '@';
+                        }
+                        String emailSupportAddress = existingMap[0].Support_Email_Address__c;
+                        
+                        if(String.isNotBlank(emailSupportAddress)){
+						if(!emailSupportAddress.startsWith(emailPrefix)){
                             envelope.toAddress = emailSupportAddress;
                             caseFunc = new CSC_Case_Functions(emailSupportAddress);
                         }
+                        }
+                        
                     }
-
 					//strip thread ID as the respose email to this Case would have two thread ID's in the subject 
 					String newSubject = email.Subject;
                     newSubject = newSubject.replace(threadId, ' ');
@@ -207,37 +191,26 @@ global class CSC_Inbound_Email_Service implements Messaging.InboundEmailHandler 
                     
                 }else{
                     
-                    if( !emailSupportAddress.startsWithIgnoreCase(emailPrefix) ){
-
-                        CaseID = createCase(email, envelope);
-
-                    }else{
-
-                        isOriginalEmail = false;
+                    isOriginalEmail = false;
                     
-                        if(existingCase[0].Owner.Type == 'User'){
-                            sendNotification = true;
-                        }else{
-                            sendNotification = false;
-                        }
-                        
-                        //indicator that shows that a new email arrived from the client for a specific case
-                        existingCase[0].hHasClientUpdate__c = true;
-                        update existingCase[0];
+                    if(existingCase[0].Owner.Type == 'User'){
+                        sendNotification = true;
+                    }else{
+                        sendNotification = false;
                     }
+                    
+                    //indicator that shows that a new email arrived from the client for a specific case
+                    existingCase[0].hHasClientUpdate__c = true;
+                    update existingCase[0];
                 }
                 
             }
             
             //get the cc addresses from the original inbound email object into a string array
             String originalCCAddresses = '';
-
             if(email.ccAddresses != null){
-
                 if(email.ccAddresses.size() > 0){
-
                     for(String s :email.ccAddresses){
-
                         originalCCAddresses+= s + ';';
                     }
                 }
@@ -268,7 +241,6 @@ global class CSC_Inbound_Email_Service implements Messaging.InboundEmailHandler 
             Blob emailBodyBlob;
             
             if(isBodySizeOk){
-                
                 if (String.isEmpty(email.htmlBody)){
                     emsg.TextBody = email.plainTextBody;
                     emailBodyBlob = Blob.valueOf(email.plainTextBody);
@@ -276,7 +248,6 @@ global class CSC_Inbound_Email_Service implements Messaging.InboundEmailHandler 
                     emsg.HtmlBody = email.htmlBody;
                     emailBodyBlob = Blob.valueOf(email.htmlBody);
                 }
-
             }else{
                 //add message so users know what we did behind the scenes
                 emsg.TextBody = 'The body of this email was too large to process. Please click on the \'View Email Body\' link to view the original email';

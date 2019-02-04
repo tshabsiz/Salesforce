@@ -46,7 +46,6 @@
     <description>Configurations relating to Event including Badges and Themes</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableReports>true</enableReports>
@@ -73,6 +72,24 @@
         <type>Url</type>
     </fields>
     <fields>
+        <fullName>Background_Image_URL__c</fullName>
+        <externalId>false</externalId>
+        <label>Background Image URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Badge_Background_Image_URL__c</fullName>
+        <externalId>false</externalId>
+        <label>Badge Background Image URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
         <fullName>Badge_Font_Family__c</fullName>
         <externalId>false</externalId>
         <label>Badge Font Family</label>
@@ -82,6 +99,31 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Badge_Format__c</fullName>
+        <externalId>false</externalId>
+        <label>Badge Format</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1Page</fullName>
+                    <default>true</default>
+                    <label>Single Sided (1 Page)</label>
+                </value>
+                <value>
+                    <fullName>2Page</fullName>
+                    <default>false</default>
+                    <label>Double Sided (2 Page)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Badge_Gutter__c</fullName>
@@ -97,6 +139,18 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Badge_Height__c</fullName>
+        <externalId>false</externalId>
+        <label>Badge Height</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Badge_Optional__c</fullName>
         <externalId>false</externalId>
         <label>Badge Optional</label>
@@ -104,6 +158,68 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Badge_Orientation__c</fullName>
+        <description>Page orientation that the badge will be printed as</description>
+        <externalId>false</externalId>
+        <label>Badge Orientation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Portrait</fullName>
+                    <default>false</default>
+                    <label>Portrait</label>
+                </value>
+                <value>
+                    <fullName>Landscape</fullName>
+                    <default>false</default>
+                    <label>Landscape</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Badge_Scanner_Image__c</fullName>
+        <description>19-01-27 DH Change label to &quot;Badge Scanner Image&quot;.  Create QRCode (Text) and QRCode (vCard) options.</description>
+        <externalId>false</externalId>
+        <label>Badge Scanner Image</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Barcode</fullName>
+                    <default>false</default>
+                    <label>Barcode</label>
+                </value>
+                <value>
+                    <fullName>QR Code (Text)</fullName>
+                    <default>false</default>
+                    <label>QR Code (Text)</label>
+                </value>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>QR Code (vCard)</fullName>
+                    <default>false</default>
+                    <label>QR Code (vCard)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Badge_Title__c</fullName>
@@ -179,6 +295,16 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Check_In_Confirmation_Fields__c</fullName>
+        <externalId>false</externalId>
+        <label>Check In Confirmation Fields</label>
+        <length>2000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
         <fullName>Default__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -217,6 +343,63 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Margin_Bottom__c</fullName>
+        <externalId>false</externalId>
+        <label>Badge Margin Bottom</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Margin_Left__c</fullName>
+        <externalId>false</externalId>
+        <label>Badge Margin Left</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Margin_Right__c</fullName>
+        <externalId>false</externalId>
+        <label>Badge Margin Right</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Margin_Top__c</fullName>
+        <externalId>false</externalId>
+        <label>Badge Margin Top</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Page_Background__c</fullName>
+        <externalId>false</externalId>
+        <label>Page Background</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
     </fields>
     <fields>
         <fullName>Primary_Button_Background_Color_Hover__c</fullName>
@@ -484,6 +667,47 @@
         <active>true</active>
         <label>Event Agenda</label>
         <picklistValues>
+            <picklist>Badge_Format__c</picklist>
+            <values>
+                <fullName>1Page</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2Page</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Badge_Orientation__c</picklist>
+            <values>
+                <fullName>Landscape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Portrait</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Badge_Scanner_Image__c</picklist>
+            <values>
+                <fullName>Barcode</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QR Code %28Text%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QR Code %28vCard%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Template__c</picklist>
             <values>
                 <fullName>Cloudsmiths</fullName>
@@ -500,6 +724,47 @@
         <active>true</active>
         <description>Badges Associated to the Event -  Do not change Label as it is used in evTestDataGenerator</description>
         <label>Event Badges</label>
+        <picklistValues>
+            <picklist>Badge_Format__c</picklist>
+            <values>
+                <fullName>1Page</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2Page</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Badge_Orientation__c</picklist>
+            <values>
+                <fullName>Landscape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Portrait</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Badge_Scanner_Image__c</picklist>
+            <values>
+                <fullName>Barcode</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QR Code %28Text%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QR Code %28vCard%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>Template__c</picklist>
             <values>
@@ -518,6 +783,47 @@
         <description>Basics Associated to the Event</description>
         <label>Event Basics</label>
         <picklistValues>
+            <picklist>Badge_Format__c</picklist>
+            <values>
+                <fullName>1Page</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2Page</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Badge_Orientation__c</picklist>
+            <values>
+                <fullName>Landscape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Portrait</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Badge_Scanner_Image__c</picklist>
+            <values>
+                <fullName>Barcode</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QR Code %28Text%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QR Code %28vCard%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Template__c</picklist>
             <values>
                 <fullName>Cloudsmiths</fullName>
@@ -535,6 +841,47 @@
         <description>Technical event configuration parameters</description>
         <label>Event Config</label>
         <picklistValues>
+            <picklist>Badge_Format__c</picklist>
+            <values>
+                <fullName>1Page</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2Page</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Badge_Orientation__c</picklist>
+            <values>
+                <fullName>Landscape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Portrait</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Badge_Scanner_Image__c</picklist>
+            <values>
+                <fullName>Barcode</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QR Code %28Text%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QR Code %28vCard%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Template__c</picklist>
             <values>
                 <fullName>Cloudsmiths</fullName>
@@ -550,6 +897,47 @@
         <fullName>Event_Disclaimer</fullName>
         <active>true</active>
         <label>Event Disclaimer</label>
+        <picklistValues>
+            <picklist>Badge_Format__c</picklist>
+            <values>
+                <fullName>1Page</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2Page</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Badge_Orientation__c</picklist>
+            <values>
+                <fullName>Landscape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Portrait</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Badge_Scanner_Image__c</picklist>
+            <values>
+                <fullName>Barcode</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QR Code %28Text%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QR Code %28vCard%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>Template__c</picklist>
             <values>
@@ -567,6 +955,47 @@
         <active>true</active>
         <description>Themes Associated to the Event</description>
         <label>Event Themes</label>
+        <picklistValues>
+            <picklist>Badge_Format__c</picklist>
+            <values>
+                <fullName>1Page</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2Page</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Badge_Orientation__c</picklist>
+            <values>
+                <fullName>Landscape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Portrait</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Badge_Scanner_Image__c</picklist>
+            <values>
+                <fullName>Barcode</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QR Code %28Text%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QR Code %28vCard%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
         <picklistValues>
             <picklist>Template__c</picklist>
             <values>

@@ -42,7 +42,7 @@
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
                     <flexTableColumn>
-                        <reportColumn>Attendee__c.Barclays_Attendee__c.Name</reportColumn>
+                        <reportColumn>Attendee__c.Barclays_Attendee__c.Name__lookup</reportColumn>
                         <showTotal>true</showTotal>
                         <type>grouping</type>
                     </flexTableColumn>
@@ -52,7 +52,7 @@
                         <type>aggregate</type>
                     </flexTableColumn>
                     <flexTableSortInfo>
-                        <sortColumn>Attendee__c.Barclays_Attendee__c.Name</sortColumn>
+                        <sortColumn>Attendee__c.Barclays_Attendee__c.Name__lookup</sortColumn>
                         <sortOrder>1</sortOrder>
                     </flexTableSortInfo>
                     <hideChatterPhotos>true</hideChatterPhotos>
@@ -567,6 +567,7 @@
                     <column>RowCount</column>
                     <showTotal>false</showTotal>
                 </dashboardTableColumn>
+                <decimalPrecision>0</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>

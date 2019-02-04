@@ -52,19 +52,9 @@
         <label>CPF</label>
     </standardValue>
     <standardValue>
-        <fullName>Credit Analyst</fullName>
-        <default>false</default>
-        <label>Credit Analyst</label>
-    </standardValue>
-    <standardValue>
         <fullName>Credit Manager</fullName>
         <default>false</default>
         <label>Credit Manager</label>
-    </standardValue>
-    <standardValue>
-        <fullName>Credit Risk Officer</fullName>
-        <default>false</default>
-        <label>Credit Risk Officer</label>
     </standardValue>
     <standardValue>
         <fullName>CSM Initiator</fullName>

@@ -53,6 +53,7 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>ColumnLine</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Millions</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>

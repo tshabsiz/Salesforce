@@ -41,6 +41,12 @@
             <operator>equals</operator>
             <value>1</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>CHILD_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Sharon Vera</value>
+        </criteriaItems>
     </filter>
     <format>Tabular</format>
     <name>Matter / Deal - Primary Contact</name>

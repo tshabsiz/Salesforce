@@ -36,6 +36,6 @@
     </values>
     <values>
         <field>Product_Partner_Team__c</field>
-        <value xsi:type="xsd:string">Affordable Housing|Commercial Property Finance - Affordable Housing|Listed Sector|SA Coverage|SA Coverage - Commercial Central|SA Coverage - Corporate Gauteng|SA Coverage - EC|SA Coverage - KZN|SA Coverage - Northern|SA Coverage - Western Cape|SA_Coverage_Commercial_Central</value>
+        <value xsi:type="xsd:string">Affordable Housing|Commercial Property Finance - Affordable Housing|Listed Sector|SA Coverage|SA Coverage - Commercial Central|SA Coverage - Corporate Gauteng|SA Coverage - EC|SA Coverage - KZN|SA Coverage - Northern|SA Coverage - Western Cape|SA_Coverage_Commercial_Central|SA Coverage - Commercial Gauteng|RoA</value>
     </values>
 </CustomMetadata>

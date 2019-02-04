@@ -4,7 +4,7 @@
     <label>DSG Low API</label>
     <oauthConfig>
         <callbackUrl>https://login.salesforce.com/services/oauth2/callback</callbackUrl>
-        <consumerKey>3MVG9llQY5kM9T6ft1Y9n7M2VbRr_KoMBhlDHFO2PDw4rk0sS1JqTVNbMnzJSGaqsjNxmtu_PCa1M5_q0HWZz</consumerKey>
+        <consumerKey>3MVG95AcBeaB55lX.v7LGIE3EZCFgNFThsbbk2v77O6zXd2klRdp7b8n4ESrIFmukQAXSuM8EH_DdzhUV5JXd</consumerKey>
         <scopes>Basic</scopes>
         <scopes>Api</scopes>
     </oauthConfig>

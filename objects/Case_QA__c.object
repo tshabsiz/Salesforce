@@ -46,7 +46,6 @@
     <description>RN - CloudSmiths - QA record saved by an agent against a specific case. VF page renders QA questions dynamically from the case QA template record for a specific business area. Updates are saved as metadata to this record and rendered by a VF page</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>true</enableReports>

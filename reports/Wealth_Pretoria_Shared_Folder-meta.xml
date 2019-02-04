@@ -6,7 +6,12 @@
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
-        <accessLevel>View</accessLevel>
+        <accessLevel>EditAllContents</accessLevel>
+        <sharedTo>nqubeko.mthembu@barclaysafrica.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>EditAllContents</accessLevel>
         <sharedTo>phutijosephina.tsela@absa1.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>

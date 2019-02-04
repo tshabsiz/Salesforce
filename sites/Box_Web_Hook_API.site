@@ -26,6 +26,6 @@
     <siteAdmin>karin.bonthuys@barclays.com</siteAdmin>
     <siteTemplate>SiteTemplate</siteTemplate>
     <siteType>Visualforce</siteType>
-    <subdomain>barclaysafricasites</subdomain>
+    <subdomain>absa1</subdomain>
     <urlPathPrefix>api</urlPathPrefix>
 </CustomSite>

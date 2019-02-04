@@ -1222,9 +1222,6 @@
         <field>Account.Turn_Over_Proxy__c.CONVERT</field>
     </columns>
     <columns>
-        <field>Account.UK_Barclays_Org_ID__c</field>
-    </columns>
-    <columns>
         <field>Account.User_Code__c</field>
     </columns>
     <currency>ZAR</currency>
@@ -1239,7 +1236,7 @@
             <column>ALIAS</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>mariab,faikac,mmantsam,patronem,ntebalem,ceciliam</value>
+            <value>mariab,faikac,patronem,ntebalem,ceciliam,leratomm,lutticim</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

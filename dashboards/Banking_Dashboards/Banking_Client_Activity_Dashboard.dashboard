@@ -116,6 +116,7 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>BarGrouped</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>

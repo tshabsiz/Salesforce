@@ -16,6 +16,7 @@
                     <column>Case.Number_of_Requests__c</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Integer</displayUnits>
                 <drillEnabled>true</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -29,7 +30,7 @@
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
                 <sortBy>RowValueDescending</sortBy>
-                <title>Cases Created by Origin</title>
+                <title>Cases Created by Origin YTD</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -47,6 +48,7 @@
                     <column>Case.Number_of_Requests__c</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Integer</displayUnits>
                 <drillEnabled>true</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -60,7 +62,7 @@
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
-                <title>Overall SLA Performance</title>
+                <title>Overall SLA Performance This Month</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -78,6 +80,7 @@
                     <column>Case.Number_of_Requests__c</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -91,7 +94,7 @@
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
                 <sortBy>RowLabelDescending</sortBy>
-                <title>Case Volumes per Business Unit</title>
+                <title>Case Volumes per Bus Unit This Month</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -101,14 +104,21 @@
             <colSpan>3</colSpan>
             <columnIndex>0</columnIndex>
             <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>Case.Number_of_Requests__c</column>
+                </chartSummary>
                 <componentType>Bar</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>true</enableHover>
                 <expandOthers>false</expandOthers>
+                <groupingColumn>Case.Service_Type__c</groupingColumn>
                 <header>Top 20 Service Types - DIVERSIFIED CORP NATIONAL</header>
                 <legendPosition>Bottom</legendPosition>
                 <maxValuesDisplayed>20</maxValuesDisplayed>
@@ -117,7 +127,7 @@
                 <showPicturesOnCharts>false</showPicturesOnCharts>
                 <showValues>true</showValues>
                 <sortBy>RowValueDescending</sortBy>
-                <title>Top 20 Service Types requested</title>
+                <title>This Month</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>4</rowIndex>
@@ -135,6 +145,7 @@
                     <column>Case.Number_of_Requests__c</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Integer</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -148,6 +159,7 @@
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
+                <title>Overall SLA Performance This Month</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>4</rowIndex>
@@ -229,6 +241,7 @@
                     <column>Case.Number_of_Requests__c</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Integer</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -242,6 +255,7 @@
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
                 <sortBy>RowValueDescending</sortBy>
+                <title>Overall SLA Performance This Month</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>8</rowIndex>
@@ -321,6 +335,7 @@
                     <column>Case.Number_of_Requests__c</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -334,6 +349,7 @@
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
+                <title>Overall SLA Performance This Month</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>12</rowIndex>
@@ -371,29 +387,30 @@
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>3</colSpan>
-            <columnIndex>3</columnIndex>
+            <columnIndex>0</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
                 <chartSummary>
-                    <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Case.Number_of_Requests__c</column>
+                    <column>RowCount</column>
                 </chartSummary>
-                <componentType>Donut</componentType>
+                <componentType>BarGrouped</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
-                <enableHover>true</enableHover>
-                <expandOthers>true</expandOthers>
-                <groupingColumn>Case.SLA_Status__c</groupingColumn>
-                <header>DIVERSIFIED CORP - LESEGO BANGANE Portfolio SLA</header>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>Case.Resolving_Team__c</groupingColumn>
+                <groupingColumn>ACCOUNT.NAME</groupingColumn>
+                <header>CORP NATIONAL - Complaints Volume</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>WCSC_CORP_Reg_Reports/DIV_CORP_Reg_CSC_Cases_SLA_perBUTHOZMAVU1</report>
-                <showPercentage>true</showPercentage>
-                <showTotal>true</showTotal>
+                <report>Complaints_Reports/CSS_Complaints_Resolving_Area_By_Client</report>
+                <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
-                <sortBy>RowLabelAscending</sortBy>
+                <sortBy>RowValueDescending</sortBy>
+                <title>YTD</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>16</rowIndex>
@@ -411,6 +428,39 @@
                     <column>Case.Number_of_Requests__c</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>true</enableHover>
+                <expandOthers>true</expandOthers>
+                <groupingColumn>Case.SLA_Status__c</groupingColumn>
+                <header>DIVERSIFIED CORP - LESEGO BANGANE Portfolio SLA</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>WCSC_CORP_Reg_Reports/DIV_CORP_Reg_CSC_Cases_SLA_perBUTHOZMAVU1</report>
+                <showPercentage>true</showPercentage>
+                <showTotal>true</showTotal>
+                <showValues>true</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <title>Overall SLA Performance This Month</title>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>16</rowIndex>
+            <rowSpan>4</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>3</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>Case.Number_of_Requests__c</column>
+                </chartSummary>
+                <componentType>Donut</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -424,6 +474,7 @@
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
+                <title>Overall SLA Performance This Month</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>20</rowIndex>
@@ -441,6 +492,7 @@
                     <column>Case.Number_of_Requests__c</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -454,6 +506,7 @@
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
+                <title>Overall SLA Performance This Month</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>24</rowIndex>
@@ -471,6 +524,7 @@
                     <column>Case.Number_of_Requests__c</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -484,6 +538,7 @@
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
+                <title>Overall SLA Performance This Month</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>28</rowIndex>
@@ -501,6 +556,7 @@
                     <column>Case.Number_of_Requests__c</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -514,6 +570,7 @@
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
+                <title>Overall SLA Performance This Month</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>32</rowIndex>
@@ -531,6 +588,7 @@
                     <column>Case.Number_of_Requests__c</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -544,6 +602,7 @@
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
+                <title>Overall SLA Performance This Month</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>36</rowIndex>
@@ -561,6 +620,7 @@
                     <column>Case.Number_of_Requests__c</column>
                 </chartSummary>
                 <componentType>Donut</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -574,6 +634,7 @@
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
+                <title>Overall SLA Performance This Month</title>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>40</rowIndex>

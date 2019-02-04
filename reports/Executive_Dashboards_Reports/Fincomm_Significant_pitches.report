@@ -69,10 +69,6 @@
     <columns>
         <field>PRODUCT_NAME</field>
     </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>OpportunityLineItem.Income_this_Year__c</field>
-    </columns>
     <currency>ZAR</currency>
     <filter>
         <criteriaItems>
@@ -80,6 +76,12 @@
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Hub_F__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>coverage south</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -112,10 +114,8 @@
     <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>false</showSubTotals>
-    <sortColumn>OpportunityLineItem.Income_this_Year__c</sortColumn>
-    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATE</dateColumn>
-        <interval>INTERVAL_CURFY</interval>
+        <interval>INTERVAL_PREVFY</interval>
     </timeFrameFilter>
 </Report>
