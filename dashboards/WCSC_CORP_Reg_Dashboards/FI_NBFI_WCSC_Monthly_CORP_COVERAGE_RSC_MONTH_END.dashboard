@@ -49,7 +49,7 @@
             <showPicturesOnCharts>false</showPicturesOnCharts>
             <showValues>true</showValues>
             <sortBy>RowValueDescending</sortBy>
-            <title>This Month</title>
+            <title>Top 20 Service Types requested</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -109,21 +109,20 @@
                 <axisBinding>y</axisBinding>
                 <column>RowCount</column>
             </chartSummary>
-            <componentType>BarGrouped</componentType>
+            <componentType>Donut</componentType>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
-            <expandOthers>false</expandOthers>
-            <groupingColumn>ACCOUNT.NAME</groupingColumn>
+            <expandOthers>true</expandOthers>
             <groupingColumn>Case.Resolving_Team__c</groupingColumn>
-            <header>CORP NATIONAL - Complaints Volume</header>
+            <header>RSC CORP NATIONAL - Complaints Volume</header>
             <legendPosition>Bottom</legendPosition>
-            <report>Complaints_Reports/CSS_Complaints_Resolving_Area_By_Client</report>
-            <showPercentage>false</showPercentage>
+            <report>WCSC_CORP_Reg_Reports/RSC_CORP_Complaints_Resolving_Area</report>
+            <showPercentage>true</showPercentage>
+            <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowValueDescending</sortBy>
-            <title>YTD</title>
             <useReportChart>false</useReportChart>
         </components>
     </leftSection>
@@ -151,7 +150,7 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Overall SLA Performance This Month</title>
+            <title>Overall SLA Performance</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -176,7 +175,6 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Overall SLA Performance This Month</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -201,7 +199,6 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowValueDescending</sortBy>
-            <title>Overall SLA Performance This Month</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -226,7 +223,6 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Overall SLA Performance This Month</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -251,7 +247,6 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Overall SLA Performance This Month</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -276,7 +271,6 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Overall SLA Performance This Month</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -301,7 +295,6 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Overall SLA Performance This Month</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -326,7 +319,6 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Overall SLA Performance This Month</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -351,7 +343,6 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Overall SLA Performance This Month</title>
             <useReportChart>false</useReportChart>
         </components>
     </middleSection>
@@ -378,7 +369,7 @@
             <showPercentage>true</showPercentage>
             <showValues>true</showValues>
             <sortBy>RowValueDescending</sortBy>
-            <title>Case Volumes per Bus Unit This Month</title>
+            <title>Case Volumes per Business Unit</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -396,14 +387,13 @@
             <enableHover>true</enableHover>
             <expandOthers>true</expandOthers>
             <groupingColumn>BucketField_22853114</groupingColumn>
-            <header>Case Volumes Split FI vs NBFI</header>
             <legendPosition>Bottom</legendPosition>
             <report>WCSC_CORP_Reg_Reports/FI_NBFI_CORP_Reg_RSC_Vol_SPLIT</report>
             <showPercentage>true</showPercentage>
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>This Month</title>
+            <title>Case Volumes Split FI vs NBFI</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>

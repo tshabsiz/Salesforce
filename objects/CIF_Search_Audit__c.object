@@ -46,7 +46,6 @@
     <description>RN - CloudSmiths - Object that holds the details of every CIF search done by CSC agents from Cases</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>false</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>true</enableReports>

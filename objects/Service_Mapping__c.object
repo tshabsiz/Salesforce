@@ -46,7 +46,6 @@
     <description>Object to Capture Service Process and Resulting Service Category, Sub-Category and Type Applicable Information to Render on Cases Page</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableReports>true</enableReports>
@@ -515,16 +514,6 @@ The date when this service mapping with SLA is effective from</description>
                     <default>false</default>
                     <label>Cash Send</label>
                 </value>
-                <value>
-                    <fullName>Refresh</fullName>
-                    <default>false</default>
-                    <label>Refresh</label>
-                </value>
-                <value>
-                    <fullName>COB Client Mandates</fullName>
-                    <default>false</default>
-                    <label>COB Client Mandates</label>
-                </value>
             </valueSetDefinition>
             <valueSettings>
                 <controllingFieldValue>Cash Operations</controllingFieldValue>
@@ -598,20 +587,13 @@ The date when this service mapping with SLA is effective from</description>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Cash Send</controllingFieldValue>
+                <controllingFieldValue>Group Procurement</controllingFieldValue>
                 <valueName>Cash Send</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Investigations</controllingFieldValue>
                 <controllingFieldValue>ITC</controllingFieldValue>
                 <valueName>Payments Operations</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Refresh</controllingFieldValue>
-                <valueName>Refresh</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>COB Client Mandates</controllingFieldValue>
-                <valueName>COB Client Mandates</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>TRI</controllingFieldValue>
@@ -1059,17 +1041,13 @@ Comma separate multiple values:  e.g. Closed Duplicate,Awaiting Feedback - Clien
                 <valueName>Eleanor Snyders</valueName>
             </valueSettings>
             <valueSettings>
-                <controllingFieldValue>Refresh</controllingFieldValue>
-                <valueName>Anisa Salejee</valueName>
+                <controllingFieldValue>Group Procurement</controllingFieldValue>
+                <valueName>Govindsamy Rowan</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>ITC</controllingFieldValue>
                 <controllingFieldValue>Complaints</controllingFieldValue>
                 <valueName>Noni Ngobeni</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>COB Client Mandates</controllingFieldValue>
-                <valueName>Cynthia Myburgh</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>TRI</controllingFieldValue>
@@ -1333,11 +1311,6 @@ Email Template API name - utilized in the Case trigger</description>
         <columns>Queue__c</columns>
         <columns>Business_Hours__c</columns>
         <filterScope>Everything</filterScope>
-        <filters>
-            <field>Queue__c</field>
-            <operation>equals</operation>
-            <value>Complaints Client</value>
-        </filters>
         <label>Business Hrs View</label>
     </listViews>
     <listViews>
@@ -1353,7 +1326,7 @@ Email Template API name - utilized in the Case trigger</description>
         <filters>
             <field>Queue__c</field>
             <operation>equals</operation>
-            <value>DOS Pocketflow</value>
+            <value>LP Mandate Requests</value>
         </filters>
         <label>Email Template View</label>
     </listViews>
@@ -1369,13 +1342,11 @@ Email Template API name - utilized in the Case trigger</description>
         <columns>Service_Sub_Category__c</columns>
         <columns>Support_Email_Address__c</columns>
         <columns>Response_From_Email_Address__c</columns>
-        <columns>Effective_Date__c</columns>
-        <columns>Business_Hours__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
-            <field>Queue__c</field>
+            <field>Support_Email_Address__c</field>
             <operation>equals</operation>
-            <value>DOS Pocketflow</value>
+            <value>cashfocus@absa.co.za</value>
         </filters>
         <label>SLA View</label>
     </listViews>
@@ -1391,7 +1362,7 @@ Email Template API name - utilized in the Case trigger</description>
         <filters>
             <field>Queue__c</field>
             <operation>equals</operation>
-            <value>RSC Corp PTA PS 1</value>
+            <value>EBSS - CSC Documentation</value>
         </filters>
         <label>Team Managers</label>
     </listViews>

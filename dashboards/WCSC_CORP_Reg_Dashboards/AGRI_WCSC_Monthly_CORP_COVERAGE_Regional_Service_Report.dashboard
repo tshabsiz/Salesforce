@@ -30,7 +30,7 @@
             <showPicturesOnCharts>false</showPicturesOnCharts>
             <showValues>true</showValues>
             <sortBy>RowValueDescending</sortBy>
-            <title>Jaco Jobert/Arrie Booyse - AGRI Month</title>
+            <title>Jaco Jobert / Arrie Booyse - AGRI</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -56,7 +56,7 @@
             <showPicturesOnCharts>false</showPicturesOnCharts>
             <showValues>true</showValues>
             <sortBy>RowValueDescending</sortBy>
-            <title>Jaco Jobert/Hendrik van der linde-AGRI M</title>
+            <title>Jaco Jobert / Hendrik van der linde-AGRI</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -82,7 +82,7 @@
             <showPicturesOnCharts>false</showPicturesOnCharts>
             <showValues>true</showValues>
             <sortBy>RowValueDescending</sortBy>
-            <title>Aletta Claasen - AGRI Month</title>
+            <title>Aletta Claasen - AGRI</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -160,7 +160,6 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowValueDescending</sortBy>
-            <title>This Month</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -185,7 +184,6 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>This Month</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -204,7 +202,6 @@
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>This Month</title>
             <useReportChart>false</useReportChart>
         </components>
     </middleSection>

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- System feids --></label>
+        <name>System_feids</name>
+    </fieldSets>
     <fields>
         <label><!-- AUM Size of Business --></label>
         <name>AUM_Size_of_Business__c</name>
@@ -1818,10 +1822,6 @@
     <fields>
         <label><!-- Original Salesforce ID --></label>
         <name>OriginalSalesforceID__c</name>
-    </fields>
-    <fields>
-        <label><!-- Owner Country --></label>
-        <name>Owner_Country__c</name>
     </fields>
     <fields>
         <label><!-- Parent Team --></label>

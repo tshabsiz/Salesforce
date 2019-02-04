@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <apex:stylesheet value="{!URLFOR($Resource.Mobile_Design_Templates,
       'Mobile-Design-Templates-master/common/css/app.min.css')}"/>
-    <apex:stylesheet value="{!URLFOR($Resource.jquery_ui_1_12_1,
+    <apex:stylesheet value="{!URLFOR($Resource.jquery_ui_1_11_1_custom_has_dialog,
       'jquery-ui.min.css')}"/>
     <apex:stylesheet value="{!URLFOR($Resource.pi__icon_utility, 'oneIcon/style.css')}"/>
     <apex:stylesheet value="{!URLFOR($Resource.pi__ProximaNovaSoft, 'proxima-nova-soft-fonts.css')}"/>
@@ -435,9 +435,9 @@
     <footer id="exit_buttons" class="button-bar"><a href="http://www.pardot.com/faqs/salesforce-engage/engage-for-salesforce1/" class="help-link btn"><i class="fa fa-question-circle"></i>&nbsp;Help</a><a id="save_filter" href="#" class="save btn">Save</a><a href="#" class="cancel btn">Cancel</a></footer>
   </form>
 </div>
-    <apex:includeScript value="{!URLFOR($Resource.pi__MarketingActions, 'js/jquery-3.3.1.min.js')}"/>
-    <apex:includeScript value="{!URLFOR($Resource.pi__jquery_ui_1_12_1, 'jquery-ui.min.js')}"/>
-
+    <apex:includeScript value="{!URLFOR($Resource.pi__MarketingActions, 'js/jquery-2.1.1.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.jquery_ui_1_11_1_custom_has_dialog,
+      'jquery-ui.min.js')}"/>
       <script type="text/javascript">
         window.CreateFilterControllerLocation = '{!$RemoteAction.FilterController.createFilter1}';
         window.EditFilterControllerLocation = '{!$RemoteAction.FilterController.updateFilter}';

@@ -12,10 +12,12 @@ trigger UserTrigger on User (before insert, after insert, before update, after u
     // after update
     if(trigger.isAfter && trigger.isUpdate){
 		UserTrigger_Helper.updateOpportunityAndCallReportRelationshipOwnerRole(Trigger.new, Trigger.oldMap);
-    }
+     
+    }//
 
     // before update
     if(trigger.isBefore && trigger.isUpdate){
-		
+      
+	 	UserTrigger_Helper.UpdateProfilePicture(Trigger.new, Trigger.old);
     }
 }

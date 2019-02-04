@@ -7,9 +7,6 @@
         <field>OWNER</field>
     </columns>
     <columns>
-        <field>ACCOUNT.NAME</field>
-    </columns>
-    <columns>
         <field>SUBJECT</field>
     </columns>
     <columns>
@@ -86,7 +83,7 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Case.SLA_Status__c</field>
+        <field>ACCOUNT.NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
@@ -110,6 +107,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_PREVCUR2Y</interval>
+        <interval>INTERVAL_CURFY</interval>
     </timeFrameFilter>
 </Report>

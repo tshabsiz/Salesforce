@@ -30,6 +30,18 @@
             <operator>equals</operator>
             <value>0</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Case.Internal_Support_Case</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OPEN</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -60,6 +72,6 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_THISMONTH</interval>
+        <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

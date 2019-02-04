@@ -45,7 +45,6 @@
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>true</enableReports>
@@ -63,23 +62,6 @@
   )
 )</formula>
         <label>Attendee Email</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Attendee_Mobile__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF(NOT(ISBLANK(Barclays_Attendee__c)), 
-&apos;&apos;, 
-IF(NOT(ISBLANK(Client_Attendee__c)), 
- Client_Attendee__r.MobilePhone , 
-&apos;&apos;
-)
-)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Attendee Mobile</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>

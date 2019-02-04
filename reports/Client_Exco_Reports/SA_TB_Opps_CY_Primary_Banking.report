@@ -7,9 +7,6 @@
         <field>OpportunityLineItem.Primary_Banking_Target__c</field>
     </columns>
     <columns>
-        <field>Opportunity.Product_Code_Won_Opportunity__c</field>
-    </columns>
-    <columns>
         <field>FULL_NAME</field>
     </columns>
     <columns>
@@ -103,6 +100,9 @@
     </columns>
     <columns>
         <field>Opportunity.No_of_days_past_close_date__c</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_CUSTOMER_ID</field>
     </columns>
     <columns>
         <field>ACCOUNT_OWNER_ALIAS</field>

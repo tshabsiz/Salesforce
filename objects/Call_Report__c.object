@@ -58,7 +58,6 @@
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableReports>true</enableReports>
@@ -3521,26 +3520,6 @@
             <value>Call_Report__c.Research_Call_Report</value>
         </filters>
         <label>Research Team&apos;s Call Reports</label>
-    </listViews>
-    <listViews>
-        <fullName>WEF_List</fullName>
-        <columns>NAME</columns>
-        <columns>Relationship__c</columns>
-        <columns>Subject__c</columns>
-        <columns>Client_Plan__c</columns>
-        <columns>RECORDTYPE</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Subject__c</field>
-            <operation>startsWith</operation>
-            <value>WEF 2019</value>
-        </filters>
-        <filters>
-            <field>Meeting_Date__c</field>
-            <operation>greaterThan</operation>
-            <value>1/1/2019</value>
-        </filters>
-        <label>2019 WEF Call Reports List</label>
     </listViews>
     <listViews>
         <fullName>X7_All_Call_Reports_My_Team</fullName>

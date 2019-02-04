@@ -318,10 +318,6 @@
                 <behavior>Readonly</behavior>
                 <field>Parent_Banker_Team__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Owner_Country__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -433,6 +429,11 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
+            <actionName>Account.New_Client_Plan_2017</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>4</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>Edit</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>0</sortOrder>
@@ -451,11 +452,6 @@
             <actionName>Account.New_Private_Opportunity_2017</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>3</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>Account.New_Client_Plan_2017</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>4</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>ChangeOwnerOne</actionName>
@@ -525,7 +521,6 @@
         <fields>Job_Role__c</fields>
         <fields>ACCCONRELATION.ROLES</fields>
         <fields>ACCCONRELATION.IS_DIRECT</fields>
-        <fields>Inactive_Contact__c</fields>
         <relatedList>RelatedAccountContactRelationList</relatedList>
     </relatedLists>
     <relatedLists>
@@ -591,12 +586,6 @@
         <fields>CASES.STATUS</fields>
         <fields>OWNER_NAME</fields>
         <relatedList>RelatedCaseList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>Pricing_Template__c</fields>
-        <fields>Approval_Status__c</fields>
-        <relatedList>Annual_Pricing__c.Organisation__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>

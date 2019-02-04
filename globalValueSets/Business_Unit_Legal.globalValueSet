@@ -126,11 +126,6 @@
         <label>Absa Investment Management Services</label>
     </customValue>
     <customValue>
-        <fullName>Absa Life Limited</fullName>
-        <default>false</default>
-        <label>Absa Life Limited</label>
-    </customValue>
-    <customValue>
         <fullName>ABSA London Group Treasury</fullName>
         <default>false</default>
         <label>ABSA London Group Treasury</label>
@@ -1779,11 +1774,6 @@
         <fullName>Short Term Insurance</fullName>
         <default>false</default>
         <label>Short Term Insurance</label>
-    </customValue>
-    <customValue>
-        <fullName>Short Term Insurance - Liabilities</fullName>
-        <default>false</default>
-        <label>Short Term Insurance - Liabilities</label>
     </customValue>
     <customValue>
         <fullName>Small Business</fullName>

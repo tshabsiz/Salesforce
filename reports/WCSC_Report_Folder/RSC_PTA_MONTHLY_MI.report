@@ -4,10 +4,13 @@
         <field>OWNER</field>
     </columns>
     <columns>
-        <field>Case.SLA_RAG_Status__c</field>
+        <field>Case.ChargeAccountNo__c</field>
     </columns>
     <columns>
         <field>Case.ChargeAmount__c</field>
+    </columns>
+    <columns>
+        <field>Case.SLA_RAG_Status__c</field>
     </columns>
     <columns>
         <field>Case.Number_of_Requests__c</field>

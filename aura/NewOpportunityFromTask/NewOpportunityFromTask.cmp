@@ -13,8 +13,7 @@
     <aura:attribute name="lstOfRecordType" type="String[]" />
     <aura:attribute name="isOpen" type="boolean" default="false" />
     <aura:attribute name="whatId" type="Id" />
- 	<aura:attribute name="campaignId" type="Id" />
-    
+ 
     <!-- Modal Box Start -->    
     <aura:if isTrue="{!v.isOpen}">
         <div role="dialog" tabindex="-1" aria-labelledby="header43" class="slds-modal slds-fade-in-open">

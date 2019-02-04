@@ -122,9 +122,6 @@
     <columns>
         <field>ACCOUNT_NAME</field>
     </columns>
-    <columns>
-        <field>CREATED</field>
-    </columns>
     <currency>ZAR</currency>
     <filter>
         <criteriaItems>

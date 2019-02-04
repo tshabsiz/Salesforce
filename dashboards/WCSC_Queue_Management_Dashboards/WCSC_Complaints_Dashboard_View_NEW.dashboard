@@ -3,6 +3,40 @@
     <backgroundEndColor>#FFFFFF</backgroundEndColor>
     <backgroundFadeDirection>LeftToRight</backgroundFadeDirection>
     <backgroundStartColor>#FFFFFF</backgroundStartColor>
+    <dashboardFilters>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>TODAY</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>THIS_MONTH</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>LAST_MONTH</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>THIS_YEAR</values>
+        </dashboardFilterOptions>
+        <name>Opened Date</name>
+    </dashboardFilters>
+    <dashboardFilters>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Product On-Boarding,Trade Product</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Payments,Regulatory</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>Electronic Banking,Regional Service Centre</values>
+        </dashboardFilterOptions>
+        <name>Resolving Area</name>
+    </dashboardFilters>
     <dashboardType>SpecifiedUser</dashboardType>
     <isGridLayout>false</isGridLayout>
     <leftSection>
@@ -11,25 +45,36 @@
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
             <componentType>Donut</componentType>
+            <dashboardFilterColumns>
+                <column>CREATED_DATEONLY</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Case.Resolving_Area__c</column>
+            </dashboardFilterColumns>
             <displayUnits>Integer</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>true</expandOthers>
-            <header>Complaints Per Resolving Area 2019</header>
+            <header>Complaints Per Resolving Area</header>
             <legendPosition>Bottom</legendPosition>
             <report>Complaints_Reports/CSS_Complaints_Resolving_Area</report>
             <showPercentage>true</showPercentage>
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>2019</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
             <componentType>Column</componentType>
+            <dashboardFilterColumns>
+                <column>CREATED_DATEONLY</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Case.Resolving_Area__c</column>
+            </dashboardFilterColumns>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -41,7 +86,6 @@
             <showPercentage>false</showPercentage>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>2019</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -52,14 +96,20 @@
                 <column>RowCount</column>
             </chartSummary>
             <componentType>BarStacked</componentType>
+            <dashboardFilterColumns>
+                <column>CREATED_DATEONLY</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Case.Resolving_Area__c</column>
+            </dashboardFilterColumns>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>true</enableHover>
+            <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>Case.Complaint_Channel__c</groupingColumn>
             <groupingColumn>Case.Resolving_Area__c</groupingColumn>
-            <header>Top 10 Channels Per Resolving Area - 2019</header>
+            <header>Top 10 Channels Per Resolving Area</header>
             <legendPosition>Bottom</legendPosition>
             <maxValuesDisplayed>10</maxValuesDisplayed>
             <report>Complaints_Reports/CSS_Complaints_Per_Channel</report>
@@ -79,20 +129,25 @@
                 <column>RowCount</column>
             </chartSummary>
             <componentType>Donut</componentType>
+            <dashboardFilterColumns>
+                <column>CREATED_DATEONLY</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Case.Resolving_Area__c</column>
+            </dashboardFilterColumns>
             <displayUnits>Integer</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>true</expandOthers>
             <groupingColumn>Case.Resolving_Team__c</groupingColumn>
-            <header>Complaints Per Resolving Team 2019</header>
+            <header>Complaints Per Resolving Team</header>
             <legendPosition>Bottom</legendPosition>
             <report>Complaints_Reports/CSS_Complaints_Resolving_Area</report>
             <showPercentage>true</showPercentage>
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>2019</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -103,6 +158,12 @@
                 <column>RowCount</column>
             </chartSummary>
             <componentType>BarStacked</componentType>
+            <dashboardFilterColumns>
+                <column>CREATED_DATEONLY</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Case.Resolving_Area__c</column>
+            </dashboardFilterColumns>
             <displayUnits>Integer</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -110,13 +171,12 @@
             <expandOthers>false</expandOthers>
             <groupingColumn>Case.Root_Cause_Category__c</groupingColumn>
             <groupingColumn>Case.Resolving_Area__c</groupingColumn>
-            <header>Root Cause Category Per Resolving Area 2019</header>
+            <header>Root Cause Category Per Resolving Area</header>
             <legendPosition>Bottom</legendPosition>
             <report>Complaints_Reports/CSS_Complaints_Root_Cause</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowValueDescending</sortBy>
-            <title>2019</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -127,20 +187,25 @@
                 <column>RowCount</column>
             </chartSummary>
             <componentType>Donut</componentType>
+            <dashboardFilterColumns>
+                <column>CREATED_DATEONLY</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Case.Resolving_Area__c</column>
+            </dashboardFilterColumns>
             <displayUnits>Integer</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>true</expandOthers>
             <groupingColumn>Case.Complaint_Service_Type__c</groupingColumn>
-            <header>Complaint Service Type 2019</header>
+            <header>Complaint Service Type</header>
             <legendPosition>Bottom</legendPosition>
             <report>Complaints_Reports/CSS_Complaints_Root_Cause_Service_Type</report>
             <showPercentage>true</showPercentage>
             <showTotal>true</showTotal>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>2019</title>
             <useReportChart>false</useReportChart>
         </components>
     </middleSection>
@@ -153,11 +218,17 @@
                 <axisBinding>y</axisBinding>
                 <column>RowCount</column>
             </chartSummary>
-            <componentType>ColumnStacked</componentType>
+            <componentType>ColumnGrouped</componentType>
+            <dashboardFilterColumns>
+                <column>CREATED_DATEONLY</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Case.Resolving_Area__c</column>
+            </dashboardFilterColumns>
             <displayUnits>Integer</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>true</enableHover>
+            <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>Case.Resolving_Area__c</groupingColumn>
             <groupingColumn>Case.Resolving_Area__c</groupingColumn>
@@ -165,37 +236,9 @@
             <legendPosition>Bottom</legendPosition>
             <report>Complaints_Reports/CSS_Complaints_Aging1</report>
             <showPercentage>false</showPercentage>
-            <showValues>false</showValues>
+            <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
             <useReportChart>false</useReportChart>
-        </components>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <componentType>Table</componentType>
-            <dashboardTableColumn>
-                <column>Case.Resolving_Team__c</column>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>false</calculatePercent>
-                <column>Case.SLA_Status__c</column>
-                <showTotal>false</showTotal>
-            </dashboardTableColumn>
-            <dashboardTableColumn>
-                <calculatePercent>false</calculatePercent>
-                <column>RowCount</column>
-                <showTotal>true</showTotal>
-                <sortBy>RowValueDescending</sortBy>
-            </dashboardTableColumn>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <header>Open Complaints Data</header>
-            <indicatorHighColor>#54C254</indicatorHighColor>
-            <indicatorLowColor>#C25454</indicatorLowColor>
-            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <maxValuesDisplayed>99</maxValuesDisplayed>
-            <report>Complaints_Reports/CSS_Complaints_Aging_Data</report>
-            <showPicturesOnTables>true</showPicturesOnTables>
         </components>
         <components>
             <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
@@ -210,6 +253,12 @@
                 <column>OPEN</column>
             </chartSummary>
             <componentType>ColumnLineStacked</componentType>
+            <dashboardFilterColumns>
+                <column>CREATED_DATEONLY</column>
+            </dashboardFilterColumns>
+            <dashboardFilterColumns>
+                <column>Case.Resolving_Area__c</column>
+            </dashboardFilterColumns>
             <displayUnits>Integer</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -217,20 +266,19 @@
             <expandOthers>false</expandOthers>
             <groupingColumn>Case.Resolving_Area__c</groupingColumn>
             <groupingColumn>Case.Resolving_Team__c</groupingColumn>
-            <header>Complaints Per Resolving Area &amp; Team 2019</header>
+            <header>Complaints Per Resolving Area &amp; Team</header>
             <legendPosition>Bottom</legendPosition>
             <maxValuesDisplayed>10</maxValuesDisplayed>
             <report>Customer_Support/CSS_Complaints_Raw_Data</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowValueDescending</sortBy>
-            <title>2019</title>
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>
     <runningUser>daryn.britz@absa1.com</runningUser>
     <textColor>#000000</textColor>
-    <title>CSS WCSC Complaints Dashboard View 2019</title>
+    <title>WCSC Complaints Dashboard View NEW</title>
     <titleColor>#000000</titleColor>
     <titleSize>12</titleSize>
 </Dashboard>

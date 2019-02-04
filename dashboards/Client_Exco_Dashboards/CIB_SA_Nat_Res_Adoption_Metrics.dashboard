@@ -671,6 +671,7 @@
                     <column>RowCount</column>
                     <showTotal>true</showTotal>
                 </dashboardTableColumn>
+                <decimalPrecision>0</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>

@@ -21,6 +21,7 @@
     <tabs>agf__ADM_Theme__c</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
+    <tabs>agf__QA_Hierarchy__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>agf__Agile_Accelerator_UtilityBar</utilityBar>
 </CustomApplication>

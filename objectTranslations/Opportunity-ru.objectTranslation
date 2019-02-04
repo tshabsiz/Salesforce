@@ -310,10 +310,6 @@
         <name>Connected_to_RFP_Tender__c</name>
     </fields>
     <fields>
-        <label><!-- Contact Number --></label>
-        <name>Contact_Number__c</name>
-    </fields>
-    <fields>
         <label><!-- Country of Booking 1 --></label>
         <name>Country_of_Booking__c</name>
         <relationshipLabel><!-- Opportunities --></relationshipLabel>
@@ -322,22 +318,6 @@
         <label><!-- Country of Booking 2 --></label>
         <name>Country_of_booking_2__c</name>
         <relationshipLabel><!-- Opportunities (Country of booking 2) --></relationshipLabel>
-    </fields>
-    <fields>
-        <label><!-- Creator Business Area --></label>
-        <name>Creator_Business_Area__c</name>
-    </fields>
-    <fields>
-        <label><!-- Creator Country --></label>
-        <name>Creator_Country__c</name>
-    </fields>
-    <fields>
-        <label><!-- Creator Hub --></label>
-        <name>Creator_Hub__c</name>
-    </fields>
-    <fields>
-        <label><!-- Creator Team --></label>
-        <name>Creator_Team__c</name>
     </fields>
     <fields>
         <label><!-- Cross Sell Opportunity --></label>
@@ -434,10 +414,6 @@
     <fields>
         <label><!-- Loss/Win Description --></label>
         <name>Loss_Win_Description__c</name>
-    </fields>
-    <fields>
-        <label><!-- Mandate Won date --></label>
-        <name>Mandate_Won_date__c</name>
     </fields>
     <fields>
         <label><!-- Ongoing Fee (%) --></label>
@@ -798,10 +774,6 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Opportunity Owner Country --></label>
-        <name>Owner_Country__c</name>
-    </fields>
-    <fields>
         <label><!-- Owner Hub --></label>
         <name>Owner_Hub__c</name>
     </fields>
@@ -879,10 +851,6 @@
     <fields>
         <label><!-- Private Side --></label>
         <name>Private_Side__c</name>
-    </fields>
-    <fields>
-        <label><!-- ProductCount --></label>
-        <name>ProductCount__c</name>
     </fields>
     <fields>
         <help><!-- A concatenation of all Product Level 2 names related to an opportunity --></help>
@@ -969,7 +937,7 @@
         <relationshipLabel><!-- Opportunities (Product Partner) --></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- Product Code (TB) --></label>
+        <label><!-- Product Code --></label>
         <name>Product_Code_Won_Opportunity__c</name>
     </fields>
     <fields>
@@ -1628,26 +1596,6 @@
         <name>Total_RoRWA__c</name>
     </fields>
     <fields>
-        <label><!-- Transaction Type --></label>
-        <name>Transaction_Type__c</name>
-        <picklistValues>
-            <masterLabel>Buy-side</masterLabel>
-            <translation><!-- Buy-side --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>DCM</masterLabel>
-            <translation><!-- DCM --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>IPO</masterLabel>
-            <translation><!-- IPO --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Sell-side</masterLabel>
-            <translation><!-- Sell-side --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
         <label><!-- UK Barclays Opp ID --></label>
         <name>UK_Barclays_Opp_ID__c</name>
     </fields>
@@ -1721,7 +1669,7 @@
         <name>Asset_Hub_1_Perc_Must_have_value</name>
     </validationRules>
     <validationRules>
-        <errorMessage><!-- Please select an option for notifying ABSA Insurance --></errorMessage>
+        <errorMessage><!-- Please select a value for notifying ABSA insurance. --></errorMessage>
         <name>CPF_Alert_Selection</name>
     </validationRules>
     <validationRules>
@@ -1740,10 +1688,6 @@ Please contact SF Support for assistance. --></errorMessage>
     <validationRules>
         <errorMessage><!-- This opportunity is pending a Product Partner acknowledgement and can not be Closed Won --></errorMessage>
         <name>Closing_Opportunity_Pending_Approval</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- This opportunity cannot be closed without adding the Related Group Client and the Related Group Client CIF. --></errorMessage>
-        <name>Closing_opportunity_Related_Group_CIF</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- Please enter a referrer name for referred opportunities --></errorMessage>
@@ -1884,13 +1828,5 @@ Please contact SF Support for assistance. --></errorMessage>
     <webLinks>
         <label><!-- Verify_with_DNB --></label>
         <name>dsfs__Verify_with_DNB</name>
-    </webLinks>
-    <webLinks>
-        <label><!-- Send_Pardot_Emails --></label>
-        <name>pi__Send_Pardot_Emails</name>
-    </webLinks>
-    <webLinks>
-        <label><!-- Send_Single_Pardot_Email --></label>
-        <name>pi__Send_Single_Pardot_Email</name>
     </webLinks>
 </CustomObjectTranslation>

@@ -41,11 +41,6 @@
         <label>Account Closure</label>
     </customValue>
     <customValue>
-        <fullName>Account Closure External</fullName>
-        <default>false</default>
-        <label>Account Closure External</label>
-    </customValue>
-    <customValue>
         <fullName>Account closures Vostro/Nostro/CFC/GPP</fullName>
         <default>false</default>
         <label>Account closures Vostro/Nostro/CFC/GPP</label>
@@ -61,6 +56,11 @@
         <label>Account Holder Verification</label>
     </customValue>
     <customValue>
+        <fullName>Account Issue</fullName>
+        <default>false</default>
+        <label>Account Issue</label>
+    </customValue>
+    <customValue>
         <fullName>Account Key Creations</fullName>
         <default>false</default>
         <label>Account Key Creations</label>
@@ -69,21 +69,6 @@
         <fullName>Account Level Billing</fullName>
         <default>false</default>
         <label>Account Level Billing</label>
-    </customValue>
-    <customValue>
-        <fullName>Account_Limit</fullName>
-        <default>false</default>
-        <label>Account Limit</label>
-    </customValue>
-    <customValue>
-        <fullName>Account_Maintenance</fullName>
-        <default>false</default>
-        <label>Account Maintenance</label>
-    </customValue>
-    <customValue>
-        <fullName>Add 3rd Party Account</fullName>
-        <default>false</default>
-        <label>Account Maintenance 3rd Party</label>
     </customValue>
     <customValue>
         <fullName>Account Not DR/CR</fullName>
@@ -101,6 +86,11 @@
         <label>Activation</label>
     </customValue>
     <customValue>
+        <fullName>Add/Amend/Delete Account on Profile</fullName>
+        <default>false</default>
+        <label>Add/Amend/Delete Account on Profile</label>
+    </customValue>
+    <customValue>
         <fullName>Add/Delete Abbreviated Name</fullName>
         <default>false</default>
         <label>Add/Delete Abbreviated Name</label>
@@ -109,6 +99,16 @@
         <fullName>Add/Delete User</fullName>
         <default>false</default>
         <label>Add/Delete User</label>
+    </customValue>
+    <customValue>
+        <fullName>Add 3rd Party Account</fullName>
+        <default>false</default>
+        <label>Add 3rd Party Account</label>
+    </customValue>
+    <customValue>
+        <fullName>Add Account to C2B</fullName>
+        <default>false</default>
+        <label>Add Account to C2B</label>
     </customValue>
     <customValue>
         <fullName>Add BII Account on Imex</fullName>
@@ -121,9 +121,34 @@
         <label>Add Entity</label>
     </customValue>
     <customValue>
+        <fullName>Add Limit</fullName>
+        <default>false</default>
+        <label>Add Limit</label>
+    </customValue>
+    <customValue>
         <fullName>Add Module</fullName>
         <default>false</default>
         <label>Add Module</label>
+    </customValue>
+    <customValue>
+        <fullName>Add Operator</fullName>
+        <default>false</default>
+        <label>Add Operator</label>
+    </customValue>
+    <customValue>
+        <fullName>Add System Manager</fullName>
+        <default>false</default>
+        <label>Add System Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Add User</fullName>
+        <default>false</default>
+        <label>Add User</label>
+    </customValue>
+    <customValue>
+        <fullName>Add Validation Rule</fullName>
+        <default>false</default>
+        <label>Add Validation Rule</label>
     </customValue>
     <customValue>
         <fullName>Adjustment/Corrections</fullName>
@@ -141,6 +166,11 @@
         <label>Advice to the Beneficiaries</label>
     </customValue>
     <customValue>
+        <fullName>Advise Client of Rejected Payment</fullName>
+        <default>false</default>
+        <label>Advise Client of Rejected Payment</label>
+    </customValue>
+    <customValue>
         <fullName>Airtime recharge</fullName>
         <default>false</default>
         <label>Airtime recharge</label>
@@ -154,6 +184,11 @@
         <fullName>Amemdment instrictions not adhered</fullName>
         <default>false</default>
         <label>Amemdment instrictions not adhered</label>
+    </customValue>
+    <customValue>
+        <fullName>Amend AMS Guarantee</fullName>
+        <default>false</default>
+        <label>Amend AMS Guarantee</label>
     </customValue>
     <customValue>
         <fullName>Amend Client Detail</fullName>
@@ -181,6 +216,11 @@
         <label>Amendments</label>
     </customValue>
     <customValue>
+        <fullName>Amendment to Profile</fullName>
+        <default>false</default>
+        <label>Amendment to Profile</label>
+    </customValue>
+    <customValue>
         <fullName>Amend Module</fullName>
         <default>false</default>
         <label>Amend Module</label>
@@ -201,9 +241,19 @@
         <label>Amend Rule Complex</label>
     </customValue>
     <customValue>
+        <fullName>Amend Statement Delivery to MT940</fullName>
+        <default>false</default>
+        <label>Amend Statement Delivery to MT940</label>
+    </customValue>
+    <customValue>
         <fullName>Amend System Manager</fullName>
         <default>false</default>
         <label>Amend System Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>AMS 72B Account</fullName>
+        <default>false</default>
+        <label>AMS 72B Account</label>
     </customValue>
     <customValue>
         <fullName>Annual Reviews</fullName>
@@ -224,6 +274,11 @@
         <fullName>Archive Statement</fullName>
         <default>false</default>
         <label>Archive Statement</label>
+    </customValue>
+    <customValue>
+        <fullName>Assignment of Proceeds</fullName>
+        <default>false</default>
+        <label>Assignment of Proceeds</label>
     </customValue>
     <customValue>
         <fullName>Assistance to TRM</fullName>
@@ -271,6 +326,11 @@
         <label>Available Funds Enquiry</label>
     </customValue>
     <customValue>
+        <fullName>Avalisation Bills</fullName>
+        <default>false</default>
+        <label>Avalisation Bills</label>
+    </customValue>
+    <customValue>
         <fullName>Back Valuations</fullName>
         <default>false</default>
         <label>Back Valuations</label>
@@ -309,11 +369,6 @@
         <fullName>Beneficiary Claims Non Receipt</fullName>
         <default>false</default>
         <label>Beneficiary Claims Non Receipt</label>
-    </customValue>
-    <customValue>
-        <fullName>Billing/Pricing</fullName>
-        <default>false</default>
-        <label>Billing/Pricing</label>
     </customValue>
     <customValue>
         <fullName>Billing Activation</fullName>
@@ -361,14 +416,14 @@
         <label>BOP Correction</label>
     </customValue>
     <customValue>
-        <fullName>General Branch Code Enquiry</fullName>
-        <default>false</default>
-        <label>Branch Code</label>
-    </customValue>
-    <customValue>
         <fullName>Branch Related Issues</fullName>
         <default>false</default>
         <label>Branch Related Issues</label>
+    </customValue>
+    <customValue>
+        <fullName>Broker Code Loading/Amendments</fullName>
+        <default>false</default>
+        <label>Broker Code Loading/Amendments</label>
     </customValue>
     <customValue>
         <fullName>Bussines Savings</fullName>
@@ -379,6 +434,11 @@
         <fullName>Buy Back</fullName>
         <default>false</default>
         <label>Buy Back</label>
+    </customValue>
+    <customValue>
+        <fullName>C2B Journal Refund</fullName>
+        <default>false</default>
+        <label>C2B Journal Refund</label>
     </customValue>
     <customValue>
         <fullName>CAF Amortization Schedule</fullName>
@@ -426,11 +486,6 @@
         <label>Capture Pricing Simple</label>
     </customValue>
     <customValue>
-        <fullName>Card Related</fullName>
-        <default>false</default>
-        <label>Card Related</label>
-    </customValue>
-    <customValue>
         <fullName>CASA Related Issues</fullName>
         <default>false</default>
         <label>CASA Related Issues</label>
@@ -461,6 +516,11 @@
         <label>Cash send</label>
     </customValue>
     <customValue>
+        <fullName>CCP (D/O Dispute)</fullName>
+        <default>false</default>
+        <label>CCP (D/O Dispute)</label>
+    </customValue>
+    <customValue>
         <fullName>Cession and Delegation</fullName>
         <default>false</default>
         <label>Cession and Delegation</label>
@@ -479,6 +539,11 @@
         <fullName>Change Collection Site</fullName>
         <default>false</default>
         <label>Change Collection Site</label>
+    </customValue>
+    <customValue>
+        <fullName>Change Service Type Request</fullName>
+        <default>false</default>
+        <label>Change Service Type Request</label>
     </customValue>
     <customValue>
         <fullName>Change Statement Detail</fullName>
@@ -521,14 +586,19 @@
         <label>Cheque Wrongly Encoded</label>
     </customValue>
     <customValue>
-        <fullName>CIF_Maintenance</fullName>
+        <fullName>CIF Changes</fullName>
         <default>false</default>
-        <label>CIF Maintenance</label>
+        <label>CIF Changes</label>
     </customValue>
     <customValue>
         <fullName>Claims / Disbursement handling</fullName>
         <default>false</default>
         <label>Claims / Disbursement handling</label>
+    </customValue>
+    <customValue>
+        <fullName>Client</fullName>
+        <default>false</default>
+        <label>Diamond Client Visit</label>
     </customValue>
     <customValue>
         <fullName>Client/Bank Not Fica Compliant</fullName>
@@ -539,6 +609,11 @@
         <fullName>Client Credit Enquiry (TRI/TRO)</fullName>
         <default>false</default>
         <label>Client Credit Enquiry (TRI/TRO)</label>
+    </customValue>
+    <customValue>
+        <fullName>Client Enhancement</fullName>
+        <default>false</default>
+        <label>Client Enhancement</label>
     </customValue>
     <customValue>
         <fullName>Client Movement</fullName>
@@ -561,6 +636,11 @@
         <label>Client Settlement/Credit Limit</label>
     </customValue>
     <customValue>
+        <fullName>Client System Issue</fullName>
+        <default>false</default>
+        <label>Client System Issue</label>
+    </customValue>
+    <customValue>
         <fullName>Client Utilization Check</fullName>
         <default>false</default>
         <label>Client Utilization Check</label>
@@ -576,9 +656,14 @@
         <label>CMS Change</label>
     </customValue>
     <customValue>
-        <fullName>Collection Schedule</fullName>
+        <fullName>Collections - ABSA</fullName>
         <default>false</default>
-        <label>Collection Schedule</label>
+        <label>Collections - ABSA</label>
+    </customValue>
+    <customValue>
+        <fullName>Collections - Non-ABSA</fullName>
+        <default>false</default>
+        <label>Collections - Non-ABSA</label>
     </customValue>
     <customValue>
         <fullName>Commission Invoicing</fullName>
@@ -604,11 +689,6 @@
         <fullName>Confirm Transaction details</fullName>
         <default>false</default>
         <label>Confirm Transaction details</label>
-    </customValue>
-    <customValue>
-        <fullName>Copy Documents</fullName>
-        <default>false</default>
-        <label>Copy Documents</label>
     </customValue>
     <customValue>
         <fullName>Copy of Cheque</fullName>
@@ -651,6 +731,11 @@
         <label>Create/Maintain-Stop/Debit Order</label>
     </customValue>
     <customValue>
+        <fullName>Create Mini CIF</fullName>
+        <default>false</default>
+        <label>Create Mini CIF</label>
+    </customValue>
+    <customValue>
         <fullName>Credit Approval</fullName>
         <default>false</default>
         <label>Credit Approval</label>
@@ -661,9 +746,19 @@
         <label>Credit Manager Corporate Banker Changes</label>
     </customValue>
     <customValue>
+        <fullName>Credit Note</fullName>
+        <default>false</default>
+        <label>Credit Note</label>
+    </customValue>
+    <customValue>
         <fullName>Credits - ABSA</fullName>
         <default>false</default>
         <label>Credits - ABSA</label>
+    </customValue>
+    <customValue>
+        <fullName>Credits - Non-ABSA</fullName>
+        <default>false</default>
+        <label>Credits - Non-ABSA</label>
     </customValue>
     <customValue>
         <fullName>Current Enquiries</fullName>
@@ -701,6 +796,11 @@
         <label>Debit Authority Received</label>
     </customValue>
     <customValue>
+        <fullName>Debit Card Related</fullName>
+        <default>false</default>
+        <label>Debit Card Related</label>
+    </customValue>
+    <customValue>
         <fullName>Decrease Item Limit</fullName>
         <default>false</default>
         <label>Decrease Item Limit</label>
@@ -709,6 +809,11 @@
         <fullName>Delayed Payment</fullName>
         <default>false</default>
         <label>Delayed Payment</label>
+    </customValue>
+    <customValue>
+        <fullName>Delays</fullName>
+        <default>false</default>
+        <label>Delays</label>
     </customValue>
     <customValue>
         <fullName>Delete Account/Hold</fullName>
@@ -731,6 +836,11 @@
         <label>Delete Entity</label>
     </customValue>
     <customValue>
+        <fullName>Delete In Use Transaction</fullName>
+        <default>false</default>
+        <label>Delete In Use Transaction</label>
+    </customValue>
+    <customValue>
         <fullName>Delete Module</fullName>
         <default>false</default>
         <label>Delete Module</label>
@@ -741,14 +851,9 @@
         <label>Delete System Manager</label>
     </customValue>
     <customValue>
-        <fullName>Deposit</fullName>
+        <fullName>Deregistration/Cancel Client</fullName>
         <default>false</default>
-        <label>Deposit</label>
-    </customValue>
-    <customValue>
-        <fullName>Deposit_ID_Maintenance</fullName>
-        <default>false</default>
-        <label>Deposit ID Maintenance</label>
+        <label>Deregistration/Cancel Client</label>
     </customValue>
     <customValue>
         <fullName>Deviated pricing not updated</fullName>
@@ -759,21 +864,6 @@
         <fullName>Device query</fullName>
         <default>false</default>
         <label>Device query</label>
-    </customValue>
-    <customValue>
-        <fullName>Client</fullName>
-        <default>false</default>
-        <label>Diamond Client Visit</label>
-    </customValue>
-    <customValue>
-        <fullName>Download Digital Certificate</fullName>
-        <default>false</default>
-        <label>Digital Certificate Download</label>
-    </customValue>
-    <customValue>
-        <fullName>Issue Digital Certificate</fullName>
-        <default>false</default>
-        <label>Digital Certificate Renewal</label>
     </customValue>
     <customValue>
         <fullName>Discounting</fullName>
@@ -806,9 +896,19 @@
         <label>Document Validation</label>
     </customValue>
     <customValue>
+        <fullName>Download Digital Certificate</fullName>
+        <default>false</default>
+        <label>Download Digital Certificate</label>
+    </customValue>
+    <customValue>
         <fullName>Drawdown</fullName>
         <default>false</default>
         <label>Drawdown</label>
+    </customValue>
+    <customValue>
+        <fullName>Duplicated Payment</fullName>
+        <default>false</default>
+        <label>Duplicated Payment</label>
     </customValue>
     <customValue>
         <fullName>E-Channel Payment Query (Domestic)</fullName>
@@ -836,14 +936,14 @@
         <label>EOD Balances</label>
     </customValue>
     <customValue>
-        <fullName>Processing Billing Due to Error Finding</fullName>
-        <default>false</default>
-        <label>Error Finding</label>
-    </customValue>
-    <customValue>
         <fullName>Error Handling</fullName>
         <default>false</default>
         <label>Error Handling</label>
+    </customValue>
+    <customValue>
+        <fullName>Escalation to Channel/Manager</fullName>
+        <default>false</default>
+        <label>Escalation to Channel/Manager</label>
     </customValue>
     <customValue>
         <fullName>E-Statement</fullName>
@@ -916,6 +1016,11 @@
         <label>Folio Costs</label>
     </customValue>
     <customValue>
+        <fullName>Follow ups</fullName>
+        <default>false</default>
+        <label>Follow ups</label>
+    </customValue>
+    <customValue>
         <fullName>Full_General/Bank_Rating_Letter</fullName>
         <default>false</default>
         <label>Full General/Bank Rating Letter</label>
@@ -931,6 +1036,11 @@
         <label>FX Queries</label>
     </customValue>
     <customValue>
+        <fullName>General Branch Code Enquiry</fullName>
+        <default>false</default>
+        <label>General Branch Code Enquiry</label>
+    </customValue>
+    <customValue>
         <fullName>General Trade product enquiries (Clients)</fullName>
         <default>false</default>
         <label>General Trade product enquiries (Clients)</label>
@@ -941,19 +1051,14 @@
         <label>GPP Acc Creations/Amendments</label>
     </customValue>
     <customValue>
-        <fullName>Guarantee Status</fullName>
-        <default>false</default>
-        <label>Guarantee Enquiry</label>
-    </customValue>
-    <customValue>
-        <fullName>Guarantee_Maintenance</fullName>
-        <default>false</default>
-        <label>Guarantee Maintenance</label>
-    </customValue>
-    <customValue>
         <fullName>Guarantees/Securities</fullName>
         <default>false</default>
         <label>Guarantees/Securities</label>
+    </customValue>
+    <customValue>
+        <fullName>Guarantee Status</fullName>
+        <default>false</default>
+        <label>Guarantee Status</label>
     </customValue>
     <customValue>
         <fullName>Holds Maintenance</fullName>
@@ -988,7 +1093,7 @@
     <customValue>
         <fullName>Install Application</fullName>
         <default>false</default>
-        <label>Installation</label>
+        <label>Install Application</label>
     </customValue>
     <customValue>
         <fullName>Insufficient Funds</fullName>
@@ -1041,6 +1146,16 @@
         <label>Irregular Cheque Clearance</label>
     </customValue>
     <customValue>
+        <fullName>Irregular Cheques</fullName>
+        <default>false</default>
+        <label>Irregular Cheques</label>
+    </customValue>
+    <customValue>
+        <fullName>Islamic Banking Early Redemption</fullName>
+        <default>false</default>
+        <label>Islamic Banking Early Redemption</label>
+    </customValue>
+    <customValue>
         <fullName>Islamic Banking Maturity Processing</fullName>
         <default>false</default>
         <label>Islamic Banking Maturity Processing</label>
@@ -1051,9 +1166,24 @@
         <label>Islamic Banking Open New Trade</label>
     </customValue>
     <customValue>
+        <fullName>Issue AMS Guarantee</fullName>
+        <default>false</default>
+        <label>Issue AMS Guarantee</label>
+    </customValue>
+    <customValue>
+        <fullName>Issue Digital Certificate</fullName>
+        <default>false</default>
+        <label>Issue Digital Certificate</label>
+    </customValue>
+    <customValue>
         <fullName>Issued Letters of Credit</fullName>
         <default>false</default>
         <label>Issued Letters of Credit</label>
+    </customValue>
+    <customValue>
+        <fullName>IVS/POI (Proof of imports)</fullName>
+        <default>false</default>
+        <label>IVS/POI (Proof of imports)</label>
     </customValue>
     <customValue>
         <fullName>Journal/Charges Queries</fullName>
@@ -1064,6 +1194,11 @@
         <fullName>Journal Processing</fullName>
         <default>false</default>
         <label>Journal Processing</label>
+    </customValue>
+    <customValue>
+        <fullName>Journals</fullName>
+        <default>false</default>
+        <label>Journals</label>
     </customValue>
     <customValue>
         <fullName>KYC/FICA/CASA</fullName>
@@ -1084,6 +1219,11 @@
         <fullName>Letters of Credit Confirmation</fullName>
         <default>false</default>
         <label>Letters of Credit Confirmation</label>
+    </customValue>
+    <customValue>
+        <fullName>Limit</fullName>
+        <default>false</default>
+        <label>Limit</label>
     </customValue>
     <customValue>
         <fullName>Limit Increase/Decrease</fullName>
@@ -1131,6 +1271,16 @@
         <label>Loading/Amending SSI</label>
     </customValue>
     <customValue>
+        <fullName>Load Restricted Trading Hours</fullName>
+        <default>false</default>
+        <label>Load Restricted Trading Hours</label>
+    </customValue>
+    <customValue>
+        <fullName>Loan Breakage</fullName>
+        <default>false</default>
+        <label>Loan Breakage</label>
+    </customValue>
+    <customValue>
         <fullName>Loan Confirmation</fullName>
         <default>false</default>
         <label>Loan Confirmation</label>
@@ -1149,11 +1299,6 @@
         <fullName>Log Fraud Incident</fullName>
         <default>false</default>
         <label>Log Fraud Incident</label>
-    </customValue>
-    <customValue>
-        <fullName>Loss Investigation</fullName>
-        <default>false</default>
-        <label>Loss Investigation</label>
     </customValue>
     <customValue>
         <fullName>Maintain Aggregate Limit Expiry</fullName>
@@ -1221,6 +1366,11 @@
         <label>Mandate Requests</label>
     </customValue>
     <customValue>
+        <fullName>Mandates/Signature Outstanding</fullName>
+        <default>false</default>
+        <label>Mandates/Signature Outstanding</label>
+    </customValue>
+    <customValue>
         <fullName>Mandates And Indeminities</fullName>
         <default>false</default>
         <label>Mandates And Indeminities</label>
@@ -1286,6 +1436,11 @@
         <label>Monthly Conditions</label>
     </customValue>
     <customValue>
+        <fullName>MT Non-Receipt</fullName>
+        <default>false</default>
+        <label>MT Non-Receipt</label>
+    </customValue>
+    <customValue>
         <fullName>Name Change</fullName>
         <default>false</default>
         <label>Name Change</label>
@@ -1341,6 +1496,11 @@
         <label>Non adherence to client intructions</label>
     </customValue>
     <customValue>
+        <fullName>Non adherence to SSI</fullName>
+        <default>false</default>
+        <label>Non adherence to SSI</label>
+    </customValue>
+    <customValue>
         <fullName>Non-Payment</fullName>
         <default>false</default>
         <label>Non-Payment</label>
@@ -1356,6 +1516,11 @@
         <label>Non Receipt of Reply Files/Statements</label>
     </customValue>
     <customValue>
+        <fullName>Non Receipt of TRO</fullName>
+        <default>false</default>
+        <label>Non Receipt of TRO</label>
+    </customValue>
+    <customValue>
         <fullName>NON-STP Detailed Report</fullName>
         <default>false</default>
         <label>NON-STP Detailed Report</label>
@@ -1366,6 +1531,11 @@
         <label>Nostro Creations/Amendments</label>
     </customValue>
     <customValue>
+        <fullName>Notifications</fullName>
+        <default>false</default>
+        <label>Notifications</label>
+    </customValue>
+    <customValue>
         <fullName>Notify Me</fullName>
         <default>false</default>
         <label>Notify Me</label>
@@ -1374,11 +1544,6 @@
         <fullName>NPF Credit/Debit</fullName>
         <default>false</default>
         <label>NPF Credit/Debit</label>
-    </customValue>
-    <customValue>
-        <fullName>Add Operator</fullName>
-        <default>false</default>
-        <label>Operator Maintenance</label>
     </customValue>
     <customValue>
         <fullName>Order Cheque/ Deposit Book</fullName>
@@ -1426,14 +1591,14 @@
         <label>Payment Confirmation/Notification</label>
     </customValue>
     <customValue>
+        <fullName>Payment Cut off time Extension</fullName>
+        <default>false</default>
+        <label>Payment Cut off time Extension</label>
+    </customValue>
+    <customValue>
         <fullName>Payment Delayed</fullName>
         <default>false</default>
         <label>Payment Delayed</label>
-    </customValue>
-    <customValue>
-        <fullName>Duplicated Payment</fullName>
-        <default>false</default>
-        <label>Payment Duplicate</label>
     </customValue>
     <customValue>
         <fullName>Payment Investigation</fullName>
@@ -1446,16 +1611,6 @@
         <label>Payment not processed within SLA</label>
     </customValue>
     <customValue>
-        <fullName>Payment_Rejection</fullName>
-        <default>false</default>
-        <label>Payment Rejection</label>
-    </customValue>
-    <customValue>
-        <fullName>Payment Related Issues</fullName>
-        <default>false</default>
-        <label>Payment Related Issues</label>
-    </customValue>
-    <customValue>
         <fullName>Payment status of payment Transaction</fullName>
         <default>false</default>
         <label>Payment status of payment Transaction</label>
@@ -1464,6 +1619,11 @@
         <fullName>Post Dated</fullName>
         <default>false</default>
         <label>Post Dated</label>
+    </customValue>
+    <customValue>
+        <fullName>Presentations</fullName>
+        <default>false</default>
+        <label>Presentations</label>
     </customValue>
     <customValue>
         <fullName>Pricing Related</fullName>
@@ -1479,6 +1639,16 @@
         <fullName>Processed documents</fullName>
         <default>false</default>
         <label>Processed documents</label>
+    </customValue>
+    <customValue>
+        <fullName>Processes</fullName>
+        <default>false</default>
+        <label>Processes</label>
+    </customValue>
+    <customValue>
+        <fullName>Processing Billing Due to Error Finding</fullName>
+        <default>false</default>
+        <label>Error Finding</label>
     </customValue>
     <customValue>
         <fullName>Process Receipts on Mentis</fullName>
@@ -1511,14 +1681,9 @@
         <label>Profile Cancellation</label>
     </customValue>
     <customValue>
-        <fullName>Profile Limit</fullName>
+        <fullName>Profile Issue</fullName>
         <default>false</default>
-        <label>Profile Limit</label>
-    </customValue>
-    <customValue>
-        <fullName>Profile Maintenance</fullName>
-        <default>false</default>
-        <label>Profile Maintenance</label>
+        <label>Profile Issue</label>
     </customValue>
     <customValue>
         <fullName>Profit &amp; Loss Submission</fullName>
@@ -1596,6 +1761,11 @@
         <label>Refinancing</label>
     </customValue>
     <customValue>
+        <fullName>Refusal of discrepancies</fullName>
+        <default>false</default>
+        <label>Refusal of discrepancies</label>
+    </customValue>
+    <customValue>
         <fullName>Register New Project</fullName>
         <default>false</default>
         <label>Register New Project</label>
@@ -1639,6 +1809,11 @@
         <fullName>Remove ACB/CF Hold</fullName>
         <default>false</default>
         <label>Remove ACB/CF Hold</label>
+    </customValue>
+    <customValue>
+        <fullName>Replace Main Account</fullName>
+        <default>false</default>
+        <label>Replace Main Account</label>
     </customValue>
     <customValue>
         <fullName>Reports</fullName>
@@ -1751,14 +1926,14 @@
         <label>Service Type Change</label>
     </customValue>
     <customValue>
-        <fullName>Service Type Maintenance</fullName>
-        <default>false</default>
-        <label>Service Type Maintenance</label>
-    </customValue>
-    <customValue>
         <fullName>Setup Form Completion</fullName>
         <default>false</default>
         <label>Setup Form Completion</label>
+    </customValue>
+    <customValue>
+        <fullName>Shipping documents lost/misplaced</fullName>
+        <default>false</default>
+        <label>Shipping documents lost/misplaced</label>
     </customValue>
     <customValue>
         <fullName>Sig/Res Not On ODP</fullName>
@@ -1791,6 +1966,11 @@
         <label>Special Cheque Clearance</label>
     </customValue>
     <customValue>
+        <fullName>Spot/Fec Deal Instructions</fullName>
+        <default>false</default>
+        <label>Spot/Fec Deal Instructions</label>
+    </customValue>
+    <customValue>
         <fullName>Staff Related Issues</fullName>
         <default>false</default>
         <label>Staff Related Issues</label>
@@ -1811,11 +1991,6 @@
         <label>Statement</label>
     </customValue>
     <customValue>
-        <fullName>Amend Statement Delivery to MT940</fullName>
-        <default>false</default>
-        <label>Statement Delivery Maintenance</label>
-    </customValue>
-    <customValue>
         <fullName>Statements/ Interest/Billing</fullName>
         <default>false</default>
         <label>Statements/ Interest/Billing</label>
@@ -1829,11 +2004,6 @@
         <fullName>Stop Payment on Cheque</fullName>
         <default>false</default>
         <label>Stop Payment on Cheque</label>
-    </customValue>
-    <customValue>
-        <fullName>Store Closure</fullName>
-        <default>false</default>
-        <label>Store Closure</label>
     </customValue>
     <customValue>
         <fullName>STP Payment Failure Notification</fullName>
@@ -1866,6 +2036,11 @@
         <label>SWIFT Copy Typing/Draft LC</label>
     </customValue>
     <customValue>
+        <fullName>Switches</fullName>
+        <default>false</default>
+        <label>Switches</label>
+    </customValue>
+    <customValue>
         <fullName>System</fullName>
         <default>false</default>
         <label>System</label>
@@ -1886,11 +2061,6 @@
         <label>System Failures</label>
     </customValue>
     <customValue>
-        <fullName>Add System Manager</fullName>
-        <default>false</default>
-        <label>System Manager Maintenance</label>
-    </customValue>
-    <customValue>
         <fullName>TAX Certificate</fullName>
         <default>false</default>
         <label>TAX Certificate</label>
@@ -1898,7 +2068,7 @@
     <customValue>
         <fullName>Technical Request</fullName>
         <default>false</default>
-        <label>Technical Error</label>
+        <label>Technical Request</label>
     </customValue>
     <customValue>
         <fullName>Telephone Banking payments</fullName>
@@ -1909,6 +2079,11 @@
         <fullName>Term Loan</fullName>
         <default>false</default>
         <label>Term Loan</label>
+    </customValue>
+    <customValue>
+        <fullName>Third Party Fault</fullName>
+        <default>false</default>
+        <label>Third Party Fault</label>
     </customValue>
     <customValue>
         <fullName>Trace Forex Transaction</fullName>
@@ -1991,16 +2166,6 @@
         <label>Unidentified CR/Deposits Narratives (International)</label>
     </customValue>
     <customValue>
-        <fullName>Collections - Non-ABSA</fullName>
-        <default>false</default>
-        <label>Unidentified Debit External</label>
-    </customValue>
-    <customValue>
-        <fullName>Collections - ABSA</fullName>
-        <default>false</default>
-        <label>Unidentified Debit Internal</label>
-    </customValue>
-    <customValue>
         <fullName>Unidentified Debits / Payments Narratives (International)</fullName>
         <default>false</default>
         <label>Unidentified Debits / Payments Narratives (International)</label>
@@ -2016,11 +2181,6 @@
         <label>Unidentified Deposit - Bulk</label>
     </customValue>
     <customValue>
-        <fullName>Credits - Non-ABSA</fullName>
-        <default>false</default>
-        <label>Unidentified Deposit External</label>
-    </customValue>
-    <customValue>
         <fullName>Unidentified DR/Payments Narratives (Domestic)</fullName>
         <default>false</default>
         <label>Unidentified DR/Payments Narratives (Domestic)</label>
@@ -2029,6 +2189,11 @@
         <fullName>Unpaid Cheque - YUFIG</fullName>
         <default>false</default>
         <label>Unpaid Cheque - YUFIG</label>
+    </customValue>
+    <customValue>
+        <fullName>Unstamped control sheet</fullName>
+        <default>false</default>
+        <label>Unstamped control sheet</label>
     </customValue>
     <customValue>
         <fullName>Use of Funds</fullName>
@@ -2071,6 +2236,11 @@
         <label>Verify Client Resolution</label>
     </customValue>
     <customValue>
+        <fullName>View/Delete Incoming Correspondence</fullName>
+        <default>false</default>
+        <label>View/Delete Incoming Correspondence</label>
+    </customValue>
+    <customValue>
         <fullName>View Transaction</fullName>
         <default>false</default>
         <label>View Transaction</label>
@@ -2081,90 +2251,49 @@
         <label>Vostro Acc Creations/Amendments</label>
     </customValue>
     <customValue>
-        <fullName>Withdrawl</fullName>
-        <default>false</default>
-        <label>Withdrawl</label>
-    </customValue>
-    <customValue>
         <fullName>ZERO Vostro account</fullName>
         <default>false</default>
         <label>ZERO Vostro account</label>
     </customValue>
     <customValue>
-        <fullName>Follow ups</fullName>
+        <fullName>Payment Related Issues</fullName>
         <default>false</default>
-        <label>Follow ups</label>
+        <label>Payment Related Issues</label>
     </customValue>
     <customValue>
-        <fullName>Mandates/Signature Outstanding</fullName>
+        <fullName>Withdrawl</fullName>
         <default>false</default>
-        <label>Mandates/Signature Outstanding</label>
+        <label>Withdrawl</label>
     </customValue>
     <customValue>
-        <fullName>Load Restricted Trading Hours</fullName>
+        <fullName>Store Closure</fullName>
         <default>false</default>
-        <isActive>false</isActive>
-        <label>Load Restricted Trading Hours</label>
+        <label>Store Closure</label>
     </customValue>
     <customValue>
-        <fullName>Notifications</fullName>
+        <fullName>Deposit</fullName>
         <default>false</default>
-        <isActive>false</isActive>
-        <label>Notifications</label>
+        <label>Deposit</label>
     </customValue>
     <customValue>
-        <fullName>Replace Main Account</fullName>
+        <fullName>Collection Schedule</fullName>
         <default>false</default>
-        <isActive>false</isActive>
-        <label>Replace Main Account</label>
+        <label>Collection Schedule</label>
     </customValue>
     <customValue>
-        <fullName>View/Delete Incoming Correspondence</fullName>
+        <fullName>Loss Investigation</fullName>
         <default>false</default>
-        <isActive>false</isActive>
-        <label>View/Delete Incoming Correspondence</label>
+        <label>Loss Investigation</label>
     </customValue>
     <customValue>
-        <fullName>Add Account to C2B</fullName>
+        <fullName>Account Closure External</fullName>
         <default>false</default>
-        <isActive>false</isActive>
-        <label>Add Account to C2B</label>
+        <label>Account Closure External</label>
     </customValue>
     <customValue>
-        <fullName>Irregular Cheques</fullName>
+        <fullName>Copy Documents</fullName>
         <default>false</default>
-        <isActive>false</isActive>
-        <label>Irregular Cheques</label>
-    </customValue>
-    <customValue>
-        <fullName>IVS/POI (Proof of imports)</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>IVS/POI (Proof of imports)</label>
-    </customValue>
-    <customValue>
-        <fullName>Spot/Fec Deal Instructions</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Spot/Fec Deal Instructions</label>
-    </customValue>
-    <customValue>
-        <fullName>Non adherence to SSI</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Non adherence to SSI</label>
-    </customValue>
-    <customValue>
-        <fullName>Third Party Fault</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Third Party Fault</label>
-    </customValue>
-    <customValue>
-        <fullName>Incor Bankdet Captured On Payment</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Incor Bankdet Captured On Payment</label>
+        <label>Copy Documents</label>
     </customValue>
     <customValue>
         <fullName>Incor Bankdet Received From Client</fullName>
@@ -2173,106 +2302,10 @@
         <label>Incor Bankdet Received From Client</label>
     </customValue>
     <customValue>
-        <fullName>Create Mini CIF</fullName>
+        <fullName>Incor Bankdet Captured On Payment</fullName>
         <default>false</default>
         <isActive>false</isActive>
-        <label>Create Mini CIF</label>
-    </customValue>
-    <customValue>
-        <fullName>Islamic Banking Early Redemption</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Islamic Banking Early Redemption</label>
-    </customValue>
-    <customValue>
-        <fullName>C2B Journal Refund</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>C2B Journal Refund</label>
-    </customValue>
-    <customValue>
-        <fullName>Delays</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Delays</label>
-    </customValue>
-    <customValue>
-        <fullName>Refusal of discrepancies</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Refusal of discrepancies</label>
-    </customValue>
-    <customValue>
-        <fullName>Shipping documents lost/misplaced</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Shipping documents lost/misplaced</label>
-    </customValue>
-    <customValue>
-        <fullName>Broker Code Loading/Amendments</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Broker Code Loading/Amendments</label>
-    </customValue>
-    <customValue>
-        <fullName>MT Non-Receipt</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>MT Non-Receipt</label>
-    </customValue>
-    <customValue>
-        <fullName>Assignment of Proceeds</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Assignment of Proceeds</label>
-    </customValue>
-    <customValue>
-        <fullName>Payment Cut off time Extension</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Payment Cut off time Extension</label>
-    </customValue>
-    <customValue>
-        <fullName>Credit Note</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Credit Note</label>
-    </customValue>
-    <customValue>
-        <fullName>Switches</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Switches</label>
-    </customValue>
-    <customValue>
-        <fullName>Unstamped control sheet</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Unstamped control sheet</label>
-    </customValue>
-    <customValue>
-        <fullName>Presentations</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Presentations</label>
-    </customValue>
-    <customValue>
-        <fullName>Processes</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Processes</label>
-    </customValue>
-    <customValue>
-        <fullName>Loan Breakage</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Loan Breakage</label>
-    </customValue>
-    <customValue>
-        <fullName>Non Receipt of TRO</fullName>
-        <default>false</default>
-        <isActive>false</isActive>
-        <label>Non Receipt of TRO</label>
+        <label>Incor Bankdet Captured On Payment</label>
     </customValue>
     <masterLabel>Service Type</masterLabel>
     <sorted>false</sorted>

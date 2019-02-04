@@ -14,7 +14,7 @@
         <groupingColumn>Call_Report__c$Meeting_Date__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
-        <secondaryGroupingColumn>Call_Report__c$Meeting_Reason2__c</secondaryGroupingColumn>
+        <secondaryGroupingColumn>Call_Report__c.Attendees__r$Barclays_Attendee__c</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -30,13 +30,13 @@
         <field>Call_Report__c$Name</field>
     </columns>
     <columns>
+        <field>Call_Report__c$Owner</field>
+    </columns>
+    <columns>
         <field>Call_Report__c$Type__c</field>
     </columns>
     <columns>
         <field>Call_Report__c$Proposed_Products__c</field>
-    </columns>
-    <columns>
-        <field>Call_Report__c.Attendees__r$Barclays_Attendee__c</field>
     </columns>
     <columns>
         <field>Call_Report__c$Meeting_Reason__c</field>
@@ -48,6 +48,9 @@
         <field>Call_Report__c$Relationship__c.Industry</field>
     </columns>
     <columns>
+        <field>Call_Report__c$Team_Role_v2__c</field>
+    </columns>
+    <columns>
         <field>Call_Report__c.Attendees__r$Barclays_Attendee__c.Hub__c</field>
     </columns>
     <columns>
@@ -55,9 +58,6 @@
     </columns>
     <columns>
         <field>Call_Report__c.Attendees__r$Barclays_Attendee__c.Team_Role__c</field>
-    </columns>
-    <columns>
-        <field>Call_Report__c$Relationship__c.Owner</field>
     </columns>
     <currency>ZAR</currency>
     <filter>
@@ -83,12 +83,12 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Call_Report__c$Meeting_Reason2__c</field>
+        <field>Call_Report__c.Attendees__r$Barclays_Attendee__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Call_Report__c$Owner</field>
+        <field>Call_Report__c$Meeting_Reason2__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Call reports YTD - Banking</name>

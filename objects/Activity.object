@@ -50,18 +50,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Campaign__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <description>Lookup to Campaign</description>
-        <externalId>false</externalId>
-        <label>Campaign</label>
-        <referenceTo>Campaign</referenceTo>
-        <relationshipLabel>Activities</relationshipLabel>
-        <relationshipName>Activities</relationshipName>
-        <required>false</required>
-        <type>Lookup</type>
-    </fields>
-    <fields>
         <fullName>Comments__c</fullName>
         <description>For use in Public Calendar list views</description>
         <externalId>false</externalId>
@@ -130,59 +118,6 @@
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Status_Reason__c</fullName>
-        <externalId>false</externalId>
-        <label>Status Reason</label>
-        <required>false</required>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Client need change / not taken up</fullName>
-                    <default>false</default>
-                    <label>Client need change / not taken up</label>
-                </value>
-                <value>
-                    <fullName>Credit Policy Decision</fullName>
-                    <default>false</default>
-                    <label>Credit Policy Decision</label>
-                </value>
-                <value>
-                    <fullName>Duplicate</fullName>
-                    <default>false</default>
-                    <label>Duplicate</label>
-                </value>
-                <value>
-                    <fullName>Other</fullName>
-                    <default>false</default>
-                    <label>Other</label>
-                </value>
-                <value>
-                    <fullName>Pricing</fullName>
-                    <default>false</default>
-                    <label>Pricing</label>
-                </value>
-                <value>
-                    <fullName>Product / Solution</fullName>
-                    <default>false</default>
-                    <label>Product / Solution</label>
-                </value>
-                <value>
-                    <fullName>Regulatory / Compliance</fullName>
-                    <default>false</default>
-                    <label>Regulatory / Compliance</label>
-                </value>
-                <value>
-                    <fullName>Relationship</fullName>
-                    <default>false</default>
-                    <label>Relationship</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <fields>
         <fullName>Type__c</fullName>

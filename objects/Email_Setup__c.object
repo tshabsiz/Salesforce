@@ -45,7 +45,6 @@
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
@@ -257,17 +256,6 @@
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
         <label>All</label>
-    </listViews>
-    <listViews>
-        <fullName>Market</fullName>
-        <columns>NAME</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>NAME</field>
-            <operation>contains</operation>
-            <value>Market</value>
-        </filters>
-        <label>Market</label>
     </listViews>
     <nameField>
         <label>Event Email Content Name</label>

@@ -19,7 +19,7 @@ public class Attachment_Trigger_Test {
         
         CaseInsertList[0].Resolving_Area__c = 'Electronic Banking';
         caseInsertList[0].Resolving_Team__c = 'EBSH Complaints';
-        caseInsertList[0].Complaint_Service_Type__c = 'ATM Related Issues';
+        caseInsertList[0].Complaint_Service_Type__c = 'Delays';
         caseInsertList[0].Queue__c = 'EBSH Complaints';
         caseInsertList[0].Complaint_Service_Category__c = 'Complaint';
         insert caseInsertList[0];

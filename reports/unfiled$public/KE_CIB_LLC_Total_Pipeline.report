@@ -44,12 +44,6 @@
             <sourceValues>
                 <sourceValue>Structured Trade and Commodity Finance</sourceValue>
             </sourceValues>
-            <sourceValues>
-                <sourceValue>Money Market Short Term Lending ( Corp )</sourceValue>
-            </sourceValues>
-            <sourceValues>
-                <sourceValue>Property Loans</sourceValue>
-            </sourceValues>
             <value>ASSETS</value>
         </values>
         <values>
@@ -371,7 +365,7 @@
     </params>
     <reportType>OpportunityProduct</reportType>
     <scope>organization</scope>
-    <showDetails>true</showDetails>
+    <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>

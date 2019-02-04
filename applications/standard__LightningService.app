@@ -10,6 +10,177 @@
         <content>Case_CSC_Detail_Layout</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.CSC_Manual_Cases</recordType>
+        <type>Flexipage</type>
+        <profile>Barclays Digital Ops</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Case_CSC_Detail_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.CSC_Manual_Cases</recordType>
+        <type>Flexipage</type>
+        <profile>Delegated Admins</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Case_CSC_Detail_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.CSC_Emails</recordType>
+        <type>Flexipage</type>
+        <profile>CIB Service Cloud User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Case_CSC_Detail_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.CSC_Emails</recordType>
+        <type>Flexipage</type>
+        <profile>Barclays CSC User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Case_CSC_Detail_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.CSC_Emails</recordType>
+        <type>Flexipage</type>
+        <profile>Barclays Digital Ops</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Case_CSC_Detail_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.CSC_Emails</recordType>
+        <type>Flexipage</type>
+        <profile>Delegated Admins</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Case_CSC_Detail_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.Complaint</recordType>
+        <type>Flexipage</type>
+        <profile>CIB Service Cloud User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Case_CSC_Detail_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.Complaint</recordType>
+        <type>Flexipage</type>
+        <profile>Barclays Administrator</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Case_CSC_Detail_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.Complaint</recordType>
+        <type>Flexipage</type>
+        <profile>Barclays CSC User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Case_CSC_Detail_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.Complaint</recordType>
+        <type>Flexipage</type>
+        <profile>Barclays Digital Ops</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Case_CSC_Detail_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.Complaint</recordType>
+        <type>Flexipage</type>
+        <profile>Delegated Admins</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Case_CSC_Detail_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.Complaint</recordType>
+        <type>Flexipage</type>
+        <profile>Service Cloud User (CSC)</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Case_CSC_Detail_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.Complaint</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Case_CSC_Detail_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.CSC_Default_Support_Cases</recordType>
+        <type>Flexipage</type>
+        <profile>CIB Service Cloud User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Case_CSC_Detail_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.CSC_Default_Support_Cases</recordType>
+        <type>Flexipage</type>
+        <profile>Barclays CSC User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Case_CSC_Detail_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.CSC_Default_Support_Cases</recordType>
+        <type>Flexipage</type>
+        <profile>Barclays Digital Ops</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Case_CSC_Detail_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.CSC_Default_Support_Cases</recordType>
+        <type>Flexipage</type>
+        <profile>Delegated Admins</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Case_CSC_Detail_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.CSC_Manual_Cases</recordType>
+        <type>Flexipage</type>
+        <profile>CIB Service Cloud User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Case_CSC_Detail_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.CSC_Manual_Cases</recordType>
+        <type>Flexipage</type>
+        <profile>Barclays CSC User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Case_CSC_Detail_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
         <recordType>Case.CSC_Default_Support_Cases</recordType>
         <type>Flexipage</type>
         <profile>Service Cloud User (CSC)</profile>
@@ -88,14 +259,18 @@
     </profileActionOverrides>
     <setupExperience>service</setupExperience>
     <tabs>standard-Case</tabs>
+    <tabs>standard-Contact</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
     <tabs>standard-home</tabs>
-    <tabs>standard-OmniSupervisorLightning</tabs>
+    <tabs>How_To__kav</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningService_UtilityBar</utilityBar>
     <workspaceConfig>
+        <mappings>
+            <tab>How_To__kav</tab>
+        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>
@@ -103,10 +278,10 @@
             <tab>standard-Case</tab>
         </mappings>
         <mappings>
-            <tab>standard-Dashboard</tab>
+            <tab>standard-Contact</tab>
         </mappings>
         <mappings>
-            <tab>standard-OmniSupervisorLightning</tab>
+            <tab>standard-Dashboard</tab>
         </mappings>
         <mappings>
             <tab>standard-home</tab>

@@ -30,6 +30,7 @@
                 <dashboardFilterColumns>
                     <column>Account$Segment__c</column>
                 </dashboardFilterColumns>
+                <decimalPrecision>0</decimalPrecision>
                 <displayUnits>Millions</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>

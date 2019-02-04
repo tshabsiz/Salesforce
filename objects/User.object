@@ -695,6 +695,33 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Full_Photo_URL1__c</fullName>
+        <externalId>false</externalId>
+        <label>Full Photo URLll</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Full_Photo_URL__c</fullName>
+        <externalId>false</externalId>
+        <label>Full Photo URL</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Full_Photo_URLs__c</fullName>
+        <externalId>false</externalId>
+        <label>Full Photo URLs</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
         <fullName>Hub__c</fullName>
         <externalId>false</externalId>
         <label>Hub</label>
@@ -6742,11 +6769,6 @@ The Whole Enchilada: All notifications (Default)</inlineHelpText>
         <columns>CORE.USERS.ACTIVE</columns>
         <filterScope>Everything</filterScope>
         <filters>
-            <field>CORE.PROFILE.NAME</field>
-            <operation>contains</operation>
-            <value>Admin</value>
-        </filters>
-        <filters>
             <field>CORE.USERS.ACTIVE</field>
             <operation>equals</operation>
             <value>1</value>
@@ -6898,6 +6920,25 @@ The Whole Enchilada: All notifications (Default)</inlineHelpText>
         <errorDisplayField>BRID__c</errorDisplayField>
         <errorMessage>A BRID Number is Required</errorMessage>
     </validationRules>
+    <webLinks>
+        <fullName>Capture_Full_Photo_Url</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Capture Full Photo Url</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/flow/Capture_Full_Photo_URL</url>
+    </webLinks>
     <webLinks>
         <fullName>Legal_Request_Form</fullName>
         <availability>online</availability>

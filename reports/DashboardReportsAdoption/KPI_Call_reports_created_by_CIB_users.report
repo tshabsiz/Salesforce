@@ -8,16 +8,17 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>Donut</chartType>
+        <chartType>VerticalColumnGrouped</chartType>
         <enableHoverLabels>false</enableHoverLabels>
-        <expandOthers>false</expandOthers>
+        <expandOthers>true</expandOthers>
         <groupingColumn>User*User$Business_Area__c</groupingColumn>
-        <legendPosition>Bottom</legendPosition>
+        <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
+        <secondaryGroupingColumn>User$CountryCode</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
-        <showPercentage>true</showPercentage>
-        <showTotal>true</showTotal>
-        <showValues>true</showValues>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
         <size>Medium</size>
         <summaryAxisRange>Auto</summaryAxisRange>
         <textColor>#000000</textColor>
@@ -33,6 +34,9 @@
     </columns>
     <columns>
         <field>User.Call_Report__c$CreatedById$Name</field>
+    </columns>
+    <columns>
+        <field>User.Call_Report__c$CreatedById$Meeting_Date__c</field>
     </columns>
     <columns>
         <field>User.Call_Report__c$CreatedById$Owner_Hub__c</field>
@@ -59,17 +63,12 @@
         <field>User$CountryCode</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
-    <groupingsAcross>
-        <dateGranularity>Month</dateGranularity>
-        <field>User.Call_Report__c$CreatedById$Meeting_Date__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>User*User$Business_Area__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>CIB FO Call reports - YTD</name>
+    <name>KPI - Call reports by CIB users</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -81,6 +80,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>User.Call_Report__c$CreatedById$Meeting_Date__c</dateColumn>
-        <interval>INTERVAL_CURFY</interval>
+        <interval>INTERVAL_LASTMONTH</interval>
     </timeFrameFilter>
 </Report>

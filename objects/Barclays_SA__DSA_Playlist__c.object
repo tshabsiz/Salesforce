@@ -47,7 +47,6 @@
     <description>Represents an ordered list of content (PDF documents, PowerPoint presentations, streamed video, etc.)</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>true</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>true</enableReports>

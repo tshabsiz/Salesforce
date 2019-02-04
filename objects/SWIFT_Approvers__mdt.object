@@ -2,6 +2,7 @@
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
         <fullName>ApproverEmail__c</fullName>
+        <caseSensitive>true</caseSensitive>
         <externalId>false</externalId>
         <fieldManageability>DeveloperControlled</fieldManageability>
         <label>Approver Email</label>

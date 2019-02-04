@@ -6,7 +6,7 @@
     <dashboardFilters>
         <dashboardFilterOptions>
             <operator>equals</operator>
-            <values>THIS_YEAR</values>
+            <values>THIS_MONTH</values>
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>equals</operator>
@@ -14,23 +14,15 @@
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>equals</operator>
-            <values>THIS_MONTH</values>
+            <values>THIS_YEAR</values>
+        </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>equals</operator>
+            <values>LAST_YEAR</values>
         </dashboardFilterOptions>
         <dashboardFilterOptions>
             <operator>equals</operator>
             <values>TODAY</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>YESTERDAY</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>THIS_WEEK</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>LAST_WEEK</values>
         </dashboardFilterOptions>
         <name>Date/Time Opened</name>
     </dashboardFilters>
@@ -321,7 +313,7 @@
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>
-    <runningUser>nakedi.mashapa@absa1.com</runningUser>
+    <runningUser>morne.grobler@absa1.com</runningUser>
     <textColor>#000000</textColor>
     <title>POB Dashboard</title>
     <titleColor>#000000</titleColor>

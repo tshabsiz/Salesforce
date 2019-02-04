@@ -73,7 +73,7 @@
             <column>Case.Department__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>RSC Corporate PTA</value>
+            <value>RSC Corporate PTA,RSCS Corporate PTA</value>
         </criteriaItems>
         <criteriaItems>
             <column>STATUS</column>
@@ -93,7 +93,7 @@
         <field>Case.SLA_Status__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>At Risk &amp; Overdue OPENCases RSC CorInlan</name>
+    <name>At Risk &amp; Overdue OPENCases RSCCor Inlan</name>
     <params>
         <name>units</name>
         <value>d</value>
@@ -109,6 +109,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_PREVCURY</interval>
+        <interval>INTERVAL_PREVCURFY</interval>
     </timeFrameFilter>
 </Report>

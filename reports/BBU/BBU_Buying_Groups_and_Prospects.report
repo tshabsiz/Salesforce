@@ -27,9 +27,6 @@
     <columns>
         <field>Account$Parent</field>
     </columns>
-    <columns>
-        <field>Account$Id</field>
-    </columns>
     <currency>ZAR</currency>
     <filter>
         <booleanFilter>1 AND (2 OR 3)</booleanFilter>

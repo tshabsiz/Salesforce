@@ -31,10 +31,6 @@
         <field>Client_Plan__c.Status__c</field>
     </columns>
     <columns>
-        <aggregateTypes>Average</aggregateTypes>
-        <field>Client_Plan__c.Progress__c</field>
-    </columns>
-    <columns>
         <field>CUST_OWNER_NAME</field>
     </columns>
     <columns>

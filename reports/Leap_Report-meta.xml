@@ -7,6 +7,11 @@
     </folderShares>
     <folderShares>
         <accessLevel>View</accessLevel>
+        <sharedTo>shinise.tillek@absa1.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
         <sharedTo>sue.nicholson@absa1.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
@@ -17,7 +22,7 @@
     </folderShares>
     <folderShares>
         <accessLevel>View</accessLevel>
-        <sharedTo>tumelo.singo@barclaysafrica.com</sharedTo>
+        <sharedTo>tumelo.singo@absa1.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>

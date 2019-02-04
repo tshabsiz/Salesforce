@@ -41,11 +41,13 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>VerticalColumn</chartType>
+        <chartType>VerticalColumnGrouped</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>User.Business_Area__c</groupingColumn>
+        <groupingColumn>ADDRESS_COUNTRY_CODE</groupingColumn>
+        <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>User.Business_Area__c</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -96,20 +98,14 @@
     <columns>
         <field>USER_ID</field>
     </columns>
-    <columns>
-        <field>BucketField_36968012</field>
-    </columns>
-    <columns>
-        <field>LAST_LOGIN</field>
-    </columns>
     <currency>ZAR</currency>
     <description>Matrix report</description>
     <filter>
         <criteriaItems>
             <column>PROFILE</column>
             <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>Barclays Read Only,Barclays Standard User,Standard User,Standard User (Banking - Private),Standard User ( Lightning ),Standard User (Markets),Standard User ( Private Lightning ),Standard User (Research),Standard User (RoA),Standard User (TBS User)</value>
+            <operator>contains</operator>
+            <value>standard,private</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
@@ -118,12 +114,22 @@
         <field>ADDRESS_COUNTRY_CODE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
+    <groupingsAcross>
+        <dateGranularity>Month</dateGranularity>
+        <field>LAST_LOGIN</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_36968012</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>User.Business_Area__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>CIB FO users by Country by Area</name>
+    <name>KPI - # of CIB Sales Cloud Matrix users</name>
     <params>
         <name>active</name>
         <value>active</value>
@@ -133,11 +139,11 @@
         <value>1</value>
     </params>
     <reportType>User</reportType>
-    <showDetails>false</showDetails>
+    <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>LAST_LOGIN</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
+        <interval>INTERVAL_THISMONTH</interval>
     </timeFrameFilter>
 </Report>

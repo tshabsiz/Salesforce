@@ -109,7 +109,6 @@ private without sharing class evRSVP_Controller_Test
         
         RSVPCon.ConfirmAccept();
         RSVPCon.accept1                                             = true;
-        RSVPCon.sessionWrapperList[0].selected = true;
         RSVPCon.ConfirmAccept();
         
         //RSVPCon.decline();
@@ -143,11 +142,9 @@ private without sharing class evRSVP_Controller_Test
         
         RSVPCon.listOfPartnerDelegates.Clear();
         RSVPCon.listOfPartnerDelegates.add(testDel);
-        
-        
         try
         {
-            RSVPCon.InsertPartnerDelegates();  
+        RSVPCon.InsertPartnerDelegates();  
         } 
         catch(exception e)
         {}

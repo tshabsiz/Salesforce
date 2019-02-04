@@ -1161,26 +1161,6 @@
         <label>TriCollections@absa.co.za</label>
     </customValue>
     <customValue>
-        <fullName>Clientcare.Mthatha@absa.co.za</fullName>
-        <default>false</default>
-        <label>Clientcare.Mthatha@absa.co.za</label>
-    </customValue>
-    <customValue>
-        <fullName>Clientcare.Welkom@absa.co.za</fullName>
-        <default>false</default>
-        <label>Clientcare.Welkom@absa.co.za</label>
-    </customValue>
-    <customValue>
-        <fullName>xraRefresh@absa.co.za</fullName>
-        <default>false</default>
-        <label>xraRefresh@absa.co.za</label>
-    </customValue>
-    <customValue>
-        <fullName>xracobclientmandates@absa.co.za</fullName>
-        <default>false</default>
-        <label>xracobclientmandates@absa.co.za</label>
-    </customValue>
-    <customValue>
         <fullName>Vostro</fullName>
         <default>false</default>
         <isActive>false</isActive>

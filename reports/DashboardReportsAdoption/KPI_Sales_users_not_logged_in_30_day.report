@@ -129,7 +129,7 @@
         <field>User.Business_Area__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>CIB FO not logged in - 30 day</name>
+    <name>KPI - Sales users not logged in - 30 day</name>
     <params>
         <name>active</name>
         <value>active</value>

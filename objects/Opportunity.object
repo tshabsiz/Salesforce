@@ -784,16 +784,6 @@ YEAR( CloseDate ) )
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Contact_Number__c</fullName>
-        <externalId>false</externalId>
-        <formula>Relationship_Contact__r.Phone</formula>
-        <label>Contact Number</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>ContractId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -824,50 +814,6 @@ YEAR( CloseDate ) )
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Creator_Business_Area__c</fullName>
-        <externalId>false</externalId>
-        <formula>TEXT (CreatedBy.Business_Area__c)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Creator Business Area</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Creator_Country__c</fullName>
-        <externalId>false</externalId>
-        <formula>CreatedBy.Country</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Creator Country</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Creator_Hub__c</fullName>
-        <externalId>false</externalId>
-        <formula>TEXT(CreatedBy.Hub__c)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Creator Hub</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Creator_Team__c</fullName>
-        <externalId>false</externalId>
-        <formula>TEXT (CreatedBy.Team__c)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Creator Team</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>CrossSellOpportunity__c</fullName>
@@ -1218,15 +1164,6 @@ YEAR( CloseDate ) )
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>TextArea</type>
-    </fields>
-    <fields>
-        <fullName>Mandate_Won_date__c</fullName>
-        <externalId>false</externalId>
-        <label>Mandate Won date</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Date</type>
     </fields>
     <fields>
         <fullName>Margin__c</fullName>
@@ -1845,17 +1782,6 @@ YEAR( CloseDate ) )
         </valueSet>
     </fields>
     <fields>
-        <fullName>Owner_Country__c</fullName>
-        <externalId>false</externalId>
-        <formula>Owner.Country</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Opportunity Owner Country</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Owner_Hub__c</fullName>
         <externalId>false</externalId>
         <formula>TEXT( Owner.Hub__c )</formula>
@@ -1950,6 +1876,8 @@ YEAR( CloseDate ) )
     </fields>
     <fields>
         <fullName>PartnerAccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
@@ -2079,16 +2007,6 @@ YEAR( CloseDate ) )
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>true</trackTrending>
-    </fields>
-    <fields>
-        <fullName>ProductCount__c</fullName>
-        <description>Gives the amount of OpportunityLineItems on an opportunity</description>
-        <externalId>false</externalId>
-        <label>ProductCount</label>
-        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
-        <summaryOperation>count</summaryOperation>
-        <trackHistory>false</trackHistory>
-        <type>Summary</type>
     </fields>
     <fields>
         <fullName>ProductLevel2List__c</fullName>
@@ -2246,7 +2164,7 @@ YEAR( CloseDate ) )
     <fields>
         <fullName>Product_Code_Won_Opportunity__c</fullName>
         <externalId>false</externalId>
-        <label>Product Code (TB)</label>
+        <label>Product Code</label>
         <length>255</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -3037,12 +2955,6 @@ YEAR( CloseDate ) )
         <label>Relationship Contact</label>
         <lookupFilter>
             <active>true</active>
-            <booleanFilter>1 OR 2</booleanFilter>
-            <filterItems>
-                <field>Contact.AccountId</field>
-                <operation>equals</operation>
-                <valueField>$Source.Account_Name__c</valueField>
-            </filterItems>
             <filterItems>
                 <field>Contact.AccountId</field>
                 <operation>equals</operation>
@@ -3480,41 +3392,6 @@ IF(RecordTypeId = &apos;01224000000TOY1&apos;,( Days_Remaining__c ) * ( Annualis
         <type>Percent</type>
     </fields>
     <fields>
-        <fullName>Transaction_Type__c</fullName>
-        <externalId>false</externalId>
-        <label>Transaction Type</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>IPO</fullName>
-                    <default>false</default>
-                    <label>IPO</label>
-                </value>
-                <value>
-                    <fullName>Buy-side</fullName>
-                    <default>false</default>
-                    <label>Buy-side</label>
-                </value>
-                <value>
-                    <fullName>Sell-side</fullName>
-                    <default>false</default>
-                    <label>Sell-side</label>
-                </value>
-                <value>
-                    <fullName>DCM</fullName>
-                    <default>false</default>
-                    <label>DCM</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Type</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
@@ -3614,6 +3491,18 @@ IF(RecordTypeId = &apos;01224000000TOY1&apos;,( Days_Remaining__c ) * ( Annualis
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
+    <listViews>
+        <fullName>AllOpportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Annualised_Income__c</columns>
+        <columns>Income_this_Year__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Opportunities</label>
+    </listViews>
     <listViews>
         <fullName>All_My_Opportunities</fullName>
         <columns>OPPORTUNITY.NAME</columns>
@@ -4578,25 +4467,6 @@ IF(RecordTypeId = &apos;01224000000TOY1&apos;,( Days_Remaining__c ) * ( Annualis
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Transaction_Type__c</picklist>
-            <values>
-                <fullName>Buy-side</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>DCM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>IPO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Sell-side</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Type</picklist>
             <values>
                 <fullName>Existing</fullName>
@@ -5540,25 +5410,6 @@ IF(RecordTypeId = &apos;01224000000TOY1&apos;,( Days_Remaining__c ) * ( Annualis
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Transaction_Type__c</picklist>
-            <values>
-                <fullName>Buy-side</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>DCM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>IPO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Sell-side</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Type</picklist>
             <values>
                 <fullName>Existing</fullName>
@@ -6271,25 +6122,6 @@ IF(RecordTypeId = &apos;01224000000TOY1&apos;,( Days_Remaining__c ) * ( Annualis
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Transaction_Type__c</picklist>
-            <values>
-                <fullName>Buy-side</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>DCM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>IPO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Sell-side</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Type</picklist>
             <values>
                 <fullName>Existing</fullName>
@@ -6973,25 +6805,6 @@ IF(RecordTypeId = &apos;01224000000TOY1&apos;,( Days_Remaining__c ) * ( Annualis
             </values>
             <values>
                 <fullName>RFP</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Transaction_Type__c</picklist>
-            <values>
-                <fullName>Buy-side</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>DCM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>IPO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Sell-side</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -7941,25 +7754,6 @@ IF(RecordTypeId = &apos;01224000000TOY1&apos;,( Days_Remaining__c ) * ( Annualis
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Transaction_Type__c</picklist>
-            <values>
-                <fullName>Buy-side</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>DCM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>IPO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Sell-side</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Type</picklist>
             <values>
                 <fullName>Cross Sell</fullName>
@@ -8902,25 +8696,6 @@ IF(RecordTypeId = &apos;01224000000TOY1&apos;,( Days_Remaining__c ) * ( Annualis
             </values>
             <values>
                 <fullName>Testing %26 Readiness Check Completed</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Transaction_Type__c</picklist>
-            <values>
-                <fullName>Buy-side</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>DCM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>IPO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Sell-side</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -10038,25 +9813,6 @@ IF(RecordTypeId = &apos;01224000000TOY1&apos;,( Days_Remaining__c ) * ( Annualis
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Transaction_Type__c</picklist>
-            <values>
-                <fullName>Buy-side</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>DCM</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>IPO</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Sell-side</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Type</picklist>
             <values>
                 <fullName>Existing</fullName>
@@ -10117,10 +9873,10 @@ OR( $Profile.Name =&quot;Barclays Standard User&quot;, $Profile.Name =&quot;Barc
     </validationRules>
     <validationRules>
         <fullName>CPF_Alert_Selection</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(OR(ISPICKVAL(StageName , &quot;Closed Won&quot;),ISPICKVAL(StageName , &quot;Mandate Won&quot;),ISPICKVAL(StageName , &quot;Contracts Finalised&quot;),ISPICKVAL(StageName ,&quot;In Implementation / Conditions Precedent&quot;)),(ProductList__c = &quot;Commercial Property Finance&quot;) ,NOT(ISPICKVAL(Notify_ABSA_Insurance_Of_This_Deal__c, &quot;Yes&quot;)),NOT(ISPICKVAL(Notify_ABSA_Insurance_Of_This_Deal__c, &quot;No&quot;)))</errorConditionFormula>
+        <active>false</active>
+        <errorConditionFormula>AND(ISPICKVAL(StageName , &quot;Closed Won&quot;),NOT(ISPICKVAL(Notify_ABSA_Insurance_Of_This_Deal__c, &quot;Yes&quot;)),NOT(ISPICKVAL(Notify_ABSA_Insurance_Of_This_Deal__c, &quot;No&quot;)))</errorConditionFormula>
         <errorDisplayField>Notify_ABSA_Insurance_Of_This_Deal__c</errorDisplayField>
-        <errorMessage>Please select an option for notifying ABSA Insurance</errorMessage>
+        <errorMessage>Please select a value for notifying ABSA insurance.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>CPF_Validation</fullName>
@@ -10166,16 +9922,6 @@ $User.ProfileId &lt;&gt; &quot;00e24000000obeD&quot;
 &amp;&amp;
 ISPICKVAL(ProductPartnerApprovalStatus__c, &quot;Pending&quot;)</errorConditionFormula>
         <errorMessage>This opportunity is pending a Product Partner acknowledgement and can not be Closed Won</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Closing_opportunity_Related_Group_CIF</fullName>
-        <active>true</active>
-        <description>Stops a user from closing an opportunity without selecting Related Group Client CIF.</description>
-        <errorConditionFormula>AND( 
-
-ISPICKVAL(  Owner.Hub__c , &quot;International Banking South Africa&quot;))
- &amp;&amp; ISPICKVAL(StageName, &quot;Closed Won&quot;) &amp;&amp;  ISBLANK(Related_Group_Client_CIF__c)</errorConditionFormula>
-        <errorMessage>This opportunity cannot be closed without adding the Related Group Client and the Related Group Client CIF.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>Enter_a_referral_name_on_a_referred_Opp</fullName>
@@ -10848,28 +10594,5 @@ $g(function() {
 	$g(&quot;.ui-dialog&quot;).css(&apos;z-index&apos;, &apos;10000&apos;);
 	$g(&quot;.ui-dialog&quot;).css(&apos;border-radius&apos;, &apos;0px&apos;);
 });</url>
-    </webLinks>
-    <webLinks>
-        <fullName>pi__Send_Pardot_Emails</fullName>
-        <availability>online</availability>
-        <displayType>massActionButton</displayType>
-        <height>600</height>
-        <linkType>page</linkType>
-        <masterLabel>Send Engage Email</masterLabel>
-        <openType>sidebar</openType>
-        <page>pi__MicroCampaignOpportunity</page>
-        <protected>false</protected>
-        <requireRowSelection>true</requireRowSelection>
-    </webLinks>
-    <webLinks>
-        <fullName>pi__Send_Single_Pardot_Email</fullName>
-        <availability>online</availability>
-        <displayType>button</displayType>
-        <height>600</height>
-        <linkType>page</linkType>
-        <masterLabel>Send Engage Email</masterLabel>
-        <openType>sidebar</openType>
-        <page>pi__MicroCampaignSingleOpportunity</page>
-        <protected>false</protected>
     </webLinks>
 </CustomObject>

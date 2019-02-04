@@ -15,6 +15,18 @@
                 <field>Barclays_Attendee__c</field>
                 <uiBehavior>Edit</uiBehavior>
             </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>true</emptySpace>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>true</emptySpace>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>true</emptySpace>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
         </quickActionLayoutColumns>
         <quickActionLayoutColumns/>
     </quickActionLayout>

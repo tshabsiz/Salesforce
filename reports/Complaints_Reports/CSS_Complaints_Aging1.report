@@ -71,8 +71,8 @@
         <criteriaItems>
             <column>Case.Resolving_Team__c</column>
             <isUnlocked>true</isUnlocked>
-            <operator>notContain</operator>
-            <value>RSC Comm,RSC Enterprise</value>
+            <operator>notEqual</operator>
+            <value></value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
@@ -102,8 +102,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <endDate>2022-12-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2017-01-01</startDate>
     </timeFrameFilter>
 </Report>

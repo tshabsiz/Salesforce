@@ -11,6 +11,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Opportunity.CSM_Initiator__c</reportColumn>
                         <showTotal>true</showTotal>
@@ -51,6 +52,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Opportunity.CSM_Initiator__c</reportColumn>
                         <showTotal>true</showTotal>
@@ -91,6 +93,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Opportunity.CSM_Initiator__c</reportColumn>
                         <showTotal>true</showTotal>
@@ -126,6 +129,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Attendee__c.Barclays_Attendee__c.Name</reportColumn>
                         <showTotal>true</showTotal>
@@ -156,6 +160,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Attendee__c.Barclays_Attendee__c.Name</reportColumn>
                         <showTotal>true</showTotal>
@@ -186,6 +191,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Attendee__c.Barclays_Attendee__c.Name</reportColumn>
                         <showTotal>true</showTotal>
@@ -216,6 +222,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Opportunity.CSM_Initiator__c</reportColumn>
                         <showTotal>true</showTotal>
@@ -251,6 +258,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Opportunity.CSM_Initiator__c</reportColumn>
                         <showTotal>true</showTotal>
@@ -286,6 +294,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Opportunity.CSM_Initiator__c</reportColumn>
                         <showTotal>true</showTotal>
@@ -321,6 +330,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Attendee__c.Barclays_Attendee__c.Name</reportColumn>
                         <showTotal>true</showTotal>
@@ -351,6 +361,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Attendee__c.Barclays_Attendee__c.Name</reportColumn>
                         <showTotal>true</showTotal>
@@ -382,6 +393,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Attendee__c.Barclays_Attendee__c.Name</reportColumn>
                         <showTotal>true</showTotal>
@@ -412,6 +424,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Opportunity.CSM_Initiator__c</reportColumn>
                         <showTotal>true</showTotal>
@@ -447,6 +460,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Attendee__c.Barclays_Attendee__c.Name</reportColumn>
                         <showTotal>true</showTotal>
@@ -480,6 +494,7 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>Column</componentType>
+                <decimalPrecision>0</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>

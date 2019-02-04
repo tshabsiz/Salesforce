@@ -15,15 +15,7 @@ global class ListsController extends pi.BaseController {
 
     }
     @RemoteAction
-    global static Map<String,Object> getLimitedListsWithOffset(String listsLimit, String listsOffset) {
-        return null;
-    }
-    @RemoteAction
     global static Map<String,Object> getListDripPrograms(String listId) {
-        return null;
-    }
-    @RemoteAction
-    global static Map<String,Object> getListEsPrograms(String listId) {
         return null;
     }
     @RemoteAction

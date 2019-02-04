@@ -2,11 +2,6 @@
 <DashboardFolder xmlns="http://soap.sforce.com/2006/04/metadata">
     <folderShares>
         <accessLevel>View</accessLevel>
-        <sharedTo>alaindevin.merckel@absa1.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>View</accessLevel>
         <sharedTo>bernadette.mckay@absa1.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
@@ -18,11 +13,6 @@
     <folderShares>
         <accessLevel>View</accessLevel>
         <sharedTo>chantel.robbins@absa1.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>View</accessLevel>
-        <sharedTo>charles.russon@absa1.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
@@ -52,17 +42,22 @@
     </folderShares>
     <folderShares>
         <accessLevel>View</accessLevel>
-        <sharedTo>devorah.barnes@absa1.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>View</accessLevel>
         <sharedTo>dudu.mtsweni@absa1.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
         <accessLevel>Manage</accessLevel>
         <sharedTo>hassen.majam@absa1.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>isebeau.spies@absa1.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>jayde.viljoen@absa1.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
@@ -77,17 +72,7 @@
     </folderShares>
     <folderShares>
         <accessLevel>View</accessLevel>
-        <sharedTo>neil.pryce@absa1.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>View</accessLevel>
         <sharedTo>nhlakaniphowiseman.ngubane@absa1.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>View</accessLevel>
-        <sharedTo>ntombentsha.bell@barclaysafrica.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
@@ -99,11 +84,6 @@
         <accessLevel>View</accessLevel>
         <sharedTo>tanya.theunissen@absa1.com</sharedTo>
         <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>View</accessLevel>
-        <sharedTo>South_Africa_CIB</sharedTo>
-        <sharedToType>RoleAndSubordinatesInternal</sharedToType>
     </folderShares>
     <name>Complaints Dashboards</name>
 </DashboardFolder>

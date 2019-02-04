@@ -56,7 +56,6 @@
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableReports>true</enableReports>
@@ -370,7 +369,7 @@
         <fullName>Calendar_End_Date__c</fullName>
         <description>Used to build calendar invite date/time link</description>
         <externalId>false</externalId>
-        <formula>RIGHT(TEXT( End_Date__c), 2)&amp;&quot;-&quot;&amp; MID(TEXT( End_Date__c ), 6, 2)&amp;&quot;-&quot;&amp;LEFT( TEXT( End_Date__c ) , 4)+&quot; &quot;+LEFT(Text( EventEndTime__c),5)</formula>
+        <formula>RIGHT(TEXT( End_Date__c), 2)&amp;&quot;-&quot;&amp; MID(TEXT( End_Date__c ), 6, 2)&amp;&quot;-&quot;&amp;LEFT( TEXT( End_Date__c ) , 4)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Calendar End Date</label>
         <required>false</required>
@@ -403,7 +402,7 @@
     <fields>
         <fullName>Calendar_Start_Date__c</fullName>
         <externalId>false</externalId>
-        <formula>RIGHT(TEXT( Start_Date__c), 2)&amp;&quot;-&quot;&amp; MID(TEXT( Start_Date__c ), 6, 2)&amp;&quot;-&quot;&amp;LEFT( TEXT( Start_Date__c ) , 4)+&quot; &quot;+ LEFT(TEXT(EventStartTime__c),5)</formula>
+        <formula>RIGHT(TEXT( Start_Date__c), 2)&amp;&quot;-&quot;&amp; MID(TEXT( Start_Date__c ), 6, 2)&amp;&quot;-&quot;&amp;LEFT( TEXT( Start_Date__c ) , 4)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Calendar Start Date</label>
         <required>false</required>

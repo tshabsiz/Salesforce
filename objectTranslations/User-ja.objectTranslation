@@ -309,6 +309,18 @@
         <name>Document_URL__c</name>
     </fields>
     <fields>
+        <label><!-- Full Photo URLll --></label>
+        <name>Full_Photo_URL1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full Photo URL --></label>
+        <name>Full_Photo_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full Photo URLs --></label>
+        <name>Full_Photo_URLs__c</name>
+    </fields>
+    <fields>
         <label><!-- Hub --></label>
         <name>Hub__c</name>
         <picklistValues>
@@ -3073,6 +3085,10 @@ The Whole Enchilada: All notifications (Default) --></help>
         <errorMessage><!-- A BRID Number is Required --></errorMessage>
         <name>BRID_Required</name>
     </validationRules>
+    <webLinks>
+        <label><!-- Capture_Full_Photo_Url --></label>
+        <name>Capture_Full_Photo_Url</name>
+    </webLinks>
     <webLinks>
         <label><!-- Legal_Request_Form --></label>
         <name>Legal_Request_Form</name>

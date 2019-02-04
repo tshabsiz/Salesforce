@@ -54,7 +54,7 @@
             <column>Attendee__c.Attendee_Name__c</column>
             <isUnlocked>false</isUnlocked>
             <operator>equals</operator>
-            <value>Chamu Mugangavari,Bjorn Singh,Jeremy Jaganath,DK Waiza,Justice Dube,Carmel Kistasamy,Mike von Fintel,Cherilyn Thompson,Katleho Mphuthi</value>
+            <value>Chamu Mugangavari,Bjorn Singh,Jeremy Jaganath,DK Waiza,Justice Dube,Carmel Kistasamy,Mike von Fintel,Cherilyn Thompson</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

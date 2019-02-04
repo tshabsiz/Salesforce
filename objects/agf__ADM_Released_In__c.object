@@ -47,7 +47,6 @@
     <description>Object to define the releases that a fix was deployed to.  Each Work record has a one to many relationship with releases.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableReports>true</enableReports>

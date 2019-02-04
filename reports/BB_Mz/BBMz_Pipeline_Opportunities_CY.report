@@ -43,9 +43,6 @@
         <field>OpportunityLineItem.Balance__c</field>
     </columns>
     <columns>
-        <field>OPPORTUNITY.CURRENCY_ISO_CODE</field>
-    </columns>
-    <columns>
         <field>OpportunityLineItem.Annualised_Income__c</field>
     </columns>
     <columns>

@@ -19,7 +19,7 @@
   </div>
   <div id="actions" class="actions"></div>
 </div>
-		<apex:includeScript value="{!URLFOR($Resource.pi__MarketingActions, 'js/jquery-3.3.1.min.js')}"/>
+		<apex:includeScript value="{!URLFOR($Resource.pi__MarketingActions, 'js/jquery-2.1.1.min.js')}"/>
 		<apex:includeScript value="{!URLFOR($Resource.pi__jquery_time_ago, 'jquery.timeago.js')}"/>
 		<script>
 			window.SalesEdge = {

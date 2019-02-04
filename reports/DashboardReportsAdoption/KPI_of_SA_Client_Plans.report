@@ -43,6 +43,12 @@
         <field>Client_Plan__c.Progress__c</field>
     </columns>
     <columns>
+        <field>Client_Plan__c.Potential_Opportunities_Count__c</field>
+    </columns>
+    <columns>
+        <field>Client_Plan__c.Strategies_Count__c</field>
+    </columns>
+    <columns>
         <field>Client_Plan__c.Relationships_Count__c</field>
     </columns>
     <columns>

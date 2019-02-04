@@ -103,31 +103,6 @@
         <blockId xsi:nil="true"/>
         <joinTable>u</joinTable>
     </blockInfo>
-    <chart>
-        <backgroundColor1>#FFFFFF</backgroundColor1>
-        <backgroundColor2>#FFFFFF</backgroundColor2>
-        <backgroundFadeDir>Diagonal</backgroundFadeDir>
-        <chartSummaries>
-            <axisBinding>y</axisBinding>
-            <column>B0#FORMULA1</column>
-        </chartSummaries>
-        <chartType>Donut</chartType>
-        <enableHoverLabels>false</enableHoverLabels>
-        <expandOthers>false</expandOthers>
-        <groupingColumn>ADDRESS_COUNTRY_CODE</groupingColumn>
-        <legendPosition>Bottom</legendPosition>
-        <location>CHART_BOTTOM</location>
-        <showAxisLabels>true</showAxisLabels>
-        <showPercentage>false</showPercentage>
-        <showTotal>true</showTotal>
-        <showValues>true</showValues>
-        <size>Medium</size>
-        <summaryAxisRange>Auto</summaryAxisRange>
-        <textColor>#000000</textColor>
-        <textSize>12</textSize>
-        <titleColor>#000000</titleColor>
-        <titleSize>18</titleSize>
-    </chart>
     <format>MultiBlock</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
@@ -139,7 +114,7 @@
         <field>User.Business_Area__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>CIB FO Log-in rate by Country</name>
+    <name>Log-in rate by Country</name>
     <reportType>User</reportType>
     <showDetails>false</showDetails>
 </Report>

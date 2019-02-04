@@ -12,7 +12,7 @@
     </folderShares>
     <folderShares>
         <accessLevel>View</accessLevel>
-        <sharedTo>charles.russon@absa1.com</sharedTo>
+        <sharedTo>charl.greyvensteyn@absa1.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
@@ -28,6 +28,11 @@
     <folderShares>
         <accessLevel>View</accessLevel>
         <sharedTo>corina.naude@absa1.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>edwintebogo.motsoane@absa1.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
@@ -113,11 +118,6 @@
     <folderShares>
         <accessLevel>View</accessLevel>
         <sharedTo>shirley.webber@absa1.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>View</accessLevel>
-        <sharedTo>edwintebogo.motsoane@absa1.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>

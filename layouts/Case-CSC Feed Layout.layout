@@ -146,11 +146,23 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Creator_Hub__c</field>
+                <field>Case_Creator_Picture__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Creator_Team__c</field>
+                <behavior>Edit</behavior>
+                <field>Approver__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Capturer__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Capturer_Photo__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Approver_Photo__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -630,6 +642,9 @@
     <quickActionList>
         <quickActionListItems>
             <quickActionName>SendEmail</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>Case.Email</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
             <quickActionName>Case.SendEmail</quickActionName>

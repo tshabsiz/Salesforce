@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
+        <label><!-- Account Executive --></label>
+        <name>Account_Executive__c</name>
+    </fields>
+    <fields>
         <help><!-- You can add multiple Account Numbers by separating them with a comma. e.g. 33333,44444,55555 --></help>
         <label><!-- Account Number(s) --></label>
         <name>Account_Number__c</name>
@@ -170,8 +174,28 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Budget approval --></label>
+        <name>Budget_approval__c</name>
+    </fields>
+    <fields>
         <label><!-- Business Area --></label>
         <name>Business_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Cluster --></label>
+        <name>Business_Cluster__c</name>
+        <picklistValues>
+            <masterLabel>CIB</masterLabel>
+            <translation><!-- CIB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GTIS</masterLabel>
+            <translation><!-- GTIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RBB</masterLabel>
+            <translation><!-- RBB --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Business Hours --></label>
@@ -182,6 +206,18 @@
         <name>Business_Owner_Action__c</name>
     </fields>
     <fields>
+        <label><!-- Business Owner Brid No --></label>
+        <name>Business_Owner_Brid_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Owner Email Address --></label>
+        <name>Business_Owner_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Owner Name --></label>
+        <name>Business_Owner__c</name>
+    </fields>
+    <fields>
         <label><!-- Business Unit --></label>
         <name>Business_Unit_Cluster_Segment__c</name>
         <relationshipLabel><!-- Cases --></relationshipLabel>
@@ -189,6 +225,11 @@
     <fields>
         <label><!-- Business Unit --></label>
         <name>Business_Unit__c</name>
+    </fields>
+    <fields>
+        <help><!-- what are we buying? Why are we buying, How will this be delivered to the Bank? --></help>
+        <label><!-- Business case --></label>
+        <name>Business_case__c</name>
     </fields>
     <fields>
         <label><!-- CF Code Status --></label>
@@ -308,6 +349,10 @@
             <masterLabel>System Issue</masterLabel>
             <translation><!-- System Issue --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Creator Picture --></label>
+        <name>Case_Creator_Picture__c</name>
     </fields>
     <fields>
         <label><!-- Case Originator --></label>
@@ -517,18 +562,6 @@
         <name>Created_Hour__c</name>
     </fields>
     <fields>
-        <label><!-- Creator Country --></label>
-        <name>Creator_Country__c</name>
-    </fields>
-    <fields>
-        <label><!-- Creator Hub --></label>
-        <name>Creator_Hub__c</name>
-    </fields>
-    <fields>
-        <label><!-- Creator Team --></label>
-        <name>Creator_Team__c</name>
-    </fields>
-    <fields>
         <label><!-- DMD --></label>
         <name>DMD__c</name>
     </fields>
@@ -557,6 +590,10 @@
         <help><!-- The original Case description --></help>
         <label><!-- Description ( Original ) --></label>
         <name>Description_Original__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description Tracking --></label>
+        <name>Description_Tracking__c</name>
     </fields>
     <fields>
         <label><!-- Desired Action --></label>
@@ -864,6 +901,10 @@
         <name>Failure_Reason__c</name>
     </fields>
     <fields>
+        <label><!-- Finance BP --></label>
+        <name>Finance_BP__c</name>
+    </fields>
+    <fields>
         <label><!-- Fire Feedback Alert --></label>
         <name>Fire_Feedback_Alert__c</name>
     </fields>
@@ -903,20 +944,12 @@
             <translation><!-- CIB Financial Crime Compliance --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>COB Client Mandates</masterLabel>
-            <translation><!-- COB Client Mandates --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Cash Send</masterLabel>
             <translation><!-- Cash Send --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Channel Specialist</masterLabel>
             <translation><!-- Channel Specialist --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Client On Boarding</masterLabel>
-            <translation><!-- Client On Boarding --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Digital Ops Support</masterLabel>
@@ -949,10 +982,6 @@
         <picklistValues>
             <masterLabel>RBB Cash Operations</masterLabel>
             <translation><!-- RBB Cash Operations --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Refresh</masterLabel>
-            <translation><!-- Refresh --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Regional Service Centre Commercial Cape Town</masterLabel>
@@ -1113,126 +1142,6 @@
         <picklistValues>
             <masterLabel>Non - Financial</masterLabel>
             <translation><!-- Non - Financial --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
-        <label><!-- Issue Type --></label>
-        <name>Issue_Type__c</name>
-        <picklistValues>
-            <masterLabel>Access Setup</masterLabel>
-            <translation><!-- Access Setup --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Africa Access</masterLabel>
-            <translation><!-- Africa Access --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Batch Time Entry</masterLabel>
-            <translation><!-- Batch Time Entry --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Box</masterLabel>
-            <translation><!-- Box --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Box Installation</masterLabel>
-            <translation><!-- Box Installation --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Bulk Upload</masterLabel>
-            <translation><!-- Bulk Upload --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Call Report</masterLabel>
-            <translation><!-- Call Report --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Cases</masterLabel>
-            <translation><!-- Cases --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Changing Ownership</masterLabel>
-            <translation><!-- Changing Ownership --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Client Plan</masterLabel>
-            <translation><!-- Client Plan --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Complaint</masterLabel>
-            <translation><!-- Complaint --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Compliment</masterLabel>
-            <translation><!-- Compliment --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Data query</masterLabel>
-            <translation><!-- Data query --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Delete beneficiary</masterLabel>
-            <translation><!-- Delete beneficiary --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Feedback</masterLabel>
-            <translation><!-- Feedback --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Investigation</masterLabel>
-            <translation><!-- Investigation --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>JLOC</masterLabel>
-            <translation><!-- JLOC --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Matter</masterLabel>
-            <translation><!-- Matter --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Opportunity</masterLabel>
-            <translation><!-- Opportunity --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Other</masterLabel>
-            <translation><!-- Other --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Queue Access</masterLabel>
-            <translation><!-- Queue Access --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Relationship</masterLabel>
-            <translation><!-- Relationship --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Reports &amp; Dashboard</masterLabel>
-            <translation><!-- Reports &amp; Dashboard --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Request</masterLabel>
-            <translation><!-- Request --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Scout Access</masterLabel>
-            <translation><!-- Scout Access --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Service types</masterLabel>
-            <translation><!-- Service types --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Technical</masterLabel>
-            <translation><!-- Technical --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Transaction query</masterLabel>
-            <translation><!-- Transaction query --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Troubleshooting</masterLabel>
-            <translation><!-- Troubleshooting --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -2102,6 +2011,10 @@
         <name>Service_Type__c</name>
     </fields>
     <fields>
+        <label><!-- Service commencement date --></label>
+        <name>Service_commencement_date__c</name>
+    </fields>
+    <fields>
         <label><!-- Severity --></label>
         <name>Severity__c</name>
     </fields>
@@ -2128,6 +2041,11 @@
             <masterLabel>3</masterLabel>
             <translation><!-- 3 --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Sponsor (Managing Principal and above) --></help>
+        <label><!-- Sponsor --></label>
+        <name>Sponsor__c</name>
     </fields>
     <fields>
         <label><!-- Staff Error Description --></label>
@@ -3301,6 +3219,22 @@
     <fields>
         <label><!-- Type Of Goodwill --></label>
         <name>Type_of_Goodwill__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Request --></label>
+        <name>Type_of_Request__c</name>
+        <picklistValues>
+            <masterLabel>New Service for Existing</masterLabel>
+            <translation><!-- New Service for Existing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Service for New Supplier</masterLabel>
+            <translation><!-- New Service for New Supplier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proof of Concept</masterLabel>
+            <translation><!-- Proof of Concept --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Type of Transfer Authorised --></label>

@@ -14,7 +14,6 @@ public class evTestDataGenerator
     Public Event_Booking__c             TestEventBooking;
     Public Delegate__c                  TestDelegate;
     Public Event_Session__c             TestSession;
-    Public Event_Session__c             TestSession2;
     Public Event_Session_Booking__c     TestSessionBooking;
     Public Product2                     Testproduct;
     Public EM_Printer__c                TestPrinter;
@@ -154,24 +153,10 @@ public class evTestDataGenerator
                 Name = 'Test Session',
             	Event_Function__c = TestEvent.Id,
                 Type__c = 'Group',
-                Date__c = Date.today(),
-                Start_Time__c =  time.newInstance(00, 000 , 000, 000),
-                end_time__c =  time.newInstance(00, 000 , 000, 000)
+                Date__c = Date.today()
             );
         
         insert TestSession;
-        
-         TestSession2 = new Event_Session__c
-            (
-                Name = 'Test Session',
-            	Event_Function__c = TestEvent.Id,
-                Type__c = 'Group',
-                Date__c = Date.today(),
-                Start_Time__c =  time.newInstance(00, 000 , 000, 000),
-                end_time__c =  time.newInstance(00, 000 , 000, 000)
-            );
-        
-        insert TestSession2;
         
         TestSessionBooking = new Event_Session_Booking__c 
             (
@@ -184,4 +169,5 @@ public class evTestDataGenerator
         insert TestSessionBooking;
         
     } 
+    
 }

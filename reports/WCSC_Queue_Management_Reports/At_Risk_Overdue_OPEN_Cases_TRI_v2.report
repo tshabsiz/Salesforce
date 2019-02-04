@@ -47,9 +47,6 @@
         <field>SUBJECT</field>
     </columns>
     <columns>
-        <field>CREATED_DATEONLY</field>
-    </columns>
-    <columns>
         <field>Case.Case_Age_In_Business_Hours__c</field>
     </columns>
     <columns>
@@ -112,6 +109,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <interval>INTERVAL_PREVCURY</interval>
+        <interval>INTERVAL_PREVCURFY</interval>
     </timeFrameFilter>
 </Report>

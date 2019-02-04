@@ -6,7 +6,6 @@
     <emailOwnerOnReply>true</emailOwnerOnReply>
     <enableAnswerViaEmail>true</enableAnswerViaEmail>
     <enableChatterAnswers>true</enableChatterAnswers>
-    <enableFacebookSSO>false</enableFacebookSSO>
     <enableInlinePublisher>false</enableInlinePublisher>
     <enableReputation>true</enableReputation>
     <enableRichTextEditor>true</enableRichTextEditor>

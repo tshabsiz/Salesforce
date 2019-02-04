@@ -38,7 +38,7 @@
                 <column>PROFILE</column>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
-                <value>Barclays Read Only,Barclays Standard User,Standard User,Standard User (Banking - Private),Standard User ( Lightning ),Standard User (Markets),Standard User ( Private Lightning ),Standard User (Research),Standard User (RoA),Standard User (TBS User)</value>
+                <value>ABSA META User,ABSA Research User,Banking User (Custom),Barclays Private Side User,Barclays Standard User,Standard User ( Lightning ),Standard User ( Private Lightning )</value>
             </criteriaItems>
         </filter>
         <format>Summary</format>
@@ -78,7 +78,7 @@
                 <column>PROFILE</column>
                 <isUnlocked>true</isUnlocked>
                 <operator>equals</operator>
-                <value>Barclays Read Only,Barclays Standard User,Standard User,Standard User (Banking - Private),Standard User ( Lightning ),Standard User (Markets),Standard User ( Private Lightning ),Standard User (Research),Standard User (RoA),Standard User (TBS User)</value>
+                <value>ABSA META User,ABSA Research User,Banking User (Custom),Barclays Private Side User,Barclays Standard User,Standard User ( Lightning ),Standard User ( Private Lightning )</value>
             </criteriaItems>
         </filter>
         <format>Summary</format>
@@ -114,7 +114,7 @@
         <field>ADDRESS_COUNTRY_CODE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>CIB FO users vs logged in</name>
+    <name>KPI - Sales Cloud users vs logged in</name>
     <reportType>User</reportType>
     <showDetails>true</showDetails>
 </Report>

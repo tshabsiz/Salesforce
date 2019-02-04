@@ -266,15 +266,6 @@
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
         <workflowTimeTriggers>
             <actions>
-                <name>Sector_Head_Matrix_Lead_Assignment_Request_Escalated</name>
-                <type>Alert</type>
-            </actions>
-            <offsetFromField>Matrix_Lead__c.Assignment_Request_Date__c</offsetFromField>
-            <timeLength>2</timeLength>
-            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
-        </workflowTimeTriggers>
-        <workflowTimeTriggers>
-            <actions>
                 <name>Empty_Assignment_Date</name>
                 <type>FieldUpdate</type>
             </actions>
@@ -284,6 +275,15 @@
             </actions>
             <offsetFromField>Matrix_Lead__c.Assignment_Request_Date__c</offsetFromField>
             <timeLength>7</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Sector_Head_Matrix_Lead_Assignment_Request_Escalated</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Matrix_Lead__c.Assignment_Request_Date__c</offsetFromField>
+            <timeLength>2</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
     </rules>
@@ -300,15 +300,6 @@
             <operation>notEqual</operation>
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
-        <workflowTimeTriggers>
-            <actions>
-                <name>Banker_and_Sector_Head_Matrix_Lead_21_Days_Notification</name>
-                <type>Alert</type>
-            </actions>
-            <offsetFromField>Matrix_Lead__c.Assignment_Date__c</offsetFromField>
-            <timeLength>21</timeLength>
-            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
-        </workflowTimeTriggers>
         <workflowTimeTriggers>
             <actions>
                 <name>Banker_and_Sector_Head_Matrix_Lead_90_Days_Notification</name>
@@ -342,6 +333,15 @@
             </actions>
             <offsetFromField>Matrix_Lead__c.Assignment_Date__c</offsetFromField>
             <timeLength>81</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Banker_and_Sector_Head_Matrix_Lead_21_Days_Notification</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Matrix_Lead__c.Assignment_Date__c</offsetFromField>
+            <timeLength>21</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
     </rules>

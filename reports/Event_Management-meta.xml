@@ -26,11 +26,6 @@
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
-        <accessLevel>EditAllContents</accessLevel>
-        <sharedTo>devorah.barnes@absa1.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
         <accessLevel>View</accessLevel>
         <sharedTo>neil.pryce@absa1.com</sharedTo>
         <sharedToType>User</sharedToType>

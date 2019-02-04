@@ -514,9 +514,6 @@
                 <div class="">
                     <apex:inputtextarea id="executiveSummary" styleClass="ckeditor sectorOverviewEditor" richtext="false" />
                 </div>
-                <div>
-                    <apex:outputText styleClass="richTextAlert" value="{!$Label.lbl_CopyPasteRichTextAlert}"/>
-                </div>
                 <div class="bold">
                     <apex:outputText value="{!$ObjectType.Client_Plan__c.fields.Sector_Overview__c.Label}" />
                 </div>

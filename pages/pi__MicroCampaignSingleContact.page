@@ -8,8 +8,8 @@
   <div id="engage_email_container"></div>
 </div>
 <apex:includeLightning ></apex:includeLightning>
-<apex:includeScript value="{!URLFOR($Resource.pi__MarketingActions, 'js/jquery-3.3.1.min.js')}"></apex:includeScript>
-<apex:includeScript value="{!URLFOR($Resource.pi__jquery_ui_1_12_1, 'jquery-ui.min.js')}"></apex:includeScript>
+<apex:includeScript value="{!URLFOR($Resource.pi__MarketingActions, 'js/jquery-2.1.1.min.js')}"></apex:includeScript>
+<apex:includeScript value="{!URLFOR($Resource.pi__jquery_ui_1_11_1_custom_has_dialog, 'jquery-ui.min.js')}"></apex:includeScript>
 <apex:includeScript value="{!URLFOR($Resource.pi__ckeditorSalesReach, 'ckeditor/ckeditor.js')}"></apex:includeScript>
 <script type="text/javascript">
   window.SessionId = '{!$Api.Session_ID}';
@@ -25,6 +25,7 @@
   window.returnUrl = '{!JSENCODE(returnUrl)}';
   window.invalidObjectType = '{!IF(invalidObjectTypeError, "true", "false")}';
   window.userHasInsufficientAccess = '{!IF(userHasInsufficientAccess, "true", "false")}';
+  window.TemplateLockingEnabled = {!IF(hasTemplateLockingEnabled, "true", "false")};
   window.soboEnabled = {!IF(soboEnabled, "true", "false")};
   window.EngageAttachmentsEnabled = {!IF(hasEngageAttachmentsEnabled, "true", "false")};
   window.UiUpdatesPdfUrl = '{!URLFOR($Resource.MicroCampaign, 'pdf/Engage_Editor_Updates.pdf')}';

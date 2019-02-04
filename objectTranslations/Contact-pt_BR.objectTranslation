@@ -293,10 +293,6 @@
         <name>Image__c</name>
     </fields>
     <fields>
-        <label><!-- Inactive Contact --></label>
-        <name>Inactive_Contact__c</name>
-    </fields>
-    <fields>
         <label><!-- Primary Role --></label>
         <name>Job_Role__c</name>
         <picklistValues>

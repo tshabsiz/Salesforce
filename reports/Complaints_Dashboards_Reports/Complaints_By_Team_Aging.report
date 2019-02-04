@@ -274,10 +274,10 @@
         <chartType>VerticalColumnGrouped</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Case.Resolving_Area__c</groupingColumn>
+        <groupingColumn>Case.SLA_Status__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
-        <secondaryGroupingColumn>Case.SLA_Status__c</secondaryGroupingColumn>
+        <secondaryGroupingColumn>BucketField_30020645</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -311,9 +311,6 @@
         <field>OWNER</field>
     </columns>
     <columns>
-        <field>CREATED</field>
-    </columns>
-    <columns>
         <field>BucketField_11690829</field>
     </columns>
     <columns>
@@ -323,7 +320,6 @@
         <field>Case.SLA__c</field>
     </columns>
     <columns>
-        <aggregateTypes>Average</aggregateTypes>
         <field>AGE</field>
     </columns>
     <columns>

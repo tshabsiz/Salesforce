@@ -8,16 +8,15 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>Donut</chartType>
+        <chartType>HorizontalBar</chartType>
         <enableHoverLabels>false</enableHoverLabels>
-        <expandOthers>false</expandOthers>
+        <expandOthers>true</expandOthers>
         <groupingColumn>FK_$Account.Client_Country__c</groupingColumn>
-        <legendPosition>Bottom</legendPosition>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
-        <showPercentage>true</showPercentage>
-        <showTotal>true</showTotal>
-        <showValues>true</showValues>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
         <size>Medium</size>
         <summaryAxisRange>Auto</summaryAxisRange>
         <textColor>#000000</textColor>
@@ -30,10 +29,6 @@
     </columns>
     <columns>
         <field>FK_NAME</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Average</aggregateTypes>
-        <field>Client_Plan__c.Progress__c</field>
     </columns>
     <columns>
         <field>Client_Plan__c.Status__c</field>
@@ -60,19 +55,40 @@
         <field>CUST_OWNER_NAME</field>
     </columns>
     <currency>ZAR</currency>
-    <description>Assumes all CPs created by CIB FO</description>
-    <format>Matrix</format>
-    <groupingsAcross>
-        <dateGranularity>Day</dateGranularity>
-        <field>FK_$Account.Coverage_country__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsAcross>
+    <description>Used in Sales Cloud Adoption KPI dashboard</description>
+    <filter>
+        <criteriaItems>
+            <column>Client_Plan__c.Strategies_Count__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Client_Plan__c.Relationships_Count__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Client_Plan__c.Client_Overview__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Client_Plan__c.Sector_Overview__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>FK_$Account.Client_Country__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>CIB FO # of Client Plans</name>
+    <name>KPI - # of Client Plans</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -81,7 +97,7 @@
     <scope>organization</scope>
     <showDetails>false</showDetails>
     <showGrandTotal>true</showGrandTotal>
-    <showSubTotals>false</showSubTotals>
+    <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Client_Plan__c.Last_Review_Date__c</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

@@ -47,7 +47,6 @@
     <description>Acts as &quot;junction&quot; object, linking a Content Document to a parent Playlist</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>

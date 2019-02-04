@@ -71,7 +71,7 @@ Public class MatterHandler_CaseConvert_test   {
          }
          system.debug('***XXX**'+TestClass.LstBoxFiles);
          
-          TestClass.MatterCase.LegalDivision__c='CIB';    
+               
           TestClass.ConvertMatterToCase();
           TestClass.AddMatter = true; 
           

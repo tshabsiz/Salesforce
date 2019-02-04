@@ -47,7 +47,6 @@
     <description>A Solution Overview is a presentation created for a release to provide an overview of a designated set of features. This object tracks the location, status, and user story &amp; branding cross references for all solution overviews.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>

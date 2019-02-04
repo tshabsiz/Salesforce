@@ -21,6 +21,12 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <componentInstances>
+            <componentName>trailheadapp:UserBadgeCount</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentName>trailheadapp:UserBadgeList</componentName>
+        </componentInstances>
+        <componentInstances>
             <componentName>force:relatedListContainer</componentName>
         </componentInstances>
         <mode>Replace</mode>

@@ -88,8 +88,8 @@
         <criteriaItems>
             <column>Contact$Owner.Hub__c</column>
             <isUnlocked>false</isUnlocked>
-            <operator>contains</operator>
-            <value>Coverage South Africa</value>
+            <operator>equals</operator>
+            <value>Coverage South Africa - Coastal Regions,Coverage South Africa - Financial Services,Coverage South Africa - Global Clients,Coverage South Africa - Public Sector,Coverage South Africa - Sectors</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

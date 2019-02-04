@@ -1516,14 +1516,9 @@
         <label>TRI collections</label>
     </customValue>
     <customValue>
-        <fullName>Refresh</fullName>
+        <fullName>Group Procurement</fullName>
         <default>false</default>
-        <label>Refresh</label>
-    </customValue>
-    <customValue>
-        <fullName>COB Client Mandates</fullName>
-        <default>false</default>
-        <label>COB Client Mandates</label>
+        <label>Group Procurement</label>
     </customValue>
     <customValue>
         <fullName>Client engagement - CPT Complaints</fullName>

@@ -46,7 +46,6 @@
     <description>To hold webhook post from box</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>false</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>

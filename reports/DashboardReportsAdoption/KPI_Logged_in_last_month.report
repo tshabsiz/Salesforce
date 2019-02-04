@@ -104,8 +104,8 @@
         <criteriaItems>
             <column>PROFILE</column>
             <isUnlocked>false</isUnlocked>
-            <operator>contains</operator>
-            <value>standard,private</value>
+            <operator>equals</operator>
+            <value>Barclays Private Side User,Barclays Read Only,Barclays Standard User,Standard User,Standard User (Banking - Private),Standard User ( Lightning ),Standard User (Markets),Standard User ( Private Lightning ),Standard User (Research),Standard User (RoA),Standard User (TBS User)</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

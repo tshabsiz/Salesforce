@@ -21,14 +21,7 @@ public class AcmMitigantCRUDService {
         collateralRelationships =  [SELECT Relationship__r.SDS__c,relationship__r.CIF__c,Relationship__c,isPrimaryRelationship__c,Collateral_Type__c,Active__c, Relationship_Type__c FROM Collateral_Relationship__c where Collateral__c =: collateral.Id];    
         return collateralRelationships;
     }
-    public static List<Collateral_Monitoring__c> getAllMonitoringsForCollateral(Collateral__c collateral)
-    {
-        return [Select id,Collateral_Type__c,Account_Number__c,Account_Type__c,Item_to_Monitor__c From Collateral_Monitoring__c where Collateral__c =:collateral.id ];
-    }
-    public static List<Collateral_Monitoring__c> getAllMonitoringsForCollateral(List<ID> collateralIds)
-    {
-        return [Select id,Collateral_Type__c,Account_Number__c,Account_Type__c,Item_to_Monitor__c From Collateral_Monitoring__c where Collateral__c IN:collateralIds AND Collateral_Type__c = 'Cash'];
-    }
+    
     public static List<Collateral_Facility__c> getAllFacilitiesForCollateral(Collateral__c collateral) {
         return [SELECT Collateral__c,Acmfacility__r.Facility_Id__c, acmfacility__r.Bank_Application_key__c,Saved_To_Acm__c,Active__c, Facility_Client__c, AcmFacility__c FROM Collateral_Facility__c where Collateral__c = :collateral.id];
     }
@@ -64,9 +57,6 @@ public class AcmMitigantCRUDService {
             acmCollateral.hasError__c = false;
             acmCollateral.OwnerId = collateral.OwnerId;
             acmCollateral.Collateral__c = collateral.Id;
-            
-            upsert acmCollateral;
-            AcmStatuses.add(acmCollateral);
             return acmCollateral;
         }
         return acmCollateralStatus;
@@ -91,15 +81,7 @@ public class AcmMitigantCRUDService {
         }
         return CFs;
     }
-    public static List<Collateral_Monitoring__c> getAllCMonitorings(Collateral__c collateral, List<Collateral_Monitoring__c> CMonitorings) {
-        List<Collateral_Monitoring__c> CMs = new List<Collateral_Monitoring__c>();
-        for(Collateral_Monitoring__c cm : CMonitorings ) {
-            if(cm.Collateral__c == collateral.Id) {
-                CMs.add(cm);
-            }
-        }
-        return CMs;
-    }
+    
     public static Acm_Collateral_Status__c getStatus(Id collateralId, List<Acm_Collateral_Status__c> AcmStatuses) {
         for(Acm_Collateral_Status__c st : AcmStatuses){
             if(Id.valueOf(st.Collateral_Id__c) == collateralId){
@@ -109,27 +91,23 @@ public class AcmMitigantCRUDService {
         return null; 
     }
     
-    public static void createOrUpdateMitigantsList(List<Acm_Collateral_Status__c> AcmStatuses, List<Collateral__c> collaterals, List<Collateral_Relationship__c> CRelationships,
-                                                   List<Collateral_Facility__c> CFacilities,List<Collateral_Monitoring__c> CMonitorings) {
+    public static void createOrUpdateMitigantsList(List<Acm_Collateral_Status__c> AcmStatuses, List<Collateral__c> collaterals, List<Collateral_Relationship__c> CRelationships,List<Collateral_Facility__c> CFacilities) {
         List<Acm_Collateral_Status__c> AcmStatusesUpdated = new List<Acm_Collateral_Status__c>();
         for(Collateral__c collateral : collaterals) {
-            String body = createMitigantJsonBodyList(collateral,getAllCRelationships(collateral,CRelationships),getAllCFacilities(collateral, CFacilities)
-                                                     ,getAllCMonitorings(collateral,CMonitorings),CREATE_UPDATE_ACTION, BAAP, MITIGANT_TYPE);
-            Acm_Collateral_Status__c acmStatus = sendBodyToAcm(body, collateral, AcmStatuses, CRelationships, CFacilities,CMonitorings);
+            String body = createMitigantJsonBodyList(collateral,getAllCRelationships(collateral,CRelationships),getAllCFacilities(collateral, CFacilities),CREATE_UPDATE_ACTION, BAAP, MITIGANT_TYPE);
+            Acm_Collateral_Status__c acmStatus = sendBodyToAcm(body, collateral, AcmStatuses, CRelationships, CFacilities);
             if(acmStatus != null) {
-              AcmStatusesUpdated.add(acmStatus);
+            	AcmStatusesUpdated.add(acmStatus);
             }
         }
         update AcmStatusesUpdated;
     }
     
-    public static String createMitigantJsonBodyList(Collateral__c collateral,List<Collateral_Relationship__c> collateralRelationships,List<Collateral_Facility__c> collateralFacilities,
-                                                    List<Collateral_Monitoring__c> collateralMonitorings,String action, string baapId, String mitigantType) {
-        return createBodyArray(collateral, collateralRelationships, collateralFacilities,collateralMonitorings);
+    public static String createMitigantJsonBodyList(Collateral__c collateral,List<Collateral_Relationship__c> collateralRelationships,List<Collateral_Facility__c> collateralFacilities, String action, string baapId, String mitigantType) {
+        return createBodyArray(collateral, collateralRelationships, collateralFacilities);
     }
     
-    public static Acm_Collateral_Status__c sendBodyToAcm(String body, Collateral__c collateral, List<Acm_Collateral_Status__c> AcmStatuses, List<Collateral_Relationship__c> collateralRelationships,
-                                                         List<Collateral_Facility__c> collateralFacilities,List<Collateral_Monitoring__c> collateralMonitorings) {
+    public static Acm_Collateral_Status__c sendBodyToAcm(String body, Collateral__c collateral, List<Acm_Collateral_Status__c> AcmStatuses, List<Collateral_Relationship__c> collateralRelationships,List<Collateral_Facility__c> collateralFacilities) {
         MESSAGE = '';   
         Map<String, String> headers = createHeader();
             Acm_Collateral_Status__c acmStatus = new Acm_Collateral_Status__c();
@@ -138,8 +116,7 @@ public class AcmMitigantCRUDService {
                     if(response != null) {
                         System.debug(LoggingLevel.Info, 'RESPONSE BODY : ' +  response.getBody());
                         if(response.getStatusCode() == 200) {
-                            String createdBody = json.serialize(createMitigantObject(collateral,collateralRelationships,collateralFacilities,collateralMonitorings));
-                            System.debug(createdBody);
+                            String createdBody = json.serialize(createMitigantObject(collateral,collateralRelationships,collateralFacilities));
                             boolean isValid = verifyBody(response.getBody(), createdBody);
                             if(!isValid) {
                                 MESSAGE = 'ACM Body verification failed : Please call you administrator';
@@ -149,7 +126,7 @@ public class AcmMitigantCRUDService {
                         }
                     } 
                     acmStatus = createOrUpdateAcmStatusList(collateral, AcmStatuses);
-          return UpdateAcmStatus(collateral, AcmStatuses);
+					return UpdateAcmStatus(collateral, AcmStatuses);
             } else {
                 MESSAGE = 'Your acm integration settings are not set.';
             }
@@ -181,11 +158,9 @@ public class AcmMitigantCRUDService {
         if(collateral != null) {
             List<Collateral_Relationship__c> collateralRelationships = getAllRelationshipsForCollateral(collateral);
             List<Collateral_Facility__c> collateralFacilities = getAllFacilitiesForCollateral(collateral);
-            List<Collateral_Monitoring__c> collateralMonitoring = getAllMonitoringsForCollateral(collateral);
-            
             List<Acm_Collateral_Status__c> acmStatuses = getAllCollateralAcmStatuses(collateral);
-            String body = createMitigantJsonBodyList(collateral,collateralRelationships,collateralFacilities,collateralMonitoring,CREATE_UPDATE_ACTION, BAAP, MITIGANT_TYPE);
-            Acm_Collateral_Status__c acmStatus = sendBodyToAcm(body, collateral, acmStatuses, collateralRelationships, collateralFacilities,collateralMonitoring);
+            String body = createMitigantJsonBodyList(collateral,collateralRelationships,collateralFacilities,CREATE_UPDATE_ACTION, BAAP, MITIGANT_TYPE);
+            Acm_Collateral_Status__c acmStatus = sendBodyToAcm(body, collateral, acmStatuses, collateralRelationships, collateralFacilities);
             if(acmStatus != null){
                 upsert acmStatus;
             }
@@ -271,8 +246,6 @@ public class AcmMitigantCRUDService {
     
     public static HttpResponse createOrUpdateMitigantObject(Map<String, String> headers, string url, string method, string body) {
         AcmHttpClient acmHttpClient = new AcmHttpClient(headers, url, method, body);
-        
-        System.debug(body);
         HttpResponse response = null;
         
         try {
@@ -399,8 +372,8 @@ public class AcmMitigantCRUDService {
     }
     
     public static String createBodyArray(Collateral__c collateral, List<Collateral_Relationship__c> collateralRelationships, 
-                                  List<Collateral_Facility__c> collateralFacilities,List<Collateral_Monitoring__c> collateralMonitorings) {                      
-        Mitigant mitigant = createMitigantObject(collateral,collateralRelationships, collateralFacilities,collateralMonitorings);
+                                  List<Collateral_Facility__c> collateralFacilities) {                      
+        Mitigant mitigant = createMitigantObject(collateral,collateralRelationships, collateralFacilities);
         
         Mitigant deleteMitigant = new Mitigant();     
         deleteMitigant.type = MITIGANT_TYPE;
@@ -419,7 +392,7 @@ public class AcmMitigantCRUDService {
         if(collateral.Acm_External_Id__c != null){
            readMitigant.PRCD = collateral.Acm_External_Id__c ;                               
         }
-        readMitigant.details = 'ProviderRole,BeneficiaryRole,AllowedProduct,MarketValuation,Udf';
+        readMitigant.details = 'ProviderRole,BeneficiaryRole,AllowedProduct,MarketValuation';
         
         Mitigant[] mitigants = new Mitigant[]{deleteMitigant,mitigant,readMitigant};
             
@@ -435,182 +408,152 @@ public class AcmMitigantCRUDService {
     }
     
     public static Mitigant createMitigantObject(Collateral__c collateral, List<Collateral_Relationship__c> collateralRelationships, 
-                                  List<Collateral_Facility__c> collateralFacilities,List<Collateral_Monitoring__c> collateralmonitorings) {
+                                  List<Collateral_Facility__c> collateralFacilities) {
                                       
-                                      Map<String,String> countryCodeMap =new Map<String,String>();
-                                      // Get the object type of the SObject.
-                                      Schema.sObjectType contactType = Contact.getSObjectType();
-                                      // Describe the SObject using its object type.
-                                      Schema.DescribeSObjectResult contactDescribe = contactType.getDescribe();
-                                      // Get a map of fields for the SObject
-                                      map<String, Schema.SObjectField> fieldMap = contactDescribe.fields.getMap();
-                                      // Get the list of picklist values for this field.
-                                      list<Schema.PicklistEntry> countryCodes = fieldMap.get('MailingCountryCode').getDescribe().getPickListValues();
-                                      // Add these values to the selectoption list.
-                                      for (Schema.PicklistEntry picklist : countryCodes) {
-                                          countryCodeMap.put(picklist.getLabel(), picklist.getValue());
-                                      }
+            Map<String,String> countryCodeMap =new Map<String,String>();
+            // Get the object type of the SObject.
+            Schema.sObjectType contactType = Contact.getSObjectType();
+            // Describe the SObject using its object type.
+            Schema.DescribeSObjectResult contactDescribe = contactType.getDescribe();
+            // Get a map of fields for the SObject
+            map<String, Schema.SObjectField> fieldMap = contactDescribe.fields.getMap();
+            // Get the list of picklist values for this field.
+            list<Schema.PicklistEntry> countryCodes = fieldMap.get('MailingCountryCode').getDescribe().getPickListValues();
+            // Add these values to the selectoption list.
+            for (Schema.PicklistEntry picklist : countryCodes) {
+                countryCodeMap.put(picklist.getLabel(), picklist.getValue());
+            }
+                
+            ObjectRelation[] providers = new ObjectRelation[]{};
+            for(Collateral_Relationship__c collateralRelationship : CollateralRelationships) {
+                    Provider provider = new Provider();
+                    if(collateralRelationship.Active__c && collateralRelationship.Relationship_Type__c == 'Provider') {
+                        String key = collateralRelationship.relationship__r.SDS__c;
+                        if(collateralRelationship.relationship__r.SDS__c == null || collateralRelationship.relationship__r.SDS__c == '') {
+                            key = collateralRelationship.relationship__r.CIF__c;
+                            if(key.contains(';')) {
+                                key = key.split(';')[0];
+                            }
+                        }
+                        provider.type = 'ProviderRole';
+                        provider.QROCD = 'Mitigant Provider';
+                        provider.RIENSHNA = String.valueOf(key);
+                        provider.REINALID = String.valueOf(key);
+                        provider.action = CREATE_UPDATE_ACTION;
+                        if( key!= null && key.isNumeric() == true) {
+                            provider.ALTYNA = 'SDS';
+                        } else {
+                            provider.ALTYNA = 'CIF';       
+                        }
+                        if(collateralRelationship.isPrimaryRelationship__c) {
+                            provider.ISROPTPC = '100';                            
+                        } else {
+                            provider.ISROPTPC = '0';
+                        }
+                        providers.add(provider);
+                    } else if(collateralRelationship.Active__c && collateralRelationship.Relationship_Type__c == 'Beneficiary' && collateral.Scope__c == 'Beneficiary' ) {
+                        String key = collateralRelationship.relationship__r.SDS__c;
+                        if(collateralRelationship.relationship__r.SDS__c == null || collateralRelationship.relationship__r.SDS__c == '') {
+                            key = collateralRelationship.relationship__r.CIF__c;
+                            if(key.contains(';')) {
+                                key = key.split(';')[0];
+                            }
+                        }
+                        provider.type = 'BeneficiaryRole';
+                        provider.QROCD = 'BENEF';
+                        provider.RIENSHNA = String.valueOf(key);
+                        provider.REINALID = String.valueOf(key);
+                        provider.action = CREATE_UPDATE_ACTION;
+                        if(key != null && key.isNumeric() == true) {
+                            provider.ALTYNA = 'SDS';
+                        } else {
+                            provider.ALTYNA = 'CIF';       
+                        }
+                        
+                        if(collateralRelationship.isPrimaryRelationship__c) {
+                            provider.ISROPTPC = '100';                            
+                        } else {
+                            provider.ISROPTPC = '0';
+                        }
+                        providers.add(provider);
+                } 
+            }        
+        System.debug('Getting collateral facility : ' + collateralFacilities);
+        for(Collateral_Facility__c collateralFacility : collateralFacilities) {
+            if(collateralFacility.Active__c && collateral.Scope__c == 'Facility' ) {
+                    // Delete if found
+                    AllowedProduct allowedProductDelete = new AllowedProduct();
+                    allowedProductDelete.type = 'AllowedProduct';
+                    allowedProductDelete.action = DELETE_ACTION;
+                    allowedProductDelete.PRCDPR = collateralFacility.ACMFacility__r.Facility_Id__c;
+                    allowedProductDelete.BAAPIDPR = collateralFacility.ACMFacility__r.Bank_Application_key__c;
+                    providers.add(allowedProductDelete);
+                    
+                    // Recreate
+                    AllowedProduct allowedProductCreate = new AllowedProduct();
+                    allowedProductCreate.type = 'AllowedProduct';
+                    allowedProductCreate.action = ALLOWED_PRODUCT_ACTION;
+                    allowedProductCreate.PRCDPR = collateralFacility.ACMFacility__r.Facility_Id__c;
+                    allowedProductCreate.BAAPIDPR = collateralFacility.ACMFacility__r.Bank_Application_key__c;
+                    providers.add(allowedProductCreate);
+            }
+        }
                                       
-                                      ObjectRelation[] providers = new ObjectRelation[]{};
-                                          for(Collateral_Relationship__c collateralRelationship : CollateralRelationships) {
-                                              Provider provider = new Provider();
-                                              if(collateralRelationship.Active__c && collateralRelationship.Relationship_Type__c == 'Provider') {
-                                                  String key = collateralRelationship.relationship__r.SDS__c;
-                                                  if(collateralRelationship.relationship__r.SDS__c == null || collateralRelationship.relationship__r.SDS__c == '') {
-                                                      key = collateralRelationship.relationship__r.CIF__c;
-                                                      if(key.contains(';')) {
-                                                          key = key.split(';')[0];
-                                                      }
-                                                  }
-                                                  provider.type = 'ProviderRole';
-                                                  provider.QROCD = 'Mitigant Provider';
-                                                  provider.RIENSHNA = String.valueOf(key);
-                                                  provider.REINALID = String.valueOf(key);
-                                                  provider.action = CREATE_UPDATE_ACTION;
-                                                  if( key!= null && key.isNumeric() == true) {
-                                                      provider.ALTYNA = 'SDS';
-                                                  } else {
-                                                      provider.ALTYNA = 'CIF';       
-                                                  }
-                                                  if(collateralRelationship.isPrimaryRelationship__c) {
-                                                      provider.ISROPTPC = '100';                            
-                                                  } else {
-                                                      provider.ISROPTPC = '0';
-                                                  }
-                                                  providers.add(provider);
-                                              } else if(collateralRelationship.Active__c && collateralRelationship.Relationship_Type__c == 'Beneficiary' && collateral.Scope__c == 'Beneficiary' ) {
-                                                  String key = collateralRelationship.relationship__r.SDS__c;
-                                                  if(collateralRelationship.relationship__r.SDS__c == null || collateralRelationship.relationship__r.SDS__c == '') {
-                                                      key = collateralRelationship.relationship__r.CIF__c;
-                                                      if(key.contains(';')) {
-                                                          key = key.split(';')[0];
-                                                      }
-                                                  }
-                                                  provider.type = 'BeneficiaryRole';
-                                                  provider.QROCD = 'BENEF';
-                                                  provider.RIENSHNA = String.valueOf(key);
-                                                  provider.REINALID = String.valueOf(key);
-                                                  provider.action = CREATE_UPDATE_ACTION;
-                                                  if(key != null && key.isNumeric() == true) {
-                                                      provider.ALTYNA = 'SDS';
-                                                  } else {
-                                                      provider.ALTYNA = 'CIF';       
-                                                  }
-                                                  
-                                                  if(collateralRelationship.isPrimaryRelationship__c) {
-                                                      provider.ISROPTPC = '100';                            
-                                                  } else {
-                                                      provider.ISROPTPC = '0';
-                                                  }
-                                                  providers.add(provider);
-                                              } 
-                                          }        
-                                      System.debug('Getting collateral facility : ' + collateralFacilities);
-                                      for(Collateral_Facility__c collateralFacility : collateralFacilities) {
-                                          if(collateralFacility.Active__c && collateral.Scope__c == 'Facility' ) {
-                                              // Delete if found
-                                              AllowedProduct allowedProductDelete = new AllowedProduct();
-                                              allowedProductDelete.type = 'AllowedProduct';
-                                              allowedProductDelete.action = DELETE_ACTION;
-                                              allowedProductDelete.PRCDPR = collateralFacility.ACMFacility__r.Facility_Id__c;
-                                              allowedProductDelete.BAAPIDPR = collateralFacility.ACMFacility__r.Bank_Application_key__c;
-                                              providers.add(allowedProductDelete);
-                                              
-                                              // Recreate
-                                              AllowedProduct allowedProductCreate = new AllowedProduct();
-                                              allowedProductCreate.type = 'AllowedProduct';
-                                              allowedProductCreate.action = ALLOWED_PRODUCT_ACTION;
-                                              allowedProductCreate.PRCDPR = collateralFacility.ACMFacility__r.Facility_Id__c;
-                                              allowedProductCreate.BAAPIDPR = collateralFacility.ACMFacility__r.Bank_Application_key__c;
-                                              providers.add(allowedProductCreate);
-                                          }
-                                      }
+        String PRCD = String.valueOf(collateral.Collateral_No__c).toUpperCase();
+        if(collateral.Acm_External_Id__c != null) {
+            PRCD = String.valueOf(collateral.Acm_External_Id__c).toUpperCase();
+        } 
+        
+        // Create mitigant
+        Mitigant mitigant = new Mitigant();
+        mitigant.type = MITIGANT_TYPE;
+        mitigant.action = CREATE_UPDATE_ACTION;
+        mitigant.BAAPID = BAAP;
+        mitigant.PRCD = PRCD ;
+        mitigant.COTYGR = collateral.Collateral_Group__r.Credit_Code__c;
+        mitigant.COTY = collateral.Collateral_Type1__r.Credit_Code__c;
+        mitigant.PRDE = collateral.Comments__c; 
+        //mitigant.PRMG = (collateral.Comments__c == null ? '' : (collateral.Comments__c + '\n') ) +  ' '+ collateral.Asset_Description__c == null?'':collateral.Asset_Description__c;
+        mitigant.STDA = String.valueOf(collateral.Signature_Date__c);
+        mitigant.EDDA = String.valueOf(collateral.Expiry_Date__c);
+        mitigant.APCUCD = String.valueOf(collateral.CurrencyIsoCode);
+        mitigant.APAM = String.valueOf(collateral.Value__c);
+        mitigant.CUCD = collateral.CurrencyIsoCode;
+        // Had to populate NVAM and NVCUCD this for PLUM report
+        mitigant.NVAM =  String.valueOf(collateral.Value__c);
+        mitigant.NVCUCD = collateral.CurrencyIsoCode;
                                       
-                                      //KeyValueWrapper[] Udfs = new KeyValueWrapper[]{};
-                                          
-                                          for(Collateral_Monitoring__c CM : collateralmonitorings)
-                                      {
-                                          Provider UDFprovider = new Provider();
-                                          UDFprovider.type = 'Udf';
-                                          UDFprovider.UDTYNA = 'Holding Account Number';
-                                          UDFprovider.action = CREATE_UPDATE_ACTION;
-                                          UDFprovider.TAID = 'COG';
-                                          UDFprovider.UDDA = CM.account_number__c;
-                                          providers.add(UDFprovider);
-                                          
-                                          UDFprovider = new Provider();
-                                          UDFprovider.type = 'Udf';
-                                          UDFprovider.UDTYNA = 'Holding Account Type';
-                                          UDFprovider.TAID = 'COG';
-                                          UDFprovider.action = CREATE_UPDATE_ACTION;
-                                          UDFprovider.UDDA = CM.Account_Type__c;
-                                          providers.add(UDFprovider);
-                                          
-                                          UDFprovider = new Provider();
-                                          UDFprovider.type = 'Udf';
-                                          UDFprovider.UDTYNA = 'Item to Monitor';
-                                          UDFprovider.TAID = 'COG';
-                                          UDFprovider.action = CREATE_UPDATE_ACTION;
-                                          UDFprovider.UDDA = CM.Item_To_Monitor__c;
-                                          providers.add(UDFprovider);
-                                      }
+        mitigant.CTSHNA = countryCodeMap.get(collateral.Country__c);
+        mitigant.CTGEID = '';
+        mitigant.ACTFL = 'Y';
+        if(Date.today() > collateral.Expiry_Date__c) {
+            mitigant.ACTFL = 'N';
+        }
                                       
-                                      String PRCD = String.valueOf(collateral.Collateral_No__c).toUpperCase();
-                                      if(collateral.Acm_External_Id__c != null) {
-                                          PRCD = String.valueOf(collateral.Acm_External_Id__c).toUpperCase();
-                                      } 
-                                      
-                                      // Create mitigant
-                                      Mitigant mitigant = new Mitigant();
-                                      //                           mitigant.UDF = Udfs;
-                                      mitigant.type = MITIGANT_TYPE;
-                                      mitigant.action = CREATE_UPDATE_ACTION;
-                                      mitigant.BAAPID = BAAP;
-                                      mitigant.PRCD = PRCD ;
-                                      mitigant.COTYGR = collateral.Collateral_Group__r.Credit_Code__c;
-                                      mitigant.COTY = collateral.Collateral_Type1__r.Credit_Code__c;
-                                      mitigant.PRDE = collateral.Comments__c; 
-                                      //mitigant.PRMG = (collateral.Comments__c == null ? '' : (collateral.Comments__c + '\n') ) +  ' '+ collateral.Asset_Description__c == null?'':collateral.Asset_Description__c;
-                                      mitigant.STDA = String.valueOf(collateral.Signature_Date__c);
-                                      mitigant.EDDA = String.valueOf(collateral.Expiry_Date__c);
-                                      mitigant.APCUCD = String.valueOf(collateral.CurrencyIsoCode);
-                                      mitigant.APAM = String.valueOf(collateral.Value__c);
-                                      mitigant.CUCD = collateral.CurrencyIsoCode;
-                                      // Had to populate NVAM and NVCUCD this for PLUM report
-                                      mitigant.NVAM =  String.valueOf(collateral.Value__c);
-                                      mitigant.NVCUCD = collateral.CurrencyIsoCode;
-                                      
-                                      mitigant.CTSHNA = countryCodeMap.get(collateral.Country__c);
-                                      mitigant.CTGEID = '';
-                                      mitigant.ACTFL = 'Y';
-                                      if(Date.today() > collateral.Expiry_Date__c) {
-                                          mitigant.ACTFL = 'N';
-                                      }
-                                      
-                                      // If we are releasing to ACM
-                                      if(collateral.Status__c == 'Released') {
-                                          mitigant.ACTFL = 'N';
-                                          mitigant.RLDA = String.valueOf(Date.today());
-                                      }
-                                      
-                                      if(collateral.Scope__c == 'Beneficiary') {
-                                          mitigant.SCPIN = 'B'; 
-                                      } else {
-                                          mitigant.SCPIN = 'F';
-                                      }
-                                      // Create MarketValuation
-                                      MarketValuation marketValuation = new MarketValuation();
-                                      marketValuation.action = CREATE_ACTION;
-                                      marketValuation.type = 'MarketValuation';
-                                      marketValuation.MKVACUCD = String.valueOf(collateral.CurrencyIsoCode);
-                                      marketValuation.MKVAAM = String.valueOf(collateral.Value__c);
-                                      marketValuation.CTRLIN = 'Y';
-                                      providers.add(marketValuation);
-                                      
-                                      // Add providers
-                                      mitigant.objects = providers;                          
-                                      return mitigant;
-                                  }
+        // If we are releasing to ACM
+        if(collateral.Status__c == 'Released') {
+            mitigant.ACTFL = 'N';
+            mitigant.RLDA = String.valueOf(Date.today());
+        }
+        
+        if(collateral.Scope__c == 'Beneficiary') {
+            mitigant.SCPIN = 'B'; 
+        } else {
+            mitigant.SCPIN = 'F';
+        }
+        // Create MarketValuation
+        MarketValuation marketValuation = new MarketValuation();
+        marketValuation.action = CREATE_ACTION;
+        marketValuation.type = 'MarketValuation';
+        marketValuation.MKVACUCD = String.valueOf(collateral.CurrencyIsoCode);
+        marketValuation.MKVAAM = String.valueOf(collateral.Value__c);
+        marketValuation.CTRLIN = 'Y';
+        providers.add(marketValuation);
+        
+        // Add providers
+        mitigant.objects = providers;                          
+        return mitigant;
+    }
     
     private static String renameFields(String body) {
         body = body.replace('"type"', '"_type"');
@@ -645,7 +588,6 @@ public class AcmMitigantCRUDService {
         // Not required anymore, ACM will set it
         // public String CMPU { get; set; }
         public ObjectRelation[] objects { get; set; }
-        //public KeyValueWrapper[] UDF{get;set;}
     }
     
     private class Provider extends ObjectRelation {
@@ -654,9 +596,6 @@ public class AcmMitigantCRUDService {
         public String ISROPTPC { get; set; }
         public String REINALID { get; set; }
         public String ALTYNA { get; set; }
-        public string UDTYNA{get;set;}
-        public string TAID{get;set;}
-        public string UDDA{get;set;}
     }
     
     private class AllowedProduct extends ObjectRelation {
@@ -682,12 +621,5 @@ public class AcmMitigantCRUDService {
     
     private class FacilityLookUp {
         public String counterpartyid { get; set; }
-    }
-    
-    
-    private class KeyValueWrapper
-    {
-        public string UDTYNA {get;set;}
-        public string UDDA {get;set;}
     }
 }

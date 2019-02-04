@@ -16,12 +16,6 @@
         <field>Case.SLA_RAG_Status__c</field>
     </columns>
     <columns>
-        <field>Case.Service_Type__c</field>
-    </columns>
-    <columns>
-        <field>Case.Number_of_Requests__c</field>
-    </columns>
-    <columns>
         <field>SUBJECT</field>
     </columns>
     <columns>

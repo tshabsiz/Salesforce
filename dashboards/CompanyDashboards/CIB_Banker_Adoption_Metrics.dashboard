@@ -14,6 +14,7 @@
                     <column>RowCount</column>
                 </chartSummary>
                 <componentType>Gauge</componentType>
+                <decimalPrecision>-1</decimalPrecision>
                 <displayUnits>Auto</displayUnits>
                 <gaugeMax>110.0</gaugeMax>
                 <gaugeMin>0.0</gaugeMin>
@@ -401,7 +402,7 @@
                 <indicatorHighColor>#54C254</indicatorHighColor>
                 <indicatorLowColor>#C25454</indicatorLowColor>
                 <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-                <report>Commercial_Property_Finance/Contacts_owned_by_CPF_efz</report>
+                <report>DashboardReportsAdoption/KPI_Contacts_owned_by_SA_Bankers1</report>
                 <showPicturesOnTables>false</showPicturesOnTables>
                 <title>Contacts owned by SA Bankers</title>
             </dashboardComponent>
@@ -535,6 +536,7 @@
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
                 <flexComponentProperties>
+                    <decimalPrecision>-1</decimalPrecision>
                     <flexTableColumn>
                         <reportColumn>Account.Hub_F__c</reportColumn>
                         <showTotal>true</showTotal>

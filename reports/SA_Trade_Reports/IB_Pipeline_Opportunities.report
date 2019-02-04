@@ -13,12 +13,6 @@
         <field>ACCOUNT_NAME</field>
     </columns>
     <columns>
-        <field>Opportunity.Related_Group_Client__c</field>
-    </columns>
-    <columns>
-        <field>Opportunity.Related_Group_Client_CIF__c</field>
-    </columns>
-    <columns>
         <field>Account.Segment__c</field>
     </columns>
     <columns>
@@ -95,12 +89,6 @@
     </columns>
     <columns>
         <field>LAST_UPDATE</field>
-    </columns>
-    <columns>
-        <field>Opportunity.Reason_Won_Lost__c</field>
-    </columns>
-    <columns>
-        <field>Opportunity.Loss_Win_Description__c</field>
     </columns>
     <columns>
         <field>OPPORTUNITY_ID</field>

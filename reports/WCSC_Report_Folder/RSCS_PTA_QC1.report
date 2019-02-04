@@ -19,7 +19,7 @@
             <column>Case_QA__c.AgentName__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>contains</operator>
-            <value>Charity,Hellen,Daphne,Nombulelo,Phumzile Lekubu,Liezel,Zinzile,Anusha,cleopatra mazwane</value>
+            <value>Charity,Hellen,Daphne,Nombulelo,Phumzile Lekubu,Liezel,Zinzile,Anusha</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -40,8 +40,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CUST_CREATED_DATE</dateColumn>
-        <endDate>2019-12-31</endDate>
+        <endDate>2018-10-12</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2019-01-01</startDate>
+        <startDate>2018-10-12</startDate>
     </timeFrameFilter>
 </Report>

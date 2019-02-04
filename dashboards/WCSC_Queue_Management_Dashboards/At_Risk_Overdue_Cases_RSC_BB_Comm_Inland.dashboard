@@ -23,29 +23,88 @@
             <expandOthers>false</expandOthers>
             <groupingColumn>OWNER</groupingColumn>
             <groupingColumn>Case.SLA_Status__c</groupingColumn>
-            <header>WCSC ALL - At Risk/Overdue</header>
+            <header>WCSC ALL - At Risk/Overdue - Last Month &amp; This Month as @ today</header>
             <legendPosition>Bottom</legendPosition>
             <report>WCSC_Queue_Management_Reports/At_Risk_Overdue_OPEN_Cases_WCSC_ALL</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowValueDescending</sortBy>
+            <title>Last Month &amp; This Month as @ today OPEN</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Case.Number_of_Requests__c</column>
+            </chartSummary>
+            <componentType>BarStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingColumn>OWNER</groupingColumn>
+            <groupingColumn>Case.SLA_Status__c</groupingColumn>
+            <header>EBS ALL - At Risk/Overdue - Last Month &amp; This Month as @ today</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>WCSC_Queue_Management_Reports/At_Risk_Overdue_OPEN_Cases_EBS_ALL</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Last Month &amp; This Month as @ today OPEN</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Case.Number_of_Requests__c</column>
+            </chartSummary>
             <componentType>BarStacked</componentType>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
-            <header>TRI - At Risk/Overdue</header>
+            <groupingColumn>OWNER</groupingColumn>
+            <groupingColumn>Case.SLA_Status__c</groupingColumn>
+            <header>EBSH - At Risk/Overdue - Last Month &amp; This Month as @ today</header>
             <legendPosition>Bottom</legendPosition>
-            <report>WCSC_Queue_Management_Reports/At_Risk_Overdue_OPEN_Cases_TRI_v2</report>
+            <report>WCSC_Queue_Management_Reports/At_Risk_Overdue_OPEN_Cases_EBSH</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowValueDescending</sortBy>
+            <title>Last Month &amp; This Month as @ today OPEN</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Case.Number_of_Requests__c</column>
+            </chartSummary>
+            <componentType>BarStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingColumn>OWNER</groupingColumn>
+            <groupingColumn>Case.SLA_Status__c</groupingColumn>
+            <header>EBSS - At Risk/Overdue - Last Month &amp; This Month as @ today</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>WCSC_Queue_Management_Reports/At_Risk_Overdue_OPEN_Cases_EBSS</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Last Month &amp; This Month as @ today OPEN</title>
             <useReportChart>false</useReportChart>
         </components>
     </leftSection>
@@ -67,12 +126,13 @@
             <expandOthers>false</expandOthers>
             <groupingColumn>OWNER</groupingColumn>
             <groupingColumn>Case.SLA_Status__c</groupingColumn>
-            <header>RSC/S CORP ALL - At Risk/Overdue</header>
+            <header>RSC/S CORP ALL - At Risk/Overdue - Last Month &amp; This Month as @ today</header>
             <legendPosition>Bottom</legendPosition>
             <report>WCSC_Queue_Management_Reports/At_Risk_Overdue_OPEN_Cases_RSCCorp_ALL</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowValueDescending</sortBy>
+            <title>Last Month &amp; This Month as @ today OPEN</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -91,12 +151,13 @@
             <expandOthers>false</expandOthers>
             <groupingColumn>OWNER</groupingColumn>
             <groupingColumn>Case.SLA_Status__c</groupingColumn>
-            <header>RSC/S CORP Inland - At Risk/Overdue</header>
+            <header>RSC/S CORP Inland - At Risk/Overdue - Last Month &amp; This Month as @ today</header>
             <legendPosition>Bottom</legendPosition>
             <report>WCSC_Queue_Management_Reports/At_Risk_Overdue_OPENCases_RSCCor_Inlan</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowValueDescending</sortBy>
+            <title>Last Month &amp; This Month as @ today OPEN</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -115,12 +176,31 @@
             <expandOthers>false</expandOthers>
             <groupingColumn>OWNER</groupingColumn>
             <groupingColumn>Case.SLA_Status__c</groupingColumn>
-            <header>RSC/S CORP Coastal - At Risk/Overdue</header>
+            <header>RSC/S CORP Coastal - At Risk/Overdue - Last Month &amp; This Month as @ today</header>
             <legendPosition>Bottom</legendPosition>
             <report>WCSC_Queue_Management_Reports/At_Risk_Overdue_OPENCases_RSCCor_Coast</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowValueDescending</sortBy>
+            <title>Last Month &amp; This Month as @ today OPEN</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>BarStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <header>TRI - At Risk/Overdue - Last Month &amp; This Month as @ today</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>WCSC_Queue_Management_Reports/At_Risk_Overdue_OPEN_Cases_TRI_v2</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Last Month &amp; This Month as @ today OPEN</title>
             <useReportChart>false</useReportChart>
         </components>
     </middleSection>
@@ -142,12 +222,13 @@
             <expandOthers>false</expandOthers>
             <groupingColumn>OWNER</groupingColumn>
             <groupingColumn>Case.SLA_Status__c</groupingColumn>
-            <header>EBS ALL - At Risk/Overdue</header>
+            <header>RSC BB ALL - At Risk/Overdue - Last Month &amp; This Month as @ today</header>
             <legendPosition>Bottom</legendPosition>
-            <report>WCSC_Queue_Management_Reports/At_Risk_Overdue_OPEN_Cases_EBS_ALL</report>
+            <report>WCSC_Queue_Management_Reports/At_Risk_Overdue_Cases_RSC_BB_ALL</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowValueDescending</sortBy>
+            <title>Last Month &amp; This Month as @ today OPEN</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -162,16 +243,17 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>false</enableHover>
+            <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>OWNER</groupingColumn>
             <groupingColumn>Case.SLA_Status__c</groupingColumn>
-            <header>EBSH - At Risk/Overdue</header>
+            <header>RSC BB Comm Inland - At Risk/Overdue - Last Month &amp; This Month as @ today</header>
             <legendPosition>Bottom</legendPosition>
-            <report>WCSC_Queue_Management_Reports/At_Risk_Overdue_OPEN_Cases_EBSH</report>
+            <report>WCSC_Queue_Management_Reports/Overdue</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowValueDescending</sortBy>
+            <title>Last Month &amp; This Month as @ today OPEN</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -186,22 +268,48 @@
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>false</enableHover>
+            <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <groupingColumn>OWNER</groupingColumn>
             <groupingColumn>Case.SLA_Status__c</groupingColumn>
-            <header>EBSS - At Risk/Overdue</header>
+            <header>RSC BB Comm Coastal - At Risk/Overdue - Last Month &amp; This Month as @ today</header>
             <legendPosition>Bottom</legendPosition>
-            <report>WCSC_Queue_Management_Reports/At_Risk_Overdue_OPEN_Cases_EBSS</report>
+            <report>WCSC_Queue_Management_Reports/At_Risk_Overdue_Cases_RSC_Com_Coastal</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowValueDescending</sortBy>
+            <title>Last Month &amp; This Month as @ today OPEN</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Case.Number_of_Requests__c</column>
+            </chartSummary>
+            <componentType>BarStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingColumn>OWNER</groupingColumn>
+            <groupingColumn>Case.SLA_Status__c</groupingColumn>
+            <header>RSC BB Enterprise - At Risk/Overdue - Last Month &amp; This Month as @ today</header>
+            <legendPosition>Bottom</legendPosition>
+            <report>WCSC_Queue_Management_Reports/At_Risk_Overdue_Cases_RSC_Enterprise</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>Last Month &amp; This Month as @ today</title>
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>
     <runningUser>daryn.britz@absa1.com</runningUser>
     <textColor>#000000</textColor>
-    <title>At Risk &amp; Overdue CORP OPEN Cases - Click on graph to get more detail</title>
+    <title>At Risk &amp; Overdue OPEN Cases - Click on graph to get more detail</title>
     <titleColor>#000000</titleColor>
     <titleSize>12</titleSize>
 </Dashboard>

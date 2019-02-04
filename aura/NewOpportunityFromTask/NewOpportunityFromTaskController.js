@@ -13,7 +13,6 @@
               helper.createToastEvent("Error!", "To create a new opportunity Related To field must be a Relationship Group or Prospect.");
             } else {
               component.set("v.whatId", response.getReturnValue().WhatId);
-              component.set("v.campaignId", response.getReturnValue().Campaign__c);
               var action2 = component.get("c.fetchRecordTypeValues");
               action2.setCallback(this, function(response) {
                 component.set("v.lstOfRecordType", response.getReturnValue());
@@ -35,7 +34,6 @@
        
       var action = component.get("c.getRecTypeId");
       var accountId = component.get("v.whatId");
-      var campaignId = component.get("v.campaignId");
       var recordTypeLabel = component.find("selectid").get("v.value");
       action.setParams({
          "recordTypeLabel": recordTypeLabel
@@ -49,8 +47,7 @@
                "entityApiName": 'Opportunity',
                "recordTypeId": RecTypeID,
                "defaultFieldValues": {
-               		'AccountId' : accountId,
-                    'CampaignId' : campaignId  
+               		'AccountId' : accountId
                }
             });
             createRecordEvent.fire();  

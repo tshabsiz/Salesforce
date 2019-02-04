@@ -47,7 +47,6 @@
     <description>Stores the hierarchies of all test cases for increased performance.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>true</enableReports>
@@ -107,6 +106,13 @@
         <fullName>agf__All</fullName>
         <filterScope>Everything</filterScope>
         <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>agf__All_items</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All_items</label>
+        <language>en_US</language>
     </listViews>
     <nameField>
         <label>Hierarchy Name</label>

@@ -83,8 +83,14 @@
         <criteriaItems>
             <column>OWNER_PROFILE</column>
             <isUnlocked>false</isUnlocked>
-            <operator>equals</operator>
-            <value>Barclays Private Side User,Barclays Read Only,Barclays Standard User,Standard User,Standard User (Banking - Private),Standard User ( Lightning ),Standard User (Markets),Standard User ( Private Lightning ),Standard User (Research),Standard User (RoA),Standard User (TBS User)</value>
+            <operator>notContain</operator>
+            <value>wealth,admin</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Segment__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Business Banking,High-Net,Ultra High-Net,Wealth Families,Analyst,Asset Consultants,Corporate,IFA,Multi-manager,Pension Funds,Platform,ABSA Wealth,AIFA</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -112,7 +118,6 @@
         <value>1</value>
     </params>
     <reportType>OpportunityProduct</reportType>
-    <roleHierarchyFilter>BAGL_Management</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>

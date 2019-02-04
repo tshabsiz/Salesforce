@@ -810,46 +810,6 @@
         <default>false</default>
         <label>STF ROA</label>
     </customValue>
-    <customValue>
-        <fullName>Leap</fullName>
-        <default>false</default>
-        <label>Leap</label>
-    </customValue>
-    <customValue>
-        <fullName>Box</fullName>
-        <default>false</default>
-        <label>Box</label>
-    </customValue>
-    <customValue>
-        <fullName>Ascot</fullName>
-        <default>false</default>
-        <label>Ascot</label>
-    </customValue>
-    <customValue>
-        <fullName>Wealth</fullName>
-        <default>false</default>
-        <label>Wealth</label>
-    </customValue>
-    <customValue>
-        <fullName>Event</fullName>
-        <default>false</default>
-        <label>Event</label>
-    </customValue>
-    <customValue>
-        <fullName>CSC</fullName>
-        <default>false</default>
-        <label>CSC</label>
-    </customValue>
-    <customValue>
-        <fullName>PocketFlow</fullName>
-        <default>false</default>
-        <label>PocketFlow</label>
-    </customValue>
-    <customValue>
-        <fullName>Pricing Tool</fullName>
-        <default>false</default>
-        <label>Pricing Tool</label>
-    </customValue>
     <masterLabel>Channel</masterLabel>
     <sorted>false</sorted>
 </GlobalValueSet>

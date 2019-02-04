@@ -39,7 +39,6 @@ trigger Case_Trigger on Case (before insert, before update, after insert, after 
                 if(trigger.new.size() == 1){
                     if(isComplaint)
                     {
-                        
                         CSC_Case_Trigger_Functions_Complaint.updateServiceMapping(trigger.new,trigger.oldMap);
                         CSC_Case_Trigger_Functions_Complaint.feedbackResponse(trigger.new,trigger.oldMap);
                         CSC_Case_Trigger_Functions_Complaint.updateSLADdate(trigger.new,trigger.oldMap);
@@ -54,6 +53,8 @@ trigger Case_Trigger on Case (before insert, before update, after insert, after 
             }else if(trigger.isInsert){
                 //Skip this if the Case was updated via a bulk process as we pull info from the mapping table and wil run into limits
                 //Tonga MM : Added this in code due to conflict of process builder and apex on lightning
+                    CSC_Case_Trigger_Functions.updatePicCases(trigger.new,true);
+
                 CSC_utility.DefualtWIP(Trigger.New);
                 if(trigger.new.size() == 1){
                     if(isComplaint)

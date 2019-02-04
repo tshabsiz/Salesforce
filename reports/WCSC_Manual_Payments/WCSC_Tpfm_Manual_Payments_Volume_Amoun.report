@@ -102,7 +102,7 @@
             <column>Case.Service_Type__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>ND External 3rd Party,ND Internal 1st Party,ND Internal 3rd Party,ND Salary Payments,SD External 3rd Party,SD Internal 1st Party,SD Internal 3rd Party,SD Salary Payments,Sweeping Instruction,Sweeping Instruction - Standing,Journal Processing,ND Journal Processing,SD Journal Processing</value>
+            <value>ND External 3rd Party,ND Internal 1st Party,ND Internal 3rd Party,ND Salary Payments,SD External 3rd Party,SD Internal 1st Party,SD Internal 3rd Party,SD Salary Payments,Sweeping Instruction,Sweeping Instruction - Standing,Journal Processing,Journals,ND Journal Processing,SD Journal Processing</value>
         </criteriaItems>
         <criteriaItems>
             <column>Case.Full_Department__c</column>

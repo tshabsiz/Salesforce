@@ -36,7 +36,7 @@
                 </dashboardFilterColumns>
                 <flexComponentProperties>
                     <flexTableColumn>
-                        <reportColumn>Call_Report__c.Relationship__c.Name</reportColumn>
+                        <reportColumn>Call_Report__c.Relationship__c.Name__lookup</reportColumn>
                         <showTotal>true</showTotal>
                         <type>detail</type>
                     </flexTableColumn>

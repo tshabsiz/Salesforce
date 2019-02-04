@@ -3,9 +3,9 @@
     <available>true</available>
     <encodingKey>ISO-8859-1</encodingKey>
     <letterhead>ABSA_internal_notification</letterhead>
-    <name>Email To Insurance For Closed CPF Deals For PvT Opps</name>
+    <name>Email To Insurance For Closed CPF Deals</name>
     <style>freeForm</style>
-    <subject>CPF Quote Request For {!Opportunity.Name}.</subject>
+    <subject>Closed Opportunity : {!Opportunity.Name}</subject>
     <textOnly>Good Day Team,
 
 

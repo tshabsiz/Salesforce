@@ -41,7 +41,7 @@
         <field>Contact$Owner</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>CIB FO Contacts loaded - CY</name>
+    <name>KPI - Contacts owned by CIB</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -52,7 +52,7 @@
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
-        <dateColumn>Contact$CreatedDate</dateColumn>
-        <interval>INTERVAL_CURFY</interval>
+        <dateColumn>Contact$LastModifiedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

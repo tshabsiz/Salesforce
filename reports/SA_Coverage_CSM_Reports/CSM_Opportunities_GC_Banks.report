@@ -63,7 +63,7 @@
             <column>Opportunity.CSM_Initiator__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Brian Mooi,Chifunda Muwila,Hildegard Snyman,Jethan Dhaness,Letta Phakathi,Lucien Granger,Melinda Buys,Rodney Rikhotso,Thomas Devonshire</value>
+            <value>brian mooi,chifunda muwila,hildegard snyman,Jethan Dhaness,letta phakathi,Lucien Granger,melinda buys,rodney rikhotso,Thomas Devonshire</value>
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>

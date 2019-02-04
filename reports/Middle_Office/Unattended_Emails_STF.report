@@ -99,7 +99,7 @@
             <column>Case.Queue__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>STF - Trade</value>
+            <value>OA - Middle Office</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>

@@ -42,7 +42,12 @@
             <axisBinding>y</axisBinding>
             <column>OpportunityLineItem.Income_this_Year__c</column>
         </chartSummaries>
-        <chartType>VerticalColumnGrouped</chartType>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>OpportunityLineItem.Income_this_Year__c</column>
+        </chartSummaries>
+        <chartType>VerticalColumnGroupedLine</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
         <groupingColumn>Opportunity.Opportunity_Country__c</groupingColumn>

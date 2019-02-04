@@ -4,7 +4,7 @@
     <contactAccessLevel>Read</contactAccessLevel>
     <description>GHA - CIB - Markets - TM</description>
     <mayForecastManagerShare>false</mayForecastManagerShare>
-    <name>GHA - CIB - Markets - Corporate TM</name>
+    <name>GHA - CIB - Markets - TM</name>
     <opportunityAccessLevel>Edit</opportunityAccessLevel>
-    <parentRole>GHA_CIB_Markets_Corporate</parentRole>
+    <parentRole>Ghana_CIB_Markets</parentRole>
 </Role>

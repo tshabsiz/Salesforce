@@ -89,7 +89,7 @@
     <name>Opps - CY linked to Unmanaged</name>
     <params>
         <name>open</name>
-        <value>all</value>
+        <value>closed</value>
     </params>
     <params>
         <name>probability</name>
@@ -100,7 +100,6 @@
         <value>1</value>
     </params>
     <reportType>OpportunityProduct</reportType>
-    <roleHierarchyFilter>BAGL_Management</roleHierarchyFilter>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>

@@ -79,4 +79,16 @@ public without sharing class UserTrigger_Helper {
             }   
         }
     }
+    
+     public static void UpdateProfilePicture(List<User> newUser, List<User> oldUser) {
+        
+       system.debug('newUser'+newUser);
+         system.debug('oldUser'+oldUser);
+        for (User u: newUser) {
+            User us = [Select FullPhotoUrl from user where id =: u.id];
+            u.Full_Photo_URL1__c = us.FullPhotoUrl ;
+      
+        }
+       
+     }
 }

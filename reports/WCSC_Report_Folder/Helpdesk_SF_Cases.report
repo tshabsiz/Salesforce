@@ -10,25 +10,16 @@
         <field>CREATED</field>
     </columns>
     <columns>
-        <field>Case.Team__c</field>
-    </columns>
-    <columns>
         <field>ORIGIN</field>
     </columns>
     <columns>
         <field>CREATED_DATE</field>
     </columns>
     <columns>
-        <field>COMMENT_MODIFIED_DATE</field>
+        <field>COMMENT_CREATED_DATE</field>
     </columns>
     <columns>
         <field>CLOSED_DATEONLY</field>
-    </columns>
-    <columns>
-        <field>Case.First_Case_Comment__c</field>
-    </columns>
-    <columns>
-        <field>Case.Last_Case_Comment__c</field>
     </columns>
     <columns>
         <field>ACCOUNT.NAME</field>
@@ -39,6 +30,9 @@
     <columns>
         <field>Case.User_Code__c</field>
     </columns>
+    <columns>
+        <field>CASE_COMMENT</field>
+    </columns>
     <currency>ZAR</currency>
     <filter>
         <criteriaItems>
@@ -46,12 +40,6 @@
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>EBSH - 2nd Line,EBSH - Absa Electronic Banking,EBSH - C2B,EBSH - Diamond 1,EBSH - Diamond 2,EBSH - Diamond 3,EBSH - Diamond 4,EBSH - Diamond 5,EBSH - Magtapes,EBSH - Passwords,EBSH - Digital Certificates,EBSH - EFX Support</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>RECORDTYPE</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>Case.CSC_Default_Support_Cases,Case.CSC_Manual_Cases</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
@@ -73,8 +61,8 @@
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>COMMENT_CREATED_DATE</dateColumn>
-        <endDate>2018-01-03</endDate>
+        <endDate>2018-09-14</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2018-01-03</startDate>
+        <startDate>2018-09-14</startDate>
     </timeFrameFilter>
 </Report>

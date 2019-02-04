@@ -84,6 +84,26 @@
     <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
+    <fieldSets>
+        <fullName>System_feids</fullName>
+        <description>systems only</description>
+        <displayedFields>
+            <field>Attitude_to_Risk_Rating__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BEE_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>advpm__Active__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>System feids</label>
+    </fieldSets>
     <fields>
         <fullName>AUM_Size_of_Business__c</fullName>
         <externalId>false</externalId>
@@ -3248,17 +3268,6 @@ HYPERLINK(&quot;/apex/ADAPT360?queryType=cif&amp;regId=&quot; &amp; CIF__c,
         <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Owner_Country__c</fullName>
-        <externalId>false</externalId>
-        <formula>Owner.Country</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Owner Country</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Ownership</fullName>

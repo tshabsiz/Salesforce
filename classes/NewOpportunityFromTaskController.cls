@@ -14,7 +14,7 @@ public class NewOpportunityFromTaskController {
     
     @AuraEnabled
     public static Task getTaskFields(Id recId){
-        return [SELECT Status, WhatId, What.RecordType.Name, Campaign__c FROM Task WHERE Id =: recId];
+        return [SELECT Status, WhatId, What.RecordType.Name FROM Task WHERE Id =: recId];
     }
     
     @AuraEnabled

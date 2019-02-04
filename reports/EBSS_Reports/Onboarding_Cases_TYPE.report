@@ -42,7 +42,7 @@
             <column>STATUS</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>New,In Progress,On Hold,Awaiting Feedback - Client,Awaiting Feedback - Internal,Awaiting Feedback - 3rd Party</value>
+            <value>New,In Progress,On Hold,Escalated,Awaiting Feedback - Client,Awaiting Feedback - Internal,Awaiting Feedback - 3rd Party,Closed Resolved,Closed - No Response from client,Closed Unresolved,Closed NFFP</value>
         </criteriaItems>
         <criteriaItems>
             <column>OWNER</column>
@@ -79,7 +79,7 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CREATED_DATEONLY</dateColumn>
-        <endDate>2019-12-31</endDate>
+        <endDate>2018-12-31</endDate>
         <interval>INTERVAL_CUSTOM</interval>
         <startDate>2018-03-01</startDate>
     </timeFrameFilter>

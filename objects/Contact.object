@@ -819,16 +819,6 @@ General interests of contact</description>
         <visibleLines>25</visibleLines>
     </fields>
     <fields>
-        <fullName>Inactive_Contact__c</fullName>
-        <defaultValue>false</defaultValue>
-        <description>Check active contacts</description>
-        <externalId>false</externalId>
-        <label>Inactive Contact</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
         <fullName>Jigsaw</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
@@ -2974,7 +2964,7 @@ Third Phone Number</description>
         <filters>
             <field>CONTACT.CREATED_DATE</field>
             <operation>equals</operation>
-            <value>TODAY</value>
+            <value>11/17/2017 12:00 AM</value>
         </filters>
         <label>Contacts Created Today</label>
     </listViews>
@@ -2990,22 +2980,6 @@ Third Phone Number</description>
         <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Mine</filterScope>
         <label>My Contacts</label>
-    </listViews>
-    <listViews>
-        <fullName>Nat_Res_Contacts</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>CONTACT.PHONE1</columns>
-        <columns>CONTACT.EMAIL</columns>
-        <columns>CONTACT.TITLE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CORE.USERS.LAST_NAME</field>
-            <operation>equals</operation>
-            <value>hack,piaray,madondo,chanakira</value>
-        </filters>
-        <label>Nat Res Contacts</label>
     </listViews>
     <searchLayouts>
         <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>

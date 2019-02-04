@@ -3,7 +3,7 @@
 * 17-08-09  DH  IMplemented the new RSVP_Status and Registration_Status values and rules
 *               Rename DelegateRespSting to RSVP
 Throw all exceptions for now. Can do local handling of some later, but need to implement a site error page to handle many of them
-17-08-17  DF Updating to use new delegate fields and removing contact update
+  17-08-17  DF Updating to use new delegate fields and removing contact update
 DF - please see some comments from DH->DF
 DP - Added custom metadata settings
 * 
@@ -23,8 +23,6 @@ public class evRSVP_Controller
     public boolean                  accept3                         {get;set;}
     public Boolean                  isDisableMandatoryFields        {get;set;}
     public Boolean                  PartnersInserted		        {get;set;}
-    list<Event_Session__c> 			thisSessionList					{get;set;}
-    public list<sessionWrapper> 	sessionWrapperList				{get;set;}
     public Map<String, String>      errorList                       = new Map<String, String>();
     public string phoneNumberFormatREGEX {get;set;}
     public string mobileNumberFormatREGEX {get;set;}
@@ -37,7 +35,7 @@ public class evRSVP_Controller
     
     public evRSVP_Controller()
     {
-        
+      
         
         customMeta = evRegistration.GetCustomMetadata('Bhalisa_Default');
         
@@ -80,21 +78,10 @@ public class evRSVP_Controller
         
         try
         {
-            ////////////////////////////Prebooked Delegate Handler - use the evRegistration utility class to fetch data
-            sessionWrapperList =  new list<sessionWrapper>();
+            ////////////////////////////Prebooked Delegate Handler
             thisDelegate = evRegistration.GetDelegate(DelegateID);
             thisContact = evRegistration.GetContact(thisDelegate.Contact__c);
-            thisEvent = evRegistration.GetEvent(thisDelegate.event__c);
-            thisSessionList = evRegistration.getSessions(thisDelegate.event__c, DelegateID);
-            
-            for(Event_Session__c sess : thisSessionList)// populate the sessionWrapperList from the thisSessionList, all items are selected as a default
-            {
-                sessionWrapper wrapper = new sessionWrapper();
-                wrapper.session = sess;
-                wrapper.selected = false;
-                
-                sessionWrapperList.add(wrapper);  
-            }
+            thisEvent = evRegistration.Getevent(thisDelegate.event__c);
             
             listOfPartnerDelegates =  new list<Delegate__c>();// delegatePartnerMap = new MAP<Integer,Delegate__c>();
             Integer count = 0;
@@ -107,6 +94,12 @@ public class evRSVP_Controller
                 }
             }
             
+          /*   
+            if(string.isBlank(thisDelegate.Company__C) == true)
+            {
+                thisDelegate.Company__C = thisContact.Company_name__C;
+            } */
+            
             if(string.isBlank(thisDelegate.first_name__c) == true)
             {
                 thisDelegate.first_name__c = thisContact.firstname;
@@ -117,7 +110,94 @@ public class evRSVP_Controller
                 thisDelegate.last_name__c = thisContact.lastname;
             }
             
-      
+           /*   if(string.isBlank(thisDelegate.Industry__C) == true)
+            {
+                thisDelegate.Industry__C = thisContact.Industry__c;
+            }
+           if(string.isBlank(thisDelegate.email__c) == true) //email used as verification so may not be populated
+            {
+                thisDelegate.email__c = thisContact.email;
+            }
+            thisDelegate.email__c = '';
+            if(string.isBlank(thisDelegate.Assistant_Email__c) == true)
+            {
+                thisDelegate.Assistant_Email__c = thisContact.Assistant_Email__c;
+            }
+            
+            if(string.isBlank(thisDelegate.mobile__c) == true)
+            {
+                thisDelegate.mobile__c = thisContact.mobilePhone;
+            }
+            
+            if(string.isBlank(thisDelegate.Phone__c) == true)
+            {
+                thisDelegate.Phone__c = thisContact.phone;
+            }
+            
+            if(string.isBlank(thisDelegate.Salutation__c) == true)
+            {
+                thisDelegate.Salutation__c = thisContact.Salutation;
+            }
+            
+            if(string.isBlank(thisDelegate.title__c) == true)
+            {
+                thisDelegate.title__c   = thisContact.title;
+            }
+            
+            if(string.isBlank(thisDelegate.id__C) == true)
+            {
+                thisDelegate.id__C = thisContact.id__c;
+            }
+             
+            if(string.isBlank(thisDelegate.Emergency_Contact_Name__c) == true)
+            {
+                thisDelegate.Emergency_Contact_Name__c = thisContact.Emergency_Contact_Name__c;
+            }
+             
+            if(string.isBlank(thisDelegate.Emergency_Contact_Relationship__c) == true)
+            {
+                thisDelegate.Emergency_Contact_Relationship__c = thisContact.Emergency_Contact_Relationship__c;
+            }
+             
+            if(string.isBlank(thisDelegate.Emergency_Contact_Tel__c) == true)
+            {
+                thisDelegate.Emergency_Contact_Tel__c = thisContact.Emergency_Contact_Tel__c;
+            }
+             
+            if(string.isBlank(thisDelegate.Main_Member_Name__c) == true)
+            {
+                thisDelegate.Main_Member_Name__c = thisContact.Main_Member_Name__c;
+            }
+             
+            if(string.isBlank(thisDelegate.Medical_Aid_Name__c) == true)
+            {
+                thisDelegate.Medical_Aid_Name__c = thisContact.Medical_Aid_Name__c;
+            }
+             
+            if(string.isBlank(thisDelegate.Medical_Aid_No__c) == true)
+            {
+                thisDelegate.Medical_Aid_No__c = thisContact.Medical_Aid_No__c;
+            }
+            
+            if(string.isBlank(thisDelegate.Nationality__c) == true)
+            {
+                thisDelegate.Nationality__c = thisContact.Nationality__c;
+            }
+            
+            if(string.isBlank(thisDelegate.Medical_Conditions__c) == true)
+            {
+                thisDelegate.Medical_Conditions__c = thisContact.Medical_Conditions__c;
+            }
+            
+            if(string.isBlank(thisDelegate.Postal_Code__c) == true)
+            {
+                thisDelegate.Postal_Code__c = thisContact.Postal_Code__c;
+            }
+            
+            if(string.isBlank(thisDelegate.Type_of_Identification__c) == true)
+            {
+                thisDelegate.Type_of_Identification__c = thisContact.Type_of_Identification__c;
+            }*/
             thisDelegate.Company__C = null;
             thisDelegate.Industry__C = null;
             thisDelegate.email__c = null;
@@ -132,13 +212,13 @@ public class evRSVP_Controller
             thisDelegate.Main_Member_Name__c = null;
             thisDelegate.Medical_Aid_Name__c = null;
             thisDelegate.Medical_Aid_No__c = null;
-            
+      
             thisDelegate.Medical_Conditions__c = null;
             thisDelegate.Postal_Code__c = null;
             thisDelegate.Type_of_Identification__c = null;
             thisDelegate.Nationality__c = null;
             thisDelegate.Country_Of_Residence__c = null;
-            thisDelegate.Transport_Required__c = false;
+			thisDelegate.Transport_Required__c = false;
         }
         catch (exception e)
         {
@@ -152,7 +232,14 @@ public class evRSVP_Controller
     Public pagereference HandleResponse()
     {
         system.debug(logginglevel.DEBUG, 'HandleResponse Starting...');
-        
+        //DH->DF and checking parameters should be done as the first step before processing anything
+        //check that RSVP has valid value
+        /*if (String.isBlank(RSVP) || (RSVP != 'Yes' && RSVP !='No' && RSVP !='Maybe')) 
+        {
+            MyException e = new MyException ('An unexpected error (ERR-R2) has been encountered.  Please accept our apologies for any inconvenience.\n\n');
+            ApexPages.addMessages(e);
+            throw e;
+        }*/
         //ensure that we have a valid delegate
         if (thisDelegate == Null) 
         {
@@ -167,9 +254,13 @@ public class evRSVP_Controller
         if (rs == 'Accepted' || rs == 'Declined' || rs == 'Confirmed' || rs == 'Cancelled')
         {
             pagereference pr =  page.evRSVP_Info;
-            
+            /*DH->DF As we have ONE controller with multiple pages you do not need to do this... the view state will go with to the new page
+pr.getParameters().put('delid', thisDelegate.id); 
+pr.setRedirect(true);
+*/
             return pr;
         }
+        //DH->DF we need to explicitly cater for all defined values in this type of logic.  Esle is very dangerous
         else if (rs == 'Pending' || rs == '') 
         {
             if (RSVP == 'Yes') 
@@ -202,6 +293,7 @@ public class evRSVP_Controller
                 thisDelegate.RSVP_Time__C = dateTime.now();
             }
             
+            //DH->DF  Make try section only where we expect possible errors:  debug the rest
             try
             {
                 update thisDelegate;
@@ -211,6 +303,7 @@ public class evRSVP_Controller
                 ApexPages.addMessages(new MyException ('An unexpected error (ERR-HR) has been encountered.  Please accept our apologies for any inconvenience.\n\n' ));
                 throw e;
             }
+            
         }
         else  // unexpected value
         {
@@ -252,62 +345,12 @@ public class evRSVP_Controller
         try
         {
             system.debug(LoggingLevel.DEBUG, 'thisContact: ' + thisContact);
-            
-            //generate and/or delete session booking records for the selected/unselected sessions for the current delegate based on the displayed sessions for selection on the RSVP page
-            if(sessionWrapperList.size() > 0)
-            {
-                list<Event_Session_Booking__c> sessionBookingExistingList = new list<Event_Session_Booking__c>();
-                list<Event_Session_Booking__c> sessionBookingInsertList = new list<Event_Session_Booking__c>();
-                list<Event_Session_Booking__c> sessionBookingDeleteList = new list<Event_Session_Booking__c>();
-                
-                for(sessionWrapper sessWrapper : sessionWrapperList)
-                {   
-                    //add existing bookings that are still being attended to sessionBookingExistingList for validation
-                    if(sessWrapper.selected == true && sessWrapper.session.Session_Bookings__r != null  && sessWrapper.session.Session_Bookings__r.size() > 0)
-                    {
-                        sessionBookingExistingList.add(sessWrapper.session.Session_Bookings__r[0]);
-                    }
-                    
-                    //if the session has been selected by the delegate and a session booking does not exist, a new one will be generated to link the delegate and session 
-                    if
-                        (
-                            (sessWrapper.selected == true) 
-                            && 
-                            (
-                                sessWrapper.session.Session_Bookings__r == null 
-                                ||
-                                (sessWrapper.session.Session_Bookings__r != null  && sessWrapper.session.Session_Bookings__r.size() == 0)
-                            )
-                        )// 
-                    {
-                            Event_Session_Booking__c sessBooking = new Event_Session_Booking__c();
-                            sessBooking.Delegate__c = delegateId;
-                            sessBooking.Session__c	= sessWrapper.session.id; 
-                            sessionBookingInsertList.add(sessBooking);
-                    }
-                    else if(sessWrapper.selected == false && sessWrapper.session.Session_Bookings__r != null  && sessWrapper.session.Session_Bookings__r.size() > 0)//delete the session booking if one exists for a session no longer selected.
-                    {
-                        
-                        Event_Session_Booking__c sessBooking = sessWrapper.session.Session_Bookings__r[0];
-                        sessionBookingDeleteList.add(sessBooking);
-                    }
-                }
-                
-                if(sessionBookingInsertList.size() == 0 && sessionBookingExistingList.size() == 0  )
-                {
-                    errorList.put('1','Please ensure at least one session/day has been selected before continuing.' ); 
-                    return null;
-                }
-                insert sessionBookingInsertList;
-                delete sessionBookingDeleteList;
-            }
+
             
             thisDelegate.Registration_Status__c = 'Accepted';
             thisDelegate.Registered_Date__c = dateTime.now();
             
             Update thisDelegate;
-            
-            
             
             //**** WE CANNOT SIMPLY UPDATE CONTACTS IN BARCLAYS SCENARIO
             //This could overwrite valuable client data
@@ -327,30 +370,6 @@ public class evRSVP_Controller
     
     Public pagereference CancelAccept()
     {  
-        try
-        {
-            if(sessionWrapperList.size() > 0)
-            {
-                list<Event_Session_Booking__c> sessionBookingDeleteList = new list<Event_Session_Booking__c>();
-                
-                for(sessionWrapper sessWrapper : sessionWrapperList)
-                {
-                    if(sessWrapper.session.Session_Bookings__r != null  && sessWrapper.session.Session_Bookings__r.size() > 0)
-                    {
-                        
-                        Event_Session_Booking__c sessBooking = sessWrapper.session.Session_Bookings__r[0];
-                        sessionBookingDeleteList.add(sessBooking);
-                    }
-                }
-                delete sessionBookingDeleteList;
-            } 
-        }
-        catch(exception e)
-        {
-            ApexPages.addMessages(new MyException ('An unexpected error (ERR-DU) has been encountered.  Please accept our apologies for any inconvenience.\n\n' ));
-            throw e;
-        }    
-        
         pagereference pr =  page.evDecline;
         pr.getParameters().put('delid', thisDelegate.id);
         pr.getParameters().put('rsvp', 'No');
@@ -406,6 +425,7 @@ public class evRSVP_Controller
                 DelRec.Delegate_Type__c = 'Partner';
                 DelegatesToInsert.add(DelRec);
                 
+                
                 numberOfPartners= numberOfPartners+ 1;
                 
             }
@@ -426,6 +446,22 @@ public class evRSVP_Controller
             }
         }
     }
+    
+  /*  Public void AddPartnerRow()
+    {
+        //Make instance of Contact. Add to Contact Item List
+        delegate__c newDel = new delegate__c();
+        //SYstem.debug(delegatePartnerMap.size());
+       // delegatePartnerMap.put(delegatePartnerMap.size()+1,newDel);
+    }
+
+    public PageReference RemoveRow()
+    {
+        SYstem.debug(SelectedIndex);
+        
+        delegatePartnerMap.remove(SelectedIndex);
+        return null;
+    }*/
     
     //ERROR HANDLERS
     public Boolean getHasErrorsLevel1() 
@@ -521,12 +557,12 @@ public class evRSVP_Controller
                 missingFields += (missingFields != '' ? ', ' : '') + 'Nationality';
             }
             
-            if (thisEvent.Booking_confirmation_mandatory_fields__c.contains('Country Of Residence')  &&(thisDelegate.Country_Of_Residence__c==NULL || thisDelegate.Country_Of_Residence__c=='')) 
+             if (thisEvent.Booking_confirmation_mandatory_fields__c.contains('Country Of Residence')  &&(thisDelegate.Country_Of_Residence__c==NULL || thisDelegate.Country_Of_Residence__c=='')) 
             {
                 missingFields += (missingFields != '' ? ', ' : '') + 'Country Of Residence';
             }
             
-            if (thisEvent.Booking_confirmation_mandatory_fields__c.contains('Assistant Email')  &&(thisDelegate.Assistant_Email__c==NULL || thisDelegate.Assistant_Email__c=='')) 
+             if (thisEvent.Booking_confirmation_mandatory_fields__c.contains('Assistant Email')  &&(thisDelegate.Assistant_Email__c==NULL || thisDelegate.Assistant_Email__c=='')) 
             {
                 missingFields += (missingFields != '' ? ', ' : '') + 'Assistant Email';
             }
@@ -563,11 +599,6 @@ public class evRSVP_Controller
         return isInvalid;
     }
     
-    public class sessionWrapper//wrapper class used to store and display sessions for the current event to the delegate for selection.
-    {
-        public Event_Session__c session {get;set;}
-        public boolean Selected {get;set;}
-    }
     
     public List<SelectOption> getEventIndustryTypes()  
     {

@@ -2,6 +2,11 @@
 <ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
     <folderShares>
         <accessLevel>View</accessLevel>
+        <sharedTo>aisling.quirke@absa1.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
         <sharedTo>akhonamzamo.gwaza@absa1.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
@@ -22,17 +27,7 @@
     </folderShares>
     <folderShares>
         <accessLevel>View</accessLevel>
-        <sharedTo>cheryl.buss@absa1.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>View</accessLevel>
         <sharedTo>claire.g.young@absa1.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>View</accessLevel>
-        <sharedTo>clint.robertson@absa1.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>
@@ -83,11 +78,6 @@
     <folderShares>
         <accessLevel>View</accessLevel>
         <sharedTo>oreoluwa.adegbotolu@absa1.com</sharedTo>
-        <sharedToType>User</sharedToType>
-    </folderShares>
-    <folderShares>
-        <accessLevel>View</accessLevel>
-        <sharedTo>sayog.jugmohan@absa1.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
     <folderShares>

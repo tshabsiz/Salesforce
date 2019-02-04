@@ -8,6 +8,10 @@
         <plural>true</plural>
         <value>Relationships</value>
     </caseValues>
+    <fieldSets>
+        <label><!-- System feids --></label>
+        <name>System_feids</name>
+    </fieldSets>
     <fields>
         <caseValues>
             <plural>false</plural>
@@ -2266,10 +2270,6 @@
     <fields>
         <label><!-- Original Salesforce ID --></label>
         <name>OriginalSalesforceID__c</name>
-    </fields>
-    <fields>
-        <label><!-- Owner Country --></label>
-        <name>Owner_Country__c</name>
     </fields>
     <fields>
         <label><!-- Parent Team --></label>

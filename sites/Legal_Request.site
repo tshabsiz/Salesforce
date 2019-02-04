@@ -23,9 +23,9 @@
     <referrerPolicyOriginWhenCrossOrigin>false</referrerPolicyOriginWhenCrossOrigin>
     <requireHttps>true</requireHttps>
     <requireInsecurePortalAccess>false</requireInsecurePortalAccess>
-    <siteAdmin>tumelo.singo@barclaysafrica.com</siteAdmin>
+    <siteAdmin>tumelo.singo@absa1.com</siteAdmin>
     <siteTemplate>SiteTemplate</siteTemplate>
     <siteType>Visualforce</siteType>
-    <subdomain>absa1</subdomain>
+    <subdomain>barclaysafricasites</subdomain>
     <urlPathPrefix>legalrequest</urlPathPrefix>
 </CustomSite>

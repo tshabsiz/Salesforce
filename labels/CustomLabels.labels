@@ -15,13 +15,6 @@
         <value>0.28</value>
     </labels>
     <labels>
-        <fullName>SalesforceSupportEmail</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>SalesforceSupportEmail</shortDescription>
-        <value>salesforcesupport@absa.africa</value>
-    </labels>
-    <labels>
         <fullName>Splits_Sum_Over_100_Percent</fullName>
         <language>en_US</language>
         <protected>false</protected>

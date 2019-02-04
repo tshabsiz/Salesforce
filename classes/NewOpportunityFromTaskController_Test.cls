@@ -20,12 +20,11 @@ public class NewOpportunityFromTaskController_Test {
 	}
     
 	public static testMethod void testGetTaskFields() {
-        Task newTask = [SELECT Id, Status, What.RecordType.Name, Campaign__c FROM Task LIMIT 1];
+        Task newTask = [SELECT Id, Status, What.RecordType.Name FROM Task LIMIT 1];
         Task queryTask = NewOpportunityFromTaskController.getTaskFields(newtask.Id);
         System.assertEquals(newTask.Id, queryTask.Id);
         System.assertEquals(newTask.Status, queryTask.Status);
         System.assertEquals(newTask.What.RecordType.Name, queryTask.What.RecordType.Name);
-        System.assertEquals(newTask.Campaign__c, queryTask.Campaign__c);
     }
     
     public static testMethod void testFetchRecordTypeValues() {

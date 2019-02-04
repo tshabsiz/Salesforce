@@ -188,10 +188,6 @@
             <translation><!-- CIB Financial Crime Compliance --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>COB Client Mandates</masterLabel>
-            <translation><!-- COB Client Mandates --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>Cash Send</masterLabel>
             <translation><!-- Cash Send --></translation>
         </picklistValues>
@@ -226,10 +222,6 @@
         <picklistValues>
             <masterLabel>RBB Cash Operations</masterLabel>
             <translation><!-- RBB Cash Operations --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Refresh</masterLabel>
-            <translation><!-- Refresh --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Regional Service Centre Commercial Cape Town</masterLabel>

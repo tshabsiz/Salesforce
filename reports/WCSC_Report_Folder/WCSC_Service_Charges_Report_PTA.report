@@ -83,8 +83,8 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CLOSED_DATEONLY</dateColumn>
-        <endDate>2018-12-10</endDate>
+        <endDate>2018-09-11</endDate>
         <interval>INTERVAL_CUSTOM</interval>
-        <startDate>2018-12-01</startDate>
+        <startDate>2018-09-03</startDate>
     </timeFrameFilter>
 </Report>

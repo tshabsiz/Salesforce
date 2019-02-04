@@ -37,6 +37,9 @@ public class CSC_Case_Trigger_Functions {
         
         //Check if the case was closed and if there are any comments for the Case
         //Prevent users from closing a case if there is not at least one case comment 
+       
+        
+        
         String oldStatus = oldValues.get(updatedCase[0].Id).Status;
         String newStatus = updatedCase[0].Status;
         String emailAction = '';
@@ -807,7 +810,7 @@ public class CSC_Case_Trigger_Functions {
                    if(manualCases[0].RecordTypeId != complaintCaseRecTypeId){
                        manualCases[0].RecordTypeId = convertedCaseRecTypeID;
                    }
-                   
+          
                    manualCases[0].Service_Mapping_Entry__c = serviceMap.get('Id');
                    manualCases[0].Complexity__c = serviceMap.get('Complexity__c');
                    manualCases[0].First_Approval__c = serviceMap.get('First_Approval__c');
@@ -816,6 +819,7 @@ public class CSC_Case_Trigger_Functions {
                    manualCases[0].Second_Approval__c = serviceMap.get('Second_Approval__c');
                    manualCases[0].Service_Mapping_Entry__c = serviceMap.get('Id');
                    manualCases[0].SLA_Time_Measure__c = serviceMap.get('SLA_Time_Measure__c');
+                   
                    
                    if(serviceMap.get('SLA_Units__c') != null){
                        manualCases[0].SLA_Units__c = Decimal.valueOf(serviceMap.get('SLA_Units__c'));
@@ -887,13 +891,14 @@ public class CSC_Case_Trigger_Functions {
                         
                         String teamRoleId = [Select Id From CaseTeamRole Where Name = 'Team Manager'].Id;
                         String managerId = [Select Id From User Where Name = :caseFunc.getTeamManager()].Id;
+                        
                         insert new CaseTeamMember(ParentId =  manualCases[0].Id, MemberId = managerId, TeamRoleId = teamRoleId);
                         
                     }catch (Exception e){
                         CSC_AuditTrailLog.logException(e, 'New', 'Warning', 'CSC_Case_Trigger_Functions', 'convertManualCases', 'Unable to add team member to case.  Manager user not found or inactive');  
                     }
                     
-                    //Add the Delegated approver for the new case owner as a new Case team memeber  
+                    //Add the Delegated approver for the new case owner as a new Case team memeber
                     list<User> delegatedApprover = [Select DelegatedApproverId From User Where Id = :manualCases[0].OwnerId];
                     String teamRoleId = [Select Id From CaseTeamRole Where Name = 'Team Leader'].Id;
                     
@@ -1232,4 +1237,12 @@ CSC_AuditTrailLog.logException(e, 'New', 'Warning', 'CSC_Case_Trigger_Functions'
             CSC_AuditTrailLog.logException(exc, 'New', 'Warning', 'CSC_Case_Trigger_Functions', 'AddCaseCreatorAsTeamMember', 'There was an issue with adding a case creator as a team member');
         }       
     }
+    
+    public static void updatePicCases(list<Case> manualCases, Boolean isBeforeInsert){
+        
+        
+        
+        
+    }
+    
 }

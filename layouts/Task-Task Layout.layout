@@ -36,10 +36,6 @@
                 <behavior>Required</behavior>
                 <field>Status</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Status_Reason__c</field>
-            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
@@ -86,8 +82,8 @@
         <label>Other Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Campaign__c</field>
+                <behavior>Readonly</behavior>
+                <field>Campaign_Name__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns/>

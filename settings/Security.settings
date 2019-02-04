@@ -18,11 +18,6 @@
             <start>185.81.100.1</start>
         </ipRanges>
         <ipRanges>
-            <description>Pretoria CSC IP Address</description>
-            <end>169.202.235.5</end>
-            <start>169.202.235.1</start>
-        </ipRanges>
-        <ipRanges>
             <end>162.248.187.255</end>
             <start>162.248.184.1</start>
         </ipRanges>
@@ -38,6 +33,11 @@
         <ipRanges>
             <end>54.69.114.54</end>
             <start>54.69.114.54</start>
+        </ipRanges>
+        <ipRanges>
+            <description>Jitterbit</description>
+            <end>52.209.142.5</end>
+            <start>52.209.142.5</start>
         </ipRanges>
         <ipRanges>
             <end>52.28.168.105</end>
@@ -67,15 +67,20 @@
             <end>52.11.152.229</end>
             <start>52.11.152.229</start>
         </ipRanges>
+        <ipRanges>
+            <description>Jitterbit</description>
+            <end>34.242.211.3</end>
+            <start>34.242.211.3</start>
+        </ipRanges>
     </networkAccess>
     <passwordPolicies>
         <complexity>UpperLowerCaseNumeric</complexity>
         <expiration>NinetyDays</expiration>
         <historyRestriction>3</historyRestriction>
-        <lockoutInterval>ThirtyMinutes</lockoutInterval>
+        <lockoutInterval>FifteenMinutes</lockoutInterval>
         <maxLoginAttempts>ThreeAttempts</maxLoginAttempts>
         <minimumPasswordLength>8</minimumPasswordLength>
-        <minimumPasswordLifetime>false</minimumPasswordLifetime>
+        <minimumPasswordLifetime>true</minimumPasswordLifetime>
         <obscureSecretAnswer>true</obscureSecretAnswer>
         <questionRestriction>DoesNotContainPassword</questionRestriction>
     </passwordPolicies>
@@ -89,10 +94,10 @@
         <enableClickjackNonsetupUser>false</enableClickjackNonsetupUser>
         <enableClickjackNonsetupUserHeaderless>false</enableClickjackNonsetupUserHeaderless>
         <enableClickjackSetup>true</enableClickjackSetup>
-        <enableContentSniffingProtection>false</enableContentSniffingProtection>
+        <enableContentSniffingProtection>true</enableContentSniffingProtection>
         <enablePostForSessions>false</enablePostForSessions>
         <enableSMSIdentity>false</enableSMSIdentity>
-        <enableUpgradeInsecureRequests>true</enableUpgradeInsecureRequests>
+        <enableUpgradeInsecureRequests>false</enableUpgradeInsecureRequests>
         <enableXssProtection>true</enableXssProtection>
         <enforceIpRangesEveryRequest>false</enforceIpRangesEveryRequest>
         <forceLogoutOnSessionTimeout>true</forceLogoutOnSessionTimeout>
@@ -102,6 +107,8 @@
         <identityConfirmationOnTwoFactorRegistrationEnabled>true</identityConfirmationOnTwoFactorRegistrationEnabled>
         <lockSessionsToDomain>true</lockSessionsToDomain>
         <lockSessionsToIp>false</lockSessionsToIp>
+        <lockerServiceCSP>false</lockerServiceCSP>
+        <lockerServiceFrozenRealm>false</lockerServiceFrozenRealm>
         <redirectionWarning>false</redirectionWarning>
         <referrerPolicy>false</referrerPolicy>
         <requireHttpOnly>false</requireHttpOnly>

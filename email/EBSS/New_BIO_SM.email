@@ -13,24 +13,23 @@
                 </h4>
             </td>
           </tr>
-             <br></br>
-             <br></br>
            <tr width="640"> 
                <td align="left">
+             
                    <img width="200" height="200" src="{!relatedTo.Capturer_Photo__c}"/>&nbsp;&nbsp;&nbsp;
                    <img width="200" height="200" src="{!relatedTo.Approver_Photo__c}"/>
+              
               </td>
            </tr>
-              <br></br>
-              <br></br>
+        
+      
+        <br></br>
        <tr>
          <td width="640" style="font-size: 12px">
-           BI Online Profile Code:  CFXXXXX – XXX – NAME <br></br>
-           <br></br>
+           BI Online Profile Code:  CFXXXXX – XXX – NAME 
            Should you not have received your password and/or enrolment code within the next 24 hours,
            kindly contact the Electronic Banking Support Centre at 0860 227 232 or email absaeb@absa.co.za 
-           and use the above case number as a reference.<br></br>
-           <br></br>
+           and use the above case number as a reference.
            To enrol for a certificate:
            <ol>
              <li>Your certificate enrolment code will be provided to you by SMS.</li>

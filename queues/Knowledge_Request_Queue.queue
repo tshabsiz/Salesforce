@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Queue xmlns="http://soap.sforce.com/2006/04/metadata">
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
-    <email>dummy@dummy.co.za</email>
+    <email>dummyemail@absa.co.za</email>
     <name>Knowledge Request Queue</name>
     <queueMembers>
         <roleAndSubordinatesInternal>
             <roleAndSubordinateInternal>Barclays_COO_Legal</roleAndSubordinateInternal>
+            <roleAndSubordinateInternal>Barclays_TMG</roleAndSubordinateInternal>
         </roleAndSubordinatesInternal>
         <users>
             <user>anita.braemer@absa1.com</user>
@@ -37,7 +38,7 @@
             <user>tanaka.nyawo@absa1.com</user>
             <user>thulani.dyasi@absa1.com</user>
             <user>tshepang.molelekeng@absa1.com</user>
-            <user>tumelo.singo@barclaysafrica.com</user>
+            <user>tumelo.singo@absa1.com</user>
             <user>vami.mbatha@absa1.com</user>
         </users>
     </queueMembers>

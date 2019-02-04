@@ -29,7 +29,7 @@
                 <field>Origin</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Edit</behavior>
                 <field>LegalDivision__c</field>
             </layoutItems>
             <layoutItems>
@@ -47,6 +47,26 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Knowledge_Team_Added__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Case_Creator_Picture__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Approver__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Capturer__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Capturer_Photo__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Approver_Photo__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

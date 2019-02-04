@@ -140,7 +140,7 @@ public with sharing class APT_PricingLetterController {
 										AND Pricing_Template__r.Type__c = :annualPricing.Pricing_Template__r.Type__c
 										AND Year__c = :annualPricing.Previous_Year__c
 										//AND (Approval_Status__c = :APT_AnnualPricingUtils.STATUS_NOT_SUBMITTED OR Approval_Status__c = :APT_AnnualPricingUtils.STATUS_APPROVED)
-                                        AND (Approval_Status__c = :APT_AnnualPricingUtils.STATUS_STANDARD_PRICING  OR Approval_Status__c = :APT_AnnualPricingUtils.STATUS_APPROVED)
+                                        AND (Approval_Status__c = :APT_AnnualPricingUtils.STATUS_STANDARD_PRICING  OR Approval_Status__c = :APT_AnnualPricingUtils.STATUS_STANDARD_PRICING )
 										ORDER BY CreatedDate DESC LIMIT 1];
 		} catch(QueryException ex){
 			return mapPreviousAnnualPricingItems;

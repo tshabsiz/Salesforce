@@ -363,6 +363,7 @@
                 <showTotal>false</showTotal>
                 <sortBy>RowValueDescending</sortBy>
             </dashboardTableColumn>
+            <decimalPrecision>0</decimalPrecision>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
@@ -374,7 +375,7 @@
             <title>Opportunities w/o Products</title>
         </components>
     </rightSection>
-    <runningUser>copado@absa0.com.dev11</runningUser>
+    <runningUser>sizwe.tshabalala@absa1.com</runningUser>
     <textColor>#000000</textColor>
     <title>CIB Inland LLC &amp; Midcorp Adoption Metric</title>
     <titleColor>#000000</titleColor>

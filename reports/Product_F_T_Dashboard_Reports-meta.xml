@@ -62,6 +62,11 @@
     </folderShares>
     <folderShares>
         <accessLevel>View</accessLevel>
+        <sharedTo>sibo.muholi@absa1.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
         <sharedTo>temi.ofong@absa1.com</sharedTo>
         <sharedToType>User</sharedToType>
     </folderShares>
