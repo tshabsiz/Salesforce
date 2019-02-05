@@ -38296,6 +38296,9 @@
         <layout>External_Collaboration_Request__c-External Collaboration Request Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Extract__c-Extract Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Facility_Party__c-Facility Party Layout</layout>
     </layoutAssignments>
     <layoutAssignments>

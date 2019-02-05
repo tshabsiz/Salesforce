@@ -21,9 +21,6 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <componentInstances>
-            <componentName>agf:ADM_Profile_TeamList</componentName>
-        </componentInstances>
-        <componentInstances>
             <componentName>force:relatedListContainer</componentName>
         </componentInstances>
         <mode>Replace</mode>

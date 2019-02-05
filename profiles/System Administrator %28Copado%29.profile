@@ -38348,6 +38348,9 @@
         <layout>External_Collaboration_Request__c-External Collaboration Request Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Extract__c-Extract Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Facility_Party__c-Facility Party Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -40300,6 +40303,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>External_Collaboration_Request__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Extract__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>

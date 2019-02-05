@@ -12,9 +12,6 @@
         <componentInstances>
             <componentName>force:detailPanel</componentName>
         </componentInstances>
-        <componentInstances>
-            <componentName>agf:ADM_ThemeWork</componentName>
-        </componentInstances>
         <mode>Replace</mode>
         <name>detailTabContent</name>
         <type>Facet</type>
