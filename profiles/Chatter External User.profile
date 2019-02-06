@@ -39370,7 +39370,7 @@
     <layoutAssignments>
         <layout>knowledge_Ownership_Assignment__mdt-knowledge Ownership Assignment Layout</layout>
     </layoutAssignments>
-    <loginHours/>
+    <loginHours />
     <objectPermissions>
         <allowCreate>false</allowCreate>
         <allowDelete>false</allowDelete>
